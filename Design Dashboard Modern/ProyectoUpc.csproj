@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8BCAAC-874B-4730-B1DC-A3147345B29B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Design_Dashboard_Modern</RootNamespace>
+    <AssemblyName>Design Dashboard Modern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizacionPlanAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizacionPlanAsignatura.Designer.cs">
+      <DependentUpon>ActualizacionPlanAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaAsignatura.Designer.cs">
+      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaDocente.Designer.cs">
+      <DependentUpon>ConsultaDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPlanAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPlanAsignatura.Designer.cs">
+      <DependentUpon>ConsultarPlanAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarRespuestaComite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarRespuestaComite.Designer.cs">
+      <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUpcComite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUpcComite.Designer.cs">
+      <DependentUpon>MenuUpcComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUpc.Designer.cs">
+      <DependentUpon>LoginUpc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUpcDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUpcDocente.Designer.cs">
+      <DependentUpon>MenuUpcDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAsignatura.Designer.cs">
+      <DependentUpon>RegistroAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroDocente.Designer.cs">
+      <DependentUpon>RegistroDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPlanAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPlanAsignatura.Designer.cs">
+      <DependentUpon>RegistroPlanAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSolicitudActualizacionPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSolicitudActualizacionPlan.Designer.cs">
+      <DependentUpon>RegistroSolicitudActualizacionPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RespuestaFormatoDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RespuestaFormatoDocente.Designer.cs">
+      <DependentUpon>RespuestaFormatoDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RevisionesFormatoDocentecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevisionesFormatoDocentecs.Designer.cs">
+      <DependentUpon>RevisionesFormatoDocentecs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MenuUpcComite.resx">
+      <DependentUpon>MenuUpcComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUpc.resx">
+      <DependentUpon>LoginUpc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUpcDocente.resx">
+      <DependentUpon>MenuUpcDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistroDocente.resx">
+      <DependentUpon>RegistroDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{e626fe3b-3f9a-4f1c-b644-5c927cd4472b}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTITY\ENTITY.csproj">
+      <Project>{3f11a062-7eaa-487b-a794-eddc52ccc8cf}</Project>
+      <Name>ENTITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

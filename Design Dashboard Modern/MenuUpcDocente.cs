@@ -185,7 +185,7 @@ namespace ProyectoHotelPensionados
 
         private void BtRegistrarSolicitudActualizacionPlan_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistroSolicitudActualizacionPlan());
+            //openChildForm(new RegistroSolicitudActualizacionPlan());
         }
 
         private void BtConsultarRespuestaComite_Click(object sender, EventArgs e)
@@ -215,6 +215,26 @@ namespace ProyectoHotelPensionados
             WindowState = FormWindowState.Normal;
             Restaurar.Visible = false;
             Maximizar.Visible = true;
+        }
+
+        private void MenuSidebar_Click_1(object sender, EventArgs e)
+        {
+            if (Sidebar.Width == 260)
+            {
+                Sidebar.Visible = false;
+                Sidebar.Width = 68;
+                SidebarWrapper.Width = 90;
+                LineaSidebar.Width = 54;
+                AnimacionSidebar.Show(Sidebar);
+            }
+            else
+            {
+                Sidebar.Visible = false;
+                Sidebar.Width = 260;
+                SidebarWrapper.Width = 280;
+                LineaSidebar.Width = 245;
+                AnimacionSidebarBack.Show(Sidebar);
+            }
         }
     }
 }

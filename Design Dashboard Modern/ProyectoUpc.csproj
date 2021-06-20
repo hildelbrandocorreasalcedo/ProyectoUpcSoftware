@@ -82,17 +82,17 @@
     <Compile Include="ConsultarRespuestaComite.Designer.cs">
       <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuUpcComite.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuUpcComite.Designer.cs">
       <DependentUpon>MenuUpcComite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginUpc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginUpc.Designer.cs">
-      <DependentUpon>LoginUpc.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuUpcDocente.cs">
       <SubType>Form</SubType>
@@ -102,6 +102,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarRespuestaFormatoDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarRespuestaFormatoDocente.Designer.cs">
+      <DependentUpon>RegistrarRespuestaFormatoDocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroAsignatura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +126,6 @@
     <Compile Include="RegistroPlanAsignatura.Designer.cs">
       <DependentUpon>RegistroPlanAsignatura.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistroSolicitudActualizacionPlan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistroSolicitudActualizacionPlan.Designer.cs">
-      <DependentUpon>RegistroSolicitudActualizacionPlan.cs</DependentUpon>
-    </Compile>
     <Compile Include="RespuestaFormatoDocente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +138,26 @@
     <Compile Include="RevisionesFormatoDocentecs.Designer.cs">
       <DependentUpon>RevisionesFormatoDocentecs.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizacionPlanAsignatura.resx">
+      <DependentUpon>ActualizacionPlanAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAsignatura.resx">
+      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaDocente.resx">
+      <DependentUpon>ConsultaDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPlanAsignatura.resx">
+      <DependentUpon>ConsultarPlanAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarRespuestaComite.resx">
+      <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuUpcComite.resx">
       <DependentUpon>MenuUpcComite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginUpc.resx">
-      <DependentUpon>LoginUpc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUpcDocente.resx">
       <DependentUpon>MenuUpcDocente.cs</DependentUpon>
@@ -156,8 +171,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarRespuestaFormatoDocente.resx">
+      <DependentUpon>RegistrarRespuestaFormatoDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAsignatura.resx">
+      <DependentUpon>RegistroAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroDocente.resx">
       <DependentUpon>RegistroDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPlanAsignatura.resx">
+      <DependentUpon>RegistroPlanAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RespuestaFormatoDocente.resx">
+      <DependentUpon>RespuestaFormatoDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevisionesFormatoDocentecs.resx">
+      <DependentUpon>RevisionesFormatoDocentecs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

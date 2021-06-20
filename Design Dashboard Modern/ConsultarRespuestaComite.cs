@@ -16,5 +16,10 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
         }
+
+        private void ConsultarRespuestaComite_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

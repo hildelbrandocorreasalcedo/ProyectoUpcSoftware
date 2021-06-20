@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class RegistroSolicitudActualizacionPlan : Form
+    public partial class RegistrarRespuestaFormatoDocente : Form
     {
-        public RegistroSolicitudActualizacionPlan()
+        public RegistrarRespuestaFormatoDocente()
         {
             InitializeComponent();
         }

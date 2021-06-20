@@ -29,7 +29,10 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUpcComite));
+            BunifuAnimatorNS.Animation animation18 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation17 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,7 +63,15 @@ namespace Design_Dashboard_Modern
             this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelHijo = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ImagenUpc = new System.Windows.Forms.PictureBox();
+            this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.RadioPanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Temporizador = new System.Windows.Forms.Timer(this.components);
+            this.MoverDashboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.AnimacionSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.AnimacionSidebarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
@@ -77,7 +88,8 @@ namespace Design_Dashboard_Modern
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.PanelHijo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenUpc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -91,6 +103,8 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.Controls.Add(this.Restaurar);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox2);
             this.bunifuGradientPanel1.Controls.Add(this.Minimizar);
+            this.AnimacionSidebarBack.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Lime;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
@@ -105,6 +119,8 @@ namespace Design_Dashboard_Modern
             // MenuSidebar
             // 
             this.MenuSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(0)))));
+            this.AnimacionSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
             this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
             this.MenuSidebar.Location = new System.Drawing.Point(19, 14);
             this.MenuSidebar.Name = "MenuSidebar";
@@ -112,14 +128,17 @@ namespace Design_Dashboard_Modern
             this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MenuSidebar.TabIndex = 24;
             this.MenuSidebar.TabStop = false;
+            this.MenuSidebar.Click += new System.EventHandler(this.MenuSidebar_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(171, 21);
+            this.label2.Location = new System.Drawing.Point(168, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(420, 36);
             this.label2.TabIndex = 23;
@@ -129,6 +148,8 @@ namespace Design_Dashboard_Modern
             // 
             this.Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Salir.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AnimacionSidebar.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
             this.Salir.Location = new System.Drawing.Point(1117, 21);
             this.Salir.Name = "Salir";
@@ -142,6 +163,8 @@ namespace Design_Dashboard_Modern
             // 
             this.Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Maximizar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AnimacionSidebar.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
             this.Maximizar.Location = new System.Drawing.Point(1081, 21);
             this.Maximizar.Name = "Maximizar";
@@ -155,6 +178,8 @@ namespace Design_Dashboard_Modern
             // 
             this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Restaurar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AnimacionSidebar.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
             this.Restaurar.Location = new System.Drawing.Point(1081, 21);
             this.Restaurar.Name = "Restaurar";
@@ -168,10 +193,12 @@ namespace Design_Dashboard_Modern
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(86, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(87, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(68, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -180,6 +207,8 @@ namespace Design_Dashboard_Modern
             // 
             this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AnimacionSidebar.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
             this.Minimizar.Location = new System.Drawing.Point(1045, 21);
             this.Minimizar.Name = "Minimizar";
@@ -193,6 +222,8 @@ namespace Design_Dashboard_Modern
             // 
             this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(0)))));
             this.SidebarWrapper.Controls.Add(this.Sidebar);
+            this.AnimacionSidebarBack.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
             this.SidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 75);
             this.SidebarWrapper.Name = "SidebarWrapper";
@@ -210,6 +241,8 @@ namespace Design_Dashboard_Modern
             this.Sidebar.Controls.Add(this.label3);
             this.Sidebar.Controls.Add(this.BTAsignaturas);
             this.Sidebar.Controls.Add(this.LineaSidebar);
+            this.AnimacionSidebarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
             this.Sidebar.GradientBottomLeft = System.Drawing.Color.Lime;
             this.Sidebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
@@ -231,7 +264,9 @@ namespace Design_Dashboard_Modern
             this.PanelSideMenu.Controls.Add(this.PanelSubDocente);
             this.PanelSideMenu.Controls.Add(this.BtDocentes);
             this.PanelSideMenu.Controls.Add(this.PanelSubAsignatura);
-            this.PanelSideMenu.Location = new System.Drawing.Point(8, 134);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelSideMenu, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PanelSideMenu, BunifuAnimatorNS.DecorationType.None);
+            this.PanelSideMenu.Location = new System.Drawing.Point(8, 126);
             this.PanelSideMenu.Name = "PanelSideMenu";
             this.PanelSideMenu.Size = new System.Drawing.Size(245, 509);
             this.PanelSideMenu.TabIndex = 2;
@@ -244,6 +279,8 @@ namespace Design_Dashboard_Modern
             this.BtRespuestaFormatoDocente.BorderRadius = 0;
             this.BtRespuestaFormatoDocente.ButtonText = "                RESPUESTAS DE                 FORMATOS DEL DOCENTE";
             this.BtRespuestaFormatoDocente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtRespuestaFormatoDocente, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtRespuestaFormatoDocente, BunifuAnimatorNS.DecorationType.None);
             this.BtRespuestaFormatoDocente.DisabledColor = System.Drawing.Color.Gray;
             this.BtRespuestaFormatoDocente.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtRespuestaFormatoDocente.Iconcolor = System.Drawing.Color.Transparent;
@@ -251,7 +288,7 @@ namespace Design_Dashboard_Modern
             this.BtRespuestaFormatoDocente.Iconimage_right = null;
             this.BtRespuestaFormatoDocente.Iconimage_right_Selected = null;
             this.BtRespuestaFormatoDocente.Iconimage_Selected = null;
-            this.BtRespuestaFormatoDocente.IconMarginLeft = 17;
+            this.BtRespuestaFormatoDocente.IconMarginLeft = 11;
             this.BtRespuestaFormatoDocente.IconMarginRight = 0;
             this.BtRespuestaFormatoDocente.IconRightVisible = true;
             this.BtRespuestaFormatoDocente.IconRightZoom = 0D;
@@ -281,6 +318,8 @@ namespace Design_Dashboard_Modern
             this.BtRevisionesFormatoDocente.BorderRadius = 0;
             this.BtRevisionesFormatoDocente.ButtonText = "                 REVISIONES DE                   FORMATOS DEL DOCENTE";
             this.BtRevisionesFormatoDocente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtRevisionesFormatoDocente, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtRevisionesFormatoDocente, BunifuAnimatorNS.DecorationType.None);
             this.BtRevisionesFormatoDocente.DisabledColor = System.Drawing.Color.Gray;
             this.BtRevisionesFormatoDocente.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtRevisionesFormatoDocente.Iconcolor = System.Drawing.Color.Transparent;
@@ -288,7 +327,7 @@ namespace Design_Dashboard_Modern
             this.BtRevisionesFormatoDocente.Iconimage_right = null;
             this.BtRevisionesFormatoDocente.Iconimage_right_Selected = null;
             this.BtRevisionesFormatoDocente.Iconimage_Selected = null;
-            this.BtRevisionesFormatoDocente.IconMarginLeft = 17;
+            this.BtRevisionesFormatoDocente.IconMarginLeft = 9;
             this.BtRevisionesFormatoDocente.IconMarginRight = 0;
             this.BtRevisionesFormatoDocente.IconRightVisible = true;
             this.BtRevisionesFormatoDocente.IconRightZoom = 0D;
@@ -315,6 +354,8 @@ namespace Design_Dashboard_Modern
             this.PanelSubPlanAsignatura.BackColor = System.Drawing.Color.Transparent;
             this.PanelSubPlanAsignatura.Controls.Add(this.BtConsultarPlanAsignatura);
             this.PanelSubPlanAsignatura.Controls.Add(this.BtRegistrarPlanAsignatura);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelSubPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PanelSubPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.PanelSubPlanAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubPlanAsignatura.Location = new System.Drawing.Point(0, 286);
             this.PanelSubPlanAsignatura.Name = "PanelSubPlanAsignatura";
@@ -329,6 +370,8 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPlanAsignatura.BorderRadius = 0;
             this.BtConsultarPlanAsignatura.ButtonText = "      CONSULTAR PLAN                             ASIGNATURA";
             this.BtConsultarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.BtConsultarPlanAsignatura.DisabledColor = System.Drawing.Color.Gray;
             this.BtConsultarPlanAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtConsultarPlanAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,7 +381,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPlanAsignatura.Iconimage_right = null;
             this.BtConsultarPlanAsignatura.Iconimage_right_Selected = null;
             this.BtConsultarPlanAsignatura.Iconimage_Selected = null;
-            this.BtConsultarPlanAsignatura.IconMarginLeft = 15;
+            this.BtConsultarPlanAsignatura.IconMarginLeft = 9;
             this.BtConsultarPlanAsignatura.IconMarginRight = 0;
             this.BtConsultarPlanAsignatura.IconRightVisible = true;
             this.BtConsultarPlanAsignatura.IconRightZoom = 0D;
@@ -367,6 +410,8 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.BorderRadius = 0;
             this.BtRegistrarPlanAsignatura.ButtonText = "        REGISTRAR PLAN                               ASIGNATURA";
             this.BtRegistrarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.BtRegistrarPlanAsignatura.DisabledColor = System.Drawing.Color.Gray;
             this.BtRegistrarPlanAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtRegistrarPlanAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -376,7 +421,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.Iconimage_right = null;
             this.BtRegistrarPlanAsignatura.Iconimage_right_Selected = null;
             this.BtRegistrarPlanAsignatura.Iconimage_Selected = null;
-            this.BtRegistrarPlanAsignatura.IconMarginLeft = 16;
+            this.BtRegistrarPlanAsignatura.IconMarginLeft = 9;
             this.BtRegistrarPlanAsignatura.IconMarginRight = 0;
             this.BtRegistrarPlanAsignatura.IconRightVisible = true;
             this.BtRegistrarPlanAsignatura.IconRightZoom = 0D;
@@ -405,6 +450,8 @@ namespace Design_Dashboard_Modern
             this.BtPlanAsignatura.BorderRadius = 0;
             this.BtPlanAsignatura.ButtonText = "       PLANES DE ASIGNATURAS";
             this.BtPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.BtPlanAsignatura.DisabledColor = System.Drawing.Color.Gray;
             this.BtPlanAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtPlanAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,7 +461,7 @@ namespace Design_Dashboard_Modern
             this.BtPlanAsignatura.Iconimage_right = null;
             this.BtPlanAsignatura.Iconimage_right_Selected = null;
             this.BtPlanAsignatura.Iconimage_Selected = null;
-            this.BtPlanAsignatura.IconMarginLeft = 16;
+            this.BtPlanAsignatura.IconMarginLeft = 9;
             this.BtPlanAsignatura.IconMarginRight = 0;
             this.BtPlanAsignatura.IconRightVisible = true;
             this.BtPlanAsignatura.IconRightZoom = 0D;
@@ -440,6 +487,8 @@ namespace Design_Dashboard_Modern
             this.PanelSubDocente.BackColor = System.Drawing.Color.Transparent;
             this.PanelSubDocente.Controls.Add(this.BtConsultarDocente);
             this.PanelSubDocente.Controls.Add(this.BtRegistrarDocente);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelSubDocente, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PanelSubDocente, BunifuAnimatorNS.DecorationType.None);
             this.PanelSubDocente.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubDocente.Location = new System.Drawing.Point(0, 140);
             this.PanelSubDocente.Name = "PanelSubDocente";
@@ -454,6 +503,8 @@ namespace Design_Dashboard_Modern
             this.BtConsultarDocente.BorderRadius = 0;
             this.BtConsultarDocente.ButtonText = "      CONSULTAR DOCENTE";
             this.BtConsultarDocente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtConsultarDocente, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtConsultarDocente, BunifuAnimatorNS.DecorationType.None);
             this.BtConsultarDocente.DisabledColor = System.Drawing.Color.Gray;
             this.BtConsultarDocente.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtConsultarDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -463,7 +514,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarDocente.Iconimage_right = null;
             this.BtConsultarDocente.Iconimage_right_Selected = null;
             this.BtConsultarDocente.Iconimage_Selected = null;
-            this.BtConsultarDocente.IconMarginLeft = 16;
+            this.BtConsultarDocente.IconMarginLeft = 9;
             this.BtConsultarDocente.IconMarginRight = 0;
             this.BtConsultarDocente.IconRightVisible = true;
             this.BtConsultarDocente.IconRightZoom = 0D;
@@ -492,6 +543,8 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarDocente.BorderRadius = 0;
             this.BtRegistrarDocente.ButtonText = "      REGISTRAR DOCENTE";
             this.BtRegistrarDocente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtRegistrarDocente, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarDocente, BunifuAnimatorNS.DecorationType.None);
             this.BtRegistrarDocente.DisabledColor = System.Drawing.Color.Gray;
             this.BtRegistrarDocente.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtRegistrarDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -501,7 +554,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarDocente.Iconimage_right = null;
             this.BtRegistrarDocente.Iconimage_right_Selected = null;
             this.BtRegistrarDocente.Iconimage_Selected = null;
-            this.BtRegistrarDocente.IconMarginLeft = 16;
+            this.BtRegistrarDocente.IconMarginLeft = 9;
             this.BtRegistrarDocente.IconMarginRight = 0;
             this.BtRegistrarDocente.IconRightVisible = true;
             this.BtRegistrarDocente.IconRightZoom = 0D;
@@ -530,6 +583,8 @@ namespace Design_Dashboard_Modern
             this.BtDocentes.BorderRadius = 0;
             this.BtDocentes.ButtonText = "      DOCENTES";
             this.BtDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtDocentes, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtDocentes, BunifuAnimatorNS.DecorationType.None);
             this.BtDocentes.DisabledColor = System.Drawing.Color.Gray;
             this.BtDocentes.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtDocentes.Iconcolor = System.Drawing.Color.Transparent;
@@ -537,7 +592,7 @@ namespace Design_Dashboard_Modern
             this.BtDocentes.Iconimage_right = null;
             this.BtDocentes.Iconimage_right_Selected = null;
             this.BtDocentes.Iconimage_Selected = null;
-            this.BtDocentes.IconMarginLeft = 15;
+            this.BtDocentes.IconMarginLeft = 8;
             this.BtDocentes.IconMarginRight = 0;
             this.BtDocentes.IconRightVisible = true;
             this.BtDocentes.IconRightZoom = 0D;
@@ -563,6 +618,8 @@ namespace Design_Dashboard_Modern
             // 
             this.PanelSubAsignatura.Controls.Add(this.BtConsultarAsignatura);
             this.PanelSubAsignatura.Controls.Add(this.BtRegistrarAsignatura);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelSubAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PanelSubAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.PanelSubAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubAsignatura.Location = new System.Drawing.Point(0, 0);
             this.PanelSubAsignatura.Name = "PanelSubAsignatura";
@@ -577,6 +634,8 @@ namespace Design_Dashboard_Modern
             this.BtConsultarAsignatura.BorderRadius = 0;
             this.BtConsultarAsignatura.ButtonText = "       CONSULTAR ASIGNATURA";
             this.BtConsultarAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtConsultarAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtConsultarAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.BtConsultarAsignatura.DisabledColor = System.Drawing.Color.Gray;
             this.BtConsultarAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtConsultarAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -586,7 +645,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarAsignatura.Iconimage_right = null;
             this.BtConsultarAsignatura.Iconimage_right_Selected = null;
             this.BtConsultarAsignatura.Iconimage_Selected = null;
-            this.BtConsultarAsignatura.IconMarginLeft = 16;
+            this.BtConsultarAsignatura.IconMarginLeft = 9;
             this.BtConsultarAsignatura.IconMarginRight = 0;
             this.BtConsultarAsignatura.IconRightVisible = true;
             this.BtConsultarAsignatura.IconRightZoom = 0D;
@@ -615,6 +674,8 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarAsignatura.BorderRadius = 0;
             this.BtRegistrarAsignatura.ButtonText = "      REGISTRAR ASIGNATURA";
             this.BtRegistrarAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BtRegistrarAsignatura, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.BtRegistrarAsignatura.DisabledColor = System.Drawing.Color.Gray;
             this.BtRegistrarAsignatura.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtRegistrarAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -624,7 +685,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarAsignatura.Iconimage_right = null;
             this.BtRegistrarAsignatura.Iconimage_right_Selected = null;
             this.BtRegistrarAsignatura.Iconimage_Selected = null;
-            this.BtRegistrarAsignatura.IconMarginLeft = 16;
+            this.BtRegistrarAsignatura.IconMarginLeft = 9;
             this.BtRegistrarAsignatura.IconMarginRight = 0;
             this.BtRegistrarAsignatura.IconRightVisible = true;
             this.BtRegistrarAsignatura.IconRightZoom = 0D;
@@ -648,10 +709,12 @@ namespace Design_Dashboard_Modern
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
@@ -660,9 +723,11 @@ namespace Design_Dashboard_Modern
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(78, 21);
+            this.label3.Location = new System.Drawing.Point(76, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 25);
             this.label3.TabIndex = 15;
@@ -676,6 +741,8 @@ namespace Design_Dashboard_Modern
             this.BTAsignaturas.BorderRadius = 0;
             this.BTAsignaturas.ButtonText = "      ASIGNATURAS";
             this.BTAsignaturas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.BTAsignaturas, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BTAsignaturas, BunifuAnimatorNS.DecorationType.None);
             this.BTAsignaturas.DisabledColor = System.Drawing.Color.Gray;
             this.BTAsignaturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTAsignaturas.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -684,14 +751,14 @@ namespace Design_Dashboard_Modern
             this.BTAsignaturas.Iconimage_right = null;
             this.BTAsignaturas.Iconimage_right_Selected = null;
             this.BTAsignaturas.Iconimage_Selected = null;
-            this.BTAsignaturas.IconMarginLeft = 16;
+            this.BTAsignaturas.IconMarginLeft = 10;
             this.BTAsignaturas.IconMarginRight = 0;
             this.BTAsignaturas.IconRightVisible = true;
             this.BTAsignaturas.IconRightZoom = 0D;
             this.BTAsignaturas.IconVisible = true;
             this.BTAsignaturas.IconZoom = 82D;
             this.BTAsignaturas.IsTab = false;
-            this.BTAsignaturas.Location = new System.Drawing.Point(8, 83);
+            this.BTAsignaturas.Location = new System.Drawing.Point(7, 75);
             this.BTAsignaturas.Name = "BTAsignaturas";
             this.BTAsignaturas.Normalcolor = System.Drawing.Color.Transparent;
             this.BTAsignaturas.OnHovercolor = System.Drawing.Color.Lime;
@@ -708,22 +775,24 @@ namespace Design_Dashboard_Modern
             // LineaSidebar
             // 
             this.LineaSidebar.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
             this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.LineaSidebar.LineThickness = 1;
             this.LineaSidebar.Location = new System.Drawing.Point(7, 68);
             this.LineaSidebar.Name = "LineaSidebar";
-            this.LineaSidebar.Size = new System.Drawing.Size(235, 1);
+            this.LineaSidebar.Size = new System.Drawing.Size(245, 1);
             this.LineaSidebar.TabIndex = 7;
             this.LineaSidebar.Transparency = 255;
             this.LineaSidebar.Vertical = false;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(0)))));
             this.panel3.Controls.Add(this.PanelHijo);
+            this.AnimacionSidebarBack.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(280, 75);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(879, 563);
@@ -735,23 +804,97 @@ namespace Design_Dashboard_Modern
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelHijo.BackColor = System.Drawing.Color.White;
-            this.PanelHijo.Controls.Add(this.pictureBox3);
+            this.PanelHijo.Controls.Add(this.ImagenUpc);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelHijo, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PanelHijo, BunifuAnimatorNS.DecorationType.None);
             this.PanelHijo.Location = new System.Drawing.Point(6, 11);
             this.PanelHijo.Name = "PanelHijo";
             this.PanelHijo.Size = new System.Drawing.Size(861, 540);
             this.PanelHijo.TabIndex = 4;
             // 
-            // pictureBox3
+            // ImagenUpc
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(246, 101);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(379, 331);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
+            this.ImagenUpc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImagenUpc.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebar.SetDecoration(this.ImagenUpc, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.ImagenUpc, BunifuAnimatorNS.DecorationType.None);
+            this.ImagenUpc.Image = ((System.Drawing.Image)(resources.GetObject("ImagenUpc.Image")));
+            this.ImagenUpc.Location = new System.Drawing.Point(246, 101);
+            this.ImagenUpc.Name = "ImagenUpc";
+            this.ImagenUpc.Size = new System.Drawing.Size(379, 331);
+            this.ImagenUpc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImagenUpc.TabIndex = 17;
+            this.ImagenUpc.TabStop = false;
+            // 
+            // CurvaSidebar
+            // 
+            this.CurvaSidebar.ElipseRadius = 7;
+            this.CurvaSidebar.TargetControl = this;
+            // 
+            // RadioPanelChart
+            // 
+            this.RadioPanelChart.ElipseRadius = 7;
+            this.RadioPanelChart.TargetControl = this;
+            // 
+            // Temporizador
+            // 
+            this.Temporizador.Enabled = true;
+            // 
+            // MoverDashboard
+            // 
+            this.MoverDashboard.Fixed = true;
+            this.MoverDashboard.Horizontal = true;
+            this.MoverDashboard.TargetControl = this.bunifuGradientPanel1;
+            this.MoverDashboard.Vertical = true;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // AnimacionSidebar
+            // 
+            this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
+            this.AnimacionSidebar.Cursor = null;
+            animation18.AnimateOnlyDifferences = true;
+            animation18.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.BlindCoeff")));
+            animation18.LeafCoeff = 0F;
+            animation18.MaxTime = 1F;
+            animation18.MinTime = 0F;
+            animation18.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicCoeff")));
+            animation18.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicShift")));
+            animation18.MosaicSize = 1;
+            animation18.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation18.RotateCoeff = 0F;
+            animation18.RotateLimit = 0F;
+            animation18.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.ScaleCoeff")));
+            animation18.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.SlideCoeff")));
+            animation18.TimeCoeff = 2F;
+            animation18.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation18;
+            // 
+            // AnimacionSidebarBack
+            // 
+            this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.AnimacionSidebarBack.Cursor = null;
+            animation17.AnimateOnlyDifferences = true;
+            animation17.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.BlindCoeff")));
+            animation17.LeafCoeff = 0F;
+            animation17.MaxTime = 1F;
+            animation17.MinTime = 0F;
+            animation17.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicCoeff")));
+            animation17.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicShift")));
+            animation17.MosaicSize = 0;
+            animation17.Padding = new System.Windows.Forms.Padding(0);
+            animation17.RotateCoeff = 0F;
+            animation17.RotateLimit = 0F;
+            animation17.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.ScaleCoeff")));
+            animation17.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.SlideCoeff")));
+            animation17.TimeCoeff = 0F;
+            animation17.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation17;
             // 
             // MenuUpcComite
             // 
@@ -761,7 +904,10 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.SidebarWrapper);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.AnimacionSidebarBack.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuUpcComite";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MenuDocente_Load);
@@ -783,7 +929,8 @@ namespace Design_Dashboard_Modern
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.PanelHijo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenUpc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -820,6 +967,14 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuSeparator LineaSidebar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel PanelHijo;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ImagenUpc;
+        private BunifuAnimatorNS.BunifuTransition AnimacionSidebar;
+        private BunifuAnimatorNS.BunifuTransition AnimacionSidebarBack;
+        private Bunifu.Framework.UI.BunifuElipse CurvaSidebar;
+        private Bunifu.Framework.UI.BunifuElipse RadioPanelChart;
+        private System.Windows.Forms.Timer Temporizador;
+        private Bunifu.Framework.UI.BunifuDragControl MoverDashboard;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }

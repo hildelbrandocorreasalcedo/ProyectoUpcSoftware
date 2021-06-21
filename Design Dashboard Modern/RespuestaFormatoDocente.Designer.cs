@@ -381,6 +381,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // bunifuGradientPanel5
             // 

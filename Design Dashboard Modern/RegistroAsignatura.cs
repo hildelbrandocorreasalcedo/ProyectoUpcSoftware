@@ -21,5 +21,20 @@ namespace Design_Dashboard_Modern
         {
 
         }
+
+        private void RegistroAsignatura_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

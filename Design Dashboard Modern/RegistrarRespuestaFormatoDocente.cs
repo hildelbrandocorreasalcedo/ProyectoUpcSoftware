@@ -16,5 +16,20 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
         }
+
+        private void RegistrarRespuestaFormatoDocente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtRegistrar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

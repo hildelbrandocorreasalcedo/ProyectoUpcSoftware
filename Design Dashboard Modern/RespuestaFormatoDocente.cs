@@ -16,5 +16,10 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
         }
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

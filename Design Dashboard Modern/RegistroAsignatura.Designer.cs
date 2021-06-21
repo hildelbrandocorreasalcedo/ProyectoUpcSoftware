@@ -49,12 +49,12 @@ namespace Design_Dashboard_Modern
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.labNombre = new System.Windows.Forms.Label();
-            this.TxtNumeroTarjeton = new System.Windows.Forms.TextBox();
+            this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.CmbCreditos = new System.Windows.Forms.ComboBox();
             this.CmbTipoAsignatura = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtPrograma = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -417,13 +417,13 @@ namespace Design_Dashboard_Modern
             this.labNombre.TabIndex = 48;
             this.labNombre.Text = "Nombre asignatura";
             // 
-            // TxtNumeroTarjeton
+            // TxtCodigo
             // 
-            this.TxtNumeroTarjeton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNumeroTarjeton.Location = new System.Drawing.Point(197, 109);
-            this.TxtNumeroTarjeton.Name = "TxtNumeroTarjeton";
-            this.TxtNumeroTarjeton.Size = new System.Drawing.Size(210, 26);
-            this.TxtNumeroTarjeton.TabIndex = 47;
+            this.TxtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodigo.Location = new System.Drawing.Point(197, 109);
+            this.TxtCodigo.Name = "TxtCodigo";
+            this.TxtCodigo.Size = new System.Drawing.Size(210, 26);
+            this.TxtCodigo.TabIndex = 47;
             // 
             // label3
             // 
@@ -476,15 +476,15 @@ namespace Design_Dashboard_Modern
             this.label5.TabIndex = 64;
             this.label5.Text = "Programa academico";
             // 
-            // textBox1
+            // TxtPrograma
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(197, 200);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 26);
-            this.textBox1.TabIndex = 65;
-            this.textBox1.Text = "INGENIERIA DE SISTEMAS";
+            this.TxtPrograma.Enabled = false;
+            this.TxtPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPrograma.Location = new System.Drawing.Point(197, 200);
+            this.TxtPrograma.Name = "TxtPrograma";
+            this.TxtPrograma.Size = new System.Drawing.Size(307, 26);
+            this.TxtPrograma.TabIndex = 65;
+            this.TxtPrograma.Text = "INGENIERIA DE SISTEMAS";
             // 
             // RegistroAsignatura
             // 
@@ -492,7 +492,7 @@ namespace Design_Dashboard_Modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(845, 501);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtPrograma);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CmbTipoAsignatura);
             this.Controls.Add(this.CmbCreditos);
@@ -509,7 +509,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.labNombre);
-            this.Controls.Add(this.TxtNumeroTarjeton);
+            this.Controls.Add(this.TxtCodigo);
             this.Name = "RegistroAsignatura";
             this.Text = "RegistroAsignatura";
             this.bunifuGradientPanel6.ResumeLayout(false);
@@ -546,11 +546,11 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label labNombre;
-        private System.Windows.Forms.TextBox TxtNumeroTarjeton;
+        private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CmbCreditos;
         private System.Windows.Forms.ComboBox CmbTipoAsignatura;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtPrograma;
     }
 }

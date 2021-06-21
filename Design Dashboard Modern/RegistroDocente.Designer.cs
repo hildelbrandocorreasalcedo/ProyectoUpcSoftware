@@ -44,7 +44,7 @@ namespace Design_Dashboard_Modern
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.labNombre = new System.Windows.Forms.Label();
-            this.TxtNumeroTarjeton = new System.Windows.Forms.TextBox();
+            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtApellido = new System.Windows.Forms.TextBox();
@@ -313,13 +313,13 @@ namespace Design_Dashboard_Modern
             this.labNombre.TabIndex = 62;
             this.labNombre.Text = "Nombres";
             // 
-            // TxtNumeroTarjeton
+            // TxtIdentificacion
             // 
-            this.TxtNumeroTarjeton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNumeroTarjeton.Location = new System.Drawing.Point(159, 90);
-            this.TxtNumeroTarjeton.Name = "TxtNumeroTarjeton";
-            this.TxtNumeroTarjeton.Size = new System.Drawing.Size(210, 26);
-            this.TxtNumeroTarjeton.TabIndex = 61;
+            this.TxtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIdentificacion.Location = new System.Drawing.Point(159, 90);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(210, 26);
+            this.TxtIdentificacion.TabIndex = 61;
             // 
             // label3
             // 
@@ -551,7 +551,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.labNombre);
-            this.Controls.Add(this.TxtNumeroTarjeton);
+            this.Controls.Add(this.TxtIdentificacion);
             this.Name = "RegistroDocente";
             this.Text = "RegistroDocente";
             this.Load += new System.EventHandler(this.RegistroDocente_Load);
@@ -583,7 +583,7 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label labNombre;
-        private System.Windows.Forms.TextBox TxtNumeroTarjeton;
+        private System.Windows.Forms.TextBox TxtIdentificacion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtApellido;

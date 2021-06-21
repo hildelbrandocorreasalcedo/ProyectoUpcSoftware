@@ -30,10 +30,6 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RespuestaFormatoDocente));
-            this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -51,111 +47,19 @@ namespace Design_Dashboard_Modern
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.labNombre = new System.Windows.Forms.Label();
             this.TxtNumeroTarjeton = new System.Windows.Forms.TextBox();
-            this.bunifuGradientPanel6.SuspendLayout();
-            this.bunifuGradientPanel5.SuspendLayout();
+            this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.PanelColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuGradientPanel6.SuspendLayout();
+            this.bunifuGradientPanel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bunifuGradientPanel6
-            // 
-            this.bunifuGradientPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel6.BackgroundImage")));
-            this.bunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel6.Controls.Add(this.BtLimpiar);
-            this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel6.Location = new System.Drawing.Point(447, 168);
-            this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
-            this.bunifuGradientPanel6.Quality = 10;
-            this.bunifuGradientPanel6.Size = new System.Drawing.Size(55, 44);
-            this.bunifuGradientPanel6.TabIndex = 73;
-            // 
-            // BtLimpiar
-            // 
-            this.BtLimpiar.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLimpiar.BackColor = System.Drawing.Color.Transparent;
-            this.BtLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLimpiar.BorderRadius = 0;
-            this.BtLimpiar.ButtonText = "";
-            this.BtLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLimpiar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLimpiar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLimpiar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtLimpiar.Iconimage")));
-            this.BtLimpiar.Iconimage_right = null;
-            this.BtLimpiar.Iconimage_right_Selected = null;
-            this.BtLimpiar.Iconimage_Selected = null;
-            this.BtLimpiar.IconMarginLeft = 8;
-            this.BtLimpiar.IconMarginRight = 0;
-            this.BtLimpiar.IconRightVisible = true;
-            this.BtLimpiar.IconRightZoom = 0D;
-            this.BtLimpiar.IconVisible = true;
-            this.BtLimpiar.IconZoom = 80D;
-            this.BtLimpiar.IsTab = false;
-            this.BtLimpiar.Location = new System.Drawing.Point(0, 1);
-            this.BtLimpiar.Name = "BtLimpiar";
-            this.BtLimpiar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLimpiar.OnHovercolor = System.Drawing.Color.Blue;
-            this.BtLimpiar.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLimpiar.selected = false;
-            this.BtLimpiar.Size = new System.Drawing.Size(55, 43);
-            this.BtLimpiar.TabIndex = 28;
-            this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLimpiar.Textcolor = System.Drawing.Color.White;
-            this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel5
-            // 
-            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
-            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel5.Controls.Add(this.BtConsultar);
-            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel5.Location = new System.Drawing.Point(447, 103);
-            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
-            this.bunifuGradientPanel5.Quality = 10;
-            this.bunifuGradientPanel5.Size = new System.Drawing.Size(55, 44);
-            this.bunifuGradientPanel5.TabIndex = 74;
-            // 
-            // BtConsultar
-            // 
-            this.BtConsultar.Activecolor = System.Drawing.Color.Transparent;
-            this.BtConsultar.BackColor = System.Drawing.Color.Transparent;
-            this.BtConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtConsultar.BorderRadius = 0;
-            this.BtConsultar.ButtonText = "";
-            this.BtConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtConsultar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtConsultar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtConsultar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtConsultar.Iconimage")));
-            this.BtConsultar.Iconimage_right = null;
-            this.BtConsultar.Iconimage_right_Selected = null;
-            this.BtConsultar.Iconimage_Selected = null;
-            this.BtConsultar.IconMarginLeft = 8;
-            this.BtConsultar.IconMarginRight = 0;
-            this.BtConsultar.IconRightVisible = true;
-            this.BtConsultar.IconRightZoom = 0D;
-            this.BtConsultar.IconVisible = true;
-            this.BtConsultar.IconZoom = 80D;
-            this.BtConsultar.IsTab = false;
-            this.BtConsultar.Location = new System.Drawing.Point(1, 2);
-            this.BtConsultar.Name = "BtConsultar";
-            this.BtConsultar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtConsultar.OnHovercolor = System.Drawing.Color.Blue;
-            this.BtConsultar.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtConsultar.selected = false;
-            this.BtConsultar.Size = new System.Drawing.Size(49, 43);
-            this.BtConsultar.TabIndex = 28;
-            this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtConsultar.Textcolor = System.Drawing.Color.White;
-            this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
             // bunifuGradientPanel2
             // 
@@ -427,8 +331,104 @@ namespace Design_Dashboard_Modern
             this.TxtNumeroTarjeton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNumeroTarjeton.Location = new System.Drawing.Point(219, 121);
             this.TxtNumeroTarjeton.Name = "TxtNumeroTarjeton";
-            this.TxtNumeroTarjeton.Size = new System.Drawing.Size(210, 26);
+            this.TxtNumeroTarjeton.Size = new System.Drawing.Size(151, 26);
             this.TxtNumeroTarjeton.TabIndex = 61;
+            // 
+            // bunifuGradientPanel6
+            // 
+            this.bunifuGradientPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel6.BackgroundImage")));
+            this.bunifuGradientPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel6.Controls.Add(this.BtLimpiar);
+            this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel6.Location = new System.Drawing.Point(449, 103);
+            this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
+            this.bunifuGradientPanel6.Quality = 10;
+            this.bunifuGradientPanel6.Size = new System.Drawing.Size(55, 44);
+            this.bunifuGradientPanel6.TabIndex = 73;
+            // 
+            // BtLimpiar
+            // 
+            this.BtLimpiar.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLimpiar.BackColor = System.Drawing.Color.Transparent;
+            this.BtLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLimpiar.BorderRadius = 0;
+            this.BtLimpiar.ButtonText = "";
+            this.BtLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLimpiar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLimpiar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLimpiar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtLimpiar.Iconimage")));
+            this.BtLimpiar.Iconimage_right = null;
+            this.BtLimpiar.Iconimage_right_Selected = null;
+            this.BtLimpiar.Iconimage_Selected = null;
+            this.BtLimpiar.IconMarginLeft = 8;
+            this.BtLimpiar.IconMarginRight = 0;
+            this.BtLimpiar.IconRightVisible = true;
+            this.BtLimpiar.IconRightZoom = 0D;
+            this.BtLimpiar.IconVisible = true;
+            this.BtLimpiar.IconZoom = 80D;
+            this.BtLimpiar.IsTab = false;
+            this.BtLimpiar.Location = new System.Drawing.Point(0, 1);
+            this.BtLimpiar.Name = "BtLimpiar";
+            this.BtLimpiar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLimpiar.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLimpiar.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLimpiar.selected = false;
+            this.BtLimpiar.Size = new System.Drawing.Size(55, 43);
+            this.BtLimpiar.TabIndex = 28;
+            this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLimpiar.Textcolor = System.Drawing.Color.White;
+            this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            // 
+            // bunifuGradientPanel5
+            // 
+            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
+            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel5.Controls.Add(this.BtConsultar);
+            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel5.Location = new System.Drawing.Point(383, 103);
+            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
+            this.bunifuGradientPanel5.Quality = 10;
+            this.bunifuGradientPanel5.Size = new System.Drawing.Size(55, 44);
+            this.bunifuGradientPanel5.TabIndex = 74;
+            // 
+            // BtConsultar
+            // 
+            this.BtConsultar.Activecolor = System.Drawing.Color.Transparent;
+            this.BtConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.BtConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtConsultar.BorderRadius = 0;
+            this.BtConsultar.ButtonText = "";
+            this.BtConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtConsultar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtConsultar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtConsultar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtConsultar.Iconimage")));
+            this.BtConsultar.Iconimage_right = null;
+            this.BtConsultar.Iconimage_right_Selected = null;
+            this.BtConsultar.Iconimage_Selected = null;
+            this.BtConsultar.IconMarginLeft = 8;
+            this.BtConsultar.IconMarginRight = 0;
+            this.BtConsultar.IconRightVisible = true;
+            this.BtConsultar.IconRightZoom = 0D;
+            this.BtConsultar.IconVisible = true;
+            this.BtConsultar.IconZoom = 80D;
+            this.BtConsultar.IsTab = false;
+            this.BtConsultar.Location = new System.Drawing.Point(1, 2);
+            this.BtConsultar.Name = "BtConsultar";
+            this.BtConsultar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtConsultar.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtConsultar.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtConsultar.selected = false;
+            this.BtConsultar.Size = new System.Drawing.Size(54, 42);
+            this.BtConsultar.TabIndex = 28;
+            this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtConsultar.Textcolor = System.Drawing.Color.White;
+            this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
             // RespuestaFormatoDocente
             // 
@@ -452,25 +452,20 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.TxtNumeroTarjeton);
             this.Name = "RespuestaFormatoDocente";
             this.Text = "RespuestaFormatoDocente";
-            this.bunifuGradientPanel6.ResumeLayout(false);
-            this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel4.ResumeLayout(false);
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.PanelColor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuGradientPanel6.ResumeLayout(false);
+            this.bunifuGradientPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel6;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
-        private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuFlatButton BtEliminar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
@@ -488,5 +483,9 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label labNombre;
         private System.Windows.Forms.TextBox TxtNumeroTarjeton;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel6;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
+        private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
     }
 }

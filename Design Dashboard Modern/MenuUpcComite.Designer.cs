@@ -31,8 +31,8 @@ namespace Design_Dashboard_Modern
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUpcComite));
-            BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation14 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -814,9 +814,7 @@ namespace Design_Dashboard_Modern
             // 
             // ImagenUpc
             // 
-            this.ImagenUpc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImagenUpc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImagenUpc.BackColor = System.Drawing.Color.Transparent;
             this.AnimacionSidebar.SetDecoration(this.ImagenUpc, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.ImagenUpc, BunifuAnimatorNS.DecorationType.None);
@@ -858,43 +856,43 @@ namespace Design_Dashboard_Modern
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation10.AnimateOnlyDifferences = true;
-            animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
-            animation10.LeafCoeff = 0F;
-            animation10.MaxTime = 1F;
-            animation10.MinTime = 0F;
-            animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
-            animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
-            animation10.MosaicSize = 1;
-            animation10.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation10.RotateCoeff = 0F;
-            animation10.RotateLimit = 0F;
-            animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
-            animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
-            animation10.TimeCoeff = 2F;
-            animation10.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation10;
+            animation14.AnimateOnlyDifferences = true;
+            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
+            animation14.LeafCoeff = 0F;
+            animation14.MaxTime = 1F;
+            animation14.MinTime = 0F;
+            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
+            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
+            animation14.MosaicSize = 1;
+            animation14.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation14.RotateCoeff = 0F;
+            animation14.RotateLimit = 0F;
+            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
+            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
+            animation14.TimeCoeff = 2F;
+            animation14.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation14;
             // 
             // AnimacionSidebarBack
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation9.AnimateOnlyDifferences = true;
-            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
-            animation9.LeafCoeff = 0F;
-            animation9.MaxTime = 1F;
-            animation9.MinTime = 0F;
-            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
-            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
-            animation9.MosaicSize = 0;
-            animation9.Padding = new System.Windows.Forms.Padding(0);
-            animation9.RotateCoeff = 0F;
-            animation9.RotateLimit = 0F;
-            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
-            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
-            animation9.TimeCoeff = 0F;
-            animation9.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation9;
+            animation13.AnimateOnlyDifferences = true;
+            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
+            animation13.LeafCoeff = 0F;
+            animation13.MaxTime = 1F;
+            animation13.MinTime = 0F;
+            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
+            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
+            animation13.MosaicSize = 0;
+            animation13.Padding = new System.Windows.Forms.Padding(0);
+            animation13.RotateCoeff = 0F;
+            animation13.RotateLimit = 0F;
+            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
+            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
+            animation13.TimeCoeff = 0F;
+            animation13.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation13;
             // 
             // MenuUpcComite
             // 

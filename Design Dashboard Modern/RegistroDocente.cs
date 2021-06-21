@@ -21,5 +21,10 @@ namespace Design_Dashboard_Modern
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

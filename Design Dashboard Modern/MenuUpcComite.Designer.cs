@@ -31,8 +31,8 @@ namespace Design_Dashboard_Modern
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUpcComite));
-            BunifuAnimatorNS.Animation animation18 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation17 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -381,12 +381,12 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPlanAsignatura.Iconimage_right = null;
             this.BtConsultarPlanAsignatura.Iconimage_right_Selected = null;
             this.BtConsultarPlanAsignatura.Iconimage_Selected = null;
-            this.BtConsultarPlanAsignatura.IconMarginLeft = 9;
+            this.BtConsultarPlanAsignatura.IconMarginLeft = 8;
             this.BtConsultarPlanAsignatura.IconMarginRight = 0;
             this.BtConsultarPlanAsignatura.IconRightVisible = true;
             this.BtConsultarPlanAsignatura.IconRightZoom = 0D;
             this.BtConsultarPlanAsignatura.IconVisible = true;
-            this.BtConsultarPlanAsignatura.IconZoom = 90D;
+            this.BtConsultarPlanAsignatura.IconZoom = 85D;
             this.BtConsultarPlanAsignatura.IsTab = false;
             this.BtConsultarPlanAsignatura.Location = new System.Drawing.Point(0, 46);
             this.BtConsultarPlanAsignatura.Name = "BtConsultarPlanAsignatura";
@@ -421,7 +421,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.Iconimage_right = null;
             this.BtRegistrarPlanAsignatura.Iconimage_right_Selected = null;
             this.BtRegistrarPlanAsignatura.Iconimage_Selected = null;
-            this.BtRegistrarPlanAsignatura.IconMarginLeft = 9;
+            this.BtRegistrarPlanAsignatura.IconMarginLeft = 12;
             this.BtRegistrarPlanAsignatura.IconMarginRight = 0;
             this.BtRegistrarPlanAsignatura.IconRightVisible = true;
             this.BtRegistrarPlanAsignatura.IconRightZoom = 0D;
@@ -645,12 +645,12 @@ namespace Design_Dashboard_Modern
             this.BtConsultarAsignatura.Iconimage_right = null;
             this.BtConsultarAsignatura.Iconimage_right_Selected = null;
             this.BtConsultarAsignatura.Iconimage_Selected = null;
-            this.BtConsultarAsignatura.IconMarginLeft = 9;
+            this.BtConsultarAsignatura.IconMarginLeft = 8;
             this.BtConsultarAsignatura.IconMarginRight = 0;
             this.BtConsultarAsignatura.IconRightVisible = true;
             this.BtConsultarAsignatura.IconRightZoom = 0D;
             this.BtConsultarAsignatura.IconVisible = true;
-            this.BtConsultarAsignatura.IconZoom = 80D;
+            this.BtConsultarAsignatura.IconZoom = 93D;
             this.BtConsultarAsignatura.IsTab = false;
             this.BtConsultarAsignatura.Location = new System.Drawing.Point(0, 42);
             this.BtConsultarAsignatura.Name = "BtConsultarAsignatura";
@@ -858,43 +858,43 @@ namespace Design_Dashboard_Modern
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation18.AnimateOnlyDifferences = true;
-            animation18.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.BlindCoeff")));
-            animation18.LeafCoeff = 0F;
-            animation18.MaxTime = 1F;
-            animation18.MinTime = 0F;
-            animation18.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicCoeff")));
-            animation18.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicShift")));
-            animation18.MosaicSize = 1;
-            animation18.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation18.RotateCoeff = 0F;
-            animation18.RotateLimit = 0F;
-            animation18.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.ScaleCoeff")));
-            animation18.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.SlideCoeff")));
-            animation18.TimeCoeff = 2F;
-            animation18.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation18;
+            animation10.AnimateOnlyDifferences = true;
+            animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
+            animation10.LeafCoeff = 0F;
+            animation10.MaxTime = 1F;
+            animation10.MinTime = 0F;
+            animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
+            animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
+            animation10.MosaicSize = 1;
+            animation10.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation10.RotateCoeff = 0F;
+            animation10.RotateLimit = 0F;
+            animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
+            animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
+            animation10.TimeCoeff = 2F;
+            animation10.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation10;
             // 
             // AnimacionSidebarBack
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation17.AnimateOnlyDifferences = true;
-            animation17.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.BlindCoeff")));
-            animation17.LeafCoeff = 0F;
-            animation17.MaxTime = 1F;
-            animation17.MinTime = 0F;
-            animation17.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicCoeff")));
-            animation17.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicShift")));
-            animation17.MosaicSize = 0;
-            animation17.Padding = new System.Windows.Forms.Padding(0);
-            animation17.RotateCoeff = 0F;
-            animation17.RotateLimit = 0F;
-            animation17.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.ScaleCoeff")));
-            animation17.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.SlideCoeff")));
-            animation17.TimeCoeff = 0F;
-            animation17.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation17;
+            animation9.AnimateOnlyDifferences = true;
+            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
+            animation9.LeafCoeff = 0F;
+            animation9.MaxTime = 1F;
+            animation9.MinTime = 0F;
+            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
+            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
+            animation9.MosaicSize = 0;
+            animation9.Padding = new System.Windows.Forms.Padding(0);
+            animation9.RotateCoeff = 0F;
+            animation9.RotateLimit = 0F;
+            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
+            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
+            animation9.TimeCoeff = 0F;
+            animation9.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation9;
             // 
             // MenuUpcComite
             // 
@@ -909,6 +909,7 @@ namespace Design_Dashboard_Modern
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuUpcComite";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MenuDocente_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);

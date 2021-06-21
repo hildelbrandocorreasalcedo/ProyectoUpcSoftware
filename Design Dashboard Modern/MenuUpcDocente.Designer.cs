@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUpcDocente));
-            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelSideMenu = new System.Windows.Forms.Panel();
             this.BtActualizacionPlanAsignatura = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtConsultarAsignatura = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,15 +47,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.PanelHijo = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AnimacionSidebarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.AnimacionSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.MoverDashboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.Temporizador = new System.Windows.Forms.Timer(this.components);
-            this.RadioPanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Restaurar = new System.Windows.Forms.PictureBox();
             this.Maximizar = new System.Windows.Forms.PictureBox();
@@ -63,14 +57,19 @@
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.AnimacionSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.MoverDashboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Temporizador = new System.Windows.Forms.Timer(this.components);
+            this.RadioPanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SidebarWrapper.SuspendLayout();
             this.Sidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelSideMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.PanelHijo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
@@ -78,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // SidebarWrapper
@@ -114,6 +114,19 @@
             this.Sidebar.Quality = 10;
             this.Sidebar.Size = new System.Drawing.Size(260, 540);
             this.Sidebar.TabIndex = 19;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarBack.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // PanelSideMenu
             // 
@@ -193,7 +206,7 @@
             this.BtConsultarAsignatura.IconRightVisible = true;
             this.BtConsultarAsignatura.IconRightZoom = 0D;
             this.BtConsultarAsignatura.IconVisible = true;
-            this.BtConsultarAsignatura.IconZoom = 80D;
+            this.BtConsultarAsignatura.IconZoom = 90D;
             this.BtConsultarAsignatura.IsTab = false;
             this.BtConsultarAsignatura.Location = new System.Drawing.Point(-1, 0);
             this.BtConsultarAsignatura.Name = "BtConsultarAsignatura";
@@ -333,7 +346,7 @@
             this.BtConsultarPlanAsignatura.BackColor = System.Drawing.Color.Transparent;
             this.BtConsultarPlanAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtConsultarPlanAsignatura.BorderRadius = 0;
-            this.BtConsultarPlanAsignatura.ButtonText = "      CONSULTAR PLAN                             ASIGNATURA";
+            this.BtConsultarPlanAsignatura.ButtonText = "      CONSULTAR PLAN                                ASIGNATURA";
             this.BtConsultarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -360,7 +373,7 @@
             this.BtConsultarPlanAsignatura.selected = false;
             this.BtConsultarPlanAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtConsultarPlanAsignatura.TabIndex = 29;
-            this.BtConsultarPlanAsignatura.Text = "      CONSULTAR PLAN                             ASIGNATURA";
+            this.BtConsultarPlanAsignatura.Text = "      CONSULTAR PLAN                                ASIGNATURA";
             this.BtConsultarPlanAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultarPlanAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtConsultarPlanAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -435,19 +448,6 @@
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebarBack.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
-            // 
             // CurvaSidebar
             // 
             this.CurvaSidebar.ElipseRadius = 7;
@@ -457,64 +457,22 @@
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation8;
-            // 
-            // AnimacionSidebar
-            // 
-            this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
-            this.AnimacionSidebar.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 1;
-            animation7.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 2F;
-            animation7.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation7;
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // MoverDashboard
-            // 
-            this.MoverDashboard.Fixed = true;
-            this.MoverDashboard.Horizontal = true;
-            this.MoverDashboard.TargetControl = this.bunifuGradientPanel1;
-            this.MoverDashboard.Vertical = true;
-            // 
-            // Temporizador
-            // 
-            this.Temporizador.Enabled = true;
-            // 
-            // RadioPanelChart
-            // 
-            this.RadioPanelChart.ElipseRadius = 7;
-            this.RadioPanelChart.TargetControl = this;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation1;
             // 
             // Minimizar
             // 
@@ -642,6 +600,48 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1159, 75);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
+            // AnimacionSidebar
+            // 
+            this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
+            this.AnimacionSidebar.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 1;
+            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 2F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation2;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // MoverDashboard
+            // 
+            this.MoverDashboard.Fixed = true;
+            this.MoverDashboard.Horizontal = true;
+            this.MoverDashboard.TargetControl = this.bunifuGradientPanel1;
+            this.MoverDashboard.Vertical = true;
+            // 
+            // Temporizador
+            // 
+            this.Temporizador.Enabled = true;
+            // 
+            // RadioPanelChart
+            // 
+            this.RadioPanelChart.ElipseRadius = 7;
+            this.RadioPanelChart.TargetControl = this;
+            // 
             // MenuUpcDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -660,12 +660,11 @@
             this.SidebarWrapper.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelSideMenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.PanelHijo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
@@ -674,6 +673,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }

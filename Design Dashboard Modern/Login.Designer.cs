@@ -119,6 +119,7 @@ namespace Design_Dashboard_Modern
             this.TxtUsuario.TabIndex = 40;
             this.TxtUsuario.Tag = "";
             this.TxtUsuario.Text = "Usuario";
+            this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             this.TxtUsuario.Enter += new System.EventHandler(this.txtUsusario_Enter);
             this.TxtUsuario.Leave += new System.EventHandler(this.txtUsusario_Leave);
             // 
@@ -163,7 +164,7 @@ namespace Design_Dashboard_Modern
             this.LineaSidebar.LineThickness = 1;
             this.LineaSidebar.Location = new System.Drawing.Point(11, 267);
             this.LineaSidebar.Name = "LineaSidebar";
-            this.LineaSidebar.Size = new System.Drawing.Size(341, 10);
+            this.LineaSidebar.Size = new System.Drawing.Size(323, 10);
             this.LineaSidebar.TabIndex = 7;
             this.LineaSidebar.Transparency = 255;
             this.LineaSidebar.Vertical = false;
@@ -185,7 +186,7 @@ namespace Design_Dashboard_Modern
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 237);
+            this.label2.Location = new System.Drawing.Point(2, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(341, 29);
             this.label2.TabIndex = 23;
@@ -244,6 +245,7 @@ namespace Design_Dashboard_Modern
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

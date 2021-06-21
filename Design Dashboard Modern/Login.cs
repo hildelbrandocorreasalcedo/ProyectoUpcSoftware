@@ -14,6 +14,7 @@ namespace Design_Dashboard_Modern
 {
     public partial class Login : Form
     {
+        int Contador = 0;
         public Login()
         {
             InitializeComponent();
@@ -36,7 +37,6 @@ namespace Design_Dashboard_Modern
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
             if (TxtUsuario.Text == "Usuario" && TxtContraseña.Text == "Contraseña")
             {
                 MessageBox.Show("Faltan llenar Completar Campos");
@@ -45,7 +45,7 @@ namespace Design_Dashboard_Modern
             {
                 ///Docente
                 if ((TxtUsuario.Text == "Docente") && (TxtContraseña.Text == "docente123"))
-                {     
+                {
                     MenuUpcDocente abrir = new MenuUpcDocente();
                     abrir.Show();
                     this.Hide();
@@ -60,10 +60,17 @@ namespace Design_Dashboard_Modern
                 else
                 {
                     MessageBox.Show("Datos Incorrectos");
-                }    
-            }          
+                    Contador += 1;
+                    
+                }
+            }
+            if (Contador>2)
+            {
+                MessageBox.Show("Se ha equivocado 3 veces, el programa se cerra, por razones de seguridad");
+                Application.Exit();
+            }
         }
-
+        
         private void txtUsusario_Enter(object sender, EventArgs e)
         {
             if (TxtUsuario.Text == "Usuario")
@@ -100,6 +107,11 @@ namespace Design_Dashboard_Modern
                 TxtContraseña.ForeColor = Color.LightGray;
                 TxtContraseña.UseSystemPasswordChar = false;
             }
+        }
+
+        private void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

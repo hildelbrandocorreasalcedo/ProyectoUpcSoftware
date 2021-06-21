@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENTITY
 {
-    public class PlanAsignatura
+    public class PlanAsignaturas
     {
         public string Materia { get; set; }
         public string Descripcion { get; set; }
@@ -19,10 +19,10 @@ namespace ENTITY
         public string MecanismosEvaluacion { get; set; }
         public string ReferenciasBibliograficas { get; set; }
 
-        public PlanAsignatura()
+        public PlanAsignaturas()
         {
         }
-        public PlanAsignatura(string materia, string descripcion, string justificacion, string objetivoGeneral, string objetivoEspecifico, 
+        public PlanAsignaturas(string materia, string descripcion, string justificacion, string objetivoGeneral, string objetivoEspecifico, 
             string estrategias, string contenidos, string mecanismosEvaluacion, string referenciasBibliograficas)
         {
             Materia = materia;

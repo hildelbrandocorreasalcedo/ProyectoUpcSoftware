@@ -212,5 +212,8 @@
       <Name>ENTITY</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="BUNIFU UI\Bunifu_UI_v1.5.3.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENTITY
 {
-    public class Docente
+    public class Docentes
     {
         public string Identificacion { get; set; }
         public string Nombre { get; set; }
@@ -16,11 +16,11 @@ namespace ENTITY
         public string Categoria { get; set; }
         public string Materia { get; set; }
 
-        public Docente()
+        public Docentes()
         {
 
         }
-        public Docente(string identificacion, string nombre, string apellido, string telefono, string correo, string categoria, string materia)
+        public Docentes(string identificacion, string nombre, string apellido, string telefono, string correo, string categoria, string materia)
         {
             Identificacion = identificacion;
             Nombre = nombre;

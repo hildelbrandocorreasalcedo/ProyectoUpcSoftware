@@ -200,7 +200,7 @@ namespace Design_Dashboard_Modern
             this.BtEliminar.Location = new System.Drawing.Point(6, 1);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtEliminar.OnHovercolor = System.Drawing.Color.Blue;
+            this.BtEliminar.OnHovercolor = System.Drawing.Color.Lime;
             this.BtEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.BtEliminar.selected = false;
             this.BtEliminar.Size = new System.Drawing.Size(139, 44);
@@ -277,7 +277,7 @@ namespace Design_Dashboard_Modern
             this.BtModificar.Location = new System.Drawing.Point(6, 1);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtModificar.OnHovercolor = System.Drawing.Color.Blue;
+            this.BtModificar.OnHovercolor = System.Drawing.Color.Lime;
             this.BtModificar.OnHoverTextColor = System.Drawing.Color.White;
             this.BtModificar.selected = false;
             this.BtModificar.Size = new System.Drawing.Size(139, 44);
@@ -326,7 +326,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrar.Location = new System.Drawing.Point(6, 1);
             this.BtRegistrar.Name = "BtRegistrar";
             this.BtRegistrar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtRegistrar.OnHovercolor = System.Drawing.Color.Blue;
+            this.BtRegistrar.OnHovercolor = System.Drawing.Color.Lime;
             this.BtRegistrar.OnHoverTextColor = System.Drawing.Color.White;
             this.BtRegistrar.selected = false;
             this.BtRegistrar.Size = new System.Drawing.Size(139, 44);

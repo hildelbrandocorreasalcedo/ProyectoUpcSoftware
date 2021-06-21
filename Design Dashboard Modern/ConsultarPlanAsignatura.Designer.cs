@@ -36,19 +36,12 @@ namespace Design_Dashboard_Modern
             this.label12 = new System.Windows.Forms.Label();
             this.PanelColor = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.CmbAsignatura = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,26 +52,24 @@ namespace Design_Dashboard_Modern
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
-            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtModificar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtRegistrar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TxtReferenciaBibliografica = new System.Windows.Forms.TextBox();
+            this.TxtEstrategias = new System.Windows.Forms.TextBox();
+            this.TxtContenido = new System.Windows.Forms.TextBox();
+            this.TxtComponentesGenericos = new System.Windows.Forms.TextBox();
+            this.TxtJustificacion = new System.Windows.Forms.TextBox();
+            this.TxtMecanismoEvaluativo = new System.Windows.Forms.TextBox();
+            this.TxtObjetivoEspecifico = new System.Windows.Forms.TextBox();
+            this.TxtObjetivoGeneral = new System.Windows.Forms.TextBox();
+            this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PanelColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.SuspendLayout();
@@ -153,42 +144,6 @@ namespace Design_Dashboard_Modern
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(165, 436);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(852, 63);
-            this.textBox7.TabIndex = 134;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(165, 505);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(852, 88);
-            this.textBox6.TabIndex = 133;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(165, 367);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(852, 63);
-            this.textBox5.TabIndex = 132;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(165, 180);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(852, 61);
-            this.textBox1.TabIndex = 131;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -254,33 +209,6 @@ namespace Design_Dashboard_Modern
             this.label3.Size = new System.Drawing.Size(141, 20);
             this.label3.TabIndex = 125;
             this.label3.Text = "Objetivo especifico";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(165, 298);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(852, 63);
-            this.textBox4.TabIndex = 124;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(165, 247);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(852, 45);
-            this.textBox3.TabIndex = 123;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(165, 113);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(852, 61);
-            this.textBox2.TabIndex = 122;
             // 
             // CmbAsignatura
             // 
@@ -396,73 +324,6 @@ namespace Design_Dashboard_Modern
             this.label15.TabIndex = 146;
             this.label15.Text = "Mecanismo de";
             // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(163, 666);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(852, 61);
-            this.textBox9.TabIndex = 145;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(163, 599);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(852, 61);
-            this.textBox8.TabIndex = 144;
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.BtEliminar);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(313, 742);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel2.TabIndex = 141;
-            // 
-            // BtEliminar
-            // 
-            this.BtEliminar.Activecolor = System.Drawing.Color.Transparent;
-            this.BtEliminar.BackColor = System.Drawing.Color.Transparent;
-            this.BtEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtEliminar.BorderRadius = 0;
-            this.BtEliminar.ButtonText = "    ELIMINAR";
-            this.BtEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtEliminar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtEliminar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtEliminar.Iconimage")));
-            this.BtEliminar.Iconimage_right = null;
-            this.BtEliminar.Iconimage_right_Selected = null;
-            this.BtEliminar.Iconimage_Selected = null;
-            this.BtEliminar.IconMarginLeft = 8;
-            this.BtEliminar.IconMarginRight = 0;
-            this.BtEliminar.IconRightVisible = true;
-            this.BtEliminar.IconRightZoom = 0D;
-            this.BtEliminar.IconVisible = true;
-            this.BtEliminar.IconZoom = 80D;
-            this.BtEliminar.IsTab = false;
-            this.BtEliminar.Location = new System.Drawing.Point(6, 1);
-            this.BtEliminar.Name = "BtEliminar";
-            this.BtEliminar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtEliminar.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtEliminar.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtEliminar.selected = false;
-            this.BtEliminar.Size = new System.Drawing.Size(139, 44);
-            this.BtEliminar.TabIndex = 28;
-            this.BtEliminar.Text = "    ELIMINAR";
-            this.BtEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtEliminar.Textcolor = System.Drawing.Color.White;
-            this.BtEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
             // bunifuGradientPanel4
             // 
             this.bunifuGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel4.BackgroundImage")));
@@ -491,103 +352,86 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
             // 
-            // bunifuGradientPanel3
+            // TxtReferenciaBibliografica
             // 
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.BtModificar);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(491, 741);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel3.TabIndex = 143;
+            this.TxtReferenciaBibliografica.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtReferenciaBibliografica.Location = new System.Drawing.Point(165, 664);
+            this.TxtReferenciaBibliografica.Multiline = true;
+            this.TxtReferenciaBibliografica.Name = "TxtReferenciaBibliografica";
+            this.TxtReferenciaBibliografica.Size = new System.Drawing.Size(852, 61);
+            this.TxtReferenciaBibliografica.TabIndex = 160;
             // 
-            // BtModificar
+            // TxtEstrategias
             // 
-            this.BtModificar.Activecolor = System.Drawing.Color.Transparent;
-            this.BtModificar.BackColor = System.Drawing.Color.Transparent;
-            this.BtModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtModificar.BorderRadius = 0;
-            this.BtModificar.ButtonText = "    MODIFICAR";
-            this.BtModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtModificar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtModificar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtModificar.Iconimage")));
-            this.BtModificar.Iconimage_right = null;
-            this.BtModificar.Iconimage_right_Selected = null;
-            this.BtModificar.Iconimage_Selected = null;
-            this.BtModificar.IconMarginLeft = 8;
-            this.BtModificar.IconMarginRight = 0;
-            this.BtModificar.IconRightVisible = true;
-            this.BtModificar.IconRightZoom = 0D;
-            this.BtModificar.IconVisible = true;
-            this.BtModificar.IconZoom = 80D;
-            this.BtModificar.IsTab = false;
-            this.BtModificar.Location = new System.Drawing.Point(6, 1);
-            this.BtModificar.Name = "BtModificar";
-            this.BtModificar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtModificar.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtModificar.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtModificar.selected = false;
-            this.BtModificar.Size = new System.Drawing.Size(139, 44);
-            this.BtModificar.TabIndex = 28;
-            this.BtModificar.Text = "    MODIFICAR";
-            this.BtModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtModificar.Textcolor = System.Drawing.Color.White;
-            this.BtModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.TxtEstrategias.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtEstrategias.Location = new System.Drawing.Point(165, 438);
+            this.TxtEstrategias.Multiline = true;
+            this.TxtEstrategias.Name = "TxtEstrategias";
+            this.TxtEstrategias.Size = new System.Drawing.Size(852, 63);
+            this.TxtEstrategias.TabIndex = 159;
             // 
-            // bunifuGradientPanel1
+            // TxtContenido
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.BtRegistrar);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(131, 741);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 140;
+            this.TxtContenido.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtContenido.Location = new System.Drawing.Point(165, 507);
+            this.TxtContenido.Multiline = true;
+            this.TxtContenido.Name = "TxtContenido";
+            this.TxtContenido.Size = new System.Drawing.Size(852, 84);
+            this.TxtContenido.TabIndex = 158;
             // 
-            // BtRegistrar
+            // TxtComponentesGenericos
             // 
-            this.BtRegistrar.Activecolor = System.Drawing.Color.Transparent;
-            this.BtRegistrar.BackColor = System.Drawing.Color.Transparent;
-            this.BtRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtRegistrar.BorderRadius = 0;
-            this.BtRegistrar.ButtonText = "    REGISTRAR";
-            this.BtRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtRegistrar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtRegistrar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtRegistrar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtRegistrar.Iconimage")));
-            this.BtRegistrar.Iconimage_right = null;
-            this.BtRegistrar.Iconimage_right_Selected = null;
-            this.BtRegistrar.Iconimage_Selected = null;
-            this.BtRegistrar.IconMarginLeft = 8;
-            this.BtRegistrar.IconMarginRight = 0;
-            this.BtRegistrar.IconRightVisible = true;
-            this.BtRegistrar.IconRightZoom = 0D;
-            this.BtRegistrar.IconVisible = true;
-            this.BtRegistrar.IconZoom = 80D;
-            this.BtRegistrar.IsTab = false;
-            this.BtRegistrar.Location = new System.Drawing.Point(6, 1);
-            this.BtRegistrar.Name = "BtRegistrar";
-            this.BtRegistrar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtRegistrar.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtRegistrar.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtRegistrar.selected = false;
-            this.BtRegistrar.Size = new System.Drawing.Size(139, 44);
-            this.BtRegistrar.TabIndex = 28;
-            this.BtRegistrar.Text = "    REGISTRAR";
-            this.BtRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtRegistrar.Textcolor = System.Drawing.Color.White;
-            this.BtRegistrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.TxtComponentesGenericos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtComponentesGenericos.Location = new System.Drawing.Point(165, 369);
+            this.TxtComponentesGenericos.Multiline = true;
+            this.TxtComponentesGenericos.Name = "TxtComponentesGenericos";
+            this.TxtComponentesGenericos.Size = new System.Drawing.Size(852, 63);
+            this.TxtComponentesGenericos.TabIndex = 157;
+            // 
+            // TxtJustificacion
+            // 
+            this.TxtJustificacion.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtJustificacion.Location = new System.Drawing.Point(165, 182);
+            this.TxtJustificacion.Multiline = true;
+            this.TxtJustificacion.Name = "TxtJustificacion";
+            this.TxtJustificacion.Size = new System.Drawing.Size(852, 61);
+            this.TxtJustificacion.TabIndex = 156;
+            // 
+            // TxtMecanismoEvaluativo
+            // 
+            this.TxtMecanismoEvaluativo.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtMecanismoEvaluativo.Location = new System.Drawing.Point(165, 597);
+            this.TxtMecanismoEvaluativo.Multiline = true;
+            this.TxtMecanismoEvaluativo.Name = "TxtMecanismoEvaluativo";
+            this.TxtMecanismoEvaluativo.Size = new System.Drawing.Size(852, 61);
+            this.TxtMecanismoEvaluativo.TabIndex = 155;
+            // 
+            // TxtObjetivoEspecifico
+            // 
+            this.TxtObjetivoEspecifico.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtObjetivoEspecifico.Location = new System.Drawing.Point(165, 300);
+            this.TxtObjetivoEspecifico.Multiline = true;
+            this.TxtObjetivoEspecifico.Name = "TxtObjetivoEspecifico";
+            this.TxtObjetivoEspecifico.Size = new System.Drawing.Size(852, 63);
+            this.TxtObjetivoEspecifico.TabIndex = 154;
+            // 
+            // TxtObjetivoGeneral
+            // 
+            this.TxtObjetivoGeneral.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.TxtObjetivoGeneral.Location = new System.Drawing.Point(165, 249);
+            this.TxtObjetivoGeneral.Multiline = true;
+            this.TxtObjetivoGeneral.Name = "TxtObjetivoGeneral";
+            this.TxtObjetivoGeneral.Size = new System.Drawing.Size(852, 45);
+            this.TxtObjetivoGeneral.TabIndex = 153;
+            // 
+            // TxtDescripcion
+            // 
+            this.TxtDescripcion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescripcion.Location = new System.Drawing.Point(165, 115);
+            this.TxtDescripcion.Multiline = true;
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.Size = new System.Drawing.Size(852, 61);
+            this.TxtDescripcion.TabIndex = 152;
             // 
             // bunifuGradientPanel6
             // 
@@ -598,11 +442,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel6.Location = new System.Drawing.Point(541, 52);
+            this.bunifuGradientPanel6.Location = new System.Drawing.Point(540, 52);
             this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
             this.bunifuGradientPanel6.Quality = 10;
             this.bunifuGradientPanel6.Size = new System.Drawing.Size(55, 44);
-            this.bunifuGradientPanel6.TabIndex = 150;
+            this.bunifuGradientPanel6.TabIndex = 161;
             // 
             // BtLimpiar
             // 
@@ -646,11 +490,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel5.Location = new System.Drawing.Point(475, 52);
+            this.bunifuGradientPanel5.Location = new System.Drawing.Point(474, 52);
             this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
             this.bunifuGradientPanel5.Quality = 10;
             this.bunifuGradientPanel5.Size = new System.Drawing.Size(55, 44);
-            this.bunifuGradientPanel5.TabIndex = 151;
+            this.bunifuGradientPanel5.TabIndex = 162;
             // 
             // BtConsultar
             // 
@@ -689,38 +533,36 @@ namespace Design_Dashboard_Modern
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1045, 788);
             this.Controls.Add(this.bunifuGradientPanel6);
             this.Controls.Add(this.bunifuGradientPanel5);
+            this.Controls.Add(this.TxtReferenciaBibliografica);
+            this.Controls.Add(this.TxtEstrategias);
+            this.Controls.Add(this.TxtContenido);
+            this.Controls.Add(this.TxtComponentesGenericos);
+            this.Controls.Add(this.TxtJustificacion);
+            this.Controls.Add(this.TxtMecanismoEvaluativo);
+            this.Controls.Add(this.TxtObjetivoEspecifico);
+            this.Controls.Add(this.TxtObjetivoGeneral);
+            this.Controls.Add(this.TxtDescripcion);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.bunifuGradientPanel4);
-            this.Controls.Add(this.bunifuGradientPanel3);
-            this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.PanelColor);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.CmbAsignatura);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -732,10 +574,7 @@ namespace Design_Dashboard_Modern
             this.Text = "ConsultarPlanAsignatura";
             this.PanelColor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel4.ResumeLayout(false);
-            this.bunifuGradientPanel3.ResumeLayout(false);
-            this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -751,19 +590,12 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuGradientPanel PanelColor;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox CmbAsignatura;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -774,16 +606,17 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.Framework.UI.BunifuFlatButton BtEliminar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
         private System.Windows.Forms.Button BtCancelar;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private Bunifu.Framework.UI.BunifuFlatButton BtModificar;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuFlatButton BtRegistrar;
+        private System.Windows.Forms.TextBox TxtReferenciaBibliografica;
+        private System.Windows.Forms.TextBox TxtEstrategias;
+        private System.Windows.Forms.TextBox TxtContenido;
+        private System.Windows.Forms.TextBox TxtComponentesGenericos;
+        private System.Windows.Forms.TextBox TxtJustificacion;
+        private System.Windows.Forms.TextBox TxtMecanismoEvaluativo;
+        private System.Windows.Forms.TextBox TxtObjetivoEspecifico;
+        private System.Windows.Forms.TextBox TxtObjetivoGeneral;
+        private System.Windows.Forms.TextBox TxtDescripcion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel6;
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;

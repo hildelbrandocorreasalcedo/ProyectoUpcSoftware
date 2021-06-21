@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ENTITY;
 using System.IO;
 
-namespace BLL
+namespace DAL
 {
     public class UpcRepository
     {

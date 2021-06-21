@@ -224,6 +224,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.Quality = 10;
             this.bunifuGradientPanel4.Size = new System.Drawing.Size(155, 44);
             this.bunifuGradientPanel4.TabIndex = 57;
+            this.bunifuGradientPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel4_Paint);
             // 
             // BtCancelar
             // 
@@ -301,6 +302,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
             this.bunifuGradientPanel1.TabIndex = 55;
+            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
             // BtRegistrar
             // 
@@ -512,6 +514,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.TxtCodigo);
             this.Name = "RegistroAsignatura";
             this.Text = "RegistroAsignatura";
+            this.Load += new System.EventHandler(this.RegistroAsignatura_Load);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);

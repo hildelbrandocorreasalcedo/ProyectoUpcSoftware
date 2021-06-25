@@ -29,6 +29,7 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroAsignatura));
             this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,9 +53,10 @@ namespace Design_Dashboard_Modern
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.CmbCreditos = new System.Windows.Forms.ComboBox();
-            this.CmbTipoAsignatura = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtPrograma = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.CmbTipoAsignatura = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -63,6 +65,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.SuspendLayout();
             this.PanelColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel6
@@ -112,6 +115,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // bunifuGradientPanel5
             // 
@@ -160,6 +164,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
             // 
             // bunifuGradientPanel2
             // 
@@ -209,6 +214,7 @@ namespace Design_Dashboard_Modern
             this.BtEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtEliminar.Textcolor = System.Drawing.Color.White;
             this.BtEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
             // 
             // bunifuGradientPanel4
             // 
@@ -238,6 +244,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // bunifuGradientPanel3
             // 
@@ -287,6 +294,7 @@ namespace Design_Dashboard_Modern
             this.BtModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtModificar.Textcolor = System.Drawing.Color.White;
             this.BtModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtModificar.Click += new System.EventHandler(this.BtModificar_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -337,6 +345,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrar.Textcolor = System.Drawing.Color.White;
             this.BtRegistrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtRegistrar.Click += new System.EventHandler(this.BtRegistrar_Click);
             // 
             // PanelColor
             // 
@@ -406,6 +415,7 @@ namespace Design_Dashboard_Modern
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(307, 26);
             this.TxtNombre.TabIndex = 49;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // labNombre
             // 
@@ -426,6 +436,7 @@ namespace Design_Dashboard_Modern
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(210, 26);
             this.TxtCodigo.TabIndex = 47;
+            this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
             // 
             // label3
             // 
@@ -444,6 +455,7 @@ namespace Design_Dashboard_Modern
             this.CmbCreditos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbCreditos.FormattingEnabled = true;
             this.CmbCreditos.Items.AddRange(new object[] {
+            "",
             "2",
             "3",
             "4"});
@@ -451,20 +463,7 @@ namespace Design_Dashboard_Modern
             this.CmbCreditos.Name = "CmbCreditos";
             this.CmbCreditos.Size = new System.Drawing.Size(83, 28);
             this.CmbCreditos.TabIndex = 62;
-            // 
-            // CmbTipoAsignatura
-            // 
-            this.CmbTipoAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipoAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbTipoAsignatura.FormattingEnabled = true;
-            this.CmbTipoAsignatura.Items.AddRange(new object[] {
-            "Teorica/Practica",
-            "Teorica",
-            "Practica"});
-            this.CmbTipoAsignatura.Location = new System.Drawing.Point(197, 296);
-            this.CmbTipoAsignatura.Name = "CmbTipoAsignatura";
-            this.CmbTipoAsignatura.Size = new System.Drawing.Size(218, 28);
-            this.CmbTipoAsignatura.TabIndex = 63;
+            this.CmbCreditos.SelectedIndexChanged += new System.EventHandler(this.CmbCreditos_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -488,15 +487,35 @@ namespace Design_Dashboard_Modern
             this.TxtPrograma.TabIndex = 65;
             this.TxtPrograma.Text = "INGENIERIA DE SISTEMAS";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // CmbTipoAsignatura
+            // 
+            this.CmbTipoAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbTipoAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbTipoAsignatura.FormattingEnabled = true;
+            this.CmbTipoAsignatura.Items.AddRange(new object[] {
+            "",
+            "Teorica/Practica",
+            "Teorica",
+            "Practica"});
+            this.CmbTipoAsignatura.Location = new System.Drawing.Point(198, 297);
+            this.CmbTipoAsignatura.Name = "CmbTipoAsignatura";
+            this.CmbTipoAsignatura.Size = new System.Drawing.Size(229, 28);
+            this.CmbTipoAsignatura.TabIndex = 66;
+            this.CmbTipoAsignatura.SelectedIndexChanged += new System.EventHandler(this.CmbTipoAsignatura_SelectedIndexChanged_1);
+            // 
             // RegistroAsignatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(845, 501);
+            this.Controls.Add(this.CmbTipoAsignatura);
             this.Controls.Add(this.TxtPrograma);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CmbTipoAsignatura);
             this.Controls.Add(this.CmbCreditos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bunifuGradientPanel6);
@@ -523,6 +542,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.PanelColor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,8 +572,9 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CmbCreditos;
-        private System.Windows.Forms.ComboBox CmbTipoAsignatura;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TxtPrograma;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox CmbTipoAsignatura;
     }
 }

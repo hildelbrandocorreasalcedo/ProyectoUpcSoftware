@@ -34,7 +34,7 @@ namespace BLL
                     AsignaturaRepository.GuardarAsignatura(asignatura);
                     return "Los Datos han sido guardados satisfactoriamente";
                 }
-                return $"El Codigo {asignatura.Codigo} ya se encuentra registrado por favor verifique los datos";
+                return $"El codigo {asignatura.Codigo} ya se encuentra registrado por favor verifique los datos";
             }
             catch (Exception e)
             {
@@ -167,10 +167,156 @@ namespace BLL
                 Message = message;
             }
         }
+
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---------Docente--------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
 
 
+        public string GuardarDocente(Docentes docente)
+        {
+            try
+            {
+                if (DocenteRepository.BuscarDocente(docente.Identificacion) == null)
+                {
+                    DocenteRepository.GuardarDocente(docente);
+                    return "Los Datos han sido guardados satisfactoriamente";
+                }
+                return $"La identificacion {docente.Identificacion} ya se encuentra registrado por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de Datos: " + e.Message;
+            }
+        }
+
+        public string EliminarDocente(string identificacion)
+        {
+            try
+            {
+                if (DocenteRepository.BuscarDocente(identificacion) != null)
+                {
+                    DocenteRepository.EliminarDocente(identificacion);
+                    return $"El docente con la identificacion {identificacion} ha sido eliminada satisfacatoriamente";
+                }
+                return $"La identificacion {identificacion} no se encuentra registrada, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+
+                return "Error de datos" + e.Message;
+            }
+        }
+
+        public string ModificarDocente(Docentes codigo)
+        {
+            try
+            {
+                if (DocenteRepository.BuscarDocente(codigo.Identificacion) != null)
+                {
+
+                    DocenteRepository.ModificarDocente(codigo);
+                    return $"El docente con la identificacion {codigo.Identificacion} ha sido modificada satisfacatoriamente";
+                }
+                return $"La identificacion {codigo.Identificacion} no se encuentra registrado, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de datos" + e.Message;
+            }
+        }
+        public RespuestaBusqueda BuscarDocente(string Codigo)
+        {
+            RespuestaBusqueda respuesta = new RespuestaBusqueda();
+            try
+            {
+                respuesta.Error = false;
+                Docentes docente = DocenteRepository.BuscarDocente(Codigo);
+                if (docente == null)
+                {
+                    respuesta.Mensaje = $"El docente con la identificacion {Codigo} no se encuentra registrado";
+                    respuesta.Docente = null;
+                }
+                else
+                {
+                    respuesta.Docente = docente;
+                    respuesta.Mensaje = "Docente encontrado\n\n";
+                }
+            }
+            catch (Exception E)
+            {
+                respuesta.Mensaje = "Error de lectura o escritura de archivos: " + E.Message;
+                respuesta.Docente = null;
+                respuesta.Error = true;
+            }
+            return respuesta;
+        }
+
+        public RespuestaConsulta ConsultarTodosDocentes()
+        {
+            RespuestaConsulta respuesta = new RespuestaConsulta();
+            try
+            {
+                respuesta.Error = false;
+                IList<Docentes> Docentess = DocenteRepository.ConsultarTodosDocentes();
+                if (Docentess.Count != 0)
+                {
+                    respuesta.Mensaje = "Se Consulta la Informacion de Docentes";
+                    respuesta.Docentes = Docentess;
+                }
+                else
+                {
+                    respuesta.Mensaje = "No existen Datos para Consultar";
+                    respuesta.Docentes = null;
+                }
+            }
+            catch (Exception e)
+            {
+                respuesta.Error = true;
+                respuesta.Mensaje = $"Erro en datos: " + e.Message;
+                respuesta.Docentes = null;
+            }
+            return respuesta;
+        }
+
+        public ConsultaDocenteResponse ConsultarTodosDocentesDtg()
+        {
+            try
+            {
+                List<Docentes> docente = DocenteRepository.ConsultarTodosDocentesDtg();
+                if (docente != null)
+                {
+                    return new ConsultaDocenteResponse(docente);
+                }
+                else
+                {
+                    return new ConsultaDocenteResponse("La asignatura buscado no se encuentra Registrado");
+                }
+            }
+            catch (Exception e)
+            {
+
+                return new ConsultaDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+
+        public class ConsultaDocenteResponse
+        {
+            public List<Docentes> Docente { get; set; }
+            public string Message { get; set; }
+
+            public ConsultaDocenteResponse(List<Docentes> docente)
+            {
+                Docente = new List<Docentes>();
+                Docente = docente;
+            }
+            public ConsultaDocenteResponse(string message)
+            {
+                Message = message;
+            }
+        }
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
     }
 }

@@ -32,7 +32,7 @@ namespace DAL
 
             FileStream file = new FileStream(FileAsignatura, FileMode.Append);
             StreamWriter writer = new StreamWriter(file);
-            writer.WriteLine($"{asignatura.Codigo};{asignatura.Nombre};{asignatura.Programa};{asignatura.Creditos};{asignatura.TipoAsignatura} ");
+            writer.WriteLine($"{asignatura.Codigo};{asignatura.Nombre};{asignatura.Programa};{asignatura.Creditos};{asignatura.TipoAsignatura}");
             writer.Close();
             file.Close();
         }
@@ -135,7 +135,7 @@ namespace DAL
         {
             FileStream file = new FileStream(FileDocente, FileMode.Append);
             StreamWriter writer = new StreamWriter(file);
-            writer.WriteLine($"{docente.Identificacion};{docente.Nombre};{docente.Apellido};{docente.Telefono};{docente.Correo};{docente.Categoria};{docente.Materia} ");
+            writer.WriteLine($"{docente.Identificacion};{docente.Nombre};{docente.Apellido};{docente.Telefono};{docente.Correo};{docente.Categoria};{docente.Materia}");
             writer.Close();
             file.Close();
         }

@@ -36,7 +36,7 @@ namespace Design_Dashboard_Modern
             this.label3 = new System.Windows.Forms.Label();
             this.TxtConteoNoVotaron = new System.Windows.Forms.TextBox();
             this.TxtConteoVotaron = new System.Windows.Forms.TextBox();
-            this.DtgEstudiante = new System.Windows.Forms.DataGridView();
+            this.DtgAsignatura = new System.Windows.Forms.DataGridView();
             this.Identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Voto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +52,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgEstudiante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgAsignatura)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
@@ -119,18 +119,18 @@ namespace Design_Dashboard_Modern
             this.TxtConteoVotaron.Size = new System.Drawing.Size(66, 26);
             this.TxtConteoVotaron.TabIndex = 66;
             // 
-            // DtgEstudiante
+            // DtgAsignatura
             // 
-            this.DtgEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgEstudiante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DtgAsignatura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgAsignatura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Identificacion,
             this.Nombre,
             this.Voto,
             this.NumeroVoto});
-            this.DtgEstudiante.Location = new System.Drawing.Point(32, 131);
-            this.DtgEstudiante.Name = "DtgEstudiante";
-            this.DtgEstudiante.Size = new System.Drawing.Size(572, 356);
-            this.DtgEstudiante.TabIndex = 65;
+            this.DtgAsignatura.Location = new System.Drawing.Point(32, 131);
+            this.DtgAsignatura.Name = "DtgAsignatura";
+            this.DtgAsignatura.Size = new System.Drawing.Size(572, 356);
+            this.DtgAsignatura.TabIndex = 65;
             // 
             // Identificacion
             // 
@@ -331,6 +331,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
             // 
             // ConsultaAsignatura
             // 
@@ -347,7 +348,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TxtConteoNoVotaron);
             this.Controls.Add(this.TxtConteoVotaron);
-            this.Controls.Add(this.DtgEstudiante);
+            this.Controls.Add(this.DtgAsignatura);
             this.Controls.Add(this.CmbFiltro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
@@ -355,7 +356,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.TxtIdentificacion);
             this.Name = "ConsultaAsignatura";
             this.Text = "ConsultaAsignatura";
-            ((System.ComponentModel.ISupportInitialize)(this.DtgEstudiante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgAsignatura)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
@@ -372,7 +373,7 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtConteoNoVotaron;
         private System.Windows.Forms.TextBox TxtConteoVotaron;
-        private System.Windows.Forms.DataGridView DtgEstudiante;
+        private System.Windows.Forms.DataGridView DtgAsignatura;
         private System.Windows.Forms.DataGridViewTextBoxColumn Identificacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Voto;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class RegistrarRespuestaFormatoDocente : Form
+    public partial class SolicitudActualicionDocente : Form
     {
-        public RegistrarRespuestaFormatoDocente()
+        public SolicitudActualicionDocente()
         {
             InitializeComponent();
         }
@@ -30,6 +30,11 @@ namespace Design_Dashboard_Modern
         private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
         {
           
+        }
+
+        private void CmbTipoAsignatura_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

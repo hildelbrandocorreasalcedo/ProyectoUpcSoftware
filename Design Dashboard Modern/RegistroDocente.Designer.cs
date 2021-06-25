@@ -29,6 +29,7 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroDocente));
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,6 +60,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
@@ -67,6 +69,7 @@ namespace Design_Dashboard_Modern
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel2
@@ -117,6 +120,7 @@ namespace Design_Dashboard_Modern
             this.BtEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtEliminar.Textcolor = System.Drawing.Color.White;
             this.BtEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
             // 
             // bunifuGradientPanel4
             // 
@@ -145,6 +149,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // bunifuGradientPanel3
             // 
@@ -194,6 +199,7 @@ namespace Design_Dashboard_Modern
             this.BtModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtModificar.Textcolor = System.Drawing.Color.White;
             this.BtModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtModificar.Click += new System.EventHandler(this.BtModificar_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -243,6 +249,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrar.Textcolor = System.Drawing.Color.White;
             this.BtRegistrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtRegistrar.Click += new System.EventHandler(this.BtRegistrar_Click);
             // 
             // PanelColor
             // 
@@ -300,6 +307,7 @@ namespace Design_Dashboard_Modern
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(302, 26);
             this.TxtNombre.TabIndex = 63;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // labNombre
             // 
@@ -320,6 +328,7 @@ namespace Design_Dashboard_Modern
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(210, 26);
             this.TxtIdentificacion.TabIndex = 61;
+            this.TxtIdentificacion.TextChanged += new System.EventHandler(this.TxtIdentificacion_TextChanged);
             // 
             // label3
             // 
@@ -352,6 +361,7 @@ namespace Design_Dashboard_Modern
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(302, 26);
             this.TxtApellido.TabIndex = 76;
+            this.TxtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
             // label6
             // 
@@ -393,6 +403,7 @@ namespace Design_Dashboard_Modern
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(183, 26);
             this.TxtTelefono.TabIndex = 81;
+            this.TxtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
             // 
             // TxtCorreo
             // 
@@ -401,6 +412,7 @@ namespace Design_Dashboard_Modern
             this.TxtCorreo.Name = "TxtCorreo";
             this.TxtCorreo.Size = new System.Drawing.Size(302, 26);
             this.TxtCorreo.TabIndex = 82;
+            this.TxtCorreo.TextChanged += new System.EventHandler(this.TxtCorreo_TextChanged);
             // 
             // CmbCategoria
             // 
@@ -408,12 +420,14 @@ namespace Design_Dashboard_Modern
             this.CmbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbCategoria.FormattingEnabled = true;
             this.CmbCategoria.Items.AddRange(new object[] {
+            "",
             "Docente ocacional",
             "Docente catedratico"});
             this.CmbCategoria.Location = new System.Drawing.Point(159, 296);
             this.CmbCategoria.Name = "CmbCategoria";
             this.CmbCategoria.Size = new System.Drawing.Size(280, 28);
             this.CmbCategoria.TabIndex = 84;
+            this.CmbCategoria.SelectedIndexChanged += new System.EventHandler(this.CmbCategoria_SelectedIndexChanged);
             // 
             // CmbAsignatura
             // 
@@ -421,12 +435,14 @@ namespace Design_Dashboard_Modern
             this.CmbAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbAsignatura.FormattingEnabled = true;
             this.CmbAsignatura.Items.AddRange(new object[] {
+            "",
             "Docente ocacional",
             "Docente catedratico"});
             this.CmbAsignatura.Location = new System.Drawing.Point(159, 338);
             this.CmbAsignatura.Name = "CmbAsignatura";
             this.CmbAsignatura.Size = new System.Drawing.Size(280, 28);
             this.CmbAsignatura.TabIndex = 85;
+            this.CmbAsignatura.SelectedIndexChanged += new System.EventHandler(this.CmbAsignatura_SelectedIndexChanged);
             // 
             // bunifuGradientPanel6
             // 
@@ -475,6 +491,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // bunifuGradientPanel5
             // 
@@ -523,6 +540,11 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // RegistroDocente
             // 
@@ -563,6 +585,7 @@ namespace Design_Dashboard_Modern
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,5 +621,6 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
         private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

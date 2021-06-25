@@ -17,7 +17,7 @@ namespace ProyectoHotelPensionados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new MenuUpcComite());
         }
     }
 }

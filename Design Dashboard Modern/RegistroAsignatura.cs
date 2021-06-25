@@ -7,16 +7,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ENTITY;
+using BLL;
 
 namespace Design_Dashboard_Modern
 {
     public partial class RegistroAsignatura : Form
     {
+        UpcService upcService = new UpcService();
         public RegistroAsignatura()
         {
             InitializeComponent();
         }
+        private void BorrarMensajesError()
+        {
+            errorProvider1.SetError(TxtCodigo, "");
+            errorProvider1.SetError(TxtNombre, "");
+            errorProvider1.SetError(CmbCreditos, "");
+            errorProvider1.SetError(CmbTipoAsignatura, "");
+        }
 
+        private bool validarcampos()
+        {
+            bool ok = true;
+            if (TxtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(TxtNombre, "Por Favor Ingrese los Nombre");
+            }
+            if (TxtCodigo.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(TxtCodigo, "Por Favor Ingrese el codigo");
+            }
+            if (CmbCreditos.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(CmbCreditos, "Este Campo Es Obligatorio");
+            }
+            if (CmbTipoAsignatura.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(CmbTipoAsignatura, "Este Campo Es Obligatorio");
+            }
+            return ok;
+        }
+        private void BorrarMensajesErrorCodigo()
+        {
+            errorProvider1.SetError(TxtCodigo, "");
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -35,6 +74,161 @@ namespace Design_Dashboard_Modern
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BtRegistrar_Click(object sender, EventArgs e)
+        {
+            
+            if (validarcampos())
+            {
+                BorrarMensajesError();
+                int numero;
+                if (!int.TryParse(TxtCodigo.Text, out numero))
+                {
+                    errorProvider1.SetError(TxtCodigo, "Ingrese Solo Numeros");
+                }
+                else
+                {
+                    Asignaturas asignatura = MapearAsignatura();
+                    string mensaje = upcService.GuardarAsignatura(asignatura);
+                    MessageBox.Show(mensaje);
+                    LimpiarTxt();
+                }
+                
+            }
+        }
+        
+        private Asignaturas MapearAsignatura()
+        {
+            Asignaturas asignatura = new Asignaturas();
+            asignatura.Codigo = TxtCodigo.Text;
+            asignatura.Nombre = TxtNombre.Text;
+            asignatura.Programa = TxtPrograma.Text;
+            asignatura.Creditos = CmbCreditos.Text;
+            asignatura.TipoAsignatura = CmbTipoAsignatura.Text;
+            return asignatura;
+        }
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarTxt();
+        }
+        private void LimpiarTxt()
+        {
+            TxtCodigo.Text = "";
+            TxtNombre.Text = "";
+            TxtPrograma.Text = "INGENIERIA DE SISTEMAS";
+            CmbCreditos.Text = "";
+            CmbTipoAsignatura.Text = "";
+
+        }
+
+        private void BtConsultar_Click(object sender, EventArgs e)
+        {
+            string codigo = TxtCodigo.Text;
+            if (codigo != "")
+            {
+                RespuestaBusqueda respuesta = upcService.BuscarAsignatura(codigo);
+
+                if (respuesta.Asignatura != null)
+                {
+                    Asignaturas asignatura = respuesta.Asignatura;
+                    TxtNombre.Text = asignatura.Nombre;
+                    TxtPrograma.Text = asignatura.Programa;
+                    CmbCreditos.Text = asignatura.Creditos;
+                    CmbTipoAsignatura.Text = asignatura.TipoAsignatura;
+                    MessageBox.Show(respuesta.Mensaje);
+                }
+                else
+                {
+                    MessageBox.Show(respuesta.Mensaje);
+                }
+            }
+            else
+            {
+                MessageBox.Show("digite el Codigo a buscar");
+            }
+        }
+
+        private void BtEliminar_Click(object sender, EventArgs e)
+        {
+            BorrarMensajesErrorCodigo();
+            if (validarcampos())
+            {
+                string codigo = TxtCodigo.Text;
+                if (codigo != "")
+                {
+                    RespuestaBusqueda respuesta = upcService.BuscarAsignatura(codigo);
+                    if (respuesta.Asignatura != null)
+                    {
+                        codigo = TxtCodigo.Text;
+                        var mensaje = upcService.EliminarAsignatura(codigo);
+                        MessageBox.Show(mensaje, "Confirmacion de ELiminado", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"La asignatura con el codigo {codigo} no se encuentra registrado");
+                    }
+                }
+                LimpiarTxt();
+            }
+        }
+
+        private void BtModificar_Click(object sender, EventArgs e)
+        {
+            BorrarMensajesError();
+            if (validarcampos())
+            {
+                if (TxtCodigo.Text != "" && TxtNombre.Text != "" && CmbCreditos.Text != "" && CmbTipoAsignatura.Text != "")
+                {
+                    Asignaturas codigo = MapearAsignatura();
+                    string mensaje = upcService.ModificarAsignatura(codigo);
+                    MessageBox.Show(mensaje);
+                }
+                else
+                {
+                    MessageBox.Show("rectifique los campos");
+                }
+                LimpiarTxt();
+            }
+        }
+
+        private void BtCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void TxtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            int numero;
+            if (!int.TryParse(TxtCodigo.Text, out numero))
+            {
+                errorProvider1.SetError(TxtCodigo, "Ingrese Solo Numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(TxtCodigo, "");
+            }
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(TxtNombre, "");
+        }
+
+        private void CmbCreditos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(CmbCreditos, "");
+        }
+
+        private void CmbTipoAsignatura_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void CmbTipoAsignatura_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(CmbTipoAsignatura, "");
         }
     }
 }

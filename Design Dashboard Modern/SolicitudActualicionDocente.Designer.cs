@@ -1,7 +1,7 @@
 ﻿
 namespace Design_Dashboard_Modern
 {
-    partial class RegistrarRespuestaFormatoDocente
+    partial class SolicitudActualicionDocente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarRespuestaFormatoDocente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolicitudActualicionDocente));
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -49,12 +49,13 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox10 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtRegistrar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.CmbTipoAsignatura = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +67,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox2.Checked = false;
             this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox2.Location = new System.Drawing.Point(698, 263);
+            this.bunifuCheckbox2.Location = new System.Drawing.Point(524, 296);
             this.bunifuCheckbox2.Name = "bunifuCheckbox2";
             this.bunifuCheckbox2.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox2.TabIndex = 56;
@@ -78,7 +79,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox3.Checked = false;
             this.bunifuCheckbox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox3.Location = new System.Drawing.Point(698, 212);
+            this.bunifuCheckbox3.Location = new System.Drawing.Point(524, 245);
             this.bunifuCheckbox3.Name = "bunifuCheckbox3";
             this.bunifuCheckbox3.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox3.TabIndex = 57;
@@ -90,7 +91,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox4.Checked = false;
             this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox4.Location = new System.Drawing.Point(698, 185);
+            this.bunifuCheckbox4.Location = new System.Drawing.Point(524, 218);
             this.bunifuCheckbox4.Name = "bunifuCheckbox4";
             this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox4.TabIndex = 58;
@@ -102,7 +103,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox5.Checked = false;
             this.bunifuCheckbox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox5.Location = new System.Drawing.Point(698, 159);
+            this.bunifuCheckbox5.Location = new System.Drawing.Point(524, 192);
             this.bunifuCheckbox5.Name = "bunifuCheckbox5";
             this.bunifuCheckbox5.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox5.TabIndex = 59;
@@ -114,7 +115,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox6.Checked = false;
             this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox6.Location = new System.Drawing.Point(698, 134);
+            this.bunifuCheckbox6.Location = new System.Drawing.Point(524, 167);
             this.bunifuCheckbox6.Name = "bunifuCheckbox6";
             this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox6.TabIndex = 60;
@@ -125,7 +126,7 @@ namespace Design_Dashboard_Modern
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(144, 311);
+            this.label4.Location = new System.Drawing.Point(60, 344);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(195, 20);
             this.label4.TabIndex = 63;
@@ -137,7 +138,7 @@ namespace Design_Dashboard_Modern
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(144, 288);
+            this.label5.Location = new System.Drawing.Point(60, 321);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(461, 20);
             this.label5.TabIndex = 64;
@@ -149,7 +150,7 @@ namespace Design_Dashboard_Modern
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(144, 263);
+            this.label6.Location = new System.Drawing.Point(60, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(303, 20);
             this.label6.TabIndex = 65;
@@ -161,7 +162,7 @@ namespace Design_Dashboard_Modern
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(144, 237);
+            this.label7.Location = new System.Drawing.Point(60, 270);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(182, 20);
             this.label7.TabIndex = 66;
@@ -173,7 +174,7 @@ namespace Design_Dashboard_Modern
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(144, 212);
+            this.label8.Location = new System.Drawing.Point(60, 245);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(157, 20);
             this.label8.TabIndex = 67;
@@ -185,7 +186,7 @@ namespace Design_Dashboard_Modern
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(144, 186);
+            this.label9.Location = new System.Drawing.Point(60, 219);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 20);
             this.label9.TabIndex = 68;
@@ -197,7 +198,7 @@ namespace Design_Dashboard_Modern
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(144, 159);
+            this.label10.Location = new System.Drawing.Point(60, 192);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 20);
             this.label10.TabIndex = 69;
@@ -209,7 +210,7 @@ namespace Design_Dashboard_Modern
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(144, 134);
+            this.label11.Location = new System.Drawing.Point(60, 167);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 20);
             this.label11.TabIndex = 70;
@@ -222,7 +223,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox7.Checked = false;
             this.bunifuCheckbox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox7.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox7.Location = new System.Drawing.Point(698, 237);
+            this.bunifuCheckbox7.Location = new System.Drawing.Point(524, 270);
             this.bunifuCheckbox7.Name = "bunifuCheckbox7";
             this.bunifuCheckbox7.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox7.TabIndex = 71;
@@ -234,7 +235,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox8.Checked = false;
             this.bunifuCheckbox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox8.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox8.Location = new System.Drawing.Point(698, 311);
+            this.bunifuCheckbox8.Location = new System.Drawing.Point(524, 344);
             this.bunifuCheckbox8.Name = "bunifuCheckbox8";
             this.bunifuCheckbox8.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox8.TabIndex = 72;
@@ -246,7 +247,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox9.Checked = false;
             this.bunifuCheckbox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox9.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox9.Location = new System.Drawing.Point(698, 288);
+            this.bunifuCheckbox9.Location = new System.Drawing.Point(524, 321);
             this.bunifuCheckbox9.Name = "bunifuCheckbox9";
             this.bunifuCheckbox9.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox9.TabIndex = 73;
@@ -258,7 +259,7 @@ namespace Design_Dashboard_Modern
             this.bunifuCheckbox10.Checked = false;
             this.bunifuCheckbox10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox10.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox10.Location = new System.Drawing.Point(698, 334);
+            this.bunifuCheckbox10.Location = new System.Drawing.Point(524, 367);
             this.bunifuCheckbox10.Name = "bunifuCheckbox10";
             this.bunifuCheckbox10.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox10.TabIndex = 75;
@@ -269,7 +270,7 @@ namespace Design_Dashboard_Modern
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(144, 334);
+            this.label1.Location = new System.Drawing.Point(60, 367);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 20);
             this.label1.TabIndex = 74;
@@ -281,25 +282,11 @@ namespace Design_Dashboard_Modern
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(144, 110);
+            this.label2.Location = new System.Drawing.Point(60, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 53;
             this.label2.Text = "Asignatura";
-            // 
-            // bunifuCheckbox1
-            // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.CausesValidation = false;
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = false;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(698, 110);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 55;
-            this.bunifuCheckbox1.OnChange += new System.EventHandler(this.bunifuCheckbox1_OnChange);
             // 
             // bunifuGradientPanel4
             // 
@@ -310,7 +297,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel4.Location = new System.Drawing.Point(509, 410);
+            this.bunifuGradientPanel4.Location = new System.Drawing.Point(486, 436);
             this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
             this.bunifuGradientPanel4.Quality = 10;
             this.bunifuGradientPanel4.Size = new System.Drawing.Size(155, 44);
@@ -338,7 +325,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(243, 410);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(220, 436);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
@@ -384,18 +371,46 @@ namespace Design_Dashboard_Modern
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(12, 35);
+            this.label3.Location = new System.Drawing.Point(60, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(854, 44);
+            this.label3.Size = new System.Drawing.Size(731, 44);
             this.label3.TabIndex = 79;
-            this.label3.Text = "REGISTRAR RESPUESTAS DEL FORMATO DOCENTE";
+            this.label3.Text = "SOLICITUD DE ACTUALIZACION FORMATO";
             // 
-            // RegistrarRespuestaFormatoDocente
+            // CmbTipoAsignatura
+            // 
+            this.CmbTipoAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbTipoAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbTipoAsignatura.FormattingEnabled = true;
+            this.CmbTipoAsignatura.Items.AddRange(new object[] {
+            "Teorica/Practica",
+            "Teorica",
+            "Practica"});
+            this.CmbTipoAsignatura.Location = new System.Drawing.Point(524, 135);
+            this.CmbTipoAsignatura.Name = "CmbTipoAsignatura";
+            this.CmbTipoAsignatura.Size = new System.Drawing.Size(267, 28);
+            this.CmbTipoAsignatura.TabIndex = 80;
+            this.CmbTipoAsignatura.SelectedIndexChanged += new System.EventHandler(this.CmbTipoAsignatura_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(340, 54);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(183, 44);
+            this.label12.TabIndex = 81;
+            this.label12.Text = "DOCENTE";
+            // 
+            // SolicitudActualicionDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(899, 546);
+            this.ClientSize = new System.Drawing.Size(845, 501);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.CmbTipoAsignatura);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.bunifuGradientPanel4);
@@ -417,9 +432,8 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.bunifuCheckbox4);
             this.Controls.Add(this.bunifuCheckbox3);
             this.Controls.Add(this.bunifuCheckbox2);
-            this.Controls.Add(this.bunifuCheckbox1);
             this.Controls.Add(this.label2);
-            this.Name = "RegistrarRespuestaFormatoDocente";
+            this.Name = "SolicitudActualicionDocente";
             this.Text = "RegistrarRespuestaFormatoDocente";
             this.Load += new System.EventHandler(this.RegistrarRespuestaFormatoDocente_Load);
             this.bunifuGradientPanel4.ResumeLayout(false);
@@ -449,11 +463,12 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
         private System.Windows.Forms.Button BtCancelar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtRegistrar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox CmbTipoAsignatura;
+        private System.Windows.Forms.Label label12;
     }
 }

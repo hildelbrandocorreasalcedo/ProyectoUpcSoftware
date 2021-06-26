@@ -435,9 +435,7 @@ namespace Design_Dashboard_Modern
             this.CmbAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbAsignatura.FormattingEnabled = true;
             this.CmbAsignatura.Items.AddRange(new object[] {
-            "",
-            "Docente ocacional",
-            "Docente catedratico"});
+            ""});
             this.CmbAsignatura.Location = new System.Drawing.Point(159, 338);
             this.CmbAsignatura.Name = "CmbAsignatura";
             this.CmbAsignatura.Size = new System.Drawing.Size(280, 28);

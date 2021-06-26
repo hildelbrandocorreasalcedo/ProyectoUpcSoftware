@@ -378,7 +378,7 @@ namespace Design_Dashboard_Modern
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(38, 255);
+            this.label4.Location = new System.Drawing.Point(37, 305);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(157, 20);
             this.label4.TabIndex = 53;
@@ -443,7 +443,7 @@ namespace Design_Dashboard_Modern
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(38, 304);
+            this.label3.Location = new System.Drawing.Point(37, 256);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 20);
             this.label3.TabIndex = 61;
@@ -459,7 +459,7 @@ namespace Design_Dashboard_Modern
             "2",
             "3",
             "4"});
-            this.CmbCreditos.Location = new System.Drawing.Point(198, 247);
+            this.CmbCreditos.Location = new System.Drawing.Point(198, 297);
             this.CmbCreditos.Name = "CmbCreditos";
             this.CmbCreditos.Size = new System.Drawing.Size(83, 28);
             this.CmbCreditos.TabIndex = 62;
@@ -471,7 +471,7 @@ namespace Design_Dashboard_Modern
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(38, 206);
+            this.label5.Location = new System.Drawing.Point(37, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(159, 20);
             this.label5.TabIndex = 64;
@@ -481,7 +481,7 @@ namespace Design_Dashboard_Modern
             // 
             this.TxtPrograma.Enabled = false;
             this.TxtPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrograma.Location = new System.Drawing.Point(197, 200);
+            this.TxtPrograma.Location = new System.Drawing.Point(196, 203);
             this.TxtPrograma.Name = "TxtPrograma";
             this.TxtPrograma.Size = new System.Drawing.Size(307, 26);
             this.TxtPrograma.TabIndex = 65;
@@ -501,7 +501,7 @@ namespace Design_Dashboard_Modern
             "Teorica/Practica",
             "Teorica",
             "Practica"});
-            this.CmbTipoAsignatura.Location = new System.Drawing.Point(198, 297);
+            this.CmbTipoAsignatura.Location = new System.Drawing.Point(197, 248);
             this.CmbTipoAsignatura.Name = "CmbTipoAsignatura";
             this.CmbTipoAsignatura.Size = new System.Drawing.Size(229, 28);
             this.CmbTipoAsignatura.TabIndex = 66;

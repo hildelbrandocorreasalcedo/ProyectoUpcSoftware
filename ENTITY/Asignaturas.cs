@@ -11,24 +11,24 @@ namespace ENTITY
         public string Codigo { get; set; }
         public string Nombre { get; set; }
         public string Programa { get; set; }
-        public string Creditos { get; set; }
         public string TipoAsignatura { get; set; }
-
+        public int Creditos { get; set; }
+        
         public Asignaturas()
         {
 
         }
-        public Asignaturas(string codigo, string nombre, string programa, string creditos, string tipoAsignatura)
+        public Asignaturas(string codigo, string nombre, string programa, string tipoAsignatura, int creditos)
         {
             Codigo = codigo;
             Nombre = nombre;
             Programa = programa;
-            Creditos = creditos;
             TipoAsignatura = tipoAsignatura;
+            Creditos = creditos;          
         }
         public override string ToString()
         {
-            return $"Codigo asignatura:{Codigo} Nombre de asignatura: {Nombre} Programa: {Programa} Creditos: {Creditos} Tipo de Asignatura: {TipoAsignatura}";
+            return $"Codigo asignatura:{Codigo} Nombre de asignatura: {Nombre} Programa: {Programa} Tipo de Asignatura: {TipoAsignatura} Creditos: {Creditos}";
         }
     }
 }

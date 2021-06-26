@@ -18,8 +18,8 @@ namespace Design_Dashboard_Modern
         public RegistroDocente()
         {
             InitializeComponent();
+            
         }
-
         private void BorrarMensajesError()
         {
             errorProvider1.SetError(TxtIdentificacion, "");
@@ -77,7 +77,12 @@ namespace Design_Dashboard_Modern
         }
         private void RegistroDocente_Load(object sender, EventArgs e)
         {
-
+            var response = upcService.ConsultarTodosAsignaturasDtg();
+            CmbAsignatura.Items.Insert(0, "");
+            foreach (var item in response.Asignatura)
+            {
+                CmbAsignatura.Items.Insert(1, item.Nombre);
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -94,16 +99,19 @@ namespace Design_Dashboard_Modern
                 if (!int.TryParse(TxtIdentificacion.Text, out numero))
                 {
                     errorProvider1.SetError(TxtIdentificacion, "Ingrese Solo Numeros");
+                }if(!int.TryParse(TxtTelefono.Text, out numero))
+                {
+                    errorProvider1.SetError(TxtTelefono, "Ingrese Solo Numeros");
                 }
                 else
                 {
                     Docentes docente = MapearDocente();
                     string mensaje = upcService.GuardarDocente(docente);
-                    MessageBox.Show(mensaje);
+                    MessageBox.Show(mensaje, "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpiarTxt();
                 }
-
             }
+            else { MessageBox.Show("Debe llenar todos los campos", "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
         private Docentes MapearDocente()
         {
@@ -138,12 +146,12 @@ namespace Design_Dashboard_Modern
                 }
                 else
                 {
-                    MessageBox.Show(respuesta.Mensaje);
+                    MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("digite la identificacion a buscar");
+                MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -176,11 +184,11 @@ namespace Design_Dashboard_Modern
                     {
                         identificacion = TxtIdentificacion.Text;
                         var mensaje = upcService.EliminarAsignatura(identificacion);
-                        MessageBox.Show(mensaje, "Confirmacion de ELiminado", MessageBoxButtons.OK);
+                        MessageBox.Show(mensaje, "Docente ELiminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show($"El docente con la identificacion {identificacion} no se encuentra registrado");
+                        MessageBox.Show($"El docente con la identificacion {identificacion} no se encuentra registrado", "Informacion de Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 LimpiarTxt();
@@ -197,11 +205,11 @@ namespace Design_Dashboard_Modern
                 {
                     Docentes identificacion = MapearDocente();
                     string mensaje = upcService.ModificarDocente(identificacion);
-                    MessageBox.Show(mensaje);
+                    MessageBox.Show(mensaje, "Informacion de Modificacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("rectifique los campos");
+                    MessageBox.Show("rectifique los campos", "Informacion de Modificacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 LimpiarTxt();
             }
@@ -232,8 +240,8 @@ namespace Design_Dashboard_Modern
 
         private void TxtTelefono_TextChanged(object sender, EventArgs e)
         {
-            int numero;
-            if (!int.TryParse(TxtTelefono.Text, out numero))
+            int numero1;
+            if (!int.TryParse(TxtTelefono.Text, out numero1))
             {
                 errorProvider1.SetError(TxtTelefono, "Ingrese Solo Numeros");
             }
@@ -256,6 +264,7 @@ namespace Design_Dashboard_Modern
         private void CmbAsignatura_SelectedIndexChanged(object sender, EventArgs e)
         {
             errorProvider1.SetError(CmbAsignatura, "");
+
         }
 
         private void BtCancelar_Click(object sender, EventArgs e)

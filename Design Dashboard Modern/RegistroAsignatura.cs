@@ -91,11 +91,11 @@ namespace Design_Dashboard_Modern
                 {
                     Asignaturas asignatura = MapearAsignatura();
                     string mensaje = upcService.GuardarAsignatura(asignatura);
-                    MessageBox.Show(mensaje);
+                    MessageBox.Show(mensaje, "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);                  
                     LimpiarTxt();
-                }
-                
+                }             
             }
+            else { MessageBox.Show("Debe llenar todos los campos", "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
         
         private Asignaturas MapearAsignatura()
@@ -104,8 +104,8 @@ namespace Design_Dashboard_Modern
             asignatura.Codigo = TxtCodigo.Text;
             asignatura.Nombre = TxtNombre.Text;
             asignatura.Programa = TxtPrograma.Text;
-            asignatura.Creditos = CmbCreditos.Text;
             asignatura.TipoAsignatura = CmbTipoAsignatura.Text;
+            asignatura.Creditos = int.Parse(CmbCreditos.Text);        
             return asignatura;
         }
 
@@ -117,10 +117,9 @@ namespace Design_Dashboard_Modern
         {
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
-            TxtPrograma.Text = "INGENIERIA DE SISTEMAS";
-            CmbCreditos.Text = "";
+            TxtPrograma.Text = "INGENIERIA DE SISTEMAS";           
             CmbTipoAsignatura.Text = "";
-
+            CmbCreditos.Text = "";
         }
 
         private void BtConsultar_Click(object sender, EventArgs e)
@@ -134,19 +133,19 @@ namespace Design_Dashboard_Modern
                 {
                     Asignaturas asignatura = respuesta.Asignatura;
                     TxtNombre.Text = asignatura.Nombre;
-                    TxtPrograma.Text = asignatura.Programa;
-                    CmbCreditos.Text = asignatura.Creditos;
+                    TxtPrograma.Text = asignatura.Programa;                 
                     CmbTipoAsignatura.Text = asignatura.TipoAsignatura;
-                    MessageBox.Show(respuesta.Mensaje);
+                    CmbCreditos.Text = asignatura.Creditos.ToString();
+                    MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show(respuesta.Mensaje);
+                    MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("digite el Codigo a buscar");
+                MessageBox.Show("digite el codigo a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -163,11 +162,12 @@ namespace Design_Dashboard_Modern
                     {
                         codigo = TxtCodigo.Text;
                         var mensaje = upcService.EliminarAsignatura(codigo);
-                        MessageBox.Show(mensaje, "Confirmacion de ELiminado", MessageBoxButtons.OK);
+                        MessageBox.Show(mensaje, "Asignatura ELiminada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
                     }
                     else
                     {
-                        MessageBox.Show($"La asignatura con el codigo {codigo} no se encuentra registrado");
+                        MessageBox.Show($"La asignatura con el codigo {codigo} no se encuentra registrada", "Informacion de Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 LimpiarTxt();
@@ -179,7 +179,7 @@ namespace Design_Dashboard_Modern
             BorrarMensajesError();
             if (validarcampos())
             {
-                if (TxtCodigo.Text != "" && TxtNombre.Text != "" && CmbCreditos.Text != "" && CmbTipoAsignatura.Text != "")
+                if (TxtCodigo.Text != "" && TxtNombre.Text != "" && CmbTipoAsignatura.Text != "" && CmbCreditos.Text != "")
                 {
                     Asignaturas codigo = MapearAsignatura();
                     string mensaje = upcService.ModificarAsignatura(codigo);
@@ -187,7 +187,7 @@ namespace Design_Dashboard_Modern
                 }
                 else
                 {
-                    MessageBox.Show("rectifique los campos");
+                    MessageBox.Show("rectifique los campos", "Informacion de Modificacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 LimpiarTxt();
             }

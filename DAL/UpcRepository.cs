@@ -26,13 +26,11 @@ namespace DAL
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////------Asignaturas-------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
-
         public void GuardarAsignatura(Asignaturas asignatura)
         {
-
             FileStream file = new FileStream(FileAsignatura, FileMode.Append);
             StreamWriter writer = new StreamWriter(file);
-            writer.WriteLine($"{asignatura.Codigo};{asignatura.Nombre};{asignatura.Programa};{asignatura.Creditos};{asignatura.TipoAsignatura}");
+            writer.WriteLine($"{asignatura.Codigo};{asignatura.Nombre};{asignatura.Programa};{asignatura.TipoAsignatura};{asignatura.Creditos}");
             writer.Close();
             file.Close();
         }
@@ -44,8 +42,8 @@ namespace DAL
             string linea = string.Empty;
             while ((linea = lector.ReadLine()) != null)
             {
-                Asignaturas asignatura = MapearAsignatura(linea);
-                asignaturas.Add(asignatura);
+                Asignaturas curso = MapearAsignatura(linea);
+                asignaturas.Add(curso);
             }
             lector.Close();
             fileStream.Close();
@@ -74,10 +72,11 @@ namespace DAL
             asignatura.Codigo = datos[0];
             asignatura.Nombre = datos[1];
             asignatura.Programa = datos[2];
-            asignatura.Creditos = datos[3];
-            asignatura.TipoAsignatura = datos[4];
+            asignatura.TipoAsignatura = datos[3];
+            asignatura.Creditos = int.Parse(datos[4]);           
             return asignatura;
         }
+
 
         public void EliminarAsignatura(string codigo)
         {
@@ -127,6 +126,7 @@ namespace DAL
             }
             return null;
         }
+        
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---------Docente--------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////

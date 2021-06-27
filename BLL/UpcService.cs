@@ -93,6 +93,7 @@ namespace BLL
                 return "Error de datos" + e.Message;
             }
         }
+
         public RespuestaBusqueda BuscarAsignatura(string Codigo)
         {
             RespuestaBusqueda respuesta = new RespuestaBusqueda();
@@ -166,166 +167,524 @@ namespace BLL
                 return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
             }
         }
-
-        public class ConsultaCandidatoResponse
+        public CandidatoResponse BuscarPorCodigo(string codigo)
         {
-            public List<Asignaturas> Asignatura { get; set; }
-            public string Message { get; set; }
-
-            public ConsultaCandidatoResponse(List<Asignaturas> asignatura)
+            try
             {
-                Asignatura = new List<Asignaturas>();
-                Asignatura = asignatura;
+                Asignaturas asignatura = AsignaturaRepository.BuscarPorCodigo(codigo);
+                if (asignatura != null)
+                {
+                    return new CandidatoResponse(asignatura);
+                }
+                else
+                {
+                    return new CandidatoResponse($"La asignatura con el codigo {codigo} no se encuentra registrada");
+                }
             }
-            public ConsultaCandidatoResponse(string message)
+            catch (Exception e)
             {
-                Message = message;
+                return new CandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse ConsultarFiltrarTeoricoPractico(string tipoAsignatura)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarTeoricoPractico(tipoAsignatura);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse ConsultarFiltrarPractico(string tipoAsignatura)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarPractico(tipoAsignatura);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
             }
         }
 
-        //public string GuardarAsignatura(Asignaturas asignatura)
-        //{
-        //    try
-        //    {
-        //        if (AsignaturaRepository.BuscarAsignatura(asignatura.Codigo) == null)
-        //        {
-        //            AsignaturaRepository.GuardarAsignatura(asignatura);
-        //            return "Los Datos han sido guardados satisfactoriamente";
-        //        }
-        //        return $"El codigo {asignatura.Codigo} ya se encuentra registrado por favor verifique los datos";
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return "Error de Datos: " + e.Message;
-        //    }
-        //}
+        public ConsultaCandidatoResponse ConsultarFiltrarTeorico(string tipoAsignatura)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarTeorico(tipoAsignatura);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
 
-        //public string EliminarAsignatura(string codigo)
-        //{
-        //    try
-        //    {
-        //        if (AsignaturaRepository.BuscarAsignatura(codigo) != null)
-        //        {
-        //            AsignaturaRepository.EliminarAsignatura(codigo);
-        //            return $"La asignatura con el codigo {codigo} ha sido eliminada satisfacatoriamente";
-        //        }
-        //        return $"El codigo {codigo} no se encuentra registrada, por favor verifique los datos";
-        //    }
-        //    catch (Exception e)
-        //    {
+        public ConsultaCandidatoResponse BuscarDtg(string codigo)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.BuscarDtg(codigo);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse($"La asignatura con el codigo {codigo} no se encuentra registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
 
-        //        return "Error de datos" + e.Message;
-        //    }
-        //}
+        public int TotalizarTodasAsignaturas()
+        {
+            return AsignaturaRepository.TotalizarTodasAsignaturas();
+        }
+        public int ContarTeoricoPractico()
+        {
+            return AsignaturaRepository.ContarTeoricoPractico();
+        }
+        public int ContarPractico()
+        {
+            return AsignaturaRepository.ContarPractico();
+        }
+        public int ContarTeorico()
+        {
+            return AsignaturaRepository.ContarTeorico();
+        }
 
-        //public string ModificarAsignatura(Asignaturas codigo)
-        //{
-        //    try
-        //    {
-        //        if (AsignaturaRepository.BuscarAsignatura(codigo.Codigo) != null)
-        //        {
+        public ConsultaCandidatoResponse FiltrarProgramaADMINISTRACION_EMPRESAS(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaADMINISTRACION_EMPRESAS(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        
+        public ConsultaCandidatoResponse FiltrarProgramaADMINISTRACION_TURISTICAS(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaADMINISTRACION_TURISTICAS(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaCOMERCIO_INTERNACIONAL(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaCOMERCIO_INTERNACIONAL(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaCONTADURIA_PUBLICA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaCONTADURIA_PUBLICA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaDERECHO(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaDERECHO(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaECONOMIA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaECONOMIA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaENFERMERIA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaENFERMERIA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaINGENIERIA_AGROINDUSTRIAL(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaINGENIERIA_AGROINDUSTRIAL(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaINGENIERIA_AMBIENTAL(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaINGENIERIA_AMBIENTAL(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaINGENIERIA_ELECTRONICA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaINGENIERIA_ELECTRONICA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaINGENIERIA_SISTEMAS(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaINGENIERIA_SISTEMAS(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaINSTRUMENTACION_QUIRURGICA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaINSTRUMENTACION_QUIRURGICA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_ARTE(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_ARTE(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_DEPORTES(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_DEPORTES(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_ESPANOL_INGLES(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_ESPANOL_INGLES(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_LITERATURA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_LITERATURA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_MATEMATICAS(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_MATEMATICAS(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaLICENCIATURA_NATURALES(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaLICENCIATURA_NATURALES(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaMICROBIOLOGIA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaMICROBIOLOGIA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaMUSICA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaMUSICA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaCandidatoResponse FiltrarProgramaPSICOLOGIA(string programa)
+        {
+            try
+            {
+                List<Asignaturas> asignaturas = AsignaturaRepository.FiltrarProgramaPSICOLOGIA(programa);
+                if (asignaturas != null)
+                {
+                    return new ConsultaCandidatoResponse(asignaturas);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("La asignatura buscada no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
 
-        //            AsignaturaRepository.ModificarAsignatura(codigo);
-        //            return $"La asignatura con el codigo {codigo.Codigo} ha sido modificada satisfacatoriamente";
-        //        }
-        //        return $"El codigo {codigo.Codigo} no se encuentra registrado, por favor verifique los datos";
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return "Error de datos" + e.Message;
-        //    }
-        //}
-        //public RespuestaBusqueda BuscarAsignatura(string Codigo)
-        //{
-        //    RespuestaBusqueda respuesta = new RespuestaBusqueda();
-        //    try
-        //    {
-        //        respuesta.Error = false;
-        //        Asignaturas asignatura = AsignaturaRepository.BuscarAsignatura(Codigo);
-        //        if (asignatura == null)
-        //        {
-        //            respuesta.Mensaje = $"La asignatura con el codigo {Codigo} no se encuentra registrado";
-        //            respuesta.Asignatura = null;
-        //        }
-        //        else
-        //        {
-        //            respuesta.Asignatura = asignatura;
-        //            respuesta.Mensaje = "Asignatura encontrada\n\n";
-        //        }
-        //    }
-        //    catch (Exception E)
-        //    {
-        //        respuesta.Mensaje = "Error de lectura o escritura de archivos: " + E.Message;
-        //        respuesta.Asignatura = null;
-        //        respuesta.Error = true;
-        //    }
-        //    return respuesta;
-        //}
-
-        //public RespuestaConsulta ConsultarTodosAsignaturas()
-        //{
-        //    RespuestaConsulta respuesta = new RespuestaConsulta();
-        //    try
-        //    {
-        //        respuesta.Error = false;
-        //        IList<Asignaturas> Asignaturass = AsignaturaRepository.ConsultarTodosAsignaturas();
-        //        if (Asignaturass.Count != 0)
-        //        {
-        //            respuesta.Mensaje = "Se Consulta la Informacion de Asignaturas";
-        //            respuesta.Asignaturas = Asignaturass;
-        //        }
-        //        else
-        //        {
-        //            respuesta.Mensaje = "No existen Datos para Consultar";
-        //            respuesta.Asignaturas = null;
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        respuesta.Error = true;
-        //        respuesta.Mensaje = $"Erro en datos: " + e.Message;
-        //        respuesta.Asignaturas = null;
-        //    }
-        //    return respuesta;
-        //}
-
-        //public ConsultaCandidatoResponse ConsultarTodosAsignaturasDtg()
-        //{
-        //    try
-        //    {
-        //        List<Asignaturas> asignatura = AsignaturaRepository.ConsultarTodosAsignaturasDtg();
-        //        if (asignatura != null)
-        //        {
-        //            return new ConsultaCandidatoResponse(asignatura);
-        //        }
-        //        else
-        //        {
-        //            return new ConsultaCandidatoResponse("La asignatura buscado no se encuentra Registrado");
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-
-        //        return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
-        //    }
-        //}
-
-        //public class ConsultaCandidatoResponse
-        //{
-        //    public List<Asignaturas> Asignatura { get; set; }
-        //    public string Message { get; set; }
-
-        //    public ConsultaCandidatoResponse(List<Asignaturas> asignatura)
-        //    {
-        //        Asignatura = new List<Asignaturas>();
-        //        Asignatura = asignatura;
-        //    }
-        //    public ConsultaCandidatoResponse(string message)
-        //    {
-        //        Message = message;
-        //    }
-        //}
-
+  
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---------Docente--------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
@@ -473,8 +832,9 @@ namespace BLL
                 Message = message;
             }
         }
-        //////////////////////////////////------------------------///////////////////////////////////////
-        /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
-        ////////////////////////////////------------------------///////////////////////////////////////
     }
+    //////////////////////////////////------------------------///////////////////////////////////////
+    /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
+    ////////////////////////////////------------------------///////////////////////////////////////
+
 }

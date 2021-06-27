@@ -25,6 +25,7 @@ namespace Design_Dashboard_Modern
             errorProvider1.SetError(TxtNombre, "");
             errorProvider1.SetError(CmbCreditos, "");
             errorProvider1.SetError(CmbTipoAsignatura, "");
+            errorProvider1.SetError(CmbPrograma, "");
         }
 
         private bool validarcampos()
@@ -39,6 +40,11 @@ namespace Design_Dashboard_Modern
             {
                 ok = false;
                 errorProvider1.SetError(TxtCodigo, "Por Favor Ingrese el codigo");
+            }
+            if (CmbPrograma.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(CmbPrograma, "Este Campo Es Obligatorio");
             }
             if (CmbCreditos.Text == "")
             {
@@ -103,7 +109,7 @@ namespace Design_Dashboard_Modern
             Asignaturas asignatura = new Asignaturas();
             asignatura.Codigo = TxtCodigo.Text;
             asignatura.Nombre = TxtNombre.Text;
-            asignatura.Programa = TxtPrograma.Text;
+            asignatura.Programa = CmbPrograma.Text;
             asignatura.TipoAsignatura = CmbTipoAsignatura.Text;
             asignatura.Creditos = int.Parse(CmbCreditos.Text);        
             return asignatura;
@@ -117,7 +123,7 @@ namespace Design_Dashboard_Modern
         {
             TxtCodigo.Text = "";
             TxtNombre.Text = "";
-            TxtPrograma.Text = "INGENIERIA DE SISTEMAS";           
+            CmbPrograma.Text = "";           
             CmbTipoAsignatura.Text = "";
             CmbCreditos.Text = "";
         }
@@ -133,7 +139,7 @@ namespace Design_Dashboard_Modern
                 {
                     Asignaturas asignatura = respuesta.Asignatura;
                     TxtNombre.Text = asignatura.Nombre;
-                    TxtPrograma.Text = asignatura.Programa;                 
+                    CmbPrograma.Text = asignatura.Programa;                 
                     CmbTipoAsignatura.Text = asignatura.TipoAsignatura;
                     CmbCreditos.Text = asignatura.Creditos.ToString();
                     MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -229,6 +235,11 @@ namespace Design_Dashboard_Modern
         private void CmbTipoAsignatura_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             errorProvider1.SetError(CmbTipoAsignatura, "");
+        }
+
+        private void CmbPrograma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(CmbPrograma, "");
         }
     }
 }

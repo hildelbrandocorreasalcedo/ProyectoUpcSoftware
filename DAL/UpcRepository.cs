@@ -52,16 +52,16 @@ namespace DAL
         public List<Asignaturas> ConsultarTodosAsignaturasDtg()
         {
             List<Asignaturas> asignaturas = new List<Asignaturas>();
-            FileStream fileStream = new FileStream(FileAsignatura, FileMode.OpenOrCreate, FileAccess.Read);
-            StreamReader lector = new StreamReader(fileStream);
+            FileStream file = new FileStream(FileAsignatura, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader reader = new StreamReader(file);
             string linea = string.Empty;
-            while ((linea = lector.ReadLine()) != null)
+            while ((linea = reader.ReadLine()) != null)
             {
-                Asignaturas asignatura = MapearAsignatura(linea);
-                asignaturas.Add(asignatura);
+                Asignaturas Asignatura = MapearAsignatura(linea);
+                asignaturas.Add(Asignatura);
             }
-            lector.Close();
-            fileStream.Close();
+            reader.Close();
+            file.Close();
             return asignaturas;
         }
 
@@ -126,7 +126,356 @@ namespace DAL
             }
             return null;
         }
+        public Asignaturas BuscarPorCodigo(string codigo)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            foreach (var item in asignaturas)
+            {
+                if (Encontrado(item.Codigo, codigo))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        private bool Encontrado(string identificacioRegistrada, string identificacionBuscada)
+        {
+            return identificacioRegistrada == identificacionBuscada;
+        }
+        //////////////////////////////////////-------------Filtros busqueda en tabla LINQ----------////////////////////////////////////
+        public List<Asignaturas> FiltrarTeoricoPractico(string tipoAsignatura)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaturaFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.TipoAsignatura.Equals("Teorico/Practico")
+                 select asignarura).ToList();
+            return asignaturaFiltradas;
+        }
         
+        public List<Asignaturas> FiltrarTeorico(string tipoAsignatura)
+        {
+
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaturaFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.TipoAsignatura.Equals("Teorico")
+                 select asignarura).ToList();
+            return asignaturaFiltradas;
+        }
+        public List<Asignaturas> FiltrarPractico(string tipoAsignatura)
+        {
+
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaturaFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.TipoAsignatura.Equals("Practico")
+                 select asignarura).ToList();
+            return asignaturaFiltradas;
+        }
+
+        public List<Asignaturas> BuscarDtg(string codigo)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaturaFiltradasBuscado =
+                (from asignarura in asignaturas
+                 where asignarura.Codigo.Equals(codigo)
+                 select asignarura).ToList();
+            return asignaturaFiltradasBuscado;
+        }
+
+        public int TotalizarTodasAsignaturas()
+        {
+            return ConsultarTodosAsignaturasDtg().Count();
+        }
+        public int ContarTeoricoPractico()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.TipoAsignatura == "Teorico/Practico").Count();
+        }
+        public int ContarTeorico()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.TipoAsignatura == "Teorico").Count();
+        }
+        public int ContarPractico()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.TipoAsignatura == "Practico").Count();
+        }
+
+        public List<Asignaturas> FiltrarProgramaADMINISTRACION_EMPRESAS(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("ADMINISTRACION DE EMPRESAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaADMINISTRACION_TURISTICAS(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("ADMINISTRACION DE EMPRESAS TURISTICAS Y HOTELERAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaCOMERCIO_INTERNACIONAL(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("COMERCIO INTERNACIONAL")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaCONTADURIA_PUBLICA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("CONTADURIA PUBLICA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaDERECHO(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("DERECHO")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaECONOMIA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("ECONOMIA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaENFERMERIA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("ENFERMERIA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaINGENIERIA_AGROINDUSTRIAL(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("INGENIERIA AGROINDUSTRIAL")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaINGENIERIA_AMBIENTAL(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("INGENIERIA AMBIENTAL Y SANITARIAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaINGENIERIA_SISTEMAS(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("INGENIERIA SISTEMAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaINGENIERIA_ELECTRONICA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("INGENIERIA ELECTRONICA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaINSTRUMENTACION_QUIRURGICA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("INSTRUMENTACION QUIRURGICA SOCIOLOGIA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_ARTE(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN ARTE")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_NATURALES(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN CIENCIAS NATURALES Y EDUCACION AMBIENTAL")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_DEPORTES(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN EDUCACION FISICA, RECREACION Y DEPORTES")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_ESPANOL_INGLES(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN ESPAÑOL E INGLES")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_LITERATURA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN LITERATURA Y LENGUAS CASTELLANAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaLICENCIATURA_MATEMATICAS(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("LICENCIATURA EN MATEMATICAS")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaMICROBIOLOGIA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("MICROBIOLOGIA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaMUSICA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("MUSICA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public List<Asignaturas> FiltrarProgramaPSICOLOGIA(string programa)
+        {
+            List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
+            List<Asignaturas> asignaruraFiltradas =
+                (from asignarura in asignaturas
+                 where asignarura.Programa.Equals("PSICOLOGIA")
+                 select asignarura).ToList();
+            return asignaruraFiltradas;
+        }
+        public int ContarProgramaADMINISTRACION_EMPRESAS()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "ADMINISTRACION DE EMPRESAS").Count();
+        }
+        public int ContarProgramaADMINISTRACION_TURISTICAS()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "ADMINISTRACION DE EMPRESAS TURISTICAS Y HOTELERAS").Count();
+        }
+        public int ContarProgramaCOMERCIO_INTERNACIONAL()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "COMERCIO INTERNACIONAL").Count();
+        }
+        public int ContarProgramaCONTADURIA_PUBLICA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "CONTADURIA PUBLICA").Count();
+        }
+        public int ContarProgramaDERECHO()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "DERECHO").Count();
+        }
+        public int ContarProgramaECONOMIA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "ECONOMIA").Count();
+        }
+        public int ContarProgramaENFERMERIA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "ENFERMERIA").Count();
+        }
+        public int ContarProgramaINGENIERIA_AGROINDUSTRIAL()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "INGENIERIA AGROINDUSTRIAL").Count();
+        }
+        public int ContarProgramaINGENIERIA_AMBIENTAL()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "INGENIERIA AMBIENTAL Y SANITARIAS").Count();
+        }
+        public int ContarProgramaINGENIERIA_SISTEMAS()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "INGENIERIA SISTEMAS").Count();
+        }
+        public int ContarProgramaINGENIERIA_ELECTRONICA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "INGENIERIA ELECTRONICA").Count();
+        }
+        public int ContarProgramaINSTRUMENTACION_QUIRURGICA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "INSTRUMENTACION QUIRURGICA SOCIOLOGIA").Count();
+        }
+        public int ContarProgramaLICENCIATURA_ARTE()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN ARTE").Count();
+        }
+        public int ContarProgramaLICENCIATURA_NATURALES()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN CIENCIAS NATURALES Y EDUCACION AMBIENTAL").Count();
+        }
+        public int ContarProgramaLICENCIATURA_DEPORTES()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN EDUCACION FISICA, RECREACION Y DEPORTES").Count();
+        }
+        public int ContarProgramaLICENCIATURA_INGLES()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN ESPAÑOL E INGLES").Count();
+        }
+        public int ContarProgramaLICENCIATURA_LITERATURA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN LITERATURA Y LENGUAS CASTELLANAS").Count();
+        }
+        public int ContarProgramaLICENCIATURA_MATEMATICAS()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "LICENCIATURA EN MATEMATICAS").Count();
+        }
+        public int ContarProgramaMICROBIOLOGIA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "MICROBIOLOGIA").Count();
+        }
+        public int ContarProgramaMUSICA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "MUSICA").Count();
+        }
+        public int ContarProgramaPSICOLOGIA()
+        {
+            return ConsultarTodosAsignaturasDtg().Where(p => p.Programa == "PSICOLOGIA").Count();
+        }
+
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---------Docente--------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
@@ -184,7 +533,6 @@ namespace DAL
             return docente;
         }
 
-
         public void EliminarDocente(string identificacion)
         {
             docentes.Clear();
@@ -199,7 +547,6 @@ namespace DAL
                 }
             }
         }
-
         public void ModificarDocente(Docentes docente)
         {
             docentes.Clear();
@@ -218,7 +565,6 @@ namespace DAL
                 }
             }
         }
-
         public Docentes BuscarDocente(string identificacion)
         {
             docentes.Clear();
@@ -233,6 +579,8 @@ namespace DAL
             }
             return null;
         }
+
+
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////-----Plan Asignatura----///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////

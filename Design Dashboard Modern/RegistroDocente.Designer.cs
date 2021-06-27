@@ -347,7 +347,7 @@ namespace Design_Dashboard_Modern
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(46, 217);
+            this.label4.Location = new System.Drawing.Point(46, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 67;
@@ -390,7 +390,7 @@ namespace Design_Dashboard_Modern
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(46, 257);
+            this.label8.Location = new System.Drawing.Point(46, 263);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 20);
             this.label8.TabIndex = 80;
@@ -399,7 +399,7 @@ namespace Design_Dashboard_Modern
             // TxtTelefono
             // 
             this.TxtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefono.Location = new System.Drawing.Point(159, 211);
+            this.TxtTelefono.Location = new System.Drawing.Point(159, 217);
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(183, 26);
             this.TxtTelefono.TabIndex = 81;
@@ -408,7 +408,7 @@ namespace Design_Dashboard_Modern
             // TxtCorreo
             // 
             this.TxtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(159, 251);
+            this.TxtCorreo.Location = new System.Drawing.Point(159, 257);
             this.TxtCorreo.Name = "TxtCorreo";
             this.TxtCorreo.Size = new System.Drawing.Size(302, 26);
             this.TxtCorreo.TabIndex = 82;

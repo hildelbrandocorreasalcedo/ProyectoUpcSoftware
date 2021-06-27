@@ -54,9 +54,9 @@ namespace Design_Dashboard_Modern
             this.label3 = new System.Windows.Forms.Label();
             this.CmbCreditos = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TxtPrograma = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.CmbTipoAsignatura = new System.Windows.Forms.ComboBox();
+            this.CmbPrograma = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -477,16 +477,6 @@ namespace Design_Dashboard_Modern
             this.label5.TabIndex = 64;
             this.label5.Text = "Programa academico";
             // 
-            // TxtPrograma
-            // 
-            this.TxtPrograma.Enabled = false;
-            this.TxtPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrograma.Location = new System.Drawing.Point(196, 203);
-            this.TxtPrograma.Name = "TxtPrograma";
-            this.TxtPrograma.Size = new System.Drawing.Size(307, 26);
-            this.TxtPrograma.TabIndex = 65;
-            this.TxtPrograma.Text = "INGENIERIA DE SISTEMAS";
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -498,14 +488,48 @@ namespace Design_Dashboard_Modern
             this.CmbTipoAsignatura.FormattingEnabled = true;
             this.CmbTipoAsignatura.Items.AddRange(new object[] {
             "",
-            "Teorica/Practica",
-            "Teorica",
-            "Practica"});
+            "Teorico/Practico",
+            "Teorico",
+            "Practico"});
             this.CmbTipoAsignatura.Location = new System.Drawing.Point(197, 248);
             this.CmbTipoAsignatura.Name = "CmbTipoAsignatura";
-            this.CmbTipoAsignatura.Size = new System.Drawing.Size(229, 28);
+            this.CmbTipoAsignatura.Size = new System.Drawing.Size(243, 28);
             this.CmbTipoAsignatura.TabIndex = 66;
             this.CmbTipoAsignatura.SelectedIndexChanged += new System.EventHandler(this.CmbTipoAsignatura_SelectedIndexChanged_1);
+            // 
+            // CmbPrograma
+            // 
+            this.CmbPrograma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbPrograma.FormattingEnabled = true;
+            this.CmbPrograma.Items.AddRange(new object[] {
+            "",
+            "ADMINISTRACION DE EMPRESAS",
+            "ADMINISTRACION DE EMPRESAS TURISTICAS Y HOTELERAS",
+            "COMERCIO INTERNACIONAL",
+            "CONTADURIA PUBLICA ",
+            "DERECHO",
+            "ECONOMIA",
+            "ENFERMERIA",
+            "INGENIERIA AGROINDUSTRIAL ",
+            "INGENIERIA AMBIENTAL Y SANITARIAS",
+            "INGENIERIA SISTEMAS",
+            "INGENIERIA ELECTRONICA",
+            "INSTRUMENTACION QUIRURGICA SOCIOLOGIA",
+            "LICENCIATURA EN ARTE",
+            "LICENCIATURA EN CIENCIAS NATURALES Y EDUCACION AMBIENTAL",
+            "LICENCIATURA EN EDUCACION FISICA, RECREACION Y DEPORTES",
+            "LICENCIATURA EN ESPAÑOL E INGLES",
+            "LICENCIATURA EN LITERATURA Y LENGUAS CASTELLANAS",
+            "LICENCIATURA EN MATEMATICAS",
+            "MICROBIOLOGIA",
+            "MUSICA",
+            "PSICOLOGIA"});
+            this.CmbPrograma.Location = new System.Drawing.Point(196, 201);
+            this.CmbPrograma.Name = "CmbPrograma";
+            this.CmbPrograma.Size = new System.Drawing.Size(308, 28);
+            this.CmbPrograma.TabIndex = 67;
+            this.CmbPrograma.SelectedIndexChanged += new System.EventHandler(this.CmbPrograma_SelectedIndexChanged);
             // 
             // RegistroAsignatura
             // 
@@ -513,8 +537,8 @@ namespace Design_Dashboard_Modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(845, 501);
+            this.Controls.Add(this.CmbPrograma);
             this.Controls.Add(this.CmbTipoAsignatura);
-            this.Controls.Add(this.TxtPrograma);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CmbCreditos);
             this.Controls.Add(this.label3);
@@ -573,8 +597,8 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CmbCreditos;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TxtPrograma;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ComboBox CmbTipoAsignatura;
+        private System.Windows.Forms.ComboBox CmbPrograma;
     }
 }

@@ -1,4 +1,12 @@
-﻿using BLL;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using BLL;
 using ENTITY;
 using System;
 using System.Windows.Forms;
@@ -17,7 +25,7 @@ namespace Design_Dashboard_Modern
         private void BtLLenarDescripcion_Click(object sender, EventArgs e)
         {
             LLenarDescripcion abrir = new LLenarDescripcion();
-            AddOwnedForm(abrir);
+            AddOwnedForm(abrir);          
             abrir.TxtDescripcionFrom.Text = TxtDescripcion.Text;
             abrir.ShowDialog();      
         }

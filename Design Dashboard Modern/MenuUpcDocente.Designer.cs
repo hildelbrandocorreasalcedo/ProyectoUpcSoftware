@@ -266,8 +266,7 @@
             this.BtRegistrarSolicitudActualizacionPlan.BackColor = System.Drawing.Color.Transparent;
             this.BtRegistrarSolicitudActualizacionPlan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtRegistrarSolicitudActualizacionPlan.BorderRadius = 0;
-            this.BtRegistrarSolicitudActualizacionPlan.ButtonText = "        REGISTRAR SOLICITUD            ACTUALIZACION DEL PLAN                  DE" +
-    " ASIGNATURA";
+            this.BtRegistrarSolicitudActualizacionPlan.ButtonText = "      SOLICITUD  ACTUALIZACION         DEL PLAN DE  ASIGNATURA";
             this.BtRegistrarSolicitudActualizacionPlan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarSolicitudActualizacionPlan, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BtRegistrarSolicitudActualizacionPlan, BunifuAnimatorNS.DecorationType.None);
@@ -294,8 +293,7 @@
             this.BtRegistrarSolicitudActualizacionPlan.selected = false;
             this.BtRegistrarSolicitudActualizacionPlan.Size = new System.Drawing.Size(244, 46);
             this.BtRegistrarSolicitudActualizacionPlan.TabIndex = 30;
-            this.BtRegistrarSolicitudActualizacionPlan.Text = "        REGISTRAR SOLICITUD            ACTUALIZACION DEL PLAN                  DE" +
-    " ASIGNATURA";
+            this.BtRegistrarSolicitudActualizacionPlan.Text = "      SOLICITUD  ACTUALIZACION         DEL PLAN DE  ASIGNATURA";
             this.BtRegistrarSolicitudActualizacionPlan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarSolicitudActualizacionPlan.Textcolor = System.Drawing.Color.LightGray;
             this.BtRegistrarSolicitudActualizacionPlan.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);

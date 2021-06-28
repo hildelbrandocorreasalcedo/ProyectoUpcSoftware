@@ -85,8 +85,6 @@ namespace Design_Dashboard_Modern
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labNombre = new System.Windows.Forms.Label();
-            this.PanelColor = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel6 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -106,8 +104,6 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel7.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
-            this.PanelColor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -1044,38 +1040,12 @@ namespace Design_Dashboard_Modern
             this.labNombre.TabIndex = 256;
             this.labNombre.Text = "Justificacion";
             // 
-            // PanelColor
-            // 
-            this.PanelColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelColor.BackgroundImage")));
-            this.PanelColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelColor.Controls.Add(this.pictureBox1);
-            this.PanelColor.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.PanelColor.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.PanelColor.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.PanelColor.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.PanelColor.Location = new System.Drawing.Point(892, 8);
-            this.PanelColor.Name = "PanelColor";
-            this.PanelColor.Quality = 10;
-            this.PanelColor.Size = new System.Drawing.Size(118, 102);
-            this.PanelColor.TabIndex = 255;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(194, 6);
+            this.label1.Location = new System.Drawing.Point(201, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(615, 44);
             this.label1.TabIndex = 254;
@@ -1233,7 +1203,6 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labNombre);
-            this.Controls.Add(this.PanelColor);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroPlanAsignaturas";
@@ -1252,8 +1221,6 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel7.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel3.ResumeLayout(false);
-            this.PanelColor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -1309,8 +1276,6 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labNombre;
-        private Bunifu.Framework.UI.BunifuGradientPanel PanelColor;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel6;
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;

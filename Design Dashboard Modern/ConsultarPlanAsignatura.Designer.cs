@@ -29,6 +29,7 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarPlanAsignatura));
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,6 +86,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarJustificacion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtLLenarDescripcion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PanelColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel4.SuspendLayout();
@@ -99,6 +101,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel7.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label14
@@ -242,13 +245,11 @@ namespace Design_Dashboard_Modern
             this.CmbAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbAsignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbAsignatura.FormattingEnabled = true;
-            this.CmbAsignatura.Items.AddRange(new object[] {
-            "Docente ocacional",
-            "Docente catedratico"});
             this.CmbAsignatura.Location = new System.Drawing.Point(165, 68);
             this.CmbAsignatura.Name = "CmbAsignatura";
             this.CmbAsignatura.Size = new System.Drawing.Size(299, 28);
             this.CmbAsignatura.TabIndex = 121;
+            this.CmbAsignatura.SelectedIndexChanged += new System.EventHandler(this.CmbAsignatura_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -388,6 +389,7 @@ namespace Design_Dashboard_Modern
             this.TxtReferenciaBibliografica.Name = "TxtReferenciaBibliografica";
             this.TxtReferenciaBibliografica.Size = new System.Drawing.Size(685, 61);
             this.TxtReferenciaBibliografica.TabIndex = 160;
+            this.TxtReferenciaBibliografica.TextChanged += new System.EventHandler(this.TxtReferenciaBibliografica_TextChanged);
             // 
             // TxtEstrategias
             // 
@@ -397,6 +399,7 @@ namespace Design_Dashboard_Modern
             this.TxtEstrategias.Name = "TxtEstrategias";
             this.TxtEstrategias.Size = new System.Drawing.Size(685, 63);
             this.TxtEstrategias.TabIndex = 159;
+            this.TxtEstrategias.TextChanged += new System.EventHandler(this.TxtEstrategias_TextChanged);
             // 
             // TxtContenido
             // 
@@ -406,6 +409,7 @@ namespace Design_Dashboard_Modern
             this.TxtContenido.Name = "TxtContenido";
             this.TxtContenido.Size = new System.Drawing.Size(685, 84);
             this.TxtContenido.TabIndex = 158;
+            this.TxtContenido.TextChanged += new System.EventHandler(this.TxtContenido_TextChanged);
             // 
             // TxtComponentesGenericos
             // 
@@ -415,6 +419,7 @@ namespace Design_Dashboard_Modern
             this.TxtComponentesGenericos.Name = "TxtComponentesGenericos";
             this.TxtComponentesGenericos.Size = new System.Drawing.Size(685, 63);
             this.TxtComponentesGenericos.TabIndex = 157;
+            this.TxtComponentesGenericos.TextChanged += new System.EventHandler(this.TxtComponentesGenericos_TextChanged);
             // 
             // TxtJustificacion
             // 
@@ -424,6 +429,7 @@ namespace Design_Dashboard_Modern
             this.TxtJustificacion.Name = "TxtJustificacion";
             this.TxtJustificacion.Size = new System.Drawing.Size(685, 61);
             this.TxtJustificacion.TabIndex = 156;
+            this.TxtJustificacion.TextChanged += new System.EventHandler(this.TxtJustificacion_TextChanged);
             // 
             // TxtMecanismoEvaluativo
             // 
@@ -433,6 +439,7 @@ namespace Design_Dashboard_Modern
             this.TxtMecanismoEvaluativo.Name = "TxtMecanismoEvaluativo";
             this.TxtMecanismoEvaluativo.Size = new System.Drawing.Size(685, 61);
             this.TxtMecanismoEvaluativo.TabIndex = 155;
+            this.TxtMecanismoEvaluativo.TextChanged += new System.EventHandler(this.TxtMecanismoEvaluativo_TextChanged);
             // 
             // TxtObjetivoEspecifico
             // 
@@ -442,6 +449,7 @@ namespace Design_Dashboard_Modern
             this.TxtObjetivoEspecifico.Name = "TxtObjetivoEspecifico";
             this.TxtObjetivoEspecifico.Size = new System.Drawing.Size(685, 63);
             this.TxtObjetivoEspecifico.TabIndex = 154;
+            this.TxtObjetivoEspecifico.TextChanged += new System.EventHandler(this.TxtObjetivoEspecifico_TextChanged);
             // 
             // TxtObjetivoGeneral
             // 
@@ -451,6 +459,7 @@ namespace Design_Dashboard_Modern
             this.TxtObjetivoGeneral.Name = "TxtObjetivoGeneral";
             this.TxtObjetivoGeneral.Size = new System.Drawing.Size(685, 45);
             this.TxtObjetivoGeneral.TabIndex = 153;
+            this.TxtObjetivoGeneral.TextChanged += new System.EventHandler(this.TxtObjetivoGeneral_TextChanged);
             // 
             // TxtDescripcion
             // 
@@ -460,6 +469,7 @@ namespace Design_Dashboard_Modern
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(685, 61);
             this.TxtDescripcion.TabIndex = 152;
+            this.TxtDescripcion.TextChanged += new System.EventHandler(this.TxtDescripcion_TextChanged);
             // 
             // bunifuGradientPanel6
             // 
@@ -508,6 +518,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // bunifuGradientPanel5
             // 
@@ -556,6 +567,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
             // 
             // bunifuGradientPanel13
             // 
@@ -1007,6 +1019,10 @@ namespace Design_Dashboard_Modern
             this.BtLLenarDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.BtLLenarDescripcion.Click += new System.EventHandler(this.BtLLenarDescripcion_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ConsultarPlanAsignatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1059,6 +1075,7 @@ namespace Design_Dashboard_Modern
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarPlanAsignatura";
             this.Text = "ConsultarPlanAsignatura";
+            this.Load += new System.EventHandler(this.ConsultarPlanAsignatura_Load);
             this.PanelColor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel4.ResumeLayout(false);
@@ -1073,6 +1090,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel7.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1135,5 +1153,6 @@ namespace Design_Dashboard_Modern
         public System.Windows.Forms.TextBox TxtObjetivoEspecifico;
         public System.Windows.Forms.TextBox TxtObjetivoGeneral;
         public System.Windows.Forms.TextBox TxtDescripcion;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

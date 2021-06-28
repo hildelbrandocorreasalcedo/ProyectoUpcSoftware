@@ -130,7 +130,7 @@ namespace Design_Dashboard_Modern
 
         private void BtRespuestaFormatoDocente_Click(object sender, EventArgs e)
         {
-            openChildForm(new SolicitudActualicionDocente());
+            openChildForm(new RespuestaFormatoDocente());
         }
 
         private void BTAsignaturas_Click(object sender, EventArgs e)

@@ -13,15 +13,19 @@ namespace DAL
         private readonly string FileAsignatura = "Asignaturas.txt";
         private readonly string FileDocente = "Docentes.txt";
         private readonly string FilePlanAsignatura = "PlanAsignaturas.txt";
+        private readonly string FileSolicitudDocente = "SolicitudDocente.txt";
 
         public IList<Asignaturas> asignaturas;
         public IList<Docentes> docentes;
         public IList<PlanAsignaturas> planAsignaturas;
+        public IList<SolicitudDocentes> solicitudDocentes;
+
         public UpcRepository()
         {
             asignaturas = new List<Asignaturas>();
             docentes = new List<Docentes>();
             planAsignaturas = new List<PlanAsignaturas>();
+            solicitudDocentes = new List<SolicitudDocentes>();
         }
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////------Asignaturas-------///////////////////////////////////////
@@ -647,63 +651,6 @@ namespace DAL
         /////////////////////////////////-----Plan Asignatura----///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
 
-        //public void GuardarAsignatura(PlanAsignaturas planAsignatura)
-        //{
-        //    FileStream file = new FileStream(FilePlanAsignatura, FileMode.Append);
-        //    StreamWriter writer = new StreamWriter(file);
-        //    writer.WriteLine($"{planAsignatura.Materia};{planAsignatura.Descripcion};{planAsignatura.Justificacion};{planAsignatura.ObjetivoGeneral};{planAsignatura.ObjetivoEspecifico};{planAsignatura.ComponeteGenerico};{planAsignatura.Estrategias};{planAsignatura.Contenidos};{planAsignatura.MecanismosEvaluacion};{planAsignatura.ReferenciasBibliograficas}");
-        //    writer.Close();
-        //    file.Close();
-        //}
-
-        //public IList<PlanAsignaturas> ConsultarTodosPlanAsignaturas()
-        //{
-        //    FileStream fileStream = new FileStream(FilePlanAsignatura, FileMode.OpenOrCreate);
-        //    StreamReader lector = new StreamReader(fileStream);
-        //    string linea = string.Empty;
-        //    while ((linea = lector.ReadLine()) != null)
-        //    {
-        //        PlanAsignaturas planAsignatura = MapearPlanAsignatura(linea);
-        //        planAsignaturas.Add(planAsignatura);
-        //    }
-        //    lector.Close();
-        //    fileStream.Close();
-        //    return planAsignaturas;
-        //}
-        //public List<PlanAsignaturas> ConsultarTodosPlanAsignaturasDtg()
-        //{
-        //    List<PlanAsignaturas> planAsignaturas = new List<PlanAsignaturas>();
-        //    FileStream file = new FileStream(FilePlanAsignatura, FileMode.OpenOrCreate, FileAccess.Read);
-        //    StreamReader reader = new StreamReader(file);
-        //    string linea = string.Empty;
-        //    while ((linea = reader.ReadLine()) != null)
-        //    {
-        //        PlanAsignaturas planAsignatura = MapearPlanAsignatura(linea);
-        //        planAsignaturas.Add(planAsignatura);
-        //    }
-        //    reader.Close();
-        //    file.Close();
-        //    return planAsignaturas;
-        //}
-
-        //public PlanAsignaturas MapearPlanAsignatura(string linea)
-        //{
-        //    PlanAsignaturas planAsignatura = new PlanAsignaturas();
-        //    string[] datos = linea.Split(';');
-        //    planAsignatura.Materia = datos[0];
-        //    planAsignatura.Descripcion = datos[1];
-        //    planAsignatura.Justificacion = datos[2];
-        //    planAsignatura.ObjetivoGeneral = datos[3];
-        //    planAsignatura.ObjetivoEspecifico = int.Parse(datos[4]);
-        //    planAsignatura.ComponeteGenerico = datos[5];
-        //    planAsignatura.Estrategias = datos[6];
-        //    planAsignatura.Contenidos = datos[7];
-        //    planAsignatura.MecanismosEvaluacion = int.Parse(datos[8]);
-        //    planAsignatura.ReferenciasBibliograficas = int.Parse(datos[9]);
-
-        //    return planAsignatura;
-        //}
-
 
         public void GuardarPlanAsignatura(PlanAsignaturas planAsignatura)
         {
@@ -778,6 +725,7 @@ namespace DAL
                 }
             }
         }
+        
         public void ModificarPlanAsignatura(PlanAsignaturas planAsignatura)
         {
             planAsignaturas.Clear();

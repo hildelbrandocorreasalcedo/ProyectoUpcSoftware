@@ -41,11 +41,6 @@ namespace Design_Dashboard_Modern
             this.TxtTotalDocentes = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.DtgDocente = new System.Windows.Forms.DataGridView();
-            this.CmbFiltro = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
             this.Identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +48,11 @@ namespace Design_Dashboard_Modern
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Asignatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmbFiltro = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
             this.TxtTotalCategoria = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel3.SuspendLayout();
@@ -109,6 +109,7 @@ namespace Design_Dashboard_Modern
             this.BtFiltroTipoDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtFiltroTipoDocente.Textcolor = System.Drawing.Color.White;
             this.BtFiltroTipoDocente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtFiltroTipoDocente.Click += new System.EventHandler(this.BtFiltroTipoDocente_Click);
             // 
             // bunifuGradientPanel6
             // 
@@ -157,6 +158,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -185,6 +187,7 @@ namespace Design_Dashboard_Modern
             this.button1.TabIndex = 13;
             this.button1.Text = "CANCELAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bunifuGradientPanel5
             // 
@@ -233,6 +236,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
             // 
             // TxtTotalDocentes
             // 
@@ -271,15 +275,50 @@ namespace Design_Dashboard_Modern
             this.DtgDocente.Size = new System.Drawing.Size(748, 269);
             this.DtgDocente.TabIndex = 85;
             // 
+            // Identificacion
+            // 
+            this.Identificacion.HeaderText = "Identificacion";
+            this.Identificacion.Name = "Identificacion";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            // 
+            // Asignatura
+            // 
+            this.Asignatura.HeaderText = "Asignatura";
+            this.Asignatura.Name = "Asignatura";
+            // 
             // CmbFiltro
             // 
             this.CmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbFiltro.FormattingEnabled = true;
             this.CmbFiltro.Items.AddRange(new object[] {
-            "SI",
-            "NO",
-            "TODOS"});
+            "TODAS LAS ASIGNATURAS",
+            "Docente ocacional",
+            "Docente catedratico"});
             this.CmbFiltro.Location = new System.Drawing.Point(501, 69);
             this.CmbFiltro.Name = "CmbFiltro";
             this.CmbFiltro.Size = new System.Drawing.Size(254, 28);
@@ -325,41 +364,6 @@ namespace Design_Dashboard_Modern
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(148, 26);
             this.TxtIdentificacion.TabIndex = 77;
-            // 
-            // Identificacion
-            // 
-            this.Identificacion.HeaderText = "Identificacion";
-            this.Identificacion.Name = "Identificacion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.Name = "Correo";
-            // 
-            // Categoria
-            // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.Name = "Categoria";
-            // 
-            // Asignatura
-            // 
-            this.Asignatura.HeaderText = "Asignatura";
-            this.Asignatura.Name = "Asignatura";
             // 
             // TxtTotalCategoria
             // 

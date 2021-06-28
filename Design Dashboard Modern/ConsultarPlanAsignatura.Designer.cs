@@ -67,11 +67,38 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel13 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel12 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarMecanismoEvaluacion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel11 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarContenidos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel10 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarEstrategiasPedagogicas = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel9 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarComponentesGenericos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel8 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarObjetivosEspecificos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel7 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarObjetivoGeneral = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarJustificacion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtLLenarDescripcion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PanelColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
+            this.bunifuGradientPanel13.SuspendLayout();
+            this.bunifuGradientPanel12.SuspendLayout();
+            this.bunifuGradientPanel11.SuspendLayout();
+            this.bunifuGradientPanel10.SuspendLayout();
+            this.bunifuGradientPanel9.SuspendLayout();
+            this.bunifuGradientPanel8.SuspendLayout();
+            this.bunifuGradientPanel7.SuspendLayout();
+            this.bunifuGradientPanel2.SuspendLayout();
+            this.bunifuGradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label14
@@ -351,6 +378,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // TxtReferenciaBibliografica
             // 
@@ -358,7 +386,7 @@ namespace Design_Dashboard_Modern
             this.TxtReferenciaBibliografica.Location = new System.Drawing.Point(165, 664);
             this.TxtReferenciaBibliografica.Multiline = true;
             this.TxtReferenciaBibliografica.Name = "TxtReferenciaBibliografica";
-            this.TxtReferenciaBibliografica.Size = new System.Drawing.Size(852, 61);
+            this.TxtReferenciaBibliografica.Size = new System.Drawing.Size(685, 61);
             this.TxtReferenciaBibliografica.TabIndex = 160;
             // 
             // TxtEstrategias
@@ -367,7 +395,7 @@ namespace Design_Dashboard_Modern
             this.TxtEstrategias.Location = new System.Drawing.Point(165, 438);
             this.TxtEstrategias.Multiline = true;
             this.TxtEstrategias.Name = "TxtEstrategias";
-            this.TxtEstrategias.Size = new System.Drawing.Size(852, 63);
+            this.TxtEstrategias.Size = new System.Drawing.Size(685, 63);
             this.TxtEstrategias.TabIndex = 159;
             // 
             // TxtContenido
@@ -376,7 +404,7 @@ namespace Design_Dashboard_Modern
             this.TxtContenido.Location = new System.Drawing.Point(165, 507);
             this.TxtContenido.Multiline = true;
             this.TxtContenido.Name = "TxtContenido";
-            this.TxtContenido.Size = new System.Drawing.Size(852, 84);
+            this.TxtContenido.Size = new System.Drawing.Size(685, 84);
             this.TxtContenido.TabIndex = 158;
             // 
             // TxtComponentesGenericos
@@ -385,7 +413,7 @@ namespace Design_Dashboard_Modern
             this.TxtComponentesGenericos.Location = new System.Drawing.Point(165, 369);
             this.TxtComponentesGenericos.Multiline = true;
             this.TxtComponentesGenericos.Name = "TxtComponentesGenericos";
-            this.TxtComponentesGenericos.Size = new System.Drawing.Size(852, 63);
+            this.TxtComponentesGenericos.Size = new System.Drawing.Size(685, 63);
             this.TxtComponentesGenericos.TabIndex = 157;
             // 
             // TxtJustificacion
@@ -394,7 +422,7 @@ namespace Design_Dashboard_Modern
             this.TxtJustificacion.Location = new System.Drawing.Point(165, 182);
             this.TxtJustificacion.Multiline = true;
             this.TxtJustificacion.Name = "TxtJustificacion";
-            this.TxtJustificacion.Size = new System.Drawing.Size(852, 61);
+            this.TxtJustificacion.Size = new System.Drawing.Size(685, 61);
             this.TxtJustificacion.TabIndex = 156;
             // 
             // TxtMecanismoEvaluativo
@@ -403,7 +431,7 @@ namespace Design_Dashboard_Modern
             this.TxtMecanismoEvaluativo.Location = new System.Drawing.Point(165, 597);
             this.TxtMecanismoEvaluativo.Multiline = true;
             this.TxtMecanismoEvaluativo.Name = "TxtMecanismoEvaluativo";
-            this.TxtMecanismoEvaluativo.Size = new System.Drawing.Size(852, 61);
+            this.TxtMecanismoEvaluativo.Size = new System.Drawing.Size(685, 61);
             this.TxtMecanismoEvaluativo.TabIndex = 155;
             // 
             // TxtObjetivoEspecifico
@@ -412,7 +440,7 @@ namespace Design_Dashboard_Modern
             this.TxtObjetivoEspecifico.Location = new System.Drawing.Point(165, 300);
             this.TxtObjetivoEspecifico.Multiline = true;
             this.TxtObjetivoEspecifico.Name = "TxtObjetivoEspecifico";
-            this.TxtObjetivoEspecifico.Size = new System.Drawing.Size(852, 63);
+            this.TxtObjetivoEspecifico.Size = new System.Drawing.Size(685, 63);
             this.TxtObjetivoEspecifico.TabIndex = 154;
             // 
             // TxtObjetivoGeneral
@@ -421,7 +449,7 @@ namespace Design_Dashboard_Modern
             this.TxtObjetivoGeneral.Location = new System.Drawing.Point(165, 249);
             this.TxtObjetivoGeneral.Multiline = true;
             this.TxtObjetivoGeneral.Name = "TxtObjetivoGeneral";
-            this.TxtObjetivoGeneral.Size = new System.Drawing.Size(852, 45);
+            this.TxtObjetivoGeneral.Size = new System.Drawing.Size(685, 45);
             this.TxtObjetivoGeneral.TabIndex = 153;
             // 
             // TxtDescripcion
@@ -430,7 +458,7 @@ namespace Design_Dashboard_Modern
             this.TxtDescripcion.Location = new System.Drawing.Point(165, 115);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(852, 61);
+            this.TxtDescripcion.Size = new System.Drawing.Size(685, 61);
             this.TxtDescripcion.TabIndex = 152;
             // 
             // bunifuGradientPanel6
@@ -529,6 +557,456 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
+            // bunifuGradientPanel13
+            // 
+            this.bunifuGradientPanel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel13.BackgroundImage")));
+            this.bunifuGradientPanel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel13.Controls.Add(this.BtLLenarReferenciasBibliograficas);
+            this.bunifuGradientPanel13.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel13.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel13.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel13.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel13.Location = new System.Drawing.Point(876, 678);
+            this.bunifuGradientPanel13.Name = "bunifuGradientPanel13";
+            this.bunifuGradientPanel13.Quality = 10;
+            this.bunifuGradientPanel13.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel13.TabIndex = 164;
+            // 
+            // BtLLenarReferenciasBibliograficas
+            // 
+            this.BtLLenarReferenciasBibliograficas.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarReferenciasBibliograficas.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarReferenciasBibliograficas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarReferenciasBibliograficas.BorderRadius = 0;
+            this.BtLLenarReferenciasBibliograficas.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarReferenciasBibliograficas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarReferenciasBibliograficas.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarReferenciasBibliograficas.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarReferenciasBibliograficas.Iconimage = null;
+            this.BtLLenarReferenciasBibliograficas.Iconimage_right = null;
+            this.BtLLenarReferenciasBibliograficas.Iconimage_right_Selected = null;
+            this.BtLLenarReferenciasBibliograficas.Iconimage_Selected = null;
+            this.BtLLenarReferenciasBibliograficas.IconMarginLeft = 8;
+            this.BtLLenarReferenciasBibliograficas.IconMarginRight = 0;
+            this.BtLLenarReferenciasBibliograficas.IconRightVisible = true;
+            this.BtLLenarReferenciasBibliograficas.IconRightZoom = 0D;
+            this.BtLLenarReferenciasBibliograficas.IconVisible = true;
+            this.BtLLenarReferenciasBibliograficas.IconZoom = 80D;
+            this.BtLLenarReferenciasBibliograficas.IsTab = false;
+            this.BtLLenarReferenciasBibliograficas.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarReferenciasBibliograficas.Name = "BtLLenarReferenciasBibliograficas";
+            this.BtLLenarReferenciasBibliograficas.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarReferenciasBibliograficas.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarReferenciasBibliograficas.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarReferenciasBibliograficas.selected = false;
+            this.BtLLenarReferenciasBibliograficas.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarReferenciasBibliograficas.TabIndex = 28;
+            this.BtLLenarReferenciasBibliograficas.Text = "     LLENAR CAMPO";
+            this.BtLLenarReferenciasBibliograficas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarReferenciasBibliograficas.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarReferenciasBibliograficas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarReferenciasBibliograficas.Click += new System.EventHandler(this.BtLLenarReferenciasBibliograficas_Click);
+            // 
+            // bunifuGradientPanel12
+            // 
+            this.bunifuGradientPanel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel12.BackgroundImage")));
+            this.bunifuGradientPanel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel12.Controls.Add(this.BtLLenarMecanismoEvaluacion);
+            this.bunifuGradientPanel12.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel12.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel12.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel12.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel12.Location = new System.Drawing.Point(876, 612);
+            this.bunifuGradientPanel12.Name = "bunifuGradientPanel12";
+            this.bunifuGradientPanel12.Quality = 10;
+            this.bunifuGradientPanel12.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel12.TabIndex = 165;
+            // 
+            // BtLLenarMecanismoEvaluacion
+            // 
+            this.BtLLenarMecanismoEvaluacion.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarMecanismoEvaluacion.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarMecanismoEvaluacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarMecanismoEvaluacion.BorderRadius = 0;
+            this.BtLLenarMecanismoEvaluacion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarMecanismoEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarMecanismoEvaluacion.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarMecanismoEvaluacion.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarMecanismoEvaluacion.Iconimage = null;
+            this.BtLLenarMecanismoEvaluacion.Iconimage_right = null;
+            this.BtLLenarMecanismoEvaluacion.Iconimage_right_Selected = null;
+            this.BtLLenarMecanismoEvaluacion.Iconimage_Selected = null;
+            this.BtLLenarMecanismoEvaluacion.IconMarginLeft = 8;
+            this.BtLLenarMecanismoEvaluacion.IconMarginRight = 0;
+            this.BtLLenarMecanismoEvaluacion.IconRightVisible = true;
+            this.BtLLenarMecanismoEvaluacion.IconRightZoom = 0D;
+            this.BtLLenarMecanismoEvaluacion.IconVisible = true;
+            this.BtLLenarMecanismoEvaluacion.IconZoom = 80D;
+            this.BtLLenarMecanismoEvaluacion.IsTab = false;
+            this.BtLLenarMecanismoEvaluacion.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarMecanismoEvaluacion.Name = "BtLLenarMecanismoEvaluacion";
+            this.BtLLenarMecanismoEvaluacion.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarMecanismoEvaluacion.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarMecanismoEvaluacion.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarMecanismoEvaluacion.selected = false;
+            this.BtLLenarMecanismoEvaluacion.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarMecanismoEvaluacion.TabIndex = 28;
+            this.BtLLenarMecanismoEvaluacion.Text = "     LLENAR CAMPO";
+            this.BtLLenarMecanismoEvaluacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarMecanismoEvaluacion.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarMecanismoEvaluacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarMecanismoEvaluacion.Click += new System.EventHandler(this.BtLLenarMecanismoEvaluacion_Click);
+            // 
+            // bunifuGradientPanel11
+            // 
+            this.bunifuGradientPanel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel11.BackgroundImage")));
+            this.bunifuGradientPanel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel11.Controls.Add(this.BtLLenarContenidos);
+            this.bunifuGradientPanel11.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel11.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel11.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel11.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel11.Location = new System.Drawing.Point(876, 532);
+            this.bunifuGradientPanel11.Name = "bunifuGradientPanel11";
+            this.bunifuGradientPanel11.Quality = 10;
+            this.bunifuGradientPanel11.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel11.TabIndex = 166;
+            // 
+            // BtLLenarContenidos
+            // 
+            this.BtLLenarContenidos.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarContenidos.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarContenidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarContenidos.BorderRadius = 0;
+            this.BtLLenarContenidos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarContenidos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarContenidos.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarContenidos.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarContenidos.Iconimage = null;
+            this.BtLLenarContenidos.Iconimage_right = null;
+            this.BtLLenarContenidos.Iconimage_right_Selected = null;
+            this.BtLLenarContenidos.Iconimage_Selected = null;
+            this.BtLLenarContenidos.IconMarginLeft = 8;
+            this.BtLLenarContenidos.IconMarginRight = 0;
+            this.BtLLenarContenidos.IconRightVisible = true;
+            this.BtLLenarContenidos.IconRightZoom = 0D;
+            this.BtLLenarContenidos.IconVisible = true;
+            this.BtLLenarContenidos.IconZoom = 80D;
+            this.BtLLenarContenidos.IsTab = false;
+            this.BtLLenarContenidos.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarContenidos.Name = "BtLLenarContenidos";
+            this.BtLLenarContenidos.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarContenidos.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarContenidos.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarContenidos.selected = false;
+            this.BtLLenarContenidos.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarContenidos.TabIndex = 28;
+            this.BtLLenarContenidos.Text = "     LLENAR CAMPO";
+            this.BtLLenarContenidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarContenidos.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarContenidos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarContenidos.Click += new System.EventHandler(this.BtLLenarContenidos_Click);
+            // 
+            // bunifuGradientPanel10
+            // 
+            this.bunifuGradientPanel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel10.BackgroundImage")));
+            this.bunifuGradientPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel10.Controls.Add(this.BtLLenarEstrategiasPedagogicas);
+            this.bunifuGradientPanel10.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel10.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel10.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel10.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel10.Location = new System.Drawing.Point(876, 452);
+            this.bunifuGradientPanel10.Name = "bunifuGradientPanel10";
+            this.bunifuGradientPanel10.Quality = 10;
+            this.bunifuGradientPanel10.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel10.TabIndex = 167;
+            // 
+            // BtLLenarEstrategiasPedagogicas
+            // 
+            this.BtLLenarEstrategiasPedagogicas.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarEstrategiasPedagogicas.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarEstrategiasPedagogicas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarEstrategiasPedagogicas.BorderRadius = 0;
+            this.BtLLenarEstrategiasPedagogicas.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarEstrategiasPedagogicas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarEstrategiasPedagogicas.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarEstrategiasPedagogicas.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarEstrategiasPedagogicas.Iconimage = null;
+            this.BtLLenarEstrategiasPedagogicas.Iconimage_right = null;
+            this.BtLLenarEstrategiasPedagogicas.Iconimage_right_Selected = null;
+            this.BtLLenarEstrategiasPedagogicas.Iconimage_Selected = null;
+            this.BtLLenarEstrategiasPedagogicas.IconMarginLeft = 8;
+            this.BtLLenarEstrategiasPedagogicas.IconMarginRight = 0;
+            this.BtLLenarEstrategiasPedagogicas.IconRightVisible = true;
+            this.BtLLenarEstrategiasPedagogicas.IconRightZoom = 0D;
+            this.BtLLenarEstrategiasPedagogicas.IconVisible = true;
+            this.BtLLenarEstrategiasPedagogicas.IconZoom = 80D;
+            this.BtLLenarEstrategiasPedagogicas.IsTab = false;
+            this.BtLLenarEstrategiasPedagogicas.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarEstrategiasPedagogicas.Name = "BtLLenarEstrategiasPedagogicas";
+            this.BtLLenarEstrategiasPedagogicas.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarEstrategiasPedagogicas.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarEstrategiasPedagogicas.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarEstrategiasPedagogicas.selected = false;
+            this.BtLLenarEstrategiasPedagogicas.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarEstrategiasPedagogicas.TabIndex = 28;
+            this.BtLLenarEstrategiasPedagogicas.Text = "     LLENAR CAMPO";
+            this.BtLLenarEstrategiasPedagogicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarEstrategiasPedagogicas.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarEstrategiasPedagogicas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarEstrategiasPedagogicas.Click += new System.EventHandler(this.BtLLenarEstrategiasPedagogicas_Click);
+            // 
+            // bunifuGradientPanel9
+            // 
+            this.bunifuGradientPanel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel9.BackgroundImage")));
+            this.bunifuGradientPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel9.Controls.Add(this.BtLLenarComponentesGenericos);
+            this.bunifuGradientPanel9.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel9.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel9.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel9.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel9.Location = new System.Drawing.Point(876, 385);
+            this.bunifuGradientPanel9.Name = "bunifuGradientPanel9";
+            this.bunifuGradientPanel9.Quality = 10;
+            this.bunifuGradientPanel9.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel9.TabIndex = 168;
+            // 
+            // BtLLenarComponentesGenericos
+            // 
+            this.BtLLenarComponentesGenericos.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarComponentesGenericos.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarComponentesGenericos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarComponentesGenericos.BorderRadius = 0;
+            this.BtLLenarComponentesGenericos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarComponentesGenericos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarComponentesGenericos.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarComponentesGenericos.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarComponentesGenericos.Iconimage = null;
+            this.BtLLenarComponentesGenericos.Iconimage_right = null;
+            this.BtLLenarComponentesGenericos.Iconimage_right_Selected = null;
+            this.BtLLenarComponentesGenericos.Iconimage_Selected = null;
+            this.BtLLenarComponentesGenericos.IconMarginLeft = 8;
+            this.BtLLenarComponentesGenericos.IconMarginRight = 0;
+            this.BtLLenarComponentesGenericos.IconRightVisible = true;
+            this.BtLLenarComponentesGenericos.IconRightZoom = 0D;
+            this.BtLLenarComponentesGenericos.IconVisible = true;
+            this.BtLLenarComponentesGenericos.IconZoom = 80D;
+            this.BtLLenarComponentesGenericos.IsTab = false;
+            this.BtLLenarComponentesGenericos.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarComponentesGenericos.Name = "BtLLenarComponentesGenericos";
+            this.BtLLenarComponentesGenericos.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarComponentesGenericos.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarComponentesGenericos.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarComponentesGenericos.selected = false;
+            this.BtLLenarComponentesGenericos.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarComponentesGenericos.TabIndex = 28;
+            this.BtLLenarComponentesGenericos.Text = "     LLENAR CAMPO";
+            this.BtLLenarComponentesGenericos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarComponentesGenericos.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarComponentesGenericos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarComponentesGenericos.Click += new System.EventHandler(this.BtLLenarComponentesGenericos_Click);
+            // 
+            // bunifuGradientPanel8
+            // 
+            this.bunifuGradientPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel8.BackgroundImage")));
+            this.bunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel8.Controls.Add(this.BtLLenarObjetivosEspecificos);
+            this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel8.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel8.Location = new System.Drawing.Point(876, 316);
+            this.bunifuGradientPanel8.Name = "bunifuGradientPanel8";
+            this.bunifuGradientPanel8.Quality = 10;
+            this.bunifuGradientPanel8.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel8.TabIndex = 169;
+            // 
+            // BtLLenarObjetivosEspecificos
+            // 
+            this.BtLLenarObjetivosEspecificos.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivosEspecificos.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivosEspecificos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarObjetivosEspecificos.BorderRadius = 0;
+            this.BtLLenarObjetivosEspecificos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarObjetivosEspecificos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarObjetivosEspecificos.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarObjetivosEspecificos.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivosEspecificos.Iconimage = null;
+            this.BtLLenarObjetivosEspecificos.Iconimage_right = null;
+            this.BtLLenarObjetivosEspecificos.Iconimage_right_Selected = null;
+            this.BtLLenarObjetivosEspecificos.Iconimage_Selected = null;
+            this.BtLLenarObjetivosEspecificos.IconMarginLeft = 8;
+            this.BtLLenarObjetivosEspecificos.IconMarginRight = 0;
+            this.BtLLenarObjetivosEspecificos.IconRightVisible = true;
+            this.BtLLenarObjetivosEspecificos.IconRightZoom = 0D;
+            this.BtLLenarObjetivosEspecificos.IconVisible = true;
+            this.BtLLenarObjetivosEspecificos.IconZoom = 80D;
+            this.BtLLenarObjetivosEspecificos.IsTab = false;
+            this.BtLLenarObjetivosEspecificos.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarObjetivosEspecificos.Name = "BtLLenarObjetivosEspecificos";
+            this.BtLLenarObjetivosEspecificos.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivosEspecificos.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarObjetivosEspecificos.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarObjetivosEspecificos.selected = false;
+            this.BtLLenarObjetivosEspecificos.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarObjetivosEspecificos.TabIndex = 28;
+            this.BtLLenarObjetivosEspecificos.Text = "     LLENAR CAMPO";
+            this.BtLLenarObjetivosEspecificos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarObjetivosEspecificos.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarObjetivosEspecificos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarObjetivosEspecificos.Click += new System.EventHandler(this.BtLLenarObjetivosEspecificos_Click);
+            // 
+            // bunifuGradientPanel7
+            // 
+            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
+            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel7.Controls.Add(this.BtLLenarObjetivoGeneral);
+            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel7.Location = new System.Drawing.Point(876, 253);
+            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
+            this.bunifuGradientPanel7.Quality = 10;
+            this.bunifuGradientPanel7.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel7.TabIndex = 170;
+            // 
+            // BtLLenarObjetivoGeneral
+            // 
+            this.BtLLenarObjetivoGeneral.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivoGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivoGeneral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarObjetivoGeneral.BorderRadius = 0;
+            this.BtLLenarObjetivoGeneral.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarObjetivoGeneral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarObjetivoGeneral.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarObjetivoGeneral.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivoGeneral.Iconimage = null;
+            this.BtLLenarObjetivoGeneral.Iconimage_right = null;
+            this.BtLLenarObjetivoGeneral.Iconimage_right_Selected = null;
+            this.BtLLenarObjetivoGeneral.Iconimage_Selected = null;
+            this.BtLLenarObjetivoGeneral.IconMarginLeft = 8;
+            this.BtLLenarObjetivoGeneral.IconMarginRight = 0;
+            this.BtLLenarObjetivoGeneral.IconRightVisible = true;
+            this.BtLLenarObjetivoGeneral.IconRightZoom = 0D;
+            this.BtLLenarObjetivoGeneral.IconVisible = true;
+            this.BtLLenarObjetivoGeneral.IconZoom = 80D;
+            this.BtLLenarObjetivoGeneral.IsTab = false;
+            this.BtLLenarObjetivoGeneral.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarObjetivoGeneral.Name = "BtLLenarObjetivoGeneral";
+            this.BtLLenarObjetivoGeneral.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarObjetivoGeneral.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarObjetivoGeneral.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarObjetivoGeneral.selected = false;
+            this.BtLLenarObjetivoGeneral.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarObjetivoGeneral.TabIndex = 28;
+            this.BtLLenarObjetivoGeneral.Text = "     LLENAR CAMPO";
+            this.BtLLenarObjetivoGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarObjetivoGeneral.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarObjetivoGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarObjetivoGeneral.Click += new System.EventHandler(this.BtLLenarObjetivoGeneral_Click);
+            // 
+            // bunifuGradientPanel2
+            // 
+            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
+            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.BtLLenarJustificacion);
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(876, 193);
+            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+            this.bunifuGradientPanel2.Quality = 10;
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel2.TabIndex = 171;
+            // 
+            // BtLLenarJustificacion
+            // 
+            this.BtLLenarJustificacion.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarJustificacion.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarJustificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarJustificacion.BorderRadius = 0;
+            this.BtLLenarJustificacion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarJustificacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarJustificacion.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarJustificacion.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarJustificacion.Iconimage = null;
+            this.BtLLenarJustificacion.Iconimage_right = null;
+            this.BtLLenarJustificacion.Iconimage_right_Selected = null;
+            this.BtLLenarJustificacion.Iconimage_Selected = null;
+            this.BtLLenarJustificacion.IconMarginLeft = 8;
+            this.BtLLenarJustificacion.IconMarginRight = 0;
+            this.BtLLenarJustificacion.IconRightVisible = true;
+            this.BtLLenarJustificacion.IconRightZoom = 0D;
+            this.BtLLenarJustificacion.IconVisible = true;
+            this.BtLLenarJustificacion.IconZoom = 80D;
+            this.BtLLenarJustificacion.IsTab = false;
+            this.BtLLenarJustificacion.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarJustificacion.Name = "BtLLenarJustificacion";
+            this.BtLLenarJustificacion.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarJustificacion.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarJustificacion.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarJustificacion.selected = false;
+            this.BtLLenarJustificacion.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarJustificacion.TabIndex = 28;
+            this.BtLLenarJustificacion.Text = "     LLENAR CAMPO";
+            this.BtLLenarJustificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarJustificacion.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarJustificacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarJustificacion.Click += new System.EventHandler(this.BtLLenarJustificacion_Click);
+            // 
+            // bunifuGradientPanel3
+            // 
+            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
+            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.Controls.Add(this.BtLLenarDescripcion);
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(876, 130);
+            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
+            this.bunifuGradientPanel3.Quality = 10;
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(151, 36);
+            this.bunifuGradientPanel3.TabIndex = 163;
+            // 
+            // BtLLenarDescripcion
+            // 
+            this.BtLLenarDescripcion.Activecolor = System.Drawing.Color.Transparent;
+            this.BtLLenarDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.BtLLenarDescripcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtLLenarDescripcion.BorderRadius = 0;
+            this.BtLLenarDescripcion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtLLenarDescripcion.DisabledColor = System.Drawing.Color.Gray;
+            this.BtLLenarDescripcion.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarDescripcion.Iconimage = null;
+            this.BtLLenarDescripcion.Iconimage_right = null;
+            this.BtLLenarDescripcion.Iconimage_right_Selected = null;
+            this.BtLLenarDescripcion.Iconimage_Selected = null;
+            this.BtLLenarDescripcion.IconMarginLeft = 8;
+            this.BtLLenarDescripcion.IconMarginRight = 0;
+            this.BtLLenarDescripcion.IconRightVisible = true;
+            this.BtLLenarDescripcion.IconRightZoom = 0D;
+            this.BtLLenarDescripcion.IconVisible = true;
+            this.BtLLenarDescripcion.IconZoom = 80D;
+            this.BtLLenarDescripcion.IsTab = false;
+            this.BtLLenarDescripcion.Location = new System.Drawing.Point(6, 3);
+            this.BtLLenarDescripcion.Name = "BtLLenarDescripcion";
+            this.BtLLenarDescripcion.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtLLenarDescripcion.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtLLenarDescripcion.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtLLenarDescripcion.selected = false;
+            this.BtLLenarDescripcion.Size = new System.Drawing.Size(139, 30);
+            this.BtLLenarDescripcion.TabIndex = 28;
+            this.BtLLenarDescripcion.Text = "     LLENAR CAMPO";
+            this.BtLLenarDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtLLenarDescripcion.Textcolor = System.Drawing.Color.White;
+            this.BtLLenarDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLLenarDescripcion.Click += new System.EventHandler(this.BtLLenarDescripcion_Click);
+            // 
             // ConsultarPlanAsignatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -536,6 +1014,15 @@ namespace Design_Dashboard_Modern
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1045, 788);
+            this.Controls.Add(this.bunifuGradientPanel13);
+            this.Controls.Add(this.bunifuGradientPanel12);
+            this.Controls.Add(this.bunifuGradientPanel11);
+            this.Controls.Add(this.bunifuGradientPanel10);
+            this.Controls.Add(this.bunifuGradientPanel9);
+            this.Controls.Add(this.bunifuGradientPanel8);
+            this.Controls.Add(this.bunifuGradientPanel7);
+            this.Controls.Add(this.bunifuGradientPanel2);
+            this.Controls.Add(this.bunifuGradientPanel3);
             this.Controls.Add(this.bunifuGradientPanel6);
             this.Controls.Add(this.bunifuGradientPanel5);
             this.Controls.Add(this.TxtReferenciaBibliografica);
@@ -577,6 +1064,15 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.ResumeLayout(false);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
+            this.bunifuGradientPanel13.ResumeLayout(false);
+            this.bunifuGradientPanel12.ResumeLayout(false);
+            this.bunifuGradientPanel11.ResumeLayout(false);
+            this.bunifuGradientPanel10.ResumeLayout(false);
+            this.bunifuGradientPanel9.ResumeLayout(false);
+            this.bunifuGradientPanel8.ResumeLayout(false);
+            this.bunifuGradientPanel7.ResumeLayout(false);
+            this.bunifuGradientPanel2.ResumeLayout(false);
+            this.bunifuGradientPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,5 +1117,23 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
         private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel13;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarReferenciasBibliograficas;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel12;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarMecanismoEvaluacion;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel11;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarContenidos;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel10;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarEstrategiasPedagogicas;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel9;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarComponentesGenericos;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel8;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarObjetivosEspecificos;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel7;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarObjetivoGeneral;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarJustificacion;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
+        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarDescripcion;
     }
 }

@@ -296,9 +296,9 @@ namespace Design_Dashboard_Modern
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(237, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 44);
+            this.label1.Size = new System.Drawing.Size(418, 44);
             this.label1.TabIndex = 65;
-            this.label1.Text = "REGISTRAR DOCENTES";
+            this.label1.Text = "GESTION DE DOCENTES";
             // 
             // TxtNombre
             // 

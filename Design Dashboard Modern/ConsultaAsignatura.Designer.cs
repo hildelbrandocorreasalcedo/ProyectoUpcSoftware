@@ -49,7 +49,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CmbPrograma = new System.Windows.Forms.ComboBox();
+            this.CmbFiltroPrograma = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtFiltroPrograma = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -193,6 +193,7 @@ namespace Design_Dashboard_Modern
             this.button1.TabIndex = 13;
             this.button1.Text = "CANCELAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bunifuGradientPanel6
             // 
@@ -314,12 +315,12 @@ namespace Design_Dashboard_Modern
             this.label3.TabIndex = 74;
             this.label3.Text = "Fitro por programa";
             // 
-            // CmbPrograma
+            // CmbFiltroPrograma
             // 
-            this.CmbPrograma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbPrograma.FormattingEnabled = true;
-            this.CmbPrograma.Items.AddRange(new object[] {
+            this.CmbFiltroPrograma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbFiltroPrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbFiltroPrograma.FormattingEnabled = true;
+            this.CmbFiltroPrograma.Items.AddRange(new object[] {
             "TODAS LAS ASIGNATURAS",
             "ADMINISTRACION DE EMPRESAS",
             "ADMINISTRACION DE EMPRESAS TURISTICAS Y HOTELERAS",
@@ -342,10 +343,10 @@ namespace Design_Dashboard_Modern
             "MICROBIOLOGIA",
             "MUSICA",
             "PSICOLOGIA"});
-            this.CmbPrograma.Location = new System.Drawing.Point(509, 60);
-            this.CmbPrograma.Name = "CmbPrograma";
-            this.CmbPrograma.Size = new System.Drawing.Size(254, 28);
-            this.CmbPrograma.TabIndex = 75;
+            this.CmbFiltroPrograma.Location = new System.Drawing.Point(509, 60);
+            this.CmbFiltroPrograma.Name = "CmbFiltroPrograma";
+            this.CmbFiltroPrograma.Size = new System.Drawing.Size(254, 28);
+            this.CmbFiltroPrograma.TabIndex = 75;
             // 
             // bunifuGradientPanel2
             // 
@@ -522,7 +523,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bunifuGradientPanel3);
             this.Controls.Add(this.bunifuGradientPanel2);
-            this.Controls.Add(this.CmbPrograma);
+            this.Controls.Add(this.CmbFiltroPrograma);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.bunifuGradientPanel6);
@@ -563,7 +564,7 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox CmbPrograma;
+        private System.Windows.Forms.ComboBox CmbFiltroPrograma;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuFlatButton BtFiltroPrograma;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;

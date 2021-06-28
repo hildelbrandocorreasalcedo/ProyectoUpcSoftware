@@ -246,11 +246,11 @@ namespace BLL
             }
         }
 
-        public ConsultaCandidatoResponse BuscarDtg(string codigo)
+        public ConsultaCandidatoResponse BuscarAsignaturaDtg(string codigo)
         {
             try
             {
-                List<Asignaturas> asignaturas = AsignaturaRepository.BuscarDtg(codigo);
+                List<Asignaturas> asignaturas = AsignaturaRepository.BuscarAsignaturaDtg(codigo);
                 if (asignaturas != null)
                 {
                     return new ConsultaCandidatoResponse(asignaturas);
@@ -683,8 +683,92 @@ namespace BLL
                 return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
             }
         }
+        public int ContarProgramaADMINISTRACION_EMPRESAS()
+        {
+            return AsignaturaRepository.ContarProgramaADMINISTRACION_EMPRESAS();
+        }
+        public int ContarProgramaADMINISTRACION_TURISTICAS()
+        {
+            return AsignaturaRepository.ContarProgramaADMINISTRACION_TURISTICAS();
+        }
+        public int ContarProgramaCOMERCIO_INTERNACIONAL()
+        {
+            return AsignaturaRepository.ContarProgramaCOMERCIO_INTERNACIONAL();
+        }
+        public int ContarProgramaCONTADURIA_PUBLICA()
+        {
+            return AsignaturaRepository.ContarProgramaCONTADURIA_PUBLICA();
+        }
+        public int ContarProgramaDERECHO()
+        {
+            return AsignaturaRepository.ContarProgramaDERECHO();
+        }
+        public int ContarProgramaECONOMIA()
+        {
+            return AsignaturaRepository.ContarProgramaECONOMIA();
+        }
+        public int ContarProgramaENFERMERIA()
+        {
+            return AsignaturaRepository.ContarProgramaENFERMERIA();
+        }
+        public int ContarProgramaINGENIERIA_AGROINDUSTRIAL()
+        {
+            return AsignaturaRepository.ContarProgramaINGENIERIA_AGROINDUSTRIAL();
+        }
+        public int ContarProgramaINGENIERIA_AMBIENTAL()
+        {
+            return AsignaturaRepository.ContarProgramaINGENIERIA_AMBIENTAL();
+        }
+        public int ContarProgramaINGENIERIA_ELECTRONICA()
+        {
+            return AsignaturaRepository.ContarProgramaINGENIERIA_ELECTRONICA();
+        }
+        public int ContarProgramaINGENIERIA_SISTEMAS()
+        {
+            return AsignaturaRepository.ContarProgramaINGENIERIA_SISTEMAS();
+        }
+        public int ContarProgramaINSTRUMENTACION_QUIRURGICA()
+        {
+            return AsignaturaRepository.ContarProgramaINSTRUMENTACION_QUIRURGICA();
+        }
+        public int ContarProgramaLICENCIATURA_ARTE()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_ARTE();
+        }
+        public int ContarProgramaLICENCIATURA_DEPORTES()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_DEPORTES();
+        }
+        public int ContarProgramaLICENCIATURA_INGLES()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_INGLES();
+        }
+        public int ContarProgramaLICENCIATURA_LITERATURA()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_LITERATURA();
+        }
+        public int ContarProgramaLICENCIATURA_MATEMATICAS()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_MATEMATICAS();
+        }
+        public int ContarProgramaLICENCIATURA_NATURALES()
+        {
+            return AsignaturaRepository.ContarProgramaLICENCIATURA_NATURALES();
+        }
+        public int ContarProgramaMICROBIOLOGIA()
+        {
+            return AsignaturaRepository.ContarProgramaMICROBIOLOGIA();
+        }
+        public int ContarProgramaMUSICA()
+        {
+            return AsignaturaRepository.ContarProgramaMUSICA();
+        }
+        public int ContarProgramaPSICOLOGIA()
+        {
+            return AsignaturaRepository.ContarProgramaPSICOLOGIA();
+        }
+       
 
-  
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---------Docente--------///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
@@ -807,7 +891,7 @@ namespace BLL
                 }
                 else
                 {
-                    return new ConsultaDocenteResponse("La asignatura buscado no se encuentra Registrado");
+                    return new ConsultaDocenteResponse("El Docente buscado no se encuentra Registrado");
                 }
             }
             catch (Exception e)
@@ -816,25 +900,100 @@ namespace BLL
                 return new ConsultaDocenteResponse("Error de Aplicacion: " + e.Message);
             }
         }
-
-        public class ConsultaDocenteResponse
+        public DocenteResponse BuscarPorIdentificacion(string identificacion)
         {
-            public List<Docentes> Docente { get; set; }
-            public string Message { get; set; }
-
-            public ConsultaDocenteResponse(List<Docentes> docente)
+            try
             {
-                Docente = new List<Docentes>();
-                Docente = docente;
+                Docentes docente = DocenteRepository.BuscarPorIdentificacion(identificacion);
+                if (docente != null)
+                {
+                    return new DocenteResponse(docente);
+                }
+                else
+                {
+                    return new DocenteResponse($"El docente con la identificacion {identificacion} no se encuentra registrada");
+                }
             }
-            public ConsultaDocenteResponse(string message)
+            catch (Exception e)
             {
-                Message = message;
+                return new DocenteResponse("Error de Aplicacion: " + e.Message);
             }
         }
-    }
-    //////////////////////////////////------------------------///////////////////////////////////////
-    /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
-    ////////////////////////////////------------------------///////////////////////////////////////
+        public ConsultaDocenteResponse ConsultarFiltrarDocenteCatedratico(string categoria)
+        {
+            try
+            {
+                List<Docentes> docentes = DocenteRepository.FiltrarDocenteCatedratico(categoria);
+                if (docentes != null)
+                {
+                    return new ConsultaDocenteResponse(docentes);
+                }
+                else
+                {
+                    return new ConsultaDocenteResponse("El docente buscado no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
 
+                return new ConsultaDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaDocenteResponse ConsultarFiltrarDocenteOcacional(string categoria)
+        {
+            try
+            {
+                List<Docentes> docentes = DocenteRepository.FiltrarDocenteOcacional(categoria);
+                if (docentes != null)
+                {
+                    return new ConsultaDocenteResponse(docentes);
+                }
+                else
+                {
+                    return new ConsultaDocenteResponse("El docente buscado no se encuentra Registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+
+        public ConsultaDocenteResponse BuscarDocentesDtg(string identificacion)
+        {
+            try
+            {
+                List<Docentes> docentes = DocenteRepository.BuscarDocentesDtg(identificacion);
+                if (docentes != null)
+                {
+                    return new ConsultaDocenteResponse(docentes);
+                }
+                else
+                {
+                    return new ConsultaDocenteResponse($"El docente con la identificacion {identificacion} no se encuentra registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+
+        public int TotalizarTodosDocentes()
+        {
+            return AsignaturaRepository.TotalizarTodosDocentes();
+        }
+        public int ContarDocenteCatedratico()
+        {
+            return AsignaturaRepository.ContarDocenteCatedratico();
+        }
+        public int ContarDocenteOcacional()
+        {
+            return AsignaturaRepository.ContarDocenteOcacional();
+        }
+
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
+    }
 }

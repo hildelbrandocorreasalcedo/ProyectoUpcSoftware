@@ -31,8 +31,8 @@ namespace Design_Dashboard_Modern
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUpcComite));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -410,7 +410,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtRegistrarPlanAsignatura.BorderRadius = 0;
             this.BtRegistrarPlanAsignatura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtRegistrarPlanAsignatura.ButtonText = "        REGISTRAR PLAN                               ASIGNATURA";
+            this.BtRegistrarPlanAsignatura.ButtonText = "        GESTIONAR PLAN                               ASIGNATURA";
             this.BtRegistrarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -438,7 +438,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.selected = false;
             this.BtRegistrarPlanAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtRegistrarPlanAsignatura.TabIndex = 30;
-            this.BtRegistrarPlanAsignatura.Text = "        REGISTRAR PLAN                               ASIGNATURA";
+            this.BtRegistrarPlanAsignatura.Text = "        GESTIONAR PLAN                               ASIGNATURA";
             this.BtRegistrarPlanAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarPlanAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtRegistrarPlanAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -504,7 +504,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarDocente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtConsultarDocente.BorderRadius = 0;
             this.BtConsultarDocente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtConsultarDocente.ButtonText = "      CONSULTAR DOCENTE";
+            this.BtConsultarDocente.ButtonText = "      CONSULTAR DOCENTES";
             this.BtConsultarDocente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtConsultarDocente, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtConsultarDocente, BunifuAnimatorNS.DecorationType.None);
@@ -532,7 +532,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarDocente.selected = false;
             this.BtConsultarDocente.Size = new System.Drawing.Size(245, 48);
             this.BtConsultarDocente.TabIndex = 27;
-            this.BtConsultarDocente.Text = "      CONSULTAR DOCENTE";
+            this.BtConsultarDocente.Text = "      CONSULTAR DOCENTES";
             this.BtConsultarDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultarDocente.Textcolor = System.Drawing.Color.LightGray;
             this.BtConsultarDocente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -545,7 +545,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarDocente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtRegistrarDocente.BorderRadius = 0;
             this.BtRegistrarDocente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtRegistrarDocente.ButtonText = "      REGISTRAR DOCENTE";
+            this.BtRegistrarDocente.ButtonText = "      GESTIONAR DOCENTE";
             this.BtRegistrarDocente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtRegistrarDocente, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarDocente, BunifuAnimatorNS.DecorationType.None);
@@ -573,7 +573,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarDocente.selected = false;
             this.BtRegistrarDocente.Size = new System.Drawing.Size(245, 48);
             this.BtRegistrarDocente.TabIndex = 28;
-            this.BtRegistrarDocente.Text = "      REGISTRAR DOCENTE";
+            this.BtRegistrarDocente.Text = "      GESTIONAR DOCENTE";
             this.BtRegistrarDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarDocente.Textcolor = System.Drawing.Color.LightGray;
             this.BtRegistrarDocente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -637,7 +637,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtConsultarAsignatura.BorderRadius = 0;
             this.BtConsultarAsignatura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtConsultarAsignatura.ButtonText = "       CONSULTAR ASIGNATURA";
+            this.BtConsultarAsignatura.ButtonText = "     CONSULTAR ASIGNATURAS";
             this.BtConsultarAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtConsultarAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtConsultarAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -665,7 +665,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarAsignatura.selected = false;
             this.BtConsultarAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtConsultarAsignatura.TabIndex = 26;
-            this.BtConsultarAsignatura.Text = "       CONSULTAR ASIGNATURA";
+            this.BtConsultarAsignatura.Text = "     CONSULTAR ASIGNATURAS";
             this.BtConsultarAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultarAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtConsultarAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -678,7 +678,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtRegistrarAsignatura.BorderRadius = 0;
             this.BtRegistrarAsignatura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtRegistrarAsignatura.ButtonText = "      REGISTRAR ASIGNATURA";
+            this.BtRegistrarAsignatura.ButtonText = "      GESTONAR ASIGNATURA";
             this.BtRegistrarAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtRegistrarAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -706,7 +706,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarAsignatura.selected = false;
             this.BtRegistrarAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtRegistrarAsignatura.TabIndex = 26;
-            this.BtRegistrarAsignatura.Text = "      REGISTRAR ASIGNATURA";
+            this.BtRegistrarAsignatura.Text = "      GESTONAR ASIGNATURA";
             this.BtRegistrarAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtRegistrarAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -862,43 +862,43 @@ namespace Design_Dashboard_Modern
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 1;
-            animation4.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 2F;
-            animation4.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 1;
+            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 2F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation1;
             // 
             // AnimacionSidebarBack
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation2;
             // 
             // MenuUpcComite
             // 

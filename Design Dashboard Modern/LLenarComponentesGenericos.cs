@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class RegistroPlanAsignatura : Form
+    public partial class LLenarComponentesGenericos : Form
     {
-        public RegistroPlanAsignatura()
+        public LLenarComponentesGenericos()
         {
             InitializeComponent();
+        }
+
+        private void TxtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

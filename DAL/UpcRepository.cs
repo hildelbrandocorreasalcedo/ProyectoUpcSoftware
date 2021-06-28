@@ -131,7 +131,7 @@ namespace DAL
             List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
             foreach (var item in asignaturas)
             {
-                if (Encontrado(item.Codigo, codigo))
+                if (EncontradaAsignatura(item.Codigo, codigo))
                 {
                     return item;
                 }
@@ -139,7 +139,7 @@ namespace DAL
             return null;
         }
 
-        private bool Encontrado(string identificacioRegistrada, string identificacionBuscada)
+        private bool EncontradaAsignatura(string identificacioRegistrada, string identificacionBuscada)
         {
             return identificacioRegistrada == identificacionBuscada;
         }
@@ -175,7 +175,7 @@ namespace DAL
             return asignaturaFiltradas;
         }
 
-        public List<Asignaturas> BuscarDtg(string codigo)
+        public List<Asignaturas> BuscarAsignaturaDtg(string codigo)
         {
             List<Asignaturas> asignaturas = ConsultarTodosAsignaturasDtg();
             List<Asignaturas> asignaturaFiltradasBuscado =
@@ -579,7 +579,69 @@ namespace DAL
             }
             return null;
         }
+        public Docentes BuscarPorIdentificacion(string identificacion)
+        {
+            List<Docentes> docentes = ConsultarTodosDocentesDtg();
+            foreach (var item in docentes)
+            {
+                if (EncontradoDocente(item.Identificacion, identificacion))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
 
+        private bool EncontradoDocente(string identificacioRegistrada, string identificacionBuscada)
+        {
+            return identificacioRegistrada == identificacionBuscada;
+        }
+
+        //////////////////////////////////////-------------Filtros busqueda en tabla LINQ----------////////////////////////////////////
+
+        public List<Docentes> FiltrarDocenteOcacional(string tipoAsignatura)
+        {
+            List<Docentes> docentes = ConsultarTodosDocentesDtg();
+            List<Docentes> docentesFiltradas =
+                (from docente in docentes
+                 where docente.Categoria.Equals("Docente ocacional")
+                 select docente).ToList();
+            return docentesFiltradas;
+        }
+
+        public List<Docentes> FiltrarDocenteCatedratico(string tipoAsignatura)
+        {
+
+            List<Docentes> docentes = ConsultarTodosDocentesDtg();
+            List<Docentes> docentesFiltradas =
+                (from docente in docentes
+                 where docente.Categoria.Equals("Docente catedratico")
+                 select docente).ToList();
+            return docentesFiltradas;
+        }
+
+        public List<Docentes> BuscarDocentesDtg(string identificacion)
+        {
+            List<Docentes> docentes = ConsultarTodosDocentesDtg();
+            List<Docentes> docentesFiltradasBuscado =
+                (from docente in docentes
+                 where docente.Identificacion.Equals(identificacion)
+                 select docente).ToList();
+            return docentesFiltradasBuscado;
+        }
+
+        public int TotalizarTodosDocentes()
+        {
+            return ConsultarTodosDocentesDtg().Count();
+        }
+        public int ContarDocenteOcacional()
+        {
+            return ConsultarTodosDocentesDtg().Where(p => p.Categoria == "Docente ocacional").Count();
+        }
+        public int ContarDocenteCatedratico()
+        {
+            return ConsultarTodosDocentesDtg().Where(p => p.Categoria == "Docente catedratico").Count();
+        }
 
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////-----Plan Asignatura----///////////////////////////////////////

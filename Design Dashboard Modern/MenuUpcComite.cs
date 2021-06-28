@@ -114,11 +114,12 @@ namespace Design_Dashboard_Modern
 
         private void BtRegistrarPlanAsignatura_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistroPlanAsignatura());
+            openChildForm(new RegistroPlanAsignaturas());
         }
 
         private void BtConsultarPlanAsignatura_Click(object sender, EventArgs e)
         {
+            
             openChildForm(new ConsultarPlanAsignatura());
         }
 

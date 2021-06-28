@@ -52,12 +52,12 @@ namespace Design_Dashboard_Modern
 
         private void BuscarDtg()
         {
-            var response = upcService.BuscarDtg(TxtCodigo.Text);
+            var response = upcService.BuscarAsignaturaDtg(TxtCodigo.Text);
             if (response != null)
             {
                 CandidatoResponse respuesta = upcService.BuscarPorCodigo(TxtCodigo.Text);
-                Asignaturas estudiante = respuesta.Asignatura;
-                if (estudiante == null)
+                Asignaturas asignatura = respuesta.Asignatura;
+                if (asignatura == null)
                 {
                     MessageBox.Show("El codigo buscado no se encuentra, vuelva a intentarlo con otro codigo", 
                         "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -148,10 +148,230 @@ namespace Design_Dashboard_Modern
         {
 
         }
-
+        private void FiltrarProgramaADMINISTRACION_EMPRESAS()
+        {
+            var response = upcService.FiltrarProgramaADMINISTRACION_EMPRESAS(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaADMINISTRACION_EMPRESAS().ToString();
+        }
+        private void FiltrarProgramaADMINISTRACION_TURISTICAS()
+        {
+            var response = upcService.FiltrarProgramaADMINISTRACION_TURISTICAS(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaADMINISTRACION_TURISTICAS().ToString();
+        }
+        private void FiltrarProgramaCOMERCIO_INTERNACIONAL()
+        {
+            var response = upcService.FiltrarProgramaCOMERCIO_INTERNACIONAL(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaCOMERCIO_INTERNACIONAL().ToString();
+        }
+        private void FiltrarProgramaCONTADURIA_PUBLICA()
+        {
+            var response = upcService.FiltrarProgramaCONTADURIA_PUBLICA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaCONTADURIA_PUBLICA().ToString();
+        }
+        private void FiltrarProgramaDERECHO()
+        {
+            var response = upcService.FiltrarProgramaDERECHO(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaDERECHO().ToString();
+        }
+        private void FiltrarProgramaECONOMIA()
+        {
+            var response = upcService.FiltrarProgramaECONOMIA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaECONOMIA().ToString();
+        }
+        private void FiltrarProgramaENFERMERIA()
+        {
+            var response = upcService.FiltrarProgramaENFERMERIA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaENFERMERIA().ToString();
+        }
+        private void FiltrarProgramaINGENIERIA_AGROINDUSTRIAL()
+        {
+            var response = upcService.FiltrarProgramaINGENIERIA_AGROINDUSTRIAL(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaINGENIERIA_AGROINDUSTRIAL().ToString();
+        }
+        private void FiltrarProgramaINGENIERIA_AMBIENTAL()
+        {
+            var response = upcService.FiltrarProgramaINGENIERIA_AMBIENTAL(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaINGENIERIA_AMBIENTAL().ToString();
+        }
+        private void FiltrarProgramaINGENIERIA_ELECTRONICA()
+        {
+            var response = upcService.FiltrarProgramaINGENIERIA_ELECTRONICA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaINGENIERIA_ELECTRONICA().ToString();
+        }
+        private void FiltrarProgramaINGENIERIA_SISTEMAS()
+        {
+            var response = upcService.FiltrarProgramaINGENIERIA_SISTEMAS(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaINGENIERIA_SISTEMAS().ToString();
+        }
+        private void FiltrarProgramaINSTRUMENTACION_QUIRURGICA()
+        {
+            var response = upcService.FiltrarProgramaINSTRUMENTACION_QUIRURGICA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaINSTRUMENTACION_QUIRURGICA().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_ARTE()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_ARTE(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_ARTE().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_DEPORTES()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_DEPORTES(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_DEPORTES().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_ESPANOL_INGLES()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_ESPANOL_INGLES(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_INGLES().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_LITERATURA()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_LITERATURA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_LITERATURA().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_MATEMATICAS()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_MATEMATICAS(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_MATEMATICAS().ToString();
+        }
+        private void FiltrarProgramaLICENCIATURA_NATURALES()
+        {
+            var response = upcService.FiltrarProgramaLICENCIATURA_NATURALES(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaLICENCIATURA_NATURALES().ToString();
+        }
+        private void FiltrarProgramaMICROBIOLOGIA()
+        {
+            var response = upcService.FiltrarProgramaMICROBIOLOGIA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaMICROBIOLOGIA().ToString();
+        }
+        private void FiltrarProgramaMUSICA()
+        {
+            var response = upcService.FiltrarProgramaMUSICA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaMUSICA().ToString();
+        }
+        private void FiltrarProgramaPSICOLOGIA()
+        {
+            var response = upcService.FiltrarProgramaPSICOLOGIA(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtTotalPrograma.Text = upcService.ContarProgramaPSICOLOGIA().ToString();
+        }
+      
         private void BtFiltroPrograma_Click(object sender, EventArgs e)
         {
-
+            DtgAsignatura.Rows.Clear();
+            VaciarTextBox();
+            var filtrado = CmbFiltroPrograma.Text;
+            if (filtrado.Equals(""))
+            {
+                MessageBox.Show("Escoja una Opción de Filtrado", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (CmbFiltroPrograma.Text.Equals("TODAS LAS ASIGNATURAS"))
+            {
+                ConsultarTodosAsignaturasDtg();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("ADMINISTRACION DE EMPRESAS"))
+            {
+                FiltrarProgramaADMINISTRACION_EMPRESAS();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("ADMINISTRACION DE EMPRESAS TURISTICAS Y HOTELERAS"))
+            {
+                FiltrarProgramaADMINISTRACION_TURISTICAS();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("COMERCIO INTERNACIONAL"))
+            {
+                FiltrarProgramaCOMERCIO_INTERNACIONAL();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("CONTADURIA PUBLICA"))
+            {
+                FiltrarProgramaCONTADURIA_PUBLICA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("DERECHO"))
+            {
+                FiltrarProgramaDERECHO();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("ECONOMIA"))
+            {
+                FiltrarProgramaECONOMIA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("ENFERMERIA"))
+            {
+                FiltrarProgramaENFERMERIA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("INGENIERIA AGROINDUSTRIAL"))
+            {
+                FiltrarProgramaINGENIERIA_AGROINDUSTRIAL();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("INGENIERIA AMBIENTAL Y SANITARIAS"))
+            {
+                FiltrarProgramaINGENIERIA_AMBIENTAL();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("INGENIERIA ELECTRONICA"))
+            {
+                FiltrarProgramaINGENIERIA_ELECTRONICA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("INGENIERIA SISTEMAS"))
+            {
+                FiltrarProgramaINGENIERIA_SISTEMAS();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("INSTRUMENTACION QUIRURGICA SOCIOLOGIA"))
+            {
+                FiltrarProgramaINSTRUMENTACION_QUIRURGICA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN ARTE"))
+            {
+                FiltrarProgramaLICENCIATURA_ARTE();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN EDUCACION FISICA, RECREACION Y DEPORTES"))
+            {
+                FiltrarProgramaLICENCIATURA_DEPORTES();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN ESPAÑOL E INGLES"))
+            {
+                FiltrarProgramaLICENCIATURA_ESPANOL_INGLES();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN LITERATURA Y LENGUAS CASTELLANAS"))
+            {
+                FiltrarProgramaLICENCIATURA_LITERATURA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN MATEMATICAS"))
+            {
+                FiltrarProgramaLICENCIATURA_MATEMATICAS();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("LICENCIATURA EN CIENCIAS NATURALES Y EDUCACION AMBIENTAL"))
+            {
+                FiltrarProgramaLICENCIATURA_NATURALES();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("MICROBIOLOGIA"))
+            {
+                FiltrarProgramaMICROBIOLOGIA(); 
+            }
+            else if (CmbFiltroPrograma.Text.Equals("MUSICA"))
+            {
+                FiltrarProgramaMUSICA();
+            }
+            else if (CmbFiltroPrograma.Text.Equals("PSICOLOGIA"))
+            {
+                FiltrarProgramaPSICOLOGIA();
+            }
         }
 
         private void BtFiltroAsignatura_Click(object sender, EventArgs e)
@@ -185,6 +405,11 @@ namespace Design_Dashboard_Modern
         {
             VaciarTextBox();
             DtgAsignatura.Rows.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

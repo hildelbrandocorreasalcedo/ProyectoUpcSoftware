@@ -403,9 +403,9 @@ namespace Design_Dashboard_Modern
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(188, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(468, 44);
+            this.label1.Size = new System.Drawing.Size(482, 44);
             this.label1.TabIndex = 51;
-            this.label1.Text = "REGISTRAR ASIGNATURAS";
+            this.label1.Text = "GESTION DE ASIGNATURAS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TxtNombre

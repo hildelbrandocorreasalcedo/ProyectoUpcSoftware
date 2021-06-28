@@ -65,4 +65,84 @@ namespace BLL
             Encontrado = false;
         }
     }
+
+    /// <summary>
+    /// ////////////////////////////////////////////////------Docente Consultas--------////////////////////////////////
+    /// </summary>
+    public class DocenteResponse
+    {
+        public Docentes Docente { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public DocenteResponse(Docentes docente)
+        {
+            Docente = new Docentes();
+            Docente = docente;
+            Encontrado = true;
+        }
+        public DocenteResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
+    public class ConsultaDocenteResponse
+    {
+        public List<Docentes> Docente { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public ConsultaDocenteResponse(List<Docentes> docente)
+        {
+            Docente = new List<Docentes>();
+            Docente = docente;
+            Encontrado = true;
+        }
+        public ConsultaDocenteResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
+
+    /// <summary>
+    /// ////////////////////////////////////////////////------Plan de asignaturas en Consultas--------////////////////////////////////
+    /// </summary>
+    public class PlanAsignaturaResponse
+    {
+        public PlanAsignaturas PlanAsignatura { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public PlanAsignaturaResponse(PlanAsignaturas planAsignatura)
+        {
+            PlanAsignatura = new PlanAsignaturas();
+            PlanAsignatura = planAsignatura;
+            Encontrado = true;
+        }
+        public PlanAsignaturaResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
+    public class ConsultaPlanAsignaturaResponse
+    {
+        public List<PlanAsignaturas> PlanAsignatura { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public ConsultaPlanAsignaturaResponse(List<PlanAsignaturas> planAsignatura)
+        {
+            PlanAsignatura = new List<PlanAsignaturas>();
+            PlanAsignatura = planAsignatura;
+            Encontrado = true;
+        }
+        public ConsultaPlanAsignaturaResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
 }

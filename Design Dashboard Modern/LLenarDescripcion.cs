@@ -17,13 +17,11 @@ namespace Design_Dashboard_Modern
             InitializeComponent();
         }
 
-        private void BtCancelar_Click(object sender, EventArgs e)
+        private void BtVolverLLenado_Click(object sender, EventArgs e)
         {
-            
-        }
-        private void BtVolver_Click(object sender, EventArgs e)
-        {
-            this.Dispose(); 
+            RegistroPlanAsignaturas abrir = Owner as RegistroPlanAsignaturas;           
+            abrir.TxtDescripcion.Text = TxtDescripcionFrom.Text;
+            this.Hide();
         }
     }
 }

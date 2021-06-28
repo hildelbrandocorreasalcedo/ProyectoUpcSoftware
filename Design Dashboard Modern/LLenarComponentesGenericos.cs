@@ -16,10 +16,5 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
         }
-
-        private void TxtDescripcion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

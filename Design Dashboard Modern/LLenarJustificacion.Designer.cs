@@ -30,32 +30,12 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarJustificacion));
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtJustificacion = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtJustificacionFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(402, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 44);
-            this.label1.TabIndex = 97;
-            this.label1.Text = "JUSTIFICACION";
-            // 
-            // TxtJustificacion
-            // 
-            this.TxtJustificacion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtJustificacion.Location = new System.Drawing.Point(32, 57);
-            this.TxtJustificacion.Multiline = true;
-            this.TxtJustificacion.Name = "TxtJustificacion";
-            this.TxtJustificacion.Size = new System.Drawing.Size(1010, 555);
-            this.TxtJustificacion.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -66,11 +46,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(468, 618);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(478, 618);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 98;
+            this.bunifuGradientPanel1.TabIndex = 101;
             // 
             // BtVolverLLenado
             // 
@@ -106,6 +86,29 @@ namespace Design_Dashboard_Modern
             this.BtVolverLLenado.Textcolor = System.Drawing.Color.White;
             this.BtVolverLLenado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(404, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 44);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "JUSTIFICACION";
+            // 
+            // TxtJustificacionFrom
+            // 
+            this.TxtJustificacionFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtJustificacionFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtJustificacionFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtJustificacionFrom.Multiline = true;
+            this.TxtJustificacionFrom.Name = "TxtJustificacionFrom";
+            this.TxtJustificacionFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtJustificacionFrom.TabIndex = 99;
+            // 
             // LLenarJustificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,7 +117,7 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtJustificacion);
+            this.Controls.Add(this.TxtJustificacionFrom);
             this.Name = "LLenarJustificacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarJustificacion";
@@ -126,9 +129,9 @@ namespace Design_Dashboard_Modern
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtJustificacion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TxtJustificacionFrom;
     }
 }

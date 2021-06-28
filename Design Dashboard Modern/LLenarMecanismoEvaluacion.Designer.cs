@@ -30,32 +30,12 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarMecanismoEvaluacion));
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtMecanismoEvaluacion = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtMecanismoEvaluacionFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(292, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 44);
-            this.label1.TabIndex = 97;
-            this.label1.Text = "MECANISMO DE EVALUACION";
-            // 
-            // TxtMecanismoEvaluacion
-            // 
-            this.TxtMecanismoEvaluacion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMecanismoEvaluacion.Location = new System.Drawing.Point(32, 57);
-            this.TxtMecanismoEvaluacion.Multiline = true;
-            this.TxtMecanismoEvaluacion.Name = "TxtMecanismoEvaluacion";
-            this.TxtMecanismoEvaluacion.Size = new System.Drawing.Size(1010, 555);
-            this.TxtMecanismoEvaluacion.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -66,11 +46,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(476, 618);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(478, 618);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 98;
+            this.bunifuGradientPanel1.TabIndex = 101;
             // 
             // BtVolverLLenado
             // 
@@ -106,6 +86,29 @@ namespace Design_Dashboard_Modern
             this.BtVolverLLenado.Textcolor = System.Drawing.Color.White;
             this.BtVolverLLenado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(291, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(523, 44);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "MECANISMO DE EVALUACION";
+            // 
+            // TxtMecanismoEvaluacionFrom
+            // 
+            this.TxtMecanismoEvaluacionFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtMecanismoEvaluacionFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMecanismoEvaluacionFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtMecanismoEvaluacionFrom.Multiline = true;
+            this.TxtMecanismoEvaluacionFrom.Name = "TxtMecanismoEvaluacionFrom";
+            this.TxtMecanismoEvaluacionFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtMecanismoEvaluacionFrom.TabIndex = 99;
+            // 
             // LLenarMecanismoEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,7 +117,8 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtMecanismoEvaluacion);
+            this.Controls.Add(this.TxtMecanismoEvaluacionFrom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LLenarMecanismoEvaluacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarMecanismoEvaluacion";
@@ -126,9 +130,9 @@ namespace Design_Dashboard_Modern
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtMecanismoEvaluacion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TxtMecanismoEvaluacionFrom;
     }
 }

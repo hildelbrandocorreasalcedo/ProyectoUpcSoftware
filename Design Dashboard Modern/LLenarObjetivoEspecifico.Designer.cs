@@ -31,7 +31,7 @@ namespace Design_Dashboard_Modern
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarObjetivoEspecifico));
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtOjetivosEspecificos = new System.Windows.Forms.TextBox();
+            this.TxtOjetivosEspecificosFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -48,14 +48,17 @@ namespace Design_Dashboard_Modern
             this.label1.TabIndex = 97;
             this.label1.Text = "OBJETIVOS ESPECIFICOS";
             // 
-            // TxtOjetivosEspecificos
+            // TxtOjetivosEspecificosFrom
             // 
-            this.TxtOjetivosEspecificos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtOjetivosEspecificos.Location = new System.Drawing.Point(32, 57);
-            this.TxtOjetivosEspecificos.Multiline = true;
-            this.TxtOjetivosEspecificos.Name = "TxtOjetivosEspecificos";
-            this.TxtOjetivosEspecificos.Size = new System.Drawing.Size(1010, 555);
-            this.TxtOjetivosEspecificos.TabIndex = 94;
+            this.TxtOjetivosEspecificosFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtOjetivosEspecificosFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOjetivosEspecificosFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtOjetivosEspecificosFrom.Multiline = true;
+            this.TxtOjetivosEspecificosFrom.Name = "TxtOjetivosEspecificosFrom";
+            this.TxtOjetivosEspecificosFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtOjetivosEspecificosFrom.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -114,7 +117,7 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtOjetivosEspecificos);
+            this.Controls.Add(this.TxtOjetivosEspecificosFrom);
             this.Name = "LLenarObjetivoEspecifico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarObjetivoEspecifico";
@@ -127,8 +130,8 @@ namespace Design_Dashboard_Modern
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtOjetivosEspecificos;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        public System.Windows.Forms.TextBox TxtOjetivosEspecificosFrom;
     }
 }

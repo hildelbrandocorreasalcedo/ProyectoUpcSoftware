@@ -30,22 +30,12 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarComponentesGenericos));
-            this.TxtComponentesGenericos = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtComponetesGenericosFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TxtComponentesGenericos
-            // 
-            this.TxtComponentesGenericos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtComponentesGenericos.Location = new System.Drawing.Point(29, 56);
-            this.TxtComponentesGenericos.Multiline = true;
-            this.TxtComponentesGenericos.Name = "TxtComponentesGenericos";
-            this.TxtComponentesGenericos.Size = new System.Drawing.Size(1010, 555);
-            this.TxtComponentesGenericos.TabIndex = 90;
-            this.TxtComponentesGenericos.TextChanged += new System.EventHandler(this.TxtDescripcion_TextChanged);
             // 
             // bunifuGradientPanel1
             // 
@@ -56,11 +46,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(476, 617);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(478, 618);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 91;
+            this.bunifuGradientPanel1.TabIndex = 101;
             // 
             // BtVolverLLenado
             // 
@@ -101,11 +91,23 @@ namespace Design_Dashboard_Modern
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(295, 7);
+            this.label1.Location = new System.Drawing.Point(317, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(487, 44);
-            this.label1.TabIndex = 93;
+            this.label1.TabIndex = 100;
             this.label1.Text = "COMPONENTES GENERICOS";
+            // 
+            // TxtComponetesGenericosFrom
+            // 
+            this.TxtComponetesGenericosFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtComponetesGenericosFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtComponetesGenericosFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtComponetesGenericosFrom.Multiline = true;
+            this.TxtComponetesGenericosFrom.Name = "TxtComponetesGenericosFrom";
+            this.TxtComponetesGenericosFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtComponetesGenericosFrom.TabIndex = 99;
             // 
             // LLenarComponentesGenericos
             // 
@@ -113,10 +115,10 @@ namespace Design_Dashboard_Modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1074, 668);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Controls.Add(this.TxtComponentesGenericos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtComponetesGenericosFrom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LLenarComponentesGenericos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarComponentesGenericos";
@@ -128,9 +130,9 @@ namespace Design_Dashboard_Modern
 
         #endregion
 
-        private System.Windows.Forms.TextBox TxtComponentesGenericos;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TxtComponetesGenericosFrom;
     }
 }

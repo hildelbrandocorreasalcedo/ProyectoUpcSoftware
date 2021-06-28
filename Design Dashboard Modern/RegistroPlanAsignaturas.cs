@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ENTITY;
 using BLL;
+using ProyectoHotelPensionados;
 
 namespace Design_Dashboard_Modern
 {
@@ -20,25 +21,23 @@ namespace Design_Dashboard_Modern
             InitializeComponent();
             upcService = new UpcService();
         }
-
+       
         private void BtLLenarDescripcion_Click(object sender, EventArgs e)
         {
             LLenarDescripcion abrir = new LLenarDescripcion();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtDescripcionFrom.Text = TxtDescripcion.Text;
+            abrir.ShowDialog();      
         }
         private void RegistroPlanAsignaturas_Load(object sender, EventArgs e)
-        {
-            var response = upcService.ConsultarTodosAsignaturasDtg();
-            CmbAsignatura.Items.Insert(0, "");
-            foreach (var item in response.Asignatura)
-            {
-                CmbAsignatura.Items.Insert(1, item.Nombre);
-            }
+        {          
         }
         private void BtLLenarJustificacion_Click(object sender, EventArgs e)
         {
             LLenarJustificacion abrir = new LLenarJustificacion();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtJustificacionFrom.Text = TxtJustificacion.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarObjetivoGeneral_Click(object sender, EventArgs e)
         {
@@ -74,6 +73,10 @@ namespace Design_Dashboard_Modern
         {
             LLenarReferenciasBibliograficas abrir = new LLenarReferenciasBibliograficas();
             abrir.Show();
+        }
+
+        private void TxtDescripcion_MouseEnter(object sender, EventArgs e)
+        {
         }
     }
 }

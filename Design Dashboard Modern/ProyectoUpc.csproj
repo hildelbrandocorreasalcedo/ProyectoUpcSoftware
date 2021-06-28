@@ -82,29 +82,29 @@
     <Compile Include="ConsultarRespuestaComite.Designer.cs">
       <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
     </Compile>
-    <Compile Include="LLenarContenidosCompetencias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LLenarContenidosCompetencias.Designer.cs">
-      <DependentUpon>LLenarContenidosCompetencias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LLenarEstrategiasPedagogicas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LLenarEstrategiasPedagogicas.Designer.cs">
-      <DependentUpon>LLenarEstrategiasPedagogicas.cs</DependentUpon>
-    </Compile>
     <Compile Include="LLenarComponentesGenericos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarComponentesGenericos.Designer.cs">
       <DependentUpon>LLenarComponentesGenericos.cs</DependentUpon>
     </Compile>
+    <Compile Include="LLenarContenidosCompetencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarContenidosCompetencias.Designer.cs">
+      <DependentUpon>LLenarContenidosCompetencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarDescripcion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarDescripcion.Designer.cs">
       <DependentUpon>LLenarDescripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LLenarEstrategiasPedagogicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarEstrategiasPedagogicas.Designer.cs">
+      <DependentUpon>LLenarEstrategiasPedagogicas.cs</DependentUpon>
     </Compile>
     <Compile Include="LLenarJustificacion.cs">
       <SubType>Form</SubType>

@@ -31,7 +31,7 @@ namespace Design_Dashboard_Modern
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarReferenciasBibliograficas));
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtReferenciasBibliograficas = new System.Windows.Forms.TextBox();
+            this.TxtReferenciasBibliograficasFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -48,14 +48,17 @@ namespace Design_Dashboard_Modern
             this.label1.TabIndex = 97;
             this.label1.Text = "REFERENCIAS BIBLIOGRAFICAS";
             // 
-            // TxtReferenciasBibliograficas
+            // TxtReferenciasBibliograficasFrom
             // 
-            this.TxtReferenciasBibliograficas.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtReferenciasBibliograficas.Location = new System.Drawing.Point(32, 57);
-            this.TxtReferenciasBibliograficas.Multiline = true;
-            this.TxtReferenciasBibliograficas.Name = "TxtReferenciasBibliograficas";
-            this.TxtReferenciasBibliograficas.Size = new System.Drawing.Size(1010, 555);
-            this.TxtReferenciasBibliograficas.TabIndex = 94;
+            this.TxtReferenciasBibliograficasFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtReferenciasBibliograficasFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtReferenciasBibliograficasFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtReferenciasBibliograficasFrom.Multiline = true;
+            this.TxtReferenciasBibliograficasFrom.Name = "TxtReferenciasBibliograficasFrom";
+            this.TxtReferenciasBibliograficasFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtReferenciasBibliograficasFrom.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -114,7 +117,7 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtReferenciasBibliograficas);
+            this.Controls.Add(this.TxtReferenciasBibliograficasFrom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "LLenarReferenciasBibliograficas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -128,8 +131,8 @@ namespace Design_Dashboard_Modern
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtReferenciasBibliograficas;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        public System.Windows.Forms.TextBox TxtReferenciasBibliograficasFrom;
     }
 }

@@ -30,32 +30,12 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarDescripcion));
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtDescripcionFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(401, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 44);
-            this.label1.TabIndex = 97;
-            this.label1.Text = "DESCRIPCION";
-            // 
-            // TxtDescripcion
-            // 
-            this.TxtDescripcion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcion.Location = new System.Drawing.Point(32, 57);
-            this.TxtDescripcion.Multiline = true;
-            this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(1010, 555);
-            this.TxtDescripcion.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -66,11 +46,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(474, 618);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(478, 618);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 98;
+            this.bunifuGradientPanel1.TabIndex = 101;
             // 
             // BtVolverLLenado
             // 
@@ -105,6 +85,30 @@ namespace Design_Dashboard_Modern
             this.BtVolverLLenado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtVolverLLenado.Textcolor = System.Drawing.Color.White;
             this.BtVolverLLenado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtVolverLLenado.Click += new System.EventHandler(this.BtVolverLLenado_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(420, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(253, 44);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "DESCRIPCION";
+            // 
+            // TxtDescripcionFrom
+            // 
+            this.TxtDescripcionFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtDescripcionFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescripcionFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtDescripcionFrom.Multiline = true;
+            this.TxtDescripcionFrom.Name = "TxtDescripcionFrom";
+            this.TxtDescripcionFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtDescripcionFrom.TabIndex = 99;
             // 
             // LLenarDescripcion
             // 
@@ -114,7 +118,8 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtDescripcion);
+            this.Controls.Add(this.TxtDescripcionFrom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LLenarDescripcion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarDescripcion";
@@ -126,9 +131,9 @@ namespace Design_Dashboard_Modern
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtDescripcion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TxtDescripcionFrom;
     }
 }

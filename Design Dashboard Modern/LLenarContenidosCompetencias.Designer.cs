@@ -30,32 +30,12 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LLenarContenidosCompetencias));
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtContenidosCompetencias = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtContenidosCompetenciasFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(27, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1012, 44);
-            this.label1.TabIndex = 97;
-            this.label1.Text = "CONTENIDOS, COMPETENCIAS ESPECIFICAS Y RESULTADOS";
-            // 
-            // TxtContenidosCompetencias
-            // 
-            this.TxtContenidosCompetencias.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContenidosCompetencias.Location = new System.Drawing.Point(32, 57);
-            this.TxtContenidosCompetencias.Multiline = true;
-            this.TxtContenidosCompetencias.Name = "TxtContenidosCompetencias";
-            this.TxtContenidosCompetencias.Size = new System.Drawing.Size(1010, 555);
-            this.TxtContenidosCompetencias.TabIndex = 94;
             // 
             // bunifuGradientPanel1
             // 
@@ -66,11 +46,11 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(480, 618);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(478, 618);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
-            this.bunifuGradientPanel1.TabIndex = 98;
+            this.bunifuGradientPanel1.TabIndex = 101;
             // 
             // BtVolverLLenado
             // 
@@ -106,6 +86,29 @@ namespace Design_Dashboard_Modern
             this.BtVolverLLenado.Textcolor = System.Drawing.Color.White;
             this.BtVolverLLenado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(30, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1012, 44);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "CONTENIDOS, COMPETENCIAS ESPECIFICAS Y RESULTADOS";
+            // 
+            // TxtContenidosCompetenciasFrom
+            // 
+            this.TxtContenidosCompetenciasFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtContenidosCompetenciasFrom.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContenidosCompetenciasFrom.Location = new System.Drawing.Point(32, 57);
+            this.TxtContenidosCompetenciasFrom.Multiline = true;
+            this.TxtContenidosCompetenciasFrom.Name = "TxtContenidosCompetenciasFrom";
+            this.TxtContenidosCompetenciasFrom.Size = new System.Drawing.Size(1010, 555);
+            this.TxtContenidosCompetenciasFrom.TabIndex = 99;
+            // 
             // LLenarContenidosCompetencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,7 +117,8 @@ namespace Design_Dashboard_Modern
             this.ClientSize = new System.Drawing.Size(1074, 668);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtContenidosCompetencias);
+            this.Controls.Add(this.TxtContenidosCompetenciasFrom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LLenarContenidosCompetencias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarContenidosCompetencias";
@@ -126,9 +130,9 @@ namespace Design_Dashboard_Modern
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtContenidosCompetencias;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TxtContenidosCompetenciasFrom;
     }
 }

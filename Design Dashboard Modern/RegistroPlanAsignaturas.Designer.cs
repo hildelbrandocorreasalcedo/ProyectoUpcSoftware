@@ -837,6 +837,7 @@ namespace Design_Dashboard_Modern
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(685, 61);
             this.TxtDescripcion.TabIndex = 273;
+            this.TxtDescripcion.MouseEnter += new System.EventHandler(this.TxtDescripcion_MouseEnter);
             // 
             // label16
             // 
@@ -1244,7 +1245,6 @@ namespace Design_Dashboard_Modern
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel13;
         private Bunifu.Framework.UI.BunifuFlatButton BtLLenarReferenciasBibliograficas;
-        private System.Windows.Forms.TextBox TxtReferenciaBibliografica;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private Bunifu.Framework.UI.BunifuGradientPanel BtEliminar;
@@ -1271,14 +1271,6 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtLLenarJustificacion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private Bunifu.Framework.UI.BunifuFlatButton BtLLenarDescripcion;
-        private System.Windows.Forms.TextBox TxtEstrategias;
-        private System.Windows.Forms.TextBox TxtContenido;
-        private System.Windows.Forms.TextBox TxtComponentesGenericos;
-        private System.Windows.Forms.TextBox TxtJustificacion;
-        private System.Windows.Forms.TextBox TxtMecanismoEvaluativo;
-        private System.Windows.Forms.TextBox TxtObjetivoEspecifico;
-        private System.Windows.Forms.TextBox TxtObjetivoGeneral;
-        private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -1303,5 +1295,14 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
         private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
+        public System.Windows.Forms.TextBox TxtReferenciaBibliografica;
+        public System.Windows.Forms.TextBox TxtEstrategias;
+        public System.Windows.Forms.TextBox TxtContenido;
+        public System.Windows.Forms.TextBox TxtComponentesGenericos;
+        public System.Windows.Forms.TextBox TxtJustificacion;
+        public System.Windows.Forms.TextBox TxtMecanismoEvaluativo;
+        public System.Windows.Forms.TextBox TxtObjetivoEspecifico;
+        public System.Windows.Forms.TextBox TxtObjetivoGeneral;
+        public System.Windows.Forms.TextBox TxtDescripcion;
     }
 }

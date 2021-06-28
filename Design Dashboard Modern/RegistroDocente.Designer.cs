@@ -299,6 +299,7 @@ namespace Design_Dashboard_Modern
             this.label1.Size = new System.Drawing.Size(418, 44);
             this.label1.TabIndex = 65;
             this.label1.Text = "GESTION DE DOCENTES";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TxtNombre
             // 

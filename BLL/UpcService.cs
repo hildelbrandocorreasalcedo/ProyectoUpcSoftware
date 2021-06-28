@@ -995,5 +995,113 @@ namespace BLL
         //////////////////////////////////------------------------///////////////////////////////////////
         /////////////////////////////////---Plan de asignatura --///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
+
+        public string GuardarPlanAsignatura(PlanAsignaturas planAsignatura)
+        {
+            try
+            {
+                if (PlanAsignaturaRepository.BuscarPlanAsignatura(planAsignatura.Materia) == null)
+                {
+                    PlanAsignaturaRepository.GuardarPlanAsignatura(planAsignatura);
+                    return "Los Datos han sido guardados satisfactoriamente";
+                }
+                return $"El plan de asignatura {planAsignatura.Materia} ya se encuentra registrado por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de Datos: " + e.Message;
+            }
+        }
+
+        public string EliminarPlanAsignatura(string materia)
+        {
+            try
+            {
+                if (PlanAsignaturaRepository.BuscarPlanAsignatura(materia) != null)
+                {
+                    PlanAsignaturaRepository.EliminarPlanAsignatura(materia);
+                    return $"El plan de asignatura {materia} ha sido eliminada satisfacatoriamente";
+                }
+                return $"El plan de asignatura {materia} no se encuentra registrada";
+            }
+            catch (Exception e)
+            {
+
+                return "Error de datos" + e.Message;
+            }
+        }
+
+        public string ModificarPlanAsignatura(PlanAsignaturas materia)
+        {
+            try
+            {
+                if (PlanAsignaturaRepository.BuscarPlanAsignatura(materia.Materia) != null)
+                {
+
+                    PlanAsignaturaRepository.ModificarPlanAsignatura(materia);
+                    return $"El Plan Asignatura {materia.Materia} ha sido modificada satisfacatoriamente";
+                }
+                return $"EL Plan Asignatura {materia.Materia} no se encuentra registrado, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de datos" + e.Message;
+            }
+        }
+        public RespuestaBusqueda BuscarPlanAsignatura(string Materia)
+        {
+            RespuestaBusqueda respuesta = new RespuestaBusqueda();
+            try
+            {
+                respuesta.Error = false;
+                PlanAsignaturas planAsignatura = PlanAsignaturaRepository.BuscarPlanAsignatura(Materia);
+                if (planAsignatura == null)
+                {
+                    respuesta.Mensaje = $"El Plan Asignatura {Materia} no se encuentra registrado";
+                    respuesta.PlanAsignatura = null;
+                }
+                else
+                {
+                    respuesta.PlanAsignatura = planAsignatura;
+                    respuesta.Mensaje = "Plan Asignatura encontrado\n\n";
+                }
+            }
+            catch (Exception E)
+            {
+                respuesta.Mensaje = "Error de lectura o escritura de archivos: " + E.Message;
+                respuesta.PlanAsignatura = null;
+                respuesta.Error = true;
+            }
+            return respuesta;
+        }
+
+        public RespuestaConsulta ConsultarTodosPlanAsignaturas()
+        {
+            RespuestaConsulta respuesta = new RespuestaConsulta();
+            try
+            {
+                respuesta.Error = false;
+                IList<PlanAsignaturas> PlanAsignaturass = PlanAsignaturaRepository.ConsultarTodosPlanAsignaturas();
+                if (PlanAsignaturass.Count != 0)
+                {
+                    respuesta.Mensaje = "Se Consulta la Informacion de Plan Asignatura";
+                    respuesta.PlanAsignaturas = PlanAsignaturass;
+                }
+                else
+                {
+                    respuesta.Mensaje = "No existen Datos para Consultar";
+                    respuesta.PlanAsignaturas = null;
+                }
+            }
+            catch (Exception e)
+            {
+                respuesta.Error = true;
+                respuesta.Mensaje = $"Erro en datos: " + e.Message;
+                respuesta.PlanAsignaturas = null;
+            }
+            return respuesta;
+        }
+
+
     }
 }

@@ -647,16 +647,75 @@ namespace DAL
         /////////////////////////////////-----Plan Asignatura----///////////////////////////////////////
         ////////////////////////////////------------------------///////////////////////////////////////
 
+        //public void GuardarAsignatura(PlanAsignaturas planAsignatura)
+        //{
+        //    FileStream file = new FileStream(FilePlanAsignatura, FileMode.Append);
+        //    StreamWriter writer = new StreamWriter(file);
+        //    writer.WriteLine($"{planAsignatura.Materia};{planAsignatura.Descripcion};{planAsignatura.Justificacion};{planAsignatura.ObjetivoGeneral};{planAsignatura.ObjetivoEspecifico};{planAsignatura.ComponeteGenerico};{planAsignatura.Estrategias};{planAsignatura.Contenidos};{planAsignatura.MecanismosEvaluacion};{planAsignatura.ReferenciasBibliograficas}");
+        //    writer.Close();
+        //    file.Close();
+        //}
+
+        //public IList<PlanAsignaturas> ConsultarTodosPlanAsignaturas()
+        //{
+        //    FileStream fileStream = new FileStream(FilePlanAsignatura, FileMode.OpenOrCreate);
+        //    StreamReader lector = new StreamReader(fileStream);
+        //    string linea = string.Empty;
+        //    while ((linea = lector.ReadLine()) != null)
+        //    {
+        //        PlanAsignaturas planAsignatura = MapearPlanAsignatura(linea);
+        //        planAsignaturas.Add(planAsignatura);
+        //    }
+        //    lector.Close();
+        //    fileStream.Close();
+        //    return planAsignaturas;
+        //}
+        //public List<PlanAsignaturas> ConsultarTodosPlanAsignaturasDtg()
+        //{
+        //    List<PlanAsignaturas> planAsignaturas = new List<PlanAsignaturas>();
+        //    FileStream file = new FileStream(FilePlanAsignatura, FileMode.OpenOrCreate, FileAccess.Read);
+        //    StreamReader reader = new StreamReader(file);
+        //    string linea = string.Empty;
+        //    while ((linea = reader.ReadLine()) != null)
+        //    {
+        //        PlanAsignaturas planAsignatura = MapearPlanAsignatura(linea);
+        //        planAsignaturas.Add(planAsignatura);
+        //    }
+        //    reader.Close();
+        //    file.Close();
+        //    return planAsignaturas;
+        //}
+
+        //public PlanAsignaturas MapearPlanAsignatura(string linea)
+        //{
+        //    PlanAsignaturas planAsignatura = new PlanAsignaturas();
+        //    string[] datos = linea.Split(';');
+        //    planAsignatura.Materia = datos[0];
+        //    planAsignatura.Descripcion = datos[1];
+        //    planAsignatura.Justificacion = datos[2];
+        //    planAsignatura.ObjetivoGeneral = datos[3];
+        //    planAsignatura.ObjetivoEspecifico = int.Parse(datos[4]);
+        //    planAsignatura.ComponeteGenerico = datos[5];
+        //    planAsignatura.Estrategias = datos[6];
+        //    planAsignatura.Contenidos = datos[7];
+        //    planAsignatura.MecanismosEvaluacion = int.Parse(datos[8]);
+        //    planAsignatura.ReferenciasBibliograficas = int.Parse(datos[9]);
+
+        //    return planAsignatura;
+        //}
+
+
         public void GuardarPlanAsignatura(PlanAsignaturas planAsignatura)
         {
             FileStream file = new FileStream(FilePlanAsignatura, FileMode.Append);
             StreamWriter writer = new StreamWriter(file);
             writer.WriteLine($"{planAsignatura.Materia};{planAsignatura.Descripcion};{planAsignatura.Justificacion};{planAsignatura.ObjetivoGeneral};" +
-                $"{planAsignatura.ObjetivoEspecifico};{planAsignatura.ComponeteGenerico};{planAsignatura.Estrategias};{planAsignatura.Contenidos}; " +
-                $"{planAsignatura.MecanismosEvaluacion};{planAsignatura.ReferenciasBibliograficas} ");
+                $"{planAsignatura.ObjetivoEspecifico};{planAsignatura.ComponeteGenerico};{planAsignatura.Estrategias};{planAsignatura.Contenidos};" +
+                $"{planAsignatura.MecanismosEvaluacion};{planAsignatura.ReferenciasBibliograficas}");
             writer.Close();
             file.Close();
         }
+
 
         public IList<PlanAsignaturas> ConsultarTodosPlanAsignaturas()
         {
@@ -672,6 +731,7 @@ namespace DAL
             fileStream.Close();
             return planAsignaturas;
         }
+
         public PlanAsignaturas MapearPlanAsignatura(string linea)
         {
             PlanAsignaturas planAsignatura = new PlanAsignaturas();
@@ -685,7 +745,7 @@ namespace DAL
             planAsignatura.Estrategias = datos[6];
             planAsignatura.Contenidos = datos[7];
             planAsignatura.MecanismosEvaluacion = datos[8];
-            planAsignatura.ReferenciasBibliograficas = datos[10];
+            planAsignatura.ReferenciasBibliograficas = datos[9];
             return planAsignatura;
         }
 
@@ -702,6 +762,39 @@ namespace DAL
                 }
             }
             return null;
+        }
+
+        public void EliminarPlanAsignatura(string materia)
+        {
+            planAsignaturas.Clear();
+            planAsignaturas = ConsultarTodosPlanAsignaturas();
+            FileStream fileStream = new FileStream(FilePlanAsignatura, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in planAsignaturas)
+            {
+                if (item.Materia != materia)
+                {
+                    GuardarPlanAsignatura(item);
+                }
+            }
+        }
+        public void ModificarPlanAsignatura(PlanAsignaturas planAsignatura)
+        {
+            planAsignaturas.Clear();
+            planAsignaturas = ConsultarTodosPlanAsignaturas();
+            FileStream fileStream = new FileStream(FileDocente, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in planAsignaturas)
+            {
+                if (item.Materia != planAsignatura.Materia)
+                {
+                    GuardarPlanAsignatura(item);
+                }
+                else
+                {
+                    GuardarPlanAsignatura(planAsignatura);
+                }
+            }
         }
     }
 }

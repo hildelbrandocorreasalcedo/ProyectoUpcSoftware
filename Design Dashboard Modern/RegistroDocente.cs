@@ -179,11 +179,11 @@ namespace Design_Dashboard_Modern
                 string identificacion = TxtIdentificacion.Text;
                 if (identificacion != "")
                 {
-                    RespuestaBusqueda respuesta = upcService.BuscarAsignatura(identificacion);
-                    if (respuesta.Asignatura != null)
+                    RespuestaBusqueda respuesta = upcService.BuscarDocente(identificacion);
+                    if (respuesta.Docente != null)
                     {
                         identificacion = TxtIdentificacion.Text;
-                        var mensaje = upcService.EliminarAsignatura(identificacion);
+                        var mensaje = upcService.EliminarDocente(identificacion);
                         MessageBox.Show(mensaje, "Docente ELiminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -270,6 +270,11 @@ namespace Design_Dashboard_Modern
         private void BtCancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,19 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
         }
+
+        private void BtVolverLLenado_Click(object sender, EventArgs e)
+        {
+            RegistroPlanAsignaturas abrir = Owner as RegistroPlanAsignaturas;
+            abrir.TxtEstrategias.Text = TxtEstrategiasPedagogicasFrom.Text;
+            this.Hide();
+        }
+
+        private void BtVolver_Click(object sender, EventArgs e)
+        {
+            ConsultarPlanAsignatura abrir1 = Owner as ConsultarPlanAsignatura;
+            abrir1.TxtEstrategias.Text = TxtEstrategiasPedagogicasFrom.Text;
+            this.Hide();
+        }
     }
 }

@@ -20,8 +20,9 @@ namespace Design_Dashboard_Modern
         private void BtLLenarDescripcion_Click(object sender, EventArgs e)
         {
             LLenarDescripcion abrir = new LLenarDescripcion();
-            abrir.Show();
-            this.Hide();
+            AddOwnedForm(abrir);
+            abrir.TxtDescripcionFrom.Text = TxtDescripcion.Text;
+            abrir.ShowDialog();
         }
 
         private void BtLLenarJustificacion_Click(object sender, EventArgs e)

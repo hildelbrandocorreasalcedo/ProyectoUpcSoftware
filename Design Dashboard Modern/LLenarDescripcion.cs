@@ -18,9 +18,17 @@ namespace Design_Dashboard_Modern
         }
 
         private void BtVolverLLenado_Click(object sender, EventArgs e)
-        {
-            RegistroPlanAsignaturas abrir = Owner as RegistroPlanAsignaturas;           
+        {           
+            RegistroPlanAsignaturas abrir = Owner as RegistroPlanAsignaturas;
             abrir.TxtDescripcion.Text = TxtDescripcionFrom.Text;
+            this.Hide();
+        }
+
+        private void BtVolver_Click(object sender, EventArgs e)
+        {
+
+            ConsultarPlanAsignatura abrir1 = Owner as ConsultarPlanAsignatura;
+            abrir1.TxtDescripcion.Text = TxtDescripcionFrom.Text;
             this.Hide();
         }
     }

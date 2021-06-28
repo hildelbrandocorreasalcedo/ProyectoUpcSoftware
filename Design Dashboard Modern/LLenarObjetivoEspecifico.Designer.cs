@@ -34,7 +34,10 @@ namespace Design_Dashboard_Modern
             this.TxtOjetivosEspecificosFrom = new System.Windows.Forms.TextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtVolverLLenado = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.FondoConsulta = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.BtVolver = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel1.SuspendLayout();
+            this.FondoConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +111,57 @@ namespace Design_Dashboard_Modern
             this.BtVolverLLenado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtVolverLLenado.Textcolor = System.Drawing.Color.White;
             this.BtVolverLLenado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtVolverLLenado.Click += new System.EventHandler(this.BtVolverLLenado_Click);
+            // 
+            // FondoConsulta
+            // 
+            this.FondoConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FondoConsulta.BackgroundImage")));
+            this.FondoConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FondoConsulta.Controls.Add(this.BtVolver);
+            this.FondoConsulta.GradientBottomLeft = System.Drawing.Color.Lime;
+            this.FondoConsulta.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.FondoConsulta.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.FondoConsulta.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.FondoConsulta.Location = new System.Drawing.Point(85, 619);
+            this.FondoConsulta.Name = "FondoConsulta";
+            this.FondoConsulta.Quality = 10;
+            this.FondoConsulta.Size = new System.Drawing.Size(151, 44);
+            this.FondoConsulta.TabIndex = 103;
+            // 
+            // BtVolver
+            // 
+            this.BtVolver.Activecolor = System.Drawing.Color.Transparent;
+            this.BtVolver.BackColor = System.Drawing.Color.Transparent;
+            this.BtVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtVolver.BorderRadius = 0;
+            this.BtVolver.ButtonText = "     VOLVER ";
+            this.BtVolver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtVolver.DisabledColor = System.Drawing.Color.Gray;
+            this.BtVolver.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtVolver.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtVolver.Iconimage")));
+            this.BtVolver.Iconimage_right = null;
+            this.BtVolver.Iconimage_right_Selected = null;
+            this.BtVolver.Iconimage_Selected = null;
+            this.BtVolver.IconMarginLeft = 8;
+            this.BtVolver.IconMarginRight = 0;
+            this.BtVolver.IconRightVisible = true;
+            this.BtVolver.IconRightZoom = 0D;
+            this.BtVolver.IconVisible = true;
+            this.BtVolver.IconZoom = 80D;
+            this.BtVolver.IsTab = false;
+            this.BtVolver.Location = new System.Drawing.Point(6, 1);
+            this.BtVolver.Name = "BtVolver";
+            this.BtVolver.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtVolver.OnHovercolor = System.Drawing.Color.Lime;
+            this.BtVolver.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtVolver.selected = false;
+            this.BtVolver.Size = new System.Drawing.Size(139, 44);
+            this.BtVolver.TabIndex = 28;
+            this.BtVolver.Text = "     VOLVER ";
+            this.BtVolver.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtVolver.Textcolor = System.Drawing.Color.White;
+            this.BtVolver.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtVolver.Click += new System.EventHandler(this.BtVolver_Click);
             // 
             // LLenarObjetivoEspecifico
             // 
@@ -115,6 +169,7 @@ namespace Design_Dashboard_Modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1074, 668);
+            this.Controls.Add(this.FondoConsulta);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtOjetivosEspecificosFrom);
@@ -122,6 +177,7 @@ namespace Design_Dashboard_Modern
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LLenarObjetivoEspecifico";
             this.bunifuGradientPanel1.ResumeLayout(false);
+            this.FondoConsulta.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +189,7 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton BtVolverLLenado;
         public System.Windows.Forms.TextBox TxtOjetivosEspecificosFrom;
+        private Bunifu.Framework.UI.BunifuGradientPanel FondoConsulta;
+        private Bunifu.Framework.UI.BunifuFlatButton BtVolver;
     }
 }

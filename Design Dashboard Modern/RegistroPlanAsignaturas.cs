@@ -42,37 +42,51 @@ namespace Design_Dashboard_Modern
         private void BtLLenarObjetivoGeneral_Click(object sender, EventArgs e)
         {
             LLenarObjetivoGeneral abrir = new LLenarObjetivoGeneral();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtObjetivoGeneralFrom.Text = TxtObjetivoGeneral.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarObjetivosEspecificos_Click(object sender, EventArgs e)
         {
             LLenarObjetivoEspecifico abrir = new LLenarObjetivoEspecifico();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtOjetivosEspecificosFrom.Text = TxtObjetivoEspecifico.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarComponentesGenericos_Click(object sender, EventArgs e)
         {
             LLenarComponentesGenericos abrir = new LLenarComponentesGenericos();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtComponetesGenericosFrom.Text = TxtComponentesGenericos.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarEstrategiasPedagogicas_Click(object sender, EventArgs e)
         {
             LLenarEstrategiasPedagogicas abrir = new LLenarEstrategiasPedagogicas();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtEstrategiasPedagogicasFrom.Text = TxtEstrategias.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarContenidos_Click(object sender, EventArgs e)
         {
             LLenarContenidosCompetencias abrir = new LLenarContenidosCompetencias();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtContenidosCompetenciasFrom.Text = TxtContenido.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarMecanismoEvaluacion_Click(object sender, EventArgs e)
         {
             LLenarMecanismoEvaluacion abrir = new LLenarMecanismoEvaluacion();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtMecanismoEvaluacionFrom.Text = TxtMecanismoEvaluativo.Text;
+            abrir.ShowDialog();
         }
         private void BtLLenarReferenciasBibliograficas_Click(object sender, EventArgs e)
         {
             LLenarReferenciasBibliograficas abrir = new LLenarReferenciasBibliograficas();
-            abrir.Show();
+            AddOwnedForm(abrir);
+            abrir.TxtReferenciasBibliograficasFrom.Text = TxtReferenciaBibliografica.Text;
+            abrir.ShowDialog();
         }
 
         private void TxtDescripcion_MouseEnter(object sender, EventArgs e)

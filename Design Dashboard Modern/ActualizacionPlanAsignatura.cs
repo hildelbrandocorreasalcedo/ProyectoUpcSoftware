@@ -259,5 +259,87 @@ namespace Design_Dashboard_Modern
         {
             this.Dispose();
         }
+
+        private void BtLLenarDescripcion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtLLenarJustificacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExDescripcion_Click(object sender, EventArgs e)
+        {
+            LLenarDescripcion2 abrir = new LLenarDescripcion2();
+            AddOwnedForm(abrir);
+            abrir.TxtDescripcionFrom.Text = TxtDescripcion.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExJustificacion_Click(object sender, EventArgs e)
+        {
+            LLenarJustificacion2 abrir = new LLenarJustificacion2();
+            AddOwnedForm(abrir);
+            abrir.TxtJustificacionFrom.Text = TxtJustificacion.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExObjetivoGeneral_Click(object sender, EventArgs e)
+        {
+            LLenarObjetivoGeneral2 abrir = new LLenarObjetivoGeneral2();
+            AddOwnedForm(abrir);
+            abrir.TxtObjetivoGeneralFrom.Text = TxtObjetivoGeneral.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExObjetivosEspecificos_Click(object sender, EventArgs e)
+        {
+            LLenarObjetivoEspecifico2 abrir = new LLenarObjetivoEspecifico2();
+            AddOwnedForm(abrir);
+            abrir.TxtOjetivosEspecificosFrom.Text = TxtObjetivoEspecifico.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExComponetes_Click(object sender, EventArgs e)
+        {
+            LLenarComponentesGenericos2 abrir = new LLenarComponentesGenericos2();
+            AddOwnedForm(abrir);
+            abrir.TxtComponetesGenericosFrom.Text = TxtComponentesGenericos.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExEstrategias_Click(object sender, EventArgs e)
+        {
+            LLenarEstrategiasPedagogicas2 abrir = new LLenarEstrategiasPedagogicas2();
+            AddOwnedForm(abrir);
+            abrir.TxtEstrategiasPedagogicasFrom.Text = TxtEstrategias.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExContenido_Click(object sender, EventArgs e)
+        {
+            LLenarContenidosCompetencias2 abrir = new LLenarContenidosCompetencias2();
+            AddOwnedForm(abrir);
+            abrir.TxtContenidosCompetenciasFrom.Text = TxtContenido.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExMecanismoEvaluacion_Click(object sender, EventArgs e)
+        {
+            LLenarMecanismoEvaluacion2 abrir = new LLenarMecanismoEvaluacion2();
+            AddOwnedForm(abrir);
+            abrir.TxtMecanismoEvaluacionFrom.Text = TxtMecanismoEvaluativo.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExReferenciasBibliograficas_Click(object sender, EventArgs e)
+        {
+            LLenarReferenciasBibliograficas2 abrir = new LLenarReferenciasBibliograficas2();
+            AddOwnedForm(abrir);
+            abrir.TxtReferenciasBibliograficasFrom.Text = TxtMecanismoEvaluativo.Text;
+            abrir.ShowDialog();
+        }
     }
 }

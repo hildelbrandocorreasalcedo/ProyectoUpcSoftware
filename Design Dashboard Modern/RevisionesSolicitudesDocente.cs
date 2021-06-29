@@ -79,5 +79,34 @@ namespace Design_Dashboard_Modern
             TxtContarSiAprobados.Text = "";
             TxtContarNOAprobados.Text = "";
         }
+
+        private void BtFiltroTipoDocente_Click(object sender, EventArgs e)
+        {
+            DtgSolicitudDocente.Rows.Clear();
+            VaciarTextBox();
+            var filtrado = CmbFiltro.Text;
+            if (filtrado.Equals(""))
+            {
+                MessageBox.Show("Escoja una Opción de Filtrado", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (CmbFiltro.Text.Equals("TODOS"))
+            {
+                ConsultarTodosDocentesDtg();
+            }
+            else if (CmbFiltro.Text.Equals("Si"))
+            {
+                //ConsultarFiltrarDocenteCatedratico();
+            }
+            else if (CmbFiltro.Text.Equals("No"))
+            {
+               // ConsultarFiltrarDocenteOcacional();
+            }
+        }
+        private void ConsultarTodosDocentesDtg()
+        {
+            var response = upcService.ConsultarTodosSolicitudDocentesDtg();
+            LlenarDtg(response);
+            //TxtTotalDocentes.Text = upcService.TotalizarTodosSolicitudDocentes().ToString();
+        }
     }
 }

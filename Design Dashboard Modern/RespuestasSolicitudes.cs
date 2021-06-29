@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class LlenarComponetesGenericos2 : Form
+    public partial class RespuestasSolicitudes : Form
     {
-        public LlenarComponetesGenericos2()
+        public RespuestasSolicitudes()
         {
             InitializeComponent();
         }

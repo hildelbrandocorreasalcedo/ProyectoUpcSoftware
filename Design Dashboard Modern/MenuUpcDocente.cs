@@ -190,7 +190,7 @@ namespace ProyectoHotelPensionados
 
         private void BtConsultarRespuestaComite_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarRespuestaComite());
+            openChildForm(new RevisionesSolicitudesDocente());
         }
 
         private void Minimizar_Click_2(object sender, EventArgs e)

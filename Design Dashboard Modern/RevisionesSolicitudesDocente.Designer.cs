@@ -43,13 +43,6 @@ namespace Design_Dashboard_Modern
             this.TxtContarNOAprobados = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.DtgSolicitudDocente = new System.Windows.Forms.DataGridView();
-            this.CmbFiltro = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
-            this.TxtContarTotalAprobados = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.Identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +56,13 @@ namespace Design_Dashboard_Modern
             this.MecanismoEvaluacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReferenciasBibliograficas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aprobado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmbFiltro = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
+            this.TxtContarTotalAprobados = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -138,6 +138,7 @@ namespace Design_Dashboard_Modern
             this.BtFiltroTipoDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtFiltroTipoDocente.Textcolor = System.Drawing.Color.White;
             this.BtFiltroTipoDocente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtFiltroTipoDocente.Click += new System.EventHandler(this.BtFiltroTipoDocente_Click);
             // 
             // bunifuGradientPanel6
             // 
@@ -309,82 +310,6 @@ namespace Design_Dashboard_Modern
             this.DtgSolicitudDocente.Size = new System.Drawing.Size(1016, 385);
             this.DtgSolicitudDocente.TabIndex = 105;
             // 
-            // CmbFiltro
-            // 
-            this.CmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbFiltro.FormattingEnabled = true;
-            this.CmbFiltro.Items.AddRange(new object[] {
-            "TODOS",
-            "SI",
-            "NO"});
-            this.CmbFiltro.Location = new System.Drawing.Point(796, 72);
-            this.CmbFiltro.Name = "CmbFiltro";
-            this.CmbFiltro.Size = new System.Drawing.Size(101, 28);
-            this.CmbFiltro.TabIndex = 102;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(639, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 20);
-            this.label7.TabIndex = 100;
-            this.label7.Text = "Fitro por aprobacion";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(154, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 20);
-            this.label2.TabIndex = 99;
-            this.label2.Text = "Identificacion";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(182, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(736, 44);
-            this.label1.TabIndex = 98;
-            this.label1.Text = "REVISION DE SOLICITUDES DEL DOCENTES";
-            // 
-            // TxtIdentificacion
-            // 
-            this.TxtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIdentificacion.Location = new System.Drawing.Point(263, 72);
-            this.TxtIdentificacion.Name = "TxtIdentificacion";
-            this.TxtIdentificacion.Size = new System.Drawing.Size(148, 26);
-            this.TxtIdentificacion.TabIndex = 97;
-            // 
-            // TxtContarTotalAprobados
-            // 
-            this.TxtContarTotalAprobados.Enabled = false;
-            this.TxtContarTotalAprobados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContarTotalAprobados.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TxtContarTotalAprobados.Location = new System.Drawing.Point(268, 547);
-            this.TxtContarTotalAprobados.Name = "TxtContarTotalAprobados";
-            this.TxtContarTotalAprobados.Size = new System.Drawing.Size(66, 26);
-            this.TxtContarTotalAprobados.TabIndex = 112;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(121, 553);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 20);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "Total de aprobados";
-            // 
             // Identificacion
             // 
             this.Identificacion.HeaderText = "Identificacion";
@@ -449,6 +374,82 @@ namespace Design_Dashboard_Modern
             // 
             this.Aprobado.HeaderText = "Aprobado";
             this.Aprobado.Name = "Aprobado";
+            // 
+            // CmbFiltro
+            // 
+            this.CmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbFiltro.FormattingEnabled = true;
+            this.CmbFiltro.Items.AddRange(new object[] {
+            "TODOS",
+            "No",
+            "Si"});
+            this.CmbFiltro.Location = new System.Drawing.Point(796, 72);
+            this.CmbFiltro.Name = "CmbFiltro";
+            this.CmbFiltro.Size = new System.Drawing.Size(101, 28);
+            this.CmbFiltro.TabIndex = 102;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(639, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(151, 20);
+            this.label7.TabIndex = 100;
+            this.label7.Text = "Fitro por aprobacion";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(154, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.TabIndex = 99;
+            this.label2.Text = "Identificacion";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(162, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(775, 44);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "REVISIONES DE SOLICITUDES DEL DOCENTES";
+            // 
+            // TxtIdentificacion
+            // 
+            this.TxtIdentificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIdentificacion.Location = new System.Drawing.Point(263, 72);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(148, 26);
+            this.TxtIdentificacion.TabIndex = 97;
+            // 
+            // TxtContarTotalAprobados
+            // 
+            this.TxtContarTotalAprobados.Enabled = false;
+            this.TxtContarTotalAprobados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContarTotalAprobados.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TxtContarTotalAprobados.Location = new System.Drawing.Point(268, 547);
+            this.TxtContarTotalAprobados.Name = "TxtContarTotalAprobados";
+            this.TxtContarTotalAprobados.Size = new System.Drawing.Size(66, 26);
+            this.TxtContarTotalAprobados.TabIndex = 112;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(121, 553);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 20);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "Total de aprobados";
             // 
             // RevisionesSolicitudesDocente
             // 

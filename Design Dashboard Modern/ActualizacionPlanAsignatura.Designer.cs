@@ -35,8 +35,6 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel13 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TxtReferenciaBibliografica = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -44,22 +42,6 @@ namespace Design_Dashboard_Modern
             this.BtModificar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
-            this.bunifuGradientPanel12 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarMecanismoEvaluacion = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel11 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarContenidos = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel10 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarEstrategiasPedagogicas = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel9 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarComponentesGenericos = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel8 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarObjetivosEspecificos = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel7 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarObjetivoGeneral = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarJustificacion = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.BtLLenarDescripcion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TxtEstrategias = new System.Windows.Forms.TextBox();
             this.TxtContenido = new System.Windows.Forms.TextBox();
             this.TxtComponentesGenericos = new System.Windows.Forms.TextBox();
@@ -87,19 +69,19 @@ namespace Design_Dashboard_Modern
             this.labNombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ExReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExMecanismoEvaluacion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExContenido = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExEstrategias = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExComponetes = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExObjetivosEspecificos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExObjetivoGeneral = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExJustificacion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ExDescripcion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
-            this.bunifuGradientPanel13.SuspendLayout();
             this.bunifuGradientPanel14.SuspendLayout();
             this.bunifuGradientPanel4.SuspendLayout();
-            this.bunifuGradientPanel12.SuspendLayout();
-            this.bunifuGradientPanel11.SuspendLayout();
-            this.bunifuGradientPanel10.SuspendLayout();
-            this.bunifuGradientPanel9.SuspendLayout();
-            this.bunifuGradientPanel8.SuspendLayout();
-            this.bunifuGradientPanel7.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,55 +182,6 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.BtConsultar.Click += new System.EventHandler(this.BtConsultar_Click);
-            // 
-            // bunifuGradientPanel13
-            // 
-            this.bunifuGradientPanel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel13.BackgroundImage")));
-            this.bunifuGradientPanel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel13.Controls.Add(this.BtLLenarReferenciasBibliograficas);
-            this.bunifuGradientPanel13.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel13.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel13.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel13.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel13.Location = new System.Drawing.Point(875, 675);
-            this.bunifuGradientPanel13.Name = "bunifuGradientPanel13";
-            this.bunifuGradientPanel13.Quality = 10;
-            this.bunifuGradientPanel13.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel13.TabIndex = 341;
-            // 
-            // BtLLenarReferenciasBibliograficas
-            // 
-            this.BtLLenarReferenciasBibliograficas.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarReferenciasBibliograficas.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarReferenciasBibliograficas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarReferenciasBibliograficas.BorderRadius = 0;
-            this.BtLLenarReferenciasBibliograficas.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarReferenciasBibliograficas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarReferenciasBibliograficas.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarReferenciasBibliograficas.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarReferenciasBibliograficas.Iconimage = null;
-            this.BtLLenarReferenciasBibliograficas.Iconimage_right = null;
-            this.BtLLenarReferenciasBibliograficas.Iconimage_right_Selected = null;
-            this.BtLLenarReferenciasBibliograficas.Iconimage_Selected = null;
-            this.BtLLenarReferenciasBibliograficas.IconMarginLeft = 8;
-            this.BtLLenarReferenciasBibliograficas.IconMarginRight = 0;
-            this.BtLLenarReferenciasBibliograficas.IconRightVisible = true;
-            this.BtLLenarReferenciasBibliograficas.IconRightZoom = 0D;
-            this.BtLLenarReferenciasBibliograficas.IconVisible = true;
-            this.BtLLenarReferenciasBibliograficas.IconZoom = 80D;
-            this.BtLLenarReferenciasBibliograficas.IsTab = false;
-            this.BtLLenarReferenciasBibliograficas.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarReferenciasBibliograficas.Name = "BtLLenarReferenciasBibliograficas";
-            this.BtLLenarReferenciasBibliograficas.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarReferenciasBibliograficas.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarReferenciasBibliograficas.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarReferenciasBibliograficas.selected = false;
-            this.BtLLenarReferenciasBibliograficas.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarReferenciasBibliograficas.TabIndex = 28;
-            this.BtLLenarReferenciasBibliograficas.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarReferenciasBibliograficas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarReferenciasBibliograficas.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarReferenciasBibliograficas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
             // TxtReferenciaBibliografica
             // 
@@ -360,398 +293,6 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
             this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
-            // 
-            // bunifuGradientPanel12
-            // 
-            this.bunifuGradientPanel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel12.BackgroundImage")));
-            this.bunifuGradientPanel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel12.Controls.Add(this.BtLLenarMecanismoEvaluacion);
-            this.bunifuGradientPanel12.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel12.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel12.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel12.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel12.Location = new System.Drawing.Point(875, 607);
-            this.bunifuGradientPanel12.Name = "bunifuGradientPanel12";
-            this.bunifuGradientPanel12.Quality = 10;
-            this.bunifuGradientPanel12.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel12.TabIndex = 327;
-            // 
-            // BtLLenarMecanismoEvaluacion
-            // 
-            this.BtLLenarMecanismoEvaluacion.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarMecanismoEvaluacion.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarMecanismoEvaluacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarMecanismoEvaluacion.BorderRadius = 0;
-            this.BtLLenarMecanismoEvaluacion.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarMecanismoEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarMecanismoEvaluacion.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarMecanismoEvaluacion.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarMecanismoEvaluacion.Iconimage = null;
-            this.BtLLenarMecanismoEvaluacion.Iconimage_right = null;
-            this.BtLLenarMecanismoEvaluacion.Iconimage_right_Selected = null;
-            this.BtLLenarMecanismoEvaluacion.Iconimage_Selected = null;
-            this.BtLLenarMecanismoEvaluacion.IconMarginLeft = 8;
-            this.BtLLenarMecanismoEvaluacion.IconMarginRight = 0;
-            this.BtLLenarMecanismoEvaluacion.IconRightVisible = true;
-            this.BtLLenarMecanismoEvaluacion.IconRightZoom = 0D;
-            this.BtLLenarMecanismoEvaluacion.IconVisible = true;
-            this.BtLLenarMecanismoEvaluacion.IconZoom = 80D;
-            this.BtLLenarMecanismoEvaluacion.IsTab = false;
-            this.BtLLenarMecanismoEvaluacion.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarMecanismoEvaluacion.Name = "BtLLenarMecanismoEvaluacion";
-            this.BtLLenarMecanismoEvaluacion.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarMecanismoEvaluacion.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarMecanismoEvaluacion.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarMecanismoEvaluacion.selected = false;
-            this.BtLLenarMecanismoEvaluacion.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarMecanismoEvaluacion.TabIndex = 28;
-            this.BtLLenarMecanismoEvaluacion.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarMecanismoEvaluacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarMecanismoEvaluacion.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarMecanismoEvaluacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel11
-            // 
-            this.bunifuGradientPanel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel11.BackgroundImage")));
-            this.bunifuGradientPanel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel11.Controls.Add(this.BtLLenarContenidos);
-            this.bunifuGradientPanel11.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel11.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel11.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel11.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel11.Location = new System.Drawing.Point(875, 528);
-            this.bunifuGradientPanel11.Name = "bunifuGradientPanel11";
-            this.bunifuGradientPanel11.Quality = 10;
-            this.bunifuGradientPanel11.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel11.TabIndex = 328;
-            // 
-            // BtLLenarContenidos
-            // 
-            this.BtLLenarContenidos.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarContenidos.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarContenidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarContenidos.BorderRadius = 0;
-            this.BtLLenarContenidos.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarContenidos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarContenidos.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarContenidos.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarContenidos.Iconimage = null;
-            this.BtLLenarContenidos.Iconimage_right = null;
-            this.BtLLenarContenidos.Iconimage_right_Selected = null;
-            this.BtLLenarContenidos.Iconimage_Selected = null;
-            this.BtLLenarContenidos.IconMarginLeft = 8;
-            this.BtLLenarContenidos.IconMarginRight = 0;
-            this.BtLLenarContenidos.IconRightVisible = true;
-            this.BtLLenarContenidos.IconRightZoom = 0D;
-            this.BtLLenarContenidos.IconVisible = true;
-            this.BtLLenarContenidos.IconZoom = 80D;
-            this.BtLLenarContenidos.IsTab = false;
-            this.BtLLenarContenidos.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarContenidos.Name = "BtLLenarContenidos";
-            this.BtLLenarContenidos.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarContenidos.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarContenidos.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarContenidos.selected = false;
-            this.BtLLenarContenidos.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarContenidos.TabIndex = 28;
-            this.BtLLenarContenidos.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarContenidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarContenidos.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarContenidos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel10
-            // 
-            this.bunifuGradientPanel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel10.BackgroundImage")));
-            this.bunifuGradientPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel10.Controls.Add(this.BtLLenarEstrategiasPedagogicas);
-            this.bunifuGradientPanel10.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel10.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel10.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel10.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel10.Location = new System.Drawing.Point(875, 448);
-            this.bunifuGradientPanel10.Name = "bunifuGradientPanel10";
-            this.bunifuGradientPanel10.Quality = 10;
-            this.bunifuGradientPanel10.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel10.TabIndex = 329;
-            // 
-            // BtLLenarEstrategiasPedagogicas
-            // 
-            this.BtLLenarEstrategiasPedagogicas.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarEstrategiasPedagogicas.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarEstrategiasPedagogicas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarEstrategiasPedagogicas.BorderRadius = 0;
-            this.BtLLenarEstrategiasPedagogicas.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarEstrategiasPedagogicas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarEstrategiasPedagogicas.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarEstrategiasPedagogicas.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarEstrategiasPedagogicas.Iconimage = null;
-            this.BtLLenarEstrategiasPedagogicas.Iconimage_right = null;
-            this.BtLLenarEstrategiasPedagogicas.Iconimage_right_Selected = null;
-            this.BtLLenarEstrategiasPedagogicas.Iconimage_Selected = null;
-            this.BtLLenarEstrategiasPedagogicas.IconMarginLeft = 8;
-            this.BtLLenarEstrategiasPedagogicas.IconMarginRight = 0;
-            this.BtLLenarEstrategiasPedagogicas.IconRightVisible = true;
-            this.BtLLenarEstrategiasPedagogicas.IconRightZoom = 0D;
-            this.BtLLenarEstrategiasPedagogicas.IconVisible = true;
-            this.BtLLenarEstrategiasPedagogicas.IconZoom = 80D;
-            this.BtLLenarEstrategiasPedagogicas.IsTab = false;
-            this.BtLLenarEstrategiasPedagogicas.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarEstrategiasPedagogicas.Name = "BtLLenarEstrategiasPedagogicas";
-            this.BtLLenarEstrategiasPedagogicas.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarEstrategiasPedagogicas.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarEstrategiasPedagogicas.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarEstrategiasPedagogicas.selected = false;
-            this.BtLLenarEstrategiasPedagogicas.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarEstrategiasPedagogicas.TabIndex = 28;
-            this.BtLLenarEstrategiasPedagogicas.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarEstrategiasPedagogicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarEstrategiasPedagogicas.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarEstrategiasPedagogicas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel9
-            // 
-            this.bunifuGradientPanel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel9.BackgroundImage")));
-            this.bunifuGradientPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel9.Controls.Add(this.BtLLenarComponentesGenericos);
-            this.bunifuGradientPanel9.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel9.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel9.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel9.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel9.Location = new System.Drawing.Point(875, 381);
-            this.bunifuGradientPanel9.Name = "bunifuGradientPanel9";
-            this.bunifuGradientPanel9.Quality = 10;
-            this.bunifuGradientPanel9.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel9.TabIndex = 330;
-            // 
-            // BtLLenarComponentesGenericos
-            // 
-            this.BtLLenarComponentesGenericos.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarComponentesGenericos.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarComponentesGenericos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarComponentesGenericos.BorderRadius = 0;
-            this.BtLLenarComponentesGenericos.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarComponentesGenericos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarComponentesGenericos.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarComponentesGenericos.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarComponentesGenericos.Iconimage = null;
-            this.BtLLenarComponentesGenericos.Iconimage_right = null;
-            this.BtLLenarComponentesGenericos.Iconimage_right_Selected = null;
-            this.BtLLenarComponentesGenericos.Iconimage_Selected = null;
-            this.BtLLenarComponentesGenericos.IconMarginLeft = 8;
-            this.BtLLenarComponentesGenericos.IconMarginRight = 0;
-            this.BtLLenarComponentesGenericos.IconRightVisible = true;
-            this.BtLLenarComponentesGenericos.IconRightZoom = 0D;
-            this.BtLLenarComponentesGenericos.IconVisible = true;
-            this.BtLLenarComponentesGenericos.IconZoom = 80D;
-            this.BtLLenarComponentesGenericos.IsTab = false;
-            this.BtLLenarComponentesGenericos.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarComponentesGenericos.Name = "BtLLenarComponentesGenericos";
-            this.BtLLenarComponentesGenericos.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarComponentesGenericos.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarComponentesGenericos.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarComponentesGenericos.selected = false;
-            this.BtLLenarComponentesGenericos.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarComponentesGenericos.TabIndex = 28;
-            this.BtLLenarComponentesGenericos.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarComponentesGenericos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarComponentesGenericos.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarComponentesGenericos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel8
-            // 
-            this.bunifuGradientPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel8.BackgroundImage")));
-            this.bunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel8.Controls.Add(this.BtLLenarObjetivosEspecificos);
-            this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel8.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel8.Location = new System.Drawing.Point(875, 312);
-            this.bunifuGradientPanel8.Name = "bunifuGradientPanel8";
-            this.bunifuGradientPanel8.Quality = 10;
-            this.bunifuGradientPanel8.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel8.TabIndex = 331;
-            // 
-            // BtLLenarObjetivosEspecificos
-            // 
-            this.BtLLenarObjetivosEspecificos.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivosEspecificos.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivosEspecificos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarObjetivosEspecificos.BorderRadius = 0;
-            this.BtLLenarObjetivosEspecificos.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarObjetivosEspecificos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarObjetivosEspecificos.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarObjetivosEspecificos.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivosEspecificos.Iconimage = null;
-            this.BtLLenarObjetivosEspecificos.Iconimage_right = null;
-            this.BtLLenarObjetivosEspecificos.Iconimage_right_Selected = null;
-            this.BtLLenarObjetivosEspecificos.Iconimage_Selected = null;
-            this.BtLLenarObjetivosEspecificos.IconMarginLeft = 8;
-            this.BtLLenarObjetivosEspecificos.IconMarginRight = 0;
-            this.BtLLenarObjetivosEspecificos.IconRightVisible = true;
-            this.BtLLenarObjetivosEspecificos.IconRightZoom = 0D;
-            this.BtLLenarObjetivosEspecificos.IconVisible = true;
-            this.BtLLenarObjetivosEspecificos.IconZoom = 80D;
-            this.BtLLenarObjetivosEspecificos.IsTab = false;
-            this.BtLLenarObjetivosEspecificos.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarObjetivosEspecificos.Name = "BtLLenarObjetivosEspecificos";
-            this.BtLLenarObjetivosEspecificos.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivosEspecificos.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarObjetivosEspecificos.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarObjetivosEspecificos.selected = false;
-            this.BtLLenarObjetivosEspecificos.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarObjetivosEspecificos.TabIndex = 28;
-            this.BtLLenarObjetivosEspecificos.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarObjetivosEspecificos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarObjetivosEspecificos.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarObjetivosEspecificos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel7
-            // 
-            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
-            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel7.Controls.Add(this.BtLLenarObjetivoGeneral);
-            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel7.Location = new System.Drawing.Point(875, 249);
-            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
-            this.bunifuGradientPanel7.Quality = 10;
-            this.bunifuGradientPanel7.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel7.TabIndex = 332;
-            // 
-            // BtLLenarObjetivoGeneral
-            // 
-            this.BtLLenarObjetivoGeneral.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivoGeneral.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivoGeneral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarObjetivoGeneral.BorderRadius = 0;
-            this.BtLLenarObjetivoGeneral.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarObjetivoGeneral.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarObjetivoGeneral.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarObjetivoGeneral.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivoGeneral.Iconimage = null;
-            this.BtLLenarObjetivoGeneral.Iconimage_right = null;
-            this.BtLLenarObjetivoGeneral.Iconimage_right_Selected = null;
-            this.BtLLenarObjetivoGeneral.Iconimage_Selected = null;
-            this.BtLLenarObjetivoGeneral.IconMarginLeft = 8;
-            this.BtLLenarObjetivoGeneral.IconMarginRight = 0;
-            this.BtLLenarObjetivoGeneral.IconRightVisible = true;
-            this.BtLLenarObjetivoGeneral.IconRightZoom = 0D;
-            this.BtLLenarObjetivoGeneral.IconVisible = true;
-            this.BtLLenarObjetivoGeneral.IconZoom = 80D;
-            this.BtLLenarObjetivoGeneral.IsTab = false;
-            this.BtLLenarObjetivoGeneral.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarObjetivoGeneral.Name = "BtLLenarObjetivoGeneral";
-            this.BtLLenarObjetivoGeneral.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarObjetivoGeneral.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarObjetivoGeneral.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarObjetivoGeneral.selected = false;
-            this.BtLLenarObjetivoGeneral.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarObjetivoGeneral.TabIndex = 28;
-            this.BtLLenarObjetivoGeneral.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarObjetivoGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarObjetivoGeneral.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarObjetivoGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.BtLLenarJustificacion);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(875, 189);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel2.TabIndex = 333;
-            // 
-            // BtLLenarJustificacion
-            // 
-            this.BtLLenarJustificacion.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarJustificacion.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarJustificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarJustificacion.BorderRadius = 0;
-            this.BtLLenarJustificacion.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarJustificacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarJustificacion.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarJustificacion.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarJustificacion.Iconimage = null;
-            this.BtLLenarJustificacion.Iconimage_right = null;
-            this.BtLLenarJustificacion.Iconimage_right_Selected = null;
-            this.BtLLenarJustificacion.Iconimage_Selected = null;
-            this.BtLLenarJustificacion.IconMarginLeft = 8;
-            this.BtLLenarJustificacion.IconMarginRight = 0;
-            this.BtLLenarJustificacion.IconRightVisible = true;
-            this.BtLLenarJustificacion.IconRightZoom = 0D;
-            this.BtLLenarJustificacion.IconVisible = true;
-            this.BtLLenarJustificacion.IconZoom = 80D;
-            this.BtLLenarJustificacion.IsTab = false;
-            this.BtLLenarJustificacion.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarJustificacion.Name = "BtLLenarJustificacion";
-            this.BtLLenarJustificacion.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarJustificacion.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarJustificacion.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarJustificacion.selected = false;
-            this.BtLLenarJustificacion.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarJustificacion.TabIndex = 28;
-            this.BtLLenarJustificacion.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarJustificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarJustificacion.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarJustificacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // bunifuGradientPanel3
-            // 
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.BtLLenarDescripcion);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.Lime;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(875, 126);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(151, 36);
-            this.bunifuGradientPanel3.TabIndex = 326;
-            // 
-            // BtLLenarDescripcion
-            // 
-            this.BtLLenarDescripcion.Activecolor = System.Drawing.Color.Transparent;
-            this.BtLLenarDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.BtLLenarDescripcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtLLenarDescripcion.BorderRadius = 0;
-            this.BtLLenarDescripcion.ButtonText = "  EXPANDIR CAMPO";
-            this.BtLLenarDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtLLenarDescripcion.DisabledColor = System.Drawing.Color.Gray;
-            this.BtLLenarDescripcion.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarDescripcion.Iconimage = null;
-            this.BtLLenarDescripcion.Iconimage_right = null;
-            this.BtLLenarDescripcion.Iconimage_right_Selected = null;
-            this.BtLLenarDescripcion.Iconimage_Selected = null;
-            this.BtLLenarDescripcion.IconMarginLeft = 8;
-            this.BtLLenarDescripcion.IconMarginRight = 0;
-            this.BtLLenarDescripcion.IconRightVisible = true;
-            this.BtLLenarDescripcion.IconRightZoom = 0D;
-            this.BtLLenarDescripcion.IconVisible = true;
-            this.BtLLenarDescripcion.IconZoom = 80D;
-            this.BtLLenarDescripcion.IsTab = false;
-            this.BtLLenarDescripcion.Location = new System.Drawing.Point(6, 3);
-            this.BtLLenarDescripcion.Name = "BtLLenarDescripcion";
-            this.BtLLenarDescripcion.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtLLenarDescripcion.OnHovercolor = System.Drawing.Color.Lime;
-            this.BtLLenarDescripcion.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtLLenarDescripcion.selected = false;
-            this.BtLLenarDescripcion.Size = new System.Drawing.Size(139, 30);
-            this.BtLLenarDescripcion.TabIndex = 28;
-            this.BtLLenarDescripcion.Text = "  EXPANDIR CAMPO";
-            this.BtLLenarDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtLLenarDescripcion.Textcolor = System.Drawing.Color.White;
-            this.BtLLenarDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
             // TxtEstrategias
             // 
@@ -1037,6 +578,321 @@ namespace Design_Dashboard_Modern
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // ExReferenciasBibliograficas
+            // 
+            this.ExReferenciasBibliograficas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExReferenciasBibliograficas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExReferenciasBibliograficas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExReferenciasBibliograficas.BorderRadius = 0;
+            this.ExReferenciasBibliograficas.ButtonText = "      EXTENDER CAMPO";
+            this.ExReferenciasBibliograficas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExReferenciasBibliograficas.DisabledColor = System.Drawing.Color.Gray;
+            this.ExReferenciasBibliograficas.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExReferenciasBibliograficas.Iconimage = null;
+            this.ExReferenciasBibliograficas.Iconimage_right = null;
+            this.ExReferenciasBibliograficas.Iconimage_right_Selected = null;
+            this.ExReferenciasBibliograficas.Iconimage_Selected = null;
+            this.ExReferenciasBibliograficas.IconMarginLeft = 0;
+            this.ExReferenciasBibliograficas.IconMarginRight = 0;
+            this.ExReferenciasBibliograficas.IconRightVisible = true;
+            this.ExReferenciasBibliograficas.IconRightZoom = 0D;
+            this.ExReferenciasBibliograficas.IconVisible = true;
+            this.ExReferenciasBibliograficas.IconZoom = 90D;
+            this.ExReferenciasBibliograficas.IsTab = false;
+            this.ExReferenciasBibliograficas.Location = new System.Drawing.Point(870, 675);
+            this.ExReferenciasBibliograficas.Name = "ExReferenciasBibliograficas";
+            this.ExReferenciasBibliograficas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExReferenciasBibliograficas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExReferenciasBibliograficas.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExReferenciasBibliograficas.selected = false;
+            this.ExReferenciasBibliograficas.Size = new System.Drawing.Size(150, 30);
+            this.ExReferenciasBibliograficas.TabIndex = 352;
+            this.ExReferenciasBibliograficas.Text = "      EXTENDER CAMPO";
+            this.ExReferenciasBibliograficas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExReferenciasBibliograficas.Textcolor = System.Drawing.Color.White;
+            this.ExReferenciasBibliograficas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExReferenciasBibliograficas.Click += new System.EventHandler(this.ExReferenciasBibliograficas_Click);
+            // 
+            // ExMecanismoEvaluacion
+            // 
+            this.ExMecanismoEvaluacion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExMecanismoEvaluacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExMecanismoEvaluacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExMecanismoEvaluacion.BorderRadius = 0;
+            this.ExMecanismoEvaluacion.ButtonText = "      EXTENDER CAMPO";
+            this.ExMecanismoEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExMecanismoEvaluacion.DisabledColor = System.Drawing.Color.Gray;
+            this.ExMecanismoEvaluacion.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExMecanismoEvaluacion.Iconimage = null;
+            this.ExMecanismoEvaluacion.Iconimage_right = null;
+            this.ExMecanismoEvaluacion.Iconimage_right_Selected = null;
+            this.ExMecanismoEvaluacion.Iconimage_Selected = null;
+            this.ExMecanismoEvaluacion.IconMarginLeft = 0;
+            this.ExMecanismoEvaluacion.IconMarginRight = 0;
+            this.ExMecanismoEvaluacion.IconRightVisible = true;
+            this.ExMecanismoEvaluacion.IconRightZoom = 0D;
+            this.ExMecanismoEvaluacion.IconVisible = true;
+            this.ExMecanismoEvaluacion.IconZoom = 90D;
+            this.ExMecanismoEvaluacion.IsTab = false;
+            this.ExMecanismoEvaluacion.Location = new System.Drawing.Point(870, 610);
+            this.ExMecanismoEvaluacion.Name = "ExMecanismoEvaluacion";
+            this.ExMecanismoEvaluacion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExMecanismoEvaluacion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExMecanismoEvaluacion.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExMecanismoEvaluacion.selected = false;
+            this.ExMecanismoEvaluacion.Size = new System.Drawing.Size(150, 30);
+            this.ExMecanismoEvaluacion.TabIndex = 351;
+            this.ExMecanismoEvaluacion.Text = "      EXTENDER CAMPO";
+            this.ExMecanismoEvaluacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExMecanismoEvaluacion.Textcolor = System.Drawing.Color.White;
+            this.ExMecanismoEvaluacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExMecanismoEvaluacion.Click += new System.EventHandler(this.ExMecanismoEvaluacion_Click);
+            // 
+            // ExContenido
+            // 
+            this.ExContenido.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExContenido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExContenido.BorderRadius = 0;
+            this.ExContenido.ButtonText = "      EXTENDER CAMPO";
+            this.ExContenido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExContenido.DisabledColor = System.Drawing.Color.Gray;
+            this.ExContenido.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExContenido.Iconimage = null;
+            this.ExContenido.Iconimage_right = null;
+            this.ExContenido.Iconimage_right_Selected = null;
+            this.ExContenido.Iconimage_Selected = null;
+            this.ExContenido.IconMarginLeft = 0;
+            this.ExContenido.IconMarginRight = 0;
+            this.ExContenido.IconRightVisible = true;
+            this.ExContenido.IconRightZoom = 0D;
+            this.ExContenido.IconVisible = true;
+            this.ExContenido.IconZoom = 90D;
+            this.ExContenido.IsTab = false;
+            this.ExContenido.Location = new System.Drawing.Point(870, 534);
+            this.ExContenido.Name = "ExContenido";
+            this.ExContenido.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExContenido.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExContenido.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExContenido.selected = false;
+            this.ExContenido.Size = new System.Drawing.Size(150, 30);
+            this.ExContenido.TabIndex = 350;
+            this.ExContenido.Text = "      EXTENDER CAMPO";
+            this.ExContenido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExContenido.Textcolor = System.Drawing.Color.White;
+            this.ExContenido.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExContenido.Click += new System.EventHandler(this.ExContenido_Click);
+            // 
+            // ExEstrategias
+            // 
+            this.ExEstrategias.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExEstrategias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExEstrategias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExEstrategias.BorderRadius = 0;
+            this.ExEstrategias.ButtonText = "      EXTENDER CAMPO";
+            this.ExEstrategias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExEstrategias.DisabledColor = System.Drawing.Color.Gray;
+            this.ExEstrategias.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExEstrategias.Iconimage = null;
+            this.ExEstrategias.Iconimage_right = null;
+            this.ExEstrategias.Iconimage_right_Selected = null;
+            this.ExEstrategias.Iconimage_Selected = null;
+            this.ExEstrategias.IconMarginLeft = 0;
+            this.ExEstrategias.IconMarginRight = 0;
+            this.ExEstrategias.IconRightVisible = true;
+            this.ExEstrategias.IconRightZoom = 0D;
+            this.ExEstrategias.IconVisible = true;
+            this.ExEstrategias.IconZoom = 90D;
+            this.ExEstrategias.IsTab = false;
+            this.ExEstrategias.Location = new System.Drawing.Point(870, 452);
+            this.ExEstrategias.Name = "ExEstrategias";
+            this.ExEstrategias.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExEstrategias.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExEstrategias.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExEstrategias.selected = false;
+            this.ExEstrategias.Size = new System.Drawing.Size(150, 30);
+            this.ExEstrategias.TabIndex = 349;
+            this.ExEstrategias.Text = "      EXTENDER CAMPO";
+            this.ExEstrategias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExEstrategias.Textcolor = System.Drawing.Color.White;
+            this.ExEstrategias.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExEstrategias.Click += new System.EventHandler(this.ExEstrategias_Click);
+            // 
+            // ExComponetes
+            // 
+            this.ExComponetes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExComponetes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExComponetes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExComponetes.BorderRadius = 0;
+            this.ExComponetes.ButtonText = "      EXTENDER CAMPO";
+            this.ExComponetes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExComponetes.DisabledColor = System.Drawing.Color.Gray;
+            this.ExComponetes.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExComponetes.Iconimage = null;
+            this.ExComponetes.Iconimage_right = null;
+            this.ExComponetes.Iconimage_right_Selected = null;
+            this.ExComponetes.Iconimage_Selected = null;
+            this.ExComponetes.IconMarginLeft = 0;
+            this.ExComponetes.IconMarginRight = 0;
+            this.ExComponetes.IconRightVisible = true;
+            this.ExComponetes.IconRightZoom = 0D;
+            this.ExComponetes.IconVisible = true;
+            this.ExComponetes.IconZoom = 90D;
+            this.ExComponetes.IsTab = false;
+            this.ExComponetes.Location = new System.Drawing.Point(870, 384);
+            this.ExComponetes.Name = "ExComponetes";
+            this.ExComponetes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExComponetes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExComponetes.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExComponetes.selected = false;
+            this.ExComponetes.Size = new System.Drawing.Size(150, 30);
+            this.ExComponetes.TabIndex = 348;
+            this.ExComponetes.Text = "      EXTENDER CAMPO";
+            this.ExComponetes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExComponetes.Textcolor = System.Drawing.Color.White;
+            this.ExComponetes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExComponetes.Click += new System.EventHandler(this.ExComponetes_Click);
+            // 
+            // ExObjetivosEspecificos
+            // 
+            this.ExObjetivosEspecificos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivosEspecificos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivosEspecificos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExObjetivosEspecificos.BorderRadius = 0;
+            this.ExObjetivosEspecificos.ButtonText = "      EXTENDER CAMPO";
+            this.ExObjetivosEspecificos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExObjetivosEspecificos.DisabledColor = System.Drawing.Color.Gray;
+            this.ExObjetivosEspecificos.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExObjetivosEspecificos.Iconimage = null;
+            this.ExObjetivosEspecificos.Iconimage_right = null;
+            this.ExObjetivosEspecificos.Iconimage_right_Selected = null;
+            this.ExObjetivosEspecificos.Iconimage_Selected = null;
+            this.ExObjetivosEspecificos.IconMarginLeft = 0;
+            this.ExObjetivosEspecificos.IconMarginRight = 0;
+            this.ExObjetivosEspecificos.IconRightVisible = true;
+            this.ExObjetivosEspecificos.IconRightZoom = 0D;
+            this.ExObjetivosEspecificos.IconVisible = true;
+            this.ExObjetivosEspecificos.IconZoom = 90D;
+            this.ExObjetivosEspecificos.IsTab = false;
+            this.ExObjetivosEspecificos.Location = new System.Drawing.Point(870, 315);
+            this.ExObjetivosEspecificos.Name = "ExObjetivosEspecificos";
+            this.ExObjetivosEspecificos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivosEspecificos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExObjetivosEspecificos.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExObjetivosEspecificos.selected = false;
+            this.ExObjetivosEspecificos.Size = new System.Drawing.Size(150, 30);
+            this.ExObjetivosEspecificos.TabIndex = 347;
+            this.ExObjetivosEspecificos.Text = "      EXTENDER CAMPO";
+            this.ExObjetivosEspecificos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExObjetivosEspecificos.Textcolor = System.Drawing.Color.White;
+            this.ExObjetivosEspecificos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExObjetivosEspecificos.Click += new System.EventHandler(this.ExObjetivosEspecificos_Click);
+            // 
+            // ExObjetivoGeneral
+            // 
+            this.ExObjetivoGeneral.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivoGeneral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExObjetivoGeneral.BorderRadius = 0;
+            this.ExObjetivoGeneral.ButtonText = "      EXTENDER CAMPO";
+            this.ExObjetivoGeneral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExObjetivoGeneral.DisabledColor = System.Drawing.Color.Gray;
+            this.ExObjetivoGeneral.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExObjetivoGeneral.Iconimage = null;
+            this.ExObjetivoGeneral.Iconimage_right = null;
+            this.ExObjetivoGeneral.Iconimage_right_Selected = null;
+            this.ExObjetivoGeneral.Iconimage_Selected = null;
+            this.ExObjetivoGeneral.IconMarginLeft = 0;
+            this.ExObjetivoGeneral.IconMarginRight = 0;
+            this.ExObjetivoGeneral.IconRightVisible = true;
+            this.ExObjetivoGeneral.IconRightZoom = 0D;
+            this.ExObjetivoGeneral.IconVisible = true;
+            this.ExObjetivoGeneral.IconZoom = 90D;
+            this.ExObjetivoGeneral.IsTab = false;
+            this.ExObjetivoGeneral.Location = new System.Drawing.Point(871, 253);
+            this.ExObjetivoGeneral.Name = "ExObjetivoGeneral";
+            this.ExObjetivoGeneral.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExObjetivoGeneral.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExObjetivoGeneral.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExObjetivoGeneral.selected = false;
+            this.ExObjetivoGeneral.Size = new System.Drawing.Size(150, 30);
+            this.ExObjetivoGeneral.TabIndex = 346;
+            this.ExObjetivoGeneral.Text = "      EXTENDER CAMPO";
+            this.ExObjetivoGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExObjetivoGeneral.Textcolor = System.Drawing.Color.White;
+            this.ExObjetivoGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExObjetivoGeneral.Click += new System.EventHandler(this.ExObjetivoGeneral_Click);
+            // 
+            // ExJustificacion
+            // 
+            this.ExJustificacion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExJustificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExJustificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExJustificacion.BorderRadius = 0;
+            this.ExJustificacion.ButtonText = "      EXTENDER CAMPO";
+            this.ExJustificacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExJustificacion.DisabledColor = System.Drawing.Color.Gray;
+            this.ExJustificacion.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExJustificacion.Iconimage = null;
+            this.ExJustificacion.Iconimage_right = null;
+            this.ExJustificacion.Iconimage_right_Selected = null;
+            this.ExJustificacion.Iconimage_Selected = null;
+            this.ExJustificacion.IconMarginLeft = 0;
+            this.ExJustificacion.IconMarginRight = 0;
+            this.ExJustificacion.IconRightVisible = true;
+            this.ExJustificacion.IconRightZoom = 0D;
+            this.ExJustificacion.IconVisible = true;
+            this.ExJustificacion.IconZoom = 90D;
+            this.ExJustificacion.IsTab = false;
+            this.ExJustificacion.Location = new System.Drawing.Point(871, 192);
+            this.ExJustificacion.Name = "ExJustificacion";
+            this.ExJustificacion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExJustificacion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExJustificacion.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExJustificacion.selected = false;
+            this.ExJustificacion.Size = new System.Drawing.Size(150, 30);
+            this.ExJustificacion.TabIndex = 345;
+            this.ExJustificacion.Text = "      EXTENDER CAMPO";
+            this.ExJustificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExJustificacion.Textcolor = System.Drawing.Color.White;
+            this.ExJustificacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExJustificacion.Click += new System.EventHandler(this.ExJustificacion_Click);
+            // 
+            // ExDescripcion
+            // 
+            this.ExDescripcion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExDescripcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExDescripcion.BorderRadius = 0;
+            this.ExDescripcion.ButtonText = "      EXTENDER CAMPO";
+            this.ExDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExDescripcion.DisabledColor = System.Drawing.Color.Gray;
+            this.ExDescripcion.Iconcolor = System.Drawing.Color.Transparent;
+            this.ExDescripcion.Iconimage = null;
+            this.ExDescripcion.Iconimage_right = null;
+            this.ExDescripcion.Iconimage_right_Selected = null;
+            this.ExDescripcion.Iconimage_Selected = null;
+            this.ExDescripcion.IconMarginLeft = 0;
+            this.ExDescripcion.IconMarginRight = 0;
+            this.ExDescripcion.IconRightVisible = true;
+            this.ExDescripcion.IconRightZoom = 0D;
+            this.ExDescripcion.IconVisible = true;
+            this.ExDescripcion.IconZoom = 90D;
+            this.ExDescripcion.IsTab = false;
+            this.ExDescripcion.Location = new System.Drawing.Point(871, 127);
+            this.ExDescripcion.Name = "ExDescripcion";
+            this.ExDescripcion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ExDescripcion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ExDescripcion.OnHoverTextColor = System.Drawing.Color.White;
+            this.ExDescripcion.selected = false;
+            this.ExDescripcion.Size = new System.Drawing.Size(150, 30);
+            this.ExDescripcion.TabIndex = 344;
+            this.ExDescripcion.Text = "      EXTENDER CAMPO";
+            this.ExDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExDescripcion.Textcolor = System.Drawing.Color.White;
+            this.ExDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExDescripcion.Click += new System.EventHandler(this.ExDescripcion_Click);
+            // 
             // ActualizacionPlanAsignatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1044,22 +900,22 @@ namespace Design_Dashboard_Modern
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1045, 788);
+            this.Controls.Add(this.ExReferenciasBibliograficas);
+            this.Controls.Add(this.ExMecanismoEvaluacion);
+            this.Controls.Add(this.ExContenido);
+            this.Controls.Add(this.ExEstrategias);
+            this.Controls.Add(this.ExComponetes);
+            this.Controls.Add(this.ExObjetivosEspecificos);
+            this.Controls.Add(this.ExObjetivoGeneral);
+            this.Controls.Add(this.ExJustificacion);
+            this.Controls.Add(this.ExDescripcion);
             this.Controls.Add(this.bunifuGradientPanel6);
             this.Controls.Add(this.bunifuGradientPanel5);
-            this.Controls.Add(this.bunifuGradientPanel13);
             this.Controls.Add(this.TxtReferenciaBibliografica);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.bunifuGradientPanel14);
             this.Controls.Add(this.bunifuGradientPanel4);
-            this.Controls.Add(this.bunifuGradientPanel12);
-            this.Controls.Add(this.bunifuGradientPanel11);
-            this.Controls.Add(this.bunifuGradientPanel10);
-            this.Controls.Add(this.bunifuGradientPanel9);
-            this.Controls.Add(this.bunifuGradientPanel8);
-            this.Controls.Add(this.bunifuGradientPanel7);
-            this.Controls.Add(this.bunifuGradientPanel2);
-            this.Controls.Add(this.bunifuGradientPanel3);
             this.Controls.Add(this.TxtEstrategias);
             this.Controls.Add(this.TxtContenido);
             this.Controls.Add(this.TxtComponentesGenericos);
@@ -1092,17 +948,8 @@ namespace Design_Dashboard_Modern
             this.Load += new System.EventHandler(this.ActualizacionPlanAsignatura_Load);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
-            this.bunifuGradientPanel13.ResumeLayout(false);
             this.bunifuGradientPanel14.ResumeLayout(false);
             this.bunifuGradientPanel4.ResumeLayout(false);
-            this.bunifuGradientPanel12.ResumeLayout(false);
-            this.bunifuGradientPanel11.ResumeLayout(false);
-            this.bunifuGradientPanel10.ResumeLayout(false);
-            this.bunifuGradientPanel9.ResumeLayout(false);
-            this.bunifuGradientPanel8.ResumeLayout(false);
-            this.bunifuGradientPanel7.ResumeLayout(false);
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            this.bunifuGradientPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1115,8 +962,6 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtLimpiar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel5;
         private Bunifu.Framework.UI.BunifuFlatButton BtConsultar;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel13;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarReferenciasBibliograficas;
         public System.Windows.Forms.TextBox TxtReferenciaBibliografica;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -1124,22 +969,6 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuFlatButton BtModificar;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
         private System.Windows.Forms.Button BtCancelar;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel12;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarMecanismoEvaluacion;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel11;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarContenidos;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel10;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarEstrategiasPedagogicas;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel9;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarComponentesGenericos;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel8;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarObjetivosEspecificos;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel7;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarObjetivoGeneral;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarJustificacion;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private Bunifu.Framework.UI.BunifuFlatButton BtLLenarDescripcion;
         public System.Windows.Forms.TextBox TxtEstrategias;
         public System.Windows.Forms.TextBox TxtContenido;
         public System.Windows.Forms.TextBox TxtComponentesGenericos;
@@ -1167,5 +996,14 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label labNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Bunifu.Framework.UI.BunifuFlatButton ExReferenciasBibliograficas;
+        private Bunifu.Framework.UI.BunifuFlatButton ExMecanismoEvaluacion;
+        private Bunifu.Framework.UI.BunifuFlatButton ExContenido;
+        private Bunifu.Framework.UI.BunifuFlatButton ExEstrategias;
+        private Bunifu.Framework.UI.BunifuFlatButton ExComponetes;
+        private Bunifu.Framework.UI.BunifuFlatButton ExObjetivosEspecificos;
+        private Bunifu.Framework.UI.BunifuFlatButton ExObjetivoGeneral;
+        private Bunifu.Framework.UI.BunifuFlatButton ExJustificacion;
+        private Bunifu.Framework.UI.BunifuFlatButton ExDescripcion;
     }
 }

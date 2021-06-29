@@ -76,23 +76,17 @@
     <Compile Include="ConsultarPlanAsignatura.Designer.cs">
       <DependentUpon>ConsultarPlanAsignatura.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarRespuestaComite.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConsultarRespuestaComite.Designer.cs">
-      <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
-    </Compile>
     <Compile Include="LLenarComponentesGenericos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarComponentesGenericos.Designer.cs">
       <DependentUpon>LLenarComponentesGenericos.cs</DependentUpon>
     </Compile>
-    <Compile Include="LlenarComponetesGenericos2.cs">
+    <Compile Include="LLenarComponentesGenericos2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LlenarComponetesGenericos2.Designer.cs">
-      <DependentUpon>LlenarComponetesGenericos2.cs</DependentUpon>
+    <Compile Include="LLenarComponentesGenericos2.Designer.cs">
+      <DependentUpon>LLenarComponentesGenericos2.cs</DependentUpon>
     </Compile>
     <Compile Include="LLenarContenidosCompetencias.cs">
       <SubType>Form</SubType>
@@ -100,11 +94,23 @@
     <Compile Include="LLenarContenidosCompetencias.Designer.cs">
       <DependentUpon>LLenarContenidosCompetencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="LLenarContenidosCompetencias2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarContenidosCompetencias2.Designer.cs">
+      <DependentUpon>LLenarContenidosCompetencias2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarDescripcion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarDescripcion.Designer.cs">
       <DependentUpon>LLenarDescripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LLenarDescripcion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarDescripcion2.Designer.cs">
+      <DependentUpon>LLenarDescripcion2.cs</DependentUpon>
     </Compile>
     <Compile Include="LLenarEstrategiasPedagogicas.cs">
       <SubType>Form</SubType>
@@ -112,11 +118,23 @@
     <Compile Include="LLenarEstrategiasPedagogicas.Designer.cs">
       <DependentUpon>LLenarEstrategiasPedagogicas.cs</DependentUpon>
     </Compile>
+    <Compile Include="LLenarEstrategiasPedagogicas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarEstrategiasPedagogicas2.Designer.cs">
+      <DependentUpon>LLenarEstrategiasPedagogicas2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarJustificacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarJustificacion.Designer.cs">
       <DependentUpon>LLenarJustificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LLenarJustificacion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarJustificacion2.Designer.cs">
+      <DependentUpon>LLenarJustificacion2.cs</DependentUpon>
     </Compile>
     <Compile Include="LLenarMecanismoEvaluacion.cs">
       <SubType>Form</SubType>
@@ -124,11 +142,23 @@
     <Compile Include="LLenarMecanismoEvaluacion.Designer.cs">
       <DependentUpon>LLenarMecanismoEvaluacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="LLenarMecanismoEvaluacion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarMecanismoEvaluacion2.Designer.cs">
+      <DependentUpon>LLenarMecanismoEvaluacion2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarObjetivoEspecifico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarObjetivoEspecifico.Designer.cs">
       <DependentUpon>LLenarObjetivoEspecifico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LLenarObjetivoEspecifico2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarObjetivoEspecifico2.Designer.cs">
+      <DependentUpon>LLenarObjetivoEspecifico2.cs</DependentUpon>
     </Compile>
     <Compile Include="LLenarObjetivoGeneral.cs">
       <SubType>Form</SubType>
@@ -136,11 +166,23 @@
     <Compile Include="LLenarObjetivoGeneral.Designer.cs">
       <DependentUpon>LLenarObjetivoGeneral.cs</DependentUpon>
     </Compile>
+    <Compile Include="LLenarObjetivoGeneral2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarObjetivoGeneral2.Designer.cs">
+      <DependentUpon>LLenarObjetivoGeneral2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarReferenciasBibliograficas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LLenarReferenciasBibliograficas.Designer.cs">
       <DependentUpon>LLenarReferenciasBibliograficas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LLenarReferenciasBibliograficas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLenarReferenciasBibliograficas2.Designer.cs">
+      <DependentUpon>LLenarReferenciasBibliograficas2.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -180,6 +222,12 @@
     <Compile Include="RegistroDocente.Designer.cs">
       <DependentUpon>RegistroDocente.cs</DependentUpon>
     </Compile>
+    <Compile Include="RespuestasSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RespuestasSolicitudes.Designer.cs">
+      <DependentUpon>RespuestasSolicitudes.cs</DependentUpon>
+    </Compile>
     <Compile Include="RevisionesSolicitudesDocente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,35 +252,59 @@
     <EmbeddedResource Include="ConsultarPlanAsignatura.resx">
       <DependentUpon>ConsultarPlanAsignatura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarRespuestaComite.resx">
-      <DependentUpon>ConsultarRespuestaComite.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LLenarComponentesGenericos.resx">
       <DependentUpon>LLenarComponentesGenericos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLenarComponentesGenericos2.resx">
+      <DependentUpon>LLenarComponentesGenericos2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LLenarContenidosCompetencias.resx">
       <DependentUpon>LLenarContenidosCompetencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LLenarContenidosCompetencias2.resx">
+      <DependentUpon>LLenarContenidosCompetencias2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LLenarDescripcion.resx">
       <DependentUpon>LLenarDescripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLenarDescripcion2.resx">
+      <DependentUpon>LLenarDescripcion2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LLenarEstrategiasPedagogicas.resx">
       <DependentUpon>LLenarEstrategiasPedagogicas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LLenarEstrategiasPedagogicas2.resx">
+      <DependentUpon>LLenarEstrategiasPedagogicas2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LLenarJustificacion.resx">
       <DependentUpon>LLenarJustificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLenarJustificacion2.resx">
+      <DependentUpon>LLenarJustificacion2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LLenarMecanismoEvaluacion.resx">
       <DependentUpon>LLenarMecanismoEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LLenarMecanismoEvaluacion2.resx">
+      <DependentUpon>LLenarMecanismoEvaluacion2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LLenarObjetivoEspecifico.resx">
       <DependentUpon>LLenarObjetivoEspecifico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLenarObjetivoEspecifico2.resx">
+      <DependentUpon>LLenarObjetivoEspecifico2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LLenarObjetivoGeneral.resx">
       <DependentUpon>LLenarObjetivoGeneral.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LLenarObjetivoGeneral2.resx">
+      <DependentUpon>LLenarObjetivoGeneral2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LLenarReferenciasBibliograficas.resx">
       <DependentUpon>LLenarReferenciasBibliograficas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLenarReferenciasBibliograficas2.resx">
+      <DependentUpon>LLenarReferenciasBibliograficas2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -260,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroDocente.resx">
       <DependentUpon>RegistroDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RespuestasSolicitudes.resx">
+      <DependentUpon>RespuestasSolicitudes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RevisionesSolicitudesDocente.resx">
       <DependentUpon>RevisionesSolicitudesDocente.cs</DependentUpon>

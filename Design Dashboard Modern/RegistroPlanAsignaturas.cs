@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using BLL;
 using ENTITY;
-using System;
-using System.Windows.Forms;
+
 
 namespace Design_Dashboard_Modern
 {
@@ -355,6 +355,11 @@ namespace Design_Dashboard_Modern
                 }
                 LimpiarTxt();
             }
+        }
+
+        private void bunifuGradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

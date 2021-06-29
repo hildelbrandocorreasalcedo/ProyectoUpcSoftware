@@ -316,7 +316,7 @@ namespace Design_Dashboard_Modern
             this.CmbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbFiltro.FormattingEnabled = true;
             this.CmbFiltro.Items.AddRange(new object[] {
-            "TODAS LAS ASIGNATURAS",
+            "TODOS LOS DOCENTES",
             "Docente ocacional",
             "Docente catedratico"});
             this.CmbFiltro.Location = new System.Drawing.Point(501, 69);

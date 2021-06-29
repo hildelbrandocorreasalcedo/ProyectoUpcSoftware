@@ -106,7 +106,7 @@ namespace Design_Dashboard_Modern
             {
                 MessageBox.Show("Escoja una Opción de Filtrado", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (CmbFiltro.Text.Equals("TODAS LAS ASIGNATURAS"))
+            else if (CmbFiltro.Text.Equals("TODOS LOS DOCENTES"))
             {
                 ConsultarTodosDocentesDtg();
             }

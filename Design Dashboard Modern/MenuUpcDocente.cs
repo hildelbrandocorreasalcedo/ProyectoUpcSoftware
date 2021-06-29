@@ -185,7 +185,7 @@ namespace ProyectoHotelPensionados
 
         private void BtRegistrarSolicitudActualizacionPlan_Click(object sender, EventArgs e)
         {
-            openChildForm(new SolicitudActualicionDocente());
+            openChildForm(new SolicitudActualizacionDocentes());
         }
 
         private void BtConsultarRespuestaComite_Click(object sender, EventArgs e)

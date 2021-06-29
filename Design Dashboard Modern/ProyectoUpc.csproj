@@ -88,6 +88,12 @@
     <Compile Include="LLenarComponentesGenericos.Designer.cs">
       <DependentUpon>LLenarComponentesGenericos.cs</DependentUpon>
     </Compile>
+    <Compile Include="LlenarComponetesGenericos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LlenarComponetesGenericos2.Designer.cs">
+      <DependentUpon>LlenarComponetesGenericos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LLenarContenidosCompetencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,12 +168,6 @@
     <Compile Include="RegistroPlanAsignaturas.Designer.cs">
       <DependentUpon>RegistroPlanAsignaturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="SolicitudActualicionDocente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SolicitudActualicionDocente.Designer.cs">
-      <DependentUpon>SolicitudActualicionDocente.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroAsignatura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +185,12 @@
     </Compile>
     <Compile Include="RevisionesSolicitudesDocente.Designer.cs">
       <DependentUpon>RevisionesSolicitudesDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitudActualizacionDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudActualizacionDocentes.Designer.cs">
+      <DependentUpon>SolicitudActualizacionDocentes.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ActualizacionPlanAsignatura.resx">
       <DependentUpon>ActualizacionPlanAsignatura.cs</DependentUpon>
@@ -249,9 +255,6 @@
     <EmbeddedResource Include="RegistroPlanAsignaturas.resx">
       <DependentUpon>RegistroPlanAsignaturas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SolicitudActualicionDocente.resx">
-      <DependentUpon>SolicitudActualicionDocente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegistroAsignatura.resx">
       <DependentUpon>RegistroAsignatura.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RevisionesSolicitudesDocente.resx">
       <DependentUpon>RevisionesSolicitudesDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudActualizacionDocentes.resx">
+      <DependentUpon>SolicitudActualizacionDocentes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

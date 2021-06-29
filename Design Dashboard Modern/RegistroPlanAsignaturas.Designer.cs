@@ -734,6 +734,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel3.Quality = 10;
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(151, 36);
             this.bunifuGradientPanel3.TabIndex = 281;
+            this.bunifuGradientPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel3_Paint);
             // 
             // BtLLenarDescripcion
             // 

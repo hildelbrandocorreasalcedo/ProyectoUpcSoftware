@@ -21,13 +21,13 @@ namespace ENTITY
         public string Contenidos { get; set; }
         public string MecanismosEvaluacion { get; set; }
         public string ReferenciasBibliograficas { get; set; }
-        public string Aprobado { get; set; }
+        public string Estado { get; set; }
         public SolicitudDocentes()
         {
 
         }
         public SolicitudDocentes(string identificacion, string nombre, string apellido, string materia, string descripcion, string justificacion, string objetivoGeneral, string objetivoEspecifico,
-            string estrategias, string contenidos, string mecanismosEvaluacion, string referenciasBibliograficas, string aprobado)
+            string estrategias, string contenidos, string mecanismosEvaluacion, string referenciasBibliograficas, string estado)
         {
             Identificacion = identificacion;
             Nombre = nombre;
@@ -41,7 +41,7 @@ namespace ENTITY
             Contenidos = contenidos;
             MecanismosEvaluacion = mecanismosEvaluacion;
             ReferenciasBibliograficas = referenciasBibliograficas;
-            Aprobado = aprobado;
+            Estado = estado;
         }
     }
 }

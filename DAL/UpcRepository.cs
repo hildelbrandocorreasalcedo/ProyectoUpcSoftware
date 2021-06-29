@@ -757,7 +757,7 @@ namespace DAL
                 $"{solicitudDocente.Materia};{solicitudDocente.Descripcion};{solicitudDocente.Justificacion};" +
                 $"{solicitudDocente.ObjetivoGeneral};{solicitudDocente.ObjetivoEspecifico};{solicitudDocente.ComponeteGenerico};" +
                 $"{solicitudDocente.Estrategias};{solicitudDocente.Contenidos};{solicitudDocente.MecanismosEvaluacion};" +
-                $"{solicitudDocente.ReferenciasBibliograficas};{solicitudDocente.Aprobado}");
+                $"{solicitudDocente.ReferenciasBibliograficas};{solicitudDocente.Estado}");
             writer.Close();
             file.Close();
         }
@@ -809,7 +809,7 @@ namespace DAL
             solicitudDocente.Contenidos = datos[10];
             solicitudDocente.MecanismosEvaluacion = datos[11];
             solicitudDocente.ReferenciasBibliograficas = datos[12];
-            solicitudDocente.Aprobado = datos[13];
+            solicitudDocente.Estado = datos[13];
             return solicitudDocente;
         }
 

@@ -359,6 +359,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // bunifuGradientPanel12
             // 
@@ -1087,6 +1088,7 @@ namespace Design_Dashboard_Modern
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizacionPlanAsignatura";
             this.Text = "ActualizacionPlanAsignatura";
+            this.Load += new System.EventHandler(this.ActualizacionPlanAsignatura_Load);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel5.ResumeLayout(false);
             this.bunifuGradientPanel13.ResumeLayout(false);

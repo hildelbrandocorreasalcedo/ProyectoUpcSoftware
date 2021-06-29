@@ -13,12 +13,14 @@ namespace BLL
         private readonly UpcRepository AsignaturaRepository;
         private readonly UpcRepository DocenteRepository;
         private readonly UpcRepository PlanAsignaturaRepository;
+        private readonly UpcRepository SolicitudDocenteRepository;
 
         public UpcService()
         {
             AsignaturaRepository = new UpcRepository();
             DocenteRepository = new UpcRepository();
             PlanAsignaturaRepository = new UpcRepository();
+            SolicitudDocenteRepository = new UpcRepository();
         }
 
         //////////////////////////////////------------------------///////////////////////////////////////
@@ -1102,6 +1104,161 @@ namespace BLL
             return respuesta;
         }
 
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////--------Solicitud-Docente--------///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
 
+
+        public string GuardarSolicitudDocente(SolicitudDocentes solicitudDocente)
+        {
+            try
+            {
+                if (SolicitudDocenteRepository.BuscarSolicitudDocente(solicitudDocente.Identificacion) == null)
+                {
+                    SolicitudDocenteRepository.GuardarSolicitudDocente(solicitudDocente);
+                    return "Los Datos han sido guardados satisfactoriamente";
+                }
+                return $"La identificacion {solicitudDocente.Identificacion} ya se encuentra registrado por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de Datos: " + e.Message;
+            }
+        }
+
+       
+        public string ModificarSolicitudDocente(SolicitudDocentes solicitudDocente)
+        {
+            try
+            {
+                if (SolicitudDocenteRepository.BuscarSolicitudDocente(solicitudDocente.Identificacion) != null)
+                {
+
+                    SolicitudDocenteRepository.ModificarSolicitudDocente(solicitudDocente);
+                    return $"El docente con la identificacion {solicitudDocente.Identificacion} ha sido modificada satisfacatoriamente";
+                }
+                return $"La identificacion {solicitudDocente.Identificacion} no se encuentra registrado, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de datos" + e.Message;
+            }
+        }
+        public RespuestaBusqueda BuscarSolicitudDocente(string Codigo)
+        {
+            RespuestaBusqueda respuesta = new RespuestaBusqueda();
+            try
+            {
+                respuesta.Error = false;
+                SolicitudDocentes solicitudDocente = SolicitudDocenteRepository.BuscarSolicitudDocente(Codigo);
+                if (solicitudDocente == null)
+                {
+                    respuesta.Mensaje = $"El docente con la identificacion {Codigo} no se encuentra registrado";
+                    respuesta.SolicitudDocente = null;
+                }
+                else
+                {
+                    respuesta.SolicitudDocente = solicitudDocente;
+                    respuesta.Mensaje = "Docente encontrado\n\n";
+                }
+            }
+            catch (Exception E)
+            {
+                respuesta.Mensaje = "Error de lectura o escritura de archivos: " + E.Message;
+                respuesta.SolicitudDocente = null;
+                respuesta.Error = true;
+            }
+            return respuesta;
+        }
+
+        public RespuestaConsulta ConsultarTodosSolicitudDocentes()
+        {
+            RespuestaConsulta respuesta = new RespuestaConsulta();
+            try
+            {
+                respuesta.Error = false;
+                IList<SolicitudDocentes> SolicitudDocentess = SolicitudDocenteRepository.ConsultarTodosSolicitudDocentes();
+                if (SolicitudDocentess.Count != 0)
+                {
+                    respuesta.Mensaje = "Se Consulta la Informacion de Docentes";
+                    respuesta.SolicitudDocentes = SolicitudDocentess;
+                }
+                else
+                {
+                    respuesta.Mensaje = "No existen Datos para Consultar";
+                    respuesta.SolicitudDocentes = null;
+                }
+            }
+            catch (Exception e)
+            {
+                respuesta.Error = true;
+                respuesta.Mensaje = $"Erro en datos: " + e.Message;
+                respuesta.SolicitudDocentes = null;
+            }
+            return respuesta;
+        }
+
+        public ConsultaSolicitudDocenteResponse ConsultarTodosSolicitudDocentesDtg()
+        {
+            try
+            {
+                List<SolicitudDocentes> solicitudDocente = SolicitudDocenteRepository.ConsultarTodosSolicitudDocentesDtg();
+                if (solicitudDocente != null)
+                {
+                    return new ConsultaSolicitudDocenteResponse(solicitudDocente);
+                }
+                else
+                {
+                    return new ConsultaSolicitudDocenteResponse("El Docente buscado no se encuentra Registrado");
+                }
+            }
+            catch (Exception e)
+            {
+
+                return new ConsultaSolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public SolicitudDocenteResponse BuscarPorIdentificacionSolicitudDocentes(string identificacion)
+        {
+            try
+            {
+                SolicitudDocentes solicitudDocente = SolicitudDocenteRepository.BuscarPorIdentificacionSolicitudDocentes(identificacion);
+                if (solicitudDocente != null)
+                {
+                    return new SolicitudDocenteResponse(solicitudDocente);
+                }
+                else
+                {
+                    return new SolicitudDocenteResponse($"El docente con la identificacion {identificacion} no se encuentra registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new SolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+      
+       
+
+        public ConsultaSolicitudDocenteResponse BuscarSolicitudDocentesDtg(string identificacion)
+        {
+            try
+            {
+                List<SolicitudDocentes> solicitudDocente = SolicitudDocenteRepository.BuscarSolicitudDocentesDtg(identificacion);
+                if (solicitudDocente != null)
+                {
+                    return new ConsultaSolicitudDocenteResponse(solicitudDocente);
+                }
+                else
+                {
+                    return new ConsultaSolicitudDocenteResponse($"El docente con la identificacion {identificacion} no se encuentra registrada");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaSolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+    
     }
 }

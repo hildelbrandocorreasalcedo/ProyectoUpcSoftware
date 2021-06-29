@@ -125,12 +125,12 @@ namespace Design_Dashboard_Modern
 
         private void BtRevisionesFormatoDocente_Click(object sender, EventArgs e)
         {
-            openChildForm(new RevisionesFormatoDocentecs());
+            openChildForm(new RevisionesSolicitudesDocente());
         }
 
         private void BtRespuestaFormatoDocente_Click(object sender, EventArgs e)
         {
-            openChildForm(new RespuestaFormatoDocente());
+            //openChildForm(new RespuestaFormatoDocente());
         }
 
         private void BTAsignaturas_Click(object sender, EventArgs e)

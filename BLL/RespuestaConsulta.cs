@@ -14,6 +14,7 @@ namespace BLL
         public IList<Asignaturas> Asignaturas { get; set; }
         public IList<Docentes> Docentes { get; set; }
         public IList<PlanAsignaturas> PlanAsignaturas { get; set; }
+        public IList<SolicitudDocentes> SolicitudDocentes { get; set; }
         public bool Error { get; set; }
     }
 
@@ -23,6 +24,7 @@ namespace BLL
         public Asignaturas Asignatura { get; set; }
         public Docentes Docente { get; set; }
         public PlanAsignaturas PlanAsignatura { get; set; }
+        public SolicitudDocentes SolicitudDocente { get; set; }
         public bool Error { get; set; }
     }
     /// <summary>
@@ -140,6 +142,46 @@ namespace BLL
             Encontrado = true;
         }
         public ConsultaPlanAsignaturaResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
+
+    /// <summary>
+    /// ////////////////////////////////////////////////------SOLICITUD DocenteS Consultas--------////////////////////////////////
+    /// </summary>
+    public class SolicitudDocenteResponse
+    {
+        public SolicitudDocentes SolicitudDocente { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public SolicitudDocenteResponse(SolicitudDocentes solicitudDocente)
+        {
+            SolicitudDocente = new SolicitudDocentes();
+            SolicitudDocente = solicitudDocente;
+            Encontrado = true;
+        }
+        public SolicitudDocenteResponse(string message)
+        {
+            Message = message;
+            Encontrado = false;
+        }
+    }
+    public class ConsultaSolicitudDocenteResponse
+    {
+        public List<SolicitudDocentes> SolicitudDocente { get; set; }
+        public string Message { get; set; }
+        public bool Encontrado { get; set; }
+
+        public ConsultaSolicitudDocenteResponse(List<SolicitudDocentes> solicitudDocente)
+        {
+            SolicitudDocente = new List<SolicitudDocentes>();
+            SolicitudDocente = solicitudDocente;
+            Encontrado = true;
+        }
+        public ConsultaSolicitudDocenteResponse(string message)
         {
             Message = message;
             Encontrado = false;

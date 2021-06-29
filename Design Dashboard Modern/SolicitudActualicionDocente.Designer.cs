@@ -29,12 +29,11 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolicitudActualicionDocente));
-            this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox6 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkEstrategias = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkObjetivosEspecificos = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkDescripcion = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,10 +42,10 @@ namespace Design_Dashboard_Modern
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.bunifuCheckbox7 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox8 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox9 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox10 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkComponentesGenericos = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkMecanismoEvaluativo = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkContenido = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
@@ -70,73 +69,53 @@ namespace Design_Dashboard_Modern
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.CkJustificacion = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkObjetivoGeneral = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuCheckbox2
+            // CkEstrategias
             // 
-            this.bunifuCheckbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.Checked = false;
-            this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox2.Location = new System.Drawing.Point(317, 142);
-            this.bunifuCheckbox2.Name = "bunifuCheckbox2";
-            this.bunifuCheckbox2.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox2.TabIndex = 56;
+            this.CkEstrategias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkEstrategias.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkEstrategias.Checked = false;
+            this.CkEstrategias.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkEstrategias.ForeColor = System.Drawing.Color.White;
+            this.CkEstrategias.Location = new System.Drawing.Point(317, 142);
+            this.CkEstrategias.Name = "CkEstrategias";
+            this.CkEstrategias.Size = new System.Drawing.Size(20, 20);
+            this.CkEstrategias.TabIndex = 56;
             // 
-            // bunifuCheckbox3
+            // CkObjetivosEspecificos
             // 
-            this.bunifuCheckbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox3.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox3.Checked = false;
-            this.bunifuCheckbox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox3.Location = new System.Drawing.Point(317, 91);
-            this.bunifuCheckbox3.Name = "bunifuCheckbox3";
-            this.bunifuCheckbox3.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox3.TabIndex = 57;
+            this.CkObjetivosEspecificos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivosEspecificos.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivosEspecificos.Checked = false;
+            this.CkObjetivosEspecificos.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkObjetivosEspecificos.ForeColor = System.Drawing.Color.White;
+            this.CkObjetivosEspecificos.Location = new System.Drawing.Point(317, 91);
+            this.CkObjetivosEspecificos.Name = "CkObjetivosEspecificos";
+            this.CkObjetivosEspecificos.Size = new System.Drawing.Size(20, 20);
+            this.CkObjetivosEspecificos.TabIndex = 57;
             // 
-            // bunifuCheckbox4
+            // CkDescripcion
             // 
-            this.bunifuCheckbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox4.Checked = false;
-            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox4.Location = new System.Drawing.Point(317, 64);
-            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
-            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox4.TabIndex = 58;
-            // 
-            // bunifuCheckbox5
-            // 
-            this.bunifuCheckbox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox5.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox5.Checked = false;
-            this.bunifuCheckbox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox5.Location = new System.Drawing.Point(317, 38);
-            this.bunifuCheckbox5.Name = "bunifuCheckbox5";
-            this.bunifuCheckbox5.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox5.TabIndex = 59;
-            // 
-            // bunifuCheckbox6
-            // 
-            this.bunifuCheckbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox6.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox6.Checked = false;
-            this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox6.Location = new System.Drawing.Point(317, 13);
-            this.bunifuCheckbox6.Name = "bunifuCheckbox6";
-            this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox6.TabIndex = 60;
+            this.CkDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkDescripcion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkDescripcion.Checked = false;
+            this.CkDescripcion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkDescripcion.ForeColor = System.Drawing.Color.White;
+            this.CkDescripcion.Location = new System.Drawing.Point(317, 13);
+            this.CkDescripcion.Name = "CkDescripcion";
+            this.CkDescripcion.Size = new System.Drawing.Size(20, 20);
+            this.CkDescripcion.TabIndex = 60;
             // 
             // label4
             // 
@@ -234,53 +213,53 @@ namespace Design_Dashboard_Modern
             this.label11.TabIndex = 70;
             this.label11.Text = "Descripción";
             // 
-            // bunifuCheckbox7
+            // CkComponentesGenericos
             // 
-            this.bunifuCheckbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox7.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox7.Checked = false;
-            this.bunifuCheckbox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox7.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox7.Location = new System.Drawing.Point(317, 116);
-            this.bunifuCheckbox7.Name = "bunifuCheckbox7";
-            this.bunifuCheckbox7.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox7.TabIndex = 71;
+            this.CkComponentesGenericos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkComponentesGenericos.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkComponentesGenericos.Checked = false;
+            this.CkComponentesGenericos.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkComponentesGenericos.ForeColor = System.Drawing.Color.White;
+            this.CkComponentesGenericos.Location = new System.Drawing.Point(317, 116);
+            this.CkComponentesGenericos.Name = "CkComponentesGenericos";
+            this.CkComponentesGenericos.Size = new System.Drawing.Size(20, 20);
+            this.CkComponentesGenericos.TabIndex = 71;
             // 
-            // bunifuCheckbox8
+            // CkMecanismoEvaluativo
             // 
-            this.bunifuCheckbox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox8.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox8.Checked = false;
-            this.bunifuCheckbox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox8.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox8.Location = new System.Drawing.Point(317, 223);
-            this.bunifuCheckbox8.Name = "bunifuCheckbox8";
-            this.bunifuCheckbox8.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox8.TabIndex = 72;
+            this.CkMecanismoEvaluativo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkMecanismoEvaluativo.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkMecanismoEvaluativo.Checked = false;
+            this.CkMecanismoEvaluativo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkMecanismoEvaluativo.ForeColor = System.Drawing.Color.White;
+            this.CkMecanismoEvaluativo.Location = new System.Drawing.Point(317, 223);
+            this.CkMecanismoEvaluativo.Name = "CkMecanismoEvaluativo";
+            this.CkMecanismoEvaluativo.Size = new System.Drawing.Size(20, 20);
+            this.CkMecanismoEvaluativo.TabIndex = 72;
             // 
-            // bunifuCheckbox9
+            // CkContenido
             // 
-            this.bunifuCheckbox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox9.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox9.Checked = false;
-            this.bunifuCheckbox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox9.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox9.Location = new System.Drawing.Point(317, 183);
-            this.bunifuCheckbox9.Name = "bunifuCheckbox9";
-            this.bunifuCheckbox9.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox9.TabIndex = 73;
+            this.CkContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkContenido.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkContenido.Checked = false;
+            this.CkContenido.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkContenido.ForeColor = System.Drawing.Color.White;
+            this.CkContenido.Location = new System.Drawing.Point(317, 183);
+            this.CkContenido.Name = "CkContenido";
+            this.CkContenido.Size = new System.Drawing.Size(20, 20);
+            this.CkContenido.TabIndex = 73;
             // 
-            // bunifuCheckbox10
+            // CkReferenciasBibliograficas
             // 
-            this.bunifuCheckbox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox10.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox10.Checked = false;
-            this.bunifuCheckbox10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox10.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox10.Location = new System.Drawing.Point(317, 247);
-            this.bunifuCheckbox10.Name = "bunifuCheckbox10";
-            this.bunifuCheckbox10.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox10.TabIndex = 75;
+            this.CkReferenciasBibliograficas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkReferenciasBibliograficas.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkReferenciasBibliograficas.Checked = false;
+            this.CkReferenciasBibliograficas.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkReferenciasBibliograficas.ForeColor = System.Drawing.Color.White;
+            this.CkReferenciasBibliograficas.Location = new System.Drawing.Point(317, 247);
+            this.CkReferenciasBibliograficas.Name = "CkReferenciasBibliograficas";
+            this.CkReferenciasBibliograficas.Size = new System.Drawing.Size(20, 20);
+            this.CkReferenciasBibliograficas.TabIndex = 75;
             // 
             // label1
             // 
@@ -321,6 +300,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -517,6 +497,7 @@ namespace Design_Dashboard_Modern
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(210, 26);
             this.TxtIdentificacion.TabIndex = 88;
+            this.TxtIdentificacion.TextChanged += new System.EventHandler(this.TxtIdentificacion_TextChanged);
             // 
             // bunifuGradientPanel6
             // 
@@ -565,6 +546,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLimpiar.Textcolor = System.Drawing.Color.White;
             this.BtLimpiar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // label2
             // 
@@ -600,24 +582,24 @@ namespace Design_Dashboard_Modern
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.CkObjetivoGeneral);
+            this.panel2.Controls.Add(this.CkJustificacion);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.bunifuCheckbox2);
+            this.panel2.Controls.Add(this.CkEstrategias);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.bunifuCheckbox3);
-            this.panel2.Controls.Add(this.bunifuCheckbox4);
-            this.panel2.Controls.Add(this.bunifuCheckbox10);
-            this.panel2.Controls.Add(this.bunifuCheckbox5);
+            this.panel2.Controls.Add(this.CkObjetivosEspecificos);
+            this.panel2.Controls.Add(this.CkReferenciasBibliograficas);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.bunifuCheckbox6);
-            this.panel2.Controls.Add(this.bunifuCheckbox8);
+            this.panel2.Controls.Add(this.CkDescripcion);
+            this.panel2.Controls.Add(this.CkMecanismoEvaluativo);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.bunifuCheckbox9);
+            this.panel2.Controls.Add(this.CkContenido);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.bunifuCheckbox7);
+            this.panel2.Controls.Add(this.CkComponentesGenericos);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(467, 100);
             this.panel2.Name = "panel2";
@@ -648,6 +630,35 @@ namespace Design_Dashboard_Modern
             this.label13.TabIndex = 108;
             this.label13.Text = "OPCION DE SOLICITUD";
             // 
+            // CkJustificacion
+            // 
+            this.CkJustificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkJustificacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkJustificacion.Checked = false;
+            this.CkJustificacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkJustificacion.ForeColor = System.Drawing.Color.White;
+            this.CkJustificacion.Location = new System.Drawing.Point(317, 38);
+            this.CkJustificacion.Name = "CkJustificacion";
+            this.CkJustificacion.Size = new System.Drawing.Size(20, 20);
+            this.CkJustificacion.TabIndex = 106;
+            // 
+            // CkObjetivoGeneral
+            // 
+            this.CkObjetivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivoGeneral.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivoGeneral.Checked = false;
+            this.CkObjetivoGeneral.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkObjetivoGeneral.ForeColor = System.Drawing.Color.White;
+            this.CkObjetivoGeneral.Location = new System.Drawing.Point(317, 65);
+            this.CkObjetivoGeneral.Name = "CkObjetivoGeneral";
+            this.CkObjetivoGeneral.Size = new System.Drawing.Size(20, 20);
+            this.CkObjetivoGeneral.TabIndex = 107;
+            this.CkObjetivoGeneral.OnChange += new System.EventHandler(this.bunifuCheckbox4_OnChange);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // SolicitudActualicionDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -672,17 +683,16 @@ namespace Design_Dashboard_Modern
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox3;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox4;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox5;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox6;
+        private Bunifu.Framework.UI.BunifuCheckbox CkEstrategias;
+        private Bunifu.Framework.UI.BunifuCheckbox CkObjetivosEspecificos;
+        private Bunifu.Framework.UI.BunifuCheckbox CkDescripcion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -691,10 +701,10 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox7;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox8;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox9;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox10;
+        private Bunifu.Framework.UI.BunifuCheckbox CkComponentesGenericos;
+        private Bunifu.Framework.UI.BunifuCheckbox CkMecanismoEvaluativo;
+        private Bunifu.Framework.UI.BunifuCheckbox CkContenido;
+        private Bunifu.Framework.UI.BunifuCheckbox CkReferenciasBibliograficas;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
         private System.Windows.Forms.Button BtCancelar;
@@ -718,5 +728,8 @@ namespace Design_Dashboard_Modern
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private Bunifu.Framework.UI.BunifuCheckbox CkObjetivoGeneral;
+        private Bunifu.Framework.UI.BunifuCheckbox CkJustificacion;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

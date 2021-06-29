@@ -244,5 +244,20 @@ namespace Design_Dashboard_Modern
            
             errorProvider1.SetError(TxtReferenciaBibliografica, "");
         }
+
+        private void ActualizacionPlanAsignatura_Load(object sender, EventArgs e)
+        {
+            var response = upcService.ConsultarTodosAsignaturasDtg();
+            CmbAsignatura.Items.Insert(0, "");
+            foreach (var item in response.Asignatura)
+            {
+                CmbAsignatura.Items.Insert(1, item.Nombre);
+            }
+        }
+
+        private void BtCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

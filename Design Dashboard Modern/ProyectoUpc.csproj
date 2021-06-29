@@ -180,17 +180,11 @@
     <Compile Include="RegistroDocente.Designer.cs">
       <DependentUpon>RegistroDocente.cs</DependentUpon>
     </Compile>
-    <Compile Include="RespuestaFormatoDocente.cs">
+    <Compile Include="RevisionesSolicitudesDocente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RespuestaFormatoDocente.Designer.cs">
-      <DependentUpon>RespuestaFormatoDocente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RevisionesFormatoDocentecs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RevisionesFormatoDocentecs.Designer.cs">
-      <DependentUpon>RevisionesFormatoDocentecs.cs</DependentUpon>
+    <Compile Include="RevisionesSolicitudesDocente.Designer.cs">
+      <DependentUpon>RevisionesSolicitudesDocente.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ActualizacionPlanAsignatura.resx">
       <DependentUpon>ActualizacionPlanAsignatura.cs</DependentUpon>
@@ -264,11 +258,8 @@
     <EmbeddedResource Include="RegistroDocente.resx">
       <DependentUpon>RegistroDocente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RespuestaFormatoDocente.resx">
-      <DependentUpon>RespuestaFormatoDocente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RevisionesFormatoDocentecs.resx">
-      <DependentUpon>RevisionesFormatoDocentecs.cs</DependentUpon>
+    <EmbeddedResource Include="RevisionesSolicitudesDocente.resx">
+      <DependentUpon>RevisionesSolicitudesDocente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

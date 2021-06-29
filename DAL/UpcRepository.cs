@@ -744,5 +744,148 @@ namespace DAL
                 }
             }
         }
+
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////------SolicitudDocente--///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
+
+        public void GuardarSolicitudDocente(SolicitudDocentes solicitudDocente)
+        {
+            FileStream file = new FileStream(FileSolicitudDocente, FileMode.Append);
+            StreamWriter writer = new StreamWriter(file);
+            writer.WriteLine($"{solicitudDocente.Identificacion};{solicitudDocente.Nombre};{solicitudDocente.Apellido};" +
+                $"{solicitudDocente.Materia};{solicitudDocente.Descripcion};{solicitudDocente.Justificacion};" +
+                $"{solicitudDocente.ObjetivoGeneral};{solicitudDocente.ObjetivoEspecifico};{solicitudDocente.ComponeteGenerico};" +
+                $"{solicitudDocente.Estrategias};{solicitudDocente.Contenidos};{solicitudDocente.MecanismosEvaluacion};" +
+                $"{solicitudDocente.ReferenciasBibliograficas};{solicitudDocente.Aprobado}");
+            writer.Close();
+            file.Close();
+        }
+
+        public IList<SolicitudDocentes> ConsultarTodosSolicitudDocentes()
+        {
+            FileStream fileStream = new FileStream(FileSolicitudDocente, FileMode.OpenOrCreate);
+            StreamReader lector = new StreamReader(fileStream);
+            string linea = string.Empty;
+            while ((linea = lector.ReadLine()) != null)
+            {
+                SolicitudDocentes solicitudDocente = MapearSolicitudDocente(linea);
+                solicitudDocentes.Add(solicitudDocente);
+            }
+            lector.Close();
+            fileStream.Close();
+            return solicitudDocentes;
+        }
+        public List<SolicitudDocentes> ConsultarTodosSolicitudDocentesDtg()
+        {
+            List<SolicitudDocentes> solicitudDocentes = new List<SolicitudDocentes>();
+            FileStream fileStream = new FileStream(FileSolicitudDocente, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader lector = new StreamReader(fileStream);
+            string linea = string.Empty;
+            while ((linea = lector.ReadLine()) != null)
+            {
+                SolicitudDocentes solicitudDocente = MapearSolicitudDocente(linea);
+                solicitudDocentes.Add(solicitudDocente);
+            }
+            lector.Close();
+            fileStream.Close();
+            return solicitudDocentes;
+        }
+
+        public SolicitudDocentes MapearSolicitudDocente(string linea)
+        {
+            SolicitudDocentes solicitudDocente = new SolicitudDocentes();
+            string[] datos = linea.Split(';');
+            solicitudDocente.Identificacion = datos[0];
+            solicitudDocente.Nombre = datos[1];
+            solicitudDocente.Apellido = datos[2];
+            solicitudDocente.Materia = datos[3];
+            solicitudDocente.Descripcion = datos[4];
+            solicitudDocente.Justificacion = datos[5];
+            solicitudDocente.ObjetivoGeneral = datos[6];
+            solicitudDocente.ObjetivoEspecifico = datos[7];
+            solicitudDocente.ComponeteGenerico = datos[8];
+            solicitudDocente.Estrategias = datos[9];
+            solicitudDocente.Contenidos = datos[10];
+            solicitudDocente.MecanismosEvaluacion = datos[11];
+            solicitudDocente.ReferenciasBibliograficas = datos[12];
+            solicitudDocente.Aprobado = datos[13];
+            return solicitudDocente;
+        }
+
+        public void EliminarSolicitudDocente(string identificacion)
+        {
+            solicitudDocentes.Clear();
+            solicitudDocentes = ConsultarTodosSolicitudDocentes();
+            FileStream fileStream = new FileStream(FileSolicitudDocente, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in solicitudDocentes)
+            {
+                if (item.Identificacion != identificacion)
+                {
+                    GuardarSolicitudDocente(item);
+                }
+            }
+        }
+        public void ModificarSolicitudDocente(SolicitudDocentes solicitudDocente)
+        {
+            solicitudDocentes.Clear();
+            solicitudDocentes = ConsultarTodosSolicitudDocentes();
+            FileStream fileStream = new FileStream(FileSolicitudDocente, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in solicitudDocentes)
+            {
+                if (item.Identificacion != solicitudDocente.Identificacion)
+                {
+                    GuardarSolicitudDocente(item);
+                }
+                else
+                {
+                    GuardarSolicitudDocente(solicitudDocente);
+                }
+            }
+        }
+        public SolicitudDocentes BuscarSolicitudDocente(string identificacion)
+        {
+            solicitudDocentes.Clear();
+            solicitudDocentes = ConsultarTodosSolicitudDocentes();
+            SolicitudDocentes persona = new SolicitudDocentes();
+            foreach (var item in solicitudDocentes)
+            {
+                if (item.Identificacion.Equals(identificacion))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+        public SolicitudDocentes BuscarPorIdentificacionSolicitudDocentes(string identificacion)
+        {
+            List<SolicitudDocentes> solicitudDocentes = ConsultarTodosSolicitudDocentesDtg();
+            foreach (var item in solicitudDocentes)
+            {
+                if (EncontradoSolicitudDocente(item.Identificacion, identificacion))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        private bool EncontradoSolicitudDocente(string identificacioRegistrada, string identificacionBuscada)
+        {
+            return identificacioRegistrada == identificacionBuscada;
+        }
+
+        //////////////////////////////////////-------------Filtros busqueda en tabla LINQ----------////////////////////////////////////
+        public List<SolicitudDocentes> BuscarSolicitudDocentesDtg(string identificacion)
+        {
+            List<SolicitudDocentes> solicitudDocentes = ConsultarTodosSolicitudDocentesDtg();
+            List<SolicitudDocentes> solicitudDocentesFiltradasBuscado =
+                (from docente in solicitudDocentes
+                 where docente.Identificacion.Equals(identificacion)
+                 select docente).ToList();
+            return solicitudDocentesFiltradasBuscado;
+        }
     }
 }

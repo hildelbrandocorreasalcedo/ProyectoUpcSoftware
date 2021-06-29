@@ -345,9 +345,10 @@ namespace Design_Dashboard_Modern
                     && TxtObjetivoEspecifico.Text != "" && TxtComponentesGenericos.Text != "" && TxtEstrategias.Text != ""
                      && TxtContenido.Text != "" && TxtMecanismoEvaluativo.Text != "" && TxtReferenciaBibliografica.Text != "")
                 {
-                    PlanAsignaturas planAsignatura = MapearPlanAsignatura();
-                    string mensaje = upcService.ModificarPlanAsignatura(planAsignatura);
+                    PlanAsignaturas materia = MapearPlanAsignatura();
+                    string mensaje = upcService.ModificarPlanAsignatura(materia);
                     MessageBox.Show(mensaje, "Informacion de Modificacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                 }
                 else
                 {

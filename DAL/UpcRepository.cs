@@ -730,7 +730,7 @@ namespace DAL
         {
             planAsignaturas.Clear();
             planAsignaturas = ConsultarTodosPlanAsignaturas();
-            FileStream fileStream = new FileStream(FileDocente, FileMode.Create);
+            FileStream fileStream = new FileStream(FilePlanAsignatura, FileMode.Create);
             fileStream.Close();
             foreach (var item in planAsignaturas)
             {
@@ -886,6 +886,37 @@ namespace DAL
                  where docente.Identificacion.Equals(identificacion)
                  select docente).ToList();
             return solicitudDocentesFiltradasBuscado;
+        }
+        public List<SolicitudDocentes> FiltrarSolicitudDocenteAprobado(string estado)
+        {
+            List<SolicitudDocentes> solicitudDocentes = ConsultarTodosSolicitudDocentesDtg();
+            List<SolicitudDocentes> SolicitudDocentesFiltradas =
+                (from solicitudDocente in solicitudDocentes
+                 where solicitudDocente.Estado.Equals("Aprobado")
+                 select solicitudDocente).ToList();
+            return SolicitudDocentesFiltradas;
+        }
+
+        public List<SolicitudDocentes> FiltrarSolicitudDocenteDesaprobado(string estado)
+        {
+            List<SolicitudDocentes> solicitudDocentes = ConsultarTodosSolicitudDocentesDtg();
+            List<SolicitudDocentes> SolicitudDocentesFiltradas =
+                (from solicitudDocente in solicitudDocentes
+                 where solicitudDocente.Estado.Equals("Desaprobado")
+                 select solicitudDocente).ToList();
+            return SolicitudDocentesFiltradas;
+        }
+        public int TotalizarTodosSolicitudDocentes()
+        {
+            return ConsultarTodosSolicitudDocentesDtg().Count();
+        }
+        public int ContarSolicitudDocenteAprobado()
+        {
+            return ConsultarTodosSolicitudDocentesDtg().Where(p => p.Estado == "Aprobado").Count();
+        }
+        public int ContarSolicitudDocenteDesaprobado()
+        {
+            return ConsultarTodosSolicitudDocentesDtg().Where(p => p.Estado == "Desaprobado").Count();
         }
     }
 }

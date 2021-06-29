@@ -48,28 +48,28 @@ namespace Design_Dashboard_Modern
             this.label4 = new System.Windows.Forms.Label();
             this.CkDescripcion = new Bunifu.Framework.UI.BunifuCheckbox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CkReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkMecanismoEvaluacion = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkContenido = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkEstrategias = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkComponetes = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkObjetivosEspecificos = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkObjetivoGeneral = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CkJustificacion = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtRegistrar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CkJustificacion = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkObjetivoGeneral = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkObjetivosEspecificos = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkComponetes = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkEstrategias = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkContenido = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkMecanismoEvaluacion = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.CkReferenciasBibliograficas = new Bunifu.Framework.UI.BunifuCheckbox();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.TxtJustificacion = new System.Windows.Forms.TextBox();
             this.TxtObjetivoGeneral = new System.Windows.Forms.TextBox();
@@ -204,7 +204,7 @@ namespace Design_Dashboard_Modern
             this.CmbAsignatura.FormattingEnabled = true;
             this.CmbAsignatura.Items.AddRange(new object[] {
             ""});
-            this.CmbAsignatura.Location = new System.Drawing.Point(154, 159);
+            this.CmbAsignatura.Location = new System.Drawing.Point(154, 126);
             this.CmbAsignatura.Name = "CmbAsignatura";
             this.CmbAsignatura.Size = new System.Drawing.Size(280, 28);
             this.CmbAsignatura.TabIndex = 101;
@@ -215,7 +215,7 @@ namespace Design_Dashboard_Modern
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(41, 167);
+            this.label6.Location = new System.Drawing.Point(41, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 95;
@@ -225,7 +225,7 @@ namespace Design_Dashboard_Modern
             // 
             this.TxtApellido.Enabled = false;
             this.TxtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellido.Location = new System.Drawing.Point(154, 112);
+            this.TxtApellido.Location = new System.Drawing.Point(154, 94);
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(302, 26);
             this.TxtApellido.TabIndex = 94;
@@ -237,7 +237,7 @@ namespace Design_Dashboard_Modern
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(41, 118);
+            this.label3.Location = new System.Drawing.Point(41, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 93;
@@ -259,7 +259,7 @@ namespace Design_Dashboard_Modern
             // 
             this.TxtNombre.Enabled = false;
             this.TxtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(154, 68);
+            this.TxtNombre.Location = new System.Drawing.Point(154, 62);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(302, 26);
             this.TxtNombre.TabIndex = 90;
@@ -271,7 +271,7 @@ namespace Design_Dashboard_Modern
             this.labNombre.BackColor = System.Drawing.Color.White;
             this.labNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labNombre.ForeColor = System.Drawing.Color.Black;
-            this.labNombre.Location = new System.Drawing.Point(41, 74);
+            this.labNombre.Location = new System.Drawing.Point(41, 65);
             this.labNombre.Name = "labNombre";
             this.labNombre.Size = new System.Drawing.Size(73, 20);
             this.labNombre.TabIndex = 89;
@@ -312,8 +312,9 @@ namespace Design_Dashboard_Modern
             this.panel1.Controls.Add(this.TxtApellido);
             this.panel1.Location = new System.Drawing.Point(269, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(523, 205);
+            this.panel1.Size = new System.Drawing.Size(523, 165);
             this.panel1.TabIndex = 105;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
@@ -335,7 +336,7 @@ namespace Design_Dashboard_Modern
             this.CkDescripcion.Checked = false;
             this.CkDescripcion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CkDescripcion.ForeColor = System.Drawing.Color.White;
-            this.CkDescripcion.Location = new System.Drawing.Point(369, 13);
+            this.CkDescripcion.Location = new System.Drawing.Point(369, 8);
             this.CkDescripcion.Name = "CkDescripcion";
             this.CkDescripcion.Size = new System.Drawing.Size(20, 20);
             this.CkDescripcion.TabIndex = 107;
@@ -362,11 +363,216 @@ namespace Design_Dashboard_Modern
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Location = new System.Drawing.Point(33, 312);
+            this.panel2.Location = new System.Drawing.Point(33, 272);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 408);
+            this.panel2.Size = new System.Drawing.Size(403, 368);
             this.panel2.TabIndex = 108;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // CkReferenciasBibliograficas
+            // 
+            this.CkReferenciasBibliograficas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkReferenciasBibliograficas.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkReferenciasBibliograficas.Checked = false;
+            this.CkReferenciasBibliograficas.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkReferenciasBibliograficas.ForeColor = System.Drawing.Color.White;
+            this.CkReferenciasBibliograficas.Location = new System.Drawing.Point(369, 336);
+            this.CkReferenciasBibliograficas.Name = "CkReferenciasBibliograficas";
+            this.CkReferenciasBibliograficas.Size = new System.Drawing.Size(20, 20);
+            this.CkReferenciasBibliograficas.TabIndex = 305;
+            this.CkReferenciasBibliograficas.OnChange += new System.EventHandler(this.CkReferenciasBibliograficas_OnChange);
+            // 
+            // CkMecanismoEvaluacion
+            // 
+            this.CkMecanismoEvaluacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkMecanismoEvaluacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkMecanismoEvaluacion.Checked = false;
+            this.CkMecanismoEvaluacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkMecanismoEvaluacion.ForeColor = System.Drawing.Color.White;
+            this.CkMecanismoEvaluacion.Location = new System.Drawing.Point(369, 294);
+            this.CkMecanismoEvaluacion.Name = "CkMecanismoEvaluacion";
+            this.CkMecanismoEvaluacion.Size = new System.Drawing.Size(20, 20);
+            this.CkMecanismoEvaluacion.TabIndex = 304;
+            this.CkMecanismoEvaluacion.OnChange += new System.EventHandler(this.CkMecanismoEvaluacion_OnChange);
+            // 
+            // CkContenido
+            // 
+            this.CkContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkContenido.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkContenido.Checked = false;
+            this.CkContenido.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkContenido.ForeColor = System.Drawing.Color.White;
+            this.CkContenido.Location = new System.Drawing.Point(369, 251);
+            this.CkContenido.Name = "CkContenido";
+            this.CkContenido.Size = new System.Drawing.Size(20, 20);
+            this.CkContenido.TabIndex = 303;
+            this.CkContenido.OnChange += new System.EventHandler(this.CkContenido_OnChange);
+            // 
+            // CkEstrategias
+            // 
+            this.CkEstrategias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkEstrategias.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkEstrategias.Checked = false;
+            this.CkEstrategias.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkEstrategias.ForeColor = System.Drawing.Color.White;
+            this.CkEstrategias.Location = new System.Drawing.Point(369, 210);
+            this.CkEstrategias.Name = "CkEstrategias";
+            this.CkEstrategias.Size = new System.Drawing.Size(20, 20);
+            this.CkEstrategias.TabIndex = 302;
+            this.CkEstrategias.OnChange += new System.EventHandler(this.CkEstrategias_OnChange);
+            // 
+            // CkComponetes
+            // 
+            this.CkComponetes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkComponetes.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkComponetes.Checked = false;
+            this.CkComponetes.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkComponetes.ForeColor = System.Drawing.Color.White;
+            this.CkComponetes.Location = new System.Drawing.Point(369, 166);
+            this.CkComponetes.Name = "CkComponetes";
+            this.CkComponetes.Size = new System.Drawing.Size(20, 20);
+            this.CkComponetes.TabIndex = 301;
+            this.CkComponetes.OnChange += new System.EventHandler(this.CkComponetes_OnChange);
+            // 
+            // CkObjetivosEspecificos
+            // 
+            this.CkObjetivosEspecificos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivosEspecificos.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivosEspecificos.Checked = false;
+            this.CkObjetivosEspecificos.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkObjetivosEspecificos.ForeColor = System.Drawing.Color.White;
+            this.CkObjetivosEspecificos.Location = new System.Drawing.Point(369, 125);
+            this.CkObjetivosEspecificos.Name = "CkObjetivosEspecificos";
+            this.CkObjetivosEspecificos.Size = new System.Drawing.Size(20, 20);
+            this.CkObjetivosEspecificos.TabIndex = 300;
+            this.CkObjetivosEspecificos.OnChange += new System.EventHandler(this.CkObjetivosEspecificos_OnChange);
+            // 
+            // CkObjetivoGeneral
+            // 
+            this.CkObjetivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivoGeneral.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkObjetivoGeneral.Checked = false;
+            this.CkObjetivoGeneral.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkObjetivoGeneral.ForeColor = System.Drawing.Color.White;
+            this.CkObjetivoGeneral.Location = new System.Drawing.Point(369, 83);
+            this.CkObjetivoGeneral.Name = "CkObjetivoGeneral";
+            this.CkObjetivoGeneral.Size = new System.Drawing.Size(20, 20);
+            this.CkObjetivoGeneral.TabIndex = 299;
+            this.CkObjetivoGeneral.OnChange += new System.EventHandler(this.CkObjetivoGeneral_OnChange);
+            // 
+            // CkJustificacion
+            // 
+            this.CkJustificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkJustificacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CkJustificacion.Checked = false;
+            this.CkJustificacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CkJustificacion.ForeColor = System.Drawing.Color.White;
+            this.CkJustificacion.Location = new System.Drawing.Point(369, 43);
+            this.CkJustificacion.Name = "CkJustificacion";
+            this.CkJustificacion.Size = new System.Drawing.Size(20, 20);
+            this.CkJustificacion.TabIndex = 298;
+            this.CkJustificacion.OnChange += new System.EventHandler(this.bunifuCheckbox2_OnChange);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(172, 336);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(191, 20);
+            this.label9.TabIndex = 297;
+            this.label9.Text = "Referencias bibliograficas";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.White;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(271, 8);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(92, 20);
+            this.label18.TabIndex = 272;
+            this.label18.Text = "Descripcion";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(66, 210);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(303, 20);
+            this.label13.TabIndex = 281;
+            this.label13.Text = "Estrategias pedagogicas y metodologicas";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(172, 294);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(191, 20);
+            this.label11.TabIndex = 295;
+            this.label11.Text = "Mecanismo de evaluacion";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(0, 251);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(369, 20);
+            this.label8.TabIndex = 277;
+            this.label8.Text = "Contenidos, competencias especificas y resultados";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(267, 43);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(96, 20);
+            this.label19.TabIndex = 271;
+            this.label19.Text = "Justificacion";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(240, 83);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(123, 20);
+            this.label17.TabIndex = 273;
+            this.label17.Text = "Objetivo general";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(222, 125);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(141, 20);
+            this.label16.TabIndex = 274;
+            this.label16.Text = "Objetivo especifico";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(187, 166);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(182, 20);
+            this.label15.TabIndex = 275;
+            this.label15.Text = "Componentes genericos";
             // 
             // bunifuGradientPanel1
             // 
@@ -377,7 +583,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(104, 739);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(140, 643);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(151, 44);
@@ -427,7 +633,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(800, 739);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(807, 643);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(155, 44);
@@ -452,239 +658,36 @@ namespace Design_Dashboard_Modern
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(135, 289);
+            this.label5.Location = new System.Drawing.Point(135, 249);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(215, 20);
             this.label5.TabIndex = 104;
             this.label5.Text = "SELECCION DE OPCIONES";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(66, 221);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(303, 20);
-            this.label13.TabIndex = 281;
-            this.label13.Text = "Estrategias pedagogicas y metodologicas";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(0, 267);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(369, 20);
-            this.label8.TabIndex = 277;
-            this.label8.Text = "Contenidos, competencias especificas y resultados";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(187, 179);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(182, 20);
-            this.label15.TabIndex = 275;
-            this.label15.Text = "Componentes genericos";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(222, 134);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(141, 20);
-            this.label16.TabIndex = 274;
-            this.label16.Text = "Objetivo especifico";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(240, 93);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(123, 20);
-            this.label17.TabIndex = 273;
-            this.label17.Text = "Objetivo general";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.White;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(271, 13);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(92, 20);
-            this.label18.TabIndex = 272;
-            this.label18.Text = "Descripcion";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(267, 53);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(96, 20);
-            this.label19.TabIndex = 271;
-            this.label19.Text = "Justificacion";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(170, 359);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 20);
-            this.label9.TabIndex = 297;
-            this.label9.Text = "Referencias bibliograficas";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(172, 311);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(191, 20);
-            this.label11.TabIndex = 295;
-            this.label11.Text = "Mecanismo de evaluacion";
-            // 
-            // CkJustificacion
-            // 
-            this.CkJustificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkJustificacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkJustificacion.Checked = false;
-            this.CkJustificacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkJustificacion.ForeColor = System.Drawing.Color.White;
-            this.CkJustificacion.Location = new System.Drawing.Point(369, 53);
-            this.CkJustificacion.Name = "CkJustificacion";
-            this.CkJustificacion.Size = new System.Drawing.Size(20, 20);
-            this.CkJustificacion.TabIndex = 298;
-            this.CkJustificacion.OnChange += new System.EventHandler(this.bunifuCheckbox2_OnChange);
-            // 
-            // CkObjetivoGeneral
-            // 
-            this.CkObjetivoGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkObjetivoGeneral.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkObjetivoGeneral.Checked = false;
-            this.CkObjetivoGeneral.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkObjetivoGeneral.ForeColor = System.Drawing.Color.White;
-            this.CkObjetivoGeneral.Location = new System.Drawing.Point(369, 93);
-            this.CkObjetivoGeneral.Name = "CkObjetivoGeneral";
-            this.CkObjetivoGeneral.Size = new System.Drawing.Size(20, 20);
-            this.CkObjetivoGeneral.TabIndex = 299;
-            this.CkObjetivoGeneral.OnChange += new System.EventHandler(this.CkObjetivoGeneral_OnChange);
-            // 
-            // CkObjetivosEspecificos
-            // 
-            this.CkObjetivosEspecificos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkObjetivosEspecificos.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkObjetivosEspecificos.Checked = false;
-            this.CkObjetivosEspecificos.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkObjetivosEspecificos.ForeColor = System.Drawing.Color.White;
-            this.CkObjetivosEspecificos.Location = new System.Drawing.Point(369, 134);
-            this.CkObjetivosEspecificos.Name = "CkObjetivosEspecificos";
-            this.CkObjetivosEspecificos.Size = new System.Drawing.Size(20, 20);
-            this.CkObjetivosEspecificos.TabIndex = 300;
-            this.CkObjetivosEspecificos.OnChange += new System.EventHandler(this.CkObjetivosEspecificos_OnChange);
-            // 
-            // CkComponetes
-            // 
-            this.CkComponetes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkComponetes.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkComponetes.Checked = false;
-            this.CkComponetes.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkComponetes.ForeColor = System.Drawing.Color.White;
-            this.CkComponetes.Location = new System.Drawing.Point(369, 179);
-            this.CkComponetes.Name = "CkComponetes";
-            this.CkComponetes.Size = new System.Drawing.Size(20, 20);
-            this.CkComponetes.TabIndex = 301;
-            this.CkComponetes.OnChange += new System.EventHandler(this.CkComponetes_OnChange);
-            // 
-            // CkEstrategias
-            // 
-            this.CkEstrategias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkEstrategias.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkEstrategias.Checked = false;
-            this.CkEstrategias.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkEstrategias.ForeColor = System.Drawing.Color.White;
-            this.CkEstrategias.Location = new System.Drawing.Point(369, 221);
-            this.CkEstrategias.Name = "CkEstrategias";
-            this.CkEstrategias.Size = new System.Drawing.Size(20, 20);
-            this.CkEstrategias.TabIndex = 302;
-            this.CkEstrategias.OnChange += new System.EventHandler(this.CkEstrategias_OnChange);
-            // 
-            // CkContenido
-            // 
-            this.CkContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkContenido.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkContenido.Checked = false;
-            this.CkContenido.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkContenido.ForeColor = System.Drawing.Color.White;
-            this.CkContenido.Location = new System.Drawing.Point(369, 267);
-            this.CkContenido.Name = "CkContenido";
-            this.CkContenido.Size = new System.Drawing.Size(20, 20);
-            this.CkContenido.TabIndex = 303;
-            this.CkContenido.OnChange += new System.EventHandler(this.CkContenido_OnChange);
-            // 
-            // CkMecanismoEvaluacion
-            // 
-            this.CkMecanismoEvaluacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkMecanismoEvaluacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkMecanismoEvaluacion.Checked = false;
-            this.CkMecanismoEvaluacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkMecanismoEvaluacion.ForeColor = System.Drawing.Color.White;
-            this.CkMecanismoEvaluacion.Location = new System.Drawing.Point(369, 311);
-            this.CkMecanismoEvaluacion.Name = "CkMecanismoEvaluacion";
-            this.CkMecanismoEvaluacion.Size = new System.Drawing.Size(20, 20);
-            this.CkMecanismoEvaluacion.TabIndex = 304;
-            this.CkMecanismoEvaluacion.OnChange += new System.EventHandler(this.CkMecanismoEvaluacion_OnChange);
-            // 
-            // CkReferenciasBibliograficas
-            // 
-            this.CkReferenciasBibliograficas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkReferenciasBibliograficas.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CkReferenciasBibliograficas.Checked = false;
-            this.CkReferenciasBibliograficas.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkReferenciasBibliograficas.ForeColor = System.Drawing.Color.White;
-            this.CkReferenciasBibliograficas.Location = new System.Drawing.Point(369, 359);
-            this.CkReferenciasBibliograficas.Name = "CkReferenciasBibliograficas";
-            this.CkReferenciasBibliograficas.Size = new System.Drawing.Size(20, 20);
-            this.CkReferenciasBibliograficas.TabIndex = 305;
-            this.CkReferenciasBibliograficas.OnChange += new System.EventHandler(this.CkReferenciasBibliograficas_OnChange);
-            // 
             // TxtDescripcion
             // 
             this.TxtDescripcion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcion.Location = new System.Drawing.Point(443, 322);
+            this.TxtDescripcion.Location = new System.Drawing.Point(442, 272);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(440, 30);
             this.TxtDescripcion.TabIndex = 274;
+            this.TxtDescripcion.TextChanged += new System.EventHandler(this.TxtDescripcion_TextChanged);
             // 
             // TxtJustificacion
             // 
             this.TxtJustificacion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtJustificacion.Location = new System.Drawing.Point(442, 362);
+            this.TxtJustificacion.Location = new System.Drawing.Point(443, 308);
             this.TxtJustificacion.Multiline = true;
             this.TxtJustificacion.Name = "TxtJustificacion";
             this.TxtJustificacion.Size = new System.Drawing.Size(440, 30);
             this.TxtJustificacion.TabIndex = 275;
+            this.TxtJustificacion.TextChanged += new System.EventHandler(this.TxtJustificacion_TextChanged);
             // 
             // TxtObjetivoGeneral
             // 
             this.TxtObjetivoGeneral.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtObjetivoGeneral.Location = new System.Drawing.Point(443, 404);
+            this.TxtObjetivoGeneral.Location = new System.Drawing.Point(442, 354);
             this.TxtObjetivoGeneral.Multiline = true;
             this.TxtObjetivoGeneral.Name = "TxtObjetivoGeneral";
             this.TxtObjetivoGeneral.Size = new System.Drawing.Size(440, 30);
@@ -693,7 +696,7 @@ namespace Design_Dashboard_Modern
             // TxtObjetivosEspecificos
             // 
             this.TxtObjetivosEspecificos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtObjetivosEspecificos.Location = new System.Drawing.Point(443, 445);
+            this.TxtObjetivosEspecificos.Location = new System.Drawing.Point(443, 396);
             this.TxtObjetivosEspecificos.Multiline = true;
             this.TxtObjetivosEspecificos.Name = "TxtObjetivosEspecificos";
             this.TxtObjetivosEspecificos.Size = new System.Drawing.Size(440, 30);
@@ -702,7 +705,7 @@ namespace Design_Dashboard_Modern
             // TxtComponetes
             // 
             this.TxtComponetes.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtComponetes.Location = new System.Drawing.Point(443, 489);
+            this.TxtComponetes.Location = new System.Drawing.Point(442, 440);
             this.TxtComponetes.Multiline = true;
             this.TxtComponetes.Name = "TxtComponetes";
             this.TxtComponetes.Size = new System.Drawing.Size(440, 30);
@@ -711,7 +714,7 @@ namespace Design_Dashboard_Modern
             // TxtEstrategias
             // 
             this.TxtEstrategias.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEstrategias.Location = new System.Drawing.Point(442, 530);
+            this.TxtEstrategias.Location = new System.Drawing.Point(442, 481);
             this.TxtEstrategias.Multiline = true;
             this.TxtEstrategias.Name = "TxtEstrategias";
             this.TxtEstrategias.Size = new System.Drawing.Size(440, 30);
@@ -720,7 +723,7 @@ namespace Design_Dashboard_Modern
             // TxtContenidos
             // 
             this.TxtContenidos.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContenidos.Location = new System.Drawing.Point(442, 578);
+            this.TxtContenidos.Location = new System.Drawing.Point(442, 525);
             this.TxtContenidos.Multiline = true;
             this.TxtContenidos.Name = "TxtContenidos";
             this.TxtContenidos.Size = new System.Drawing.Size(440, 30);
@@ -729,7 +732,7 @@ namespace Design_Dashboard_Modern
             // TxtMecanismoEvaluacion
             // 
             this.TxtMecanismoEvaluacion.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMecanismoEvaluacion.Location = new System.Drawing.Point(442, 620);
+            this.TxtMecanismoEvaluacion.Location = new System.Drawing.Point(442, 565);
             this.TxtMecanismoEvaluacion.Multiline = true;
             this.TxtMecanismoEvaluacion.Name = "TxtMecanismoEvaluacion";
             this.TxtMecanismoEvaluacion.Size = new System.Drawing.Size(440, 30);
@@ -738,7 +741,7 @@ namespace Design_Dashboard_Modern
             // TxtReferenciasBibliograficas
             // 
             this.TxtReferenciasBibliograficas.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtReferenciasBibliograficas.Location = new System.Drawing.Point(442, 667);
+            this.TxtReferenciasBibliograficas.Location = new System.Drawing.Point(443, 607);
             this.TxtReferenciasBibliograficas.Multiline = true;
             this.TxtReferenciasBibliograficas.Name = "TxtReferenciasBibliograficas";
             this.TxtReferenciasBibliograficas.Size = new System.Drawing.Size(440, 30);
@@ -765,7 +768,7 @@ namespace Design_Dashboard_Modern
             this.ExDescripcion.IconVisible = true;
             this.ExDescripcion.IconZoom = 90D;
             this.ExDescripcion.IsTab = false;
-            this.ExDescripcion.Location = new System.Drawing.Point(889, 322);
+            this.ExDescripcion.Location = new System.Drawing.Point(889, 272);
             this.ExDescripcion.Name = "ExDescripcion";
             this.ExDescripcion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExDescripcion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -800,7 +803,7 @@ namespace Design_Dashboard_Modern
             this.ExJustificacion.IconVisible = true;
             this.ExJustificacion.IconZoom = 90D;
             this.ExJustificacion.IsTab = false;
-            this.ExJustificacion.Location = new System.Drawing.Point(889, 362);
+            this.ExJustificacion.Location = new System.Drawing.Point(888, 308);
             this.ExJustificacion.Name = "ExJustificacion";
             this.ExJustificacion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExJustificacion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -835,7 +838,7 @@ namespace Design_Dashboard_Modern
             this.ExObjetivoGeneral.IconVisible = true;
             this.ExObjetivoGeneral.IconZoom = 90D;
             this.ExObjetivoGeneral.IsTab = false;
-            this.ExObjetivoGeneral.Location = new System.Drawing.Point(889, 404);
+            this.ExObjetivoGeneral.Location = new System.Drawing.Point(888, 354);
             this.ExObjetivoGeneral.Name = "ExObjetivoGeneral";
             this.ExObjetivoGeneral.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExObjetivoGeneral.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -870,7 +873,7 @@ namespace Design_Dashboard_Modern
             this.ExObjetivosEspecificos.IconVisible = true;
             this.ExObjetivosEspecificos.IconZoom = 90D;
             this.ExObjetivosEspecificos.IsTab = false;
-            this.ExObjetivosEspecificos.Location = new System.Drawing.Point(889, 445);
+            this.ExObjetivosEspecificos.Location = new System.Drawing.Point(889, 396);
             this.ExObjetivosEspecificos.Name = "ExObjetivosEspecificos";
             this.ExObjetivosEspecificos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExObjetivosEspecificos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -905,7 +908,7 @@ namespace Design_Dashboard_Modern
             this.ExComponetes.IconVisible = true;
             this.ExComponetes.IconZoom = 90D;
             this.ExComponetes.IsTab = false;
-            this.ExComponetes.Location = new System.Drawing.Point(889, 489);
+            this.ExComponetes.Location = new System.Drawing.Point(889, 440);
             this.ExComponetes.Name = "ExComponetes";
             this.ExComponetes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExComponetes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -940,7 +943,7 @@ namespace Design_Dashboard_Modern
             this.ExEstrategias.IconVisible = true;
             this.ExEstrategias.IconZoom = 90D;
             this.ExEstrategias.IsTab = false;
-            this.ExEstrategias.Location = new System.Drawing.Point(888, 530);
+            this.ExEstrategias.Location = new System.Drawing.Point(888, 481);
             this.ExEstrategias.Name = "ExEstrategias";
             this.ExEstrategias.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExEstrategias.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -975,7 +978,7 @@ namespace Design_Dashboard_Modern
             this.ExContenido.IconVisible = true;
             this.ExContenido.IconZoom = 90D;
             this.ExContenido.IsTab = false;
-            this.ExContenido.Location = new System.Drawing.Point(889, 578);
+            this.ExContenido.Location = new System.Drawing.Point(889, 525);
             this.ExContenido.Name = "ExContenido";
             this.ExContenido.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExContenido.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -1010,7 +1013,7 @@ namespace Design_Dashboard_Modern
             this.ExMecanismoEvaluacion.IconVisible = true;
             this.ExMecanismoEvaluacion.IconZoom = 90D;
             this.ExMecanismoEvaluacion.IsTab = false;
-            this.ExMecanismoEvaluacion.Location = new System.Drawing.Point(889, 620);
+            this.ExMecanismoEvaluacion.Location = new System.Drawing.Point(888, 565);
             this.ExMecanismoEvaluacion.Name = "ExMecanismoEvaluacion";
             this.ExMecanismoEvaluacion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExMecanismoEvaluacion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -1045,7 +1048,7 @@ namespace Design_Dashboard_Modern
             this.ExReferenciasBibliograficas.IconVisible = true;
             this.ExReferenciasBibliograficas.IconZoom = 90D;
             this.ExReferenciasBibliograficas.IsTab = false;
-            this.ExReferenciasBibliograficas.Location = new System.Drawing.Point(888, 667);
+            this.ExReferenciasBibliograficas.Location = new System.Drawing.Point(888, 607);
             this.ExReferenciasBibliograficas.Name = "ExReferenciasBibliograficas";
             this.ExReferenciasBibliograficas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.ExReferenciasBibliograficas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -1069,7 +1072,7 @@ namespace Design_Dashboard_Modern
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1045, 788);
+            this.ClientSize = new System.Drawing.Size(1045, 693);
             this.Controls.Add(this.ExReferenciasBibliograficas);
             this.Controls.Add(this.ExMecanismoEvaluacion);
             this.Controls.Add(this.ExContenido);

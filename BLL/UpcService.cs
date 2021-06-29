@@ -1244,10 +1244,10 @@ namespace BLL
         {
             try
             {
-                List<SolicitudDocentes> solicitudDocente = SolicitudDocenteRepository.BuscarSolicitudDocentesDtg(identificacion);
-                if (solicitudDocente != null)
+                List<SolicitudDocentes> solicitudDocentes = SolicitudDocenteRepository.BuscarSolicitudDocentesDtg(identificacion);
+                if (solicitudDocentes != null)
                 {
-                    return new ConsultaSolicitudDocenteResponse(solicitudDocente);
+                    return new ConsultaSolicitudDocenteResponse(solicitudDocentes);
                 }
                 else
                 {
@@ -1259,6 +1259,56 @@ namespace BLL
                 return new ConsultaSolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
             }
         }
-    
+        public ConsultaSolicitudDocenteResponse FiltrarSolicitudDocenteAprobado(string estado)
+        {
+            try
+            {
+                List<SolicitudDocentes> solicitudDocentes = SolicitudDocenteRepository.FiltrarSolicitudDocenteAprobado(estado);
+                if (solicitudDocentes != null)
+                {
+                    return new ConsultaSolicitudDocenteResponse(solicitudDocentes);
+                }
+                else
+                {
+                    return new ConsultaSolicitudDocenteResponse("El docente buscado no se encuentra Registrado");
+                }
+            }
+            catch (Exception e)
+            {
+
+                return new ConsultaSolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public ConsultaSolicitudDocenteResponse FiltrarSolicitudDocenteDesaprobado(string estado)
+        {
+            try
+            {
+                List<SolicitudDocentes> solicitudDocentes = SolicitudDocenteRepository.FiltrarSolicitudDocenteDesaprobado(estado);
+                if (solicitudDocentes != null)
+                {
+                    return new ConsultaSolicitudDocenteResponse(solicitudDocentes);
+                }
+                else
+                {
+                    return new ConsultaSolicitudDocenteResponse("El docente buscado no se encuentra Registrado");
+                }
+            }
+            catch (Exception e)
+            {
+                return new ConsultaSolicitudDocenteResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+        public int TotalizarTodosSolicitudDocentes()
+        {
+            return AsignaturaRepository.TotalizarTodosSolicitudDocentes();
+        }
+        public int ContarSolicitudDocenteAprobado()
+        {
+            return AsignaturaRepository.ContarSolicitudDocenteAprobado();
+        }
+        public int ContarSolicitudDocenteDesaprobado()
+        {
+            return AsignaturaRepository.ContarSolicitudDocenteDesaprobado();
+        }
     }
 }

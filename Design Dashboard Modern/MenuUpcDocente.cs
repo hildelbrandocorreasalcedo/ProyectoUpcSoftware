@@ -85,29 +85,23 @@ namespace ProyectoHotelPensionados
 
         private void Temporizador_Tick(object sender, EventArgs e)
         {
-            Temporizador.Stop();
-
-            
+            Temporizador.Stop();           
         }
 
         private void MenuTop_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void Grafico_Click(object sender, EventArgs e)
         {
-
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void PanelChart_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
@@ -118,7 +112,6 @@ namespace ProyectoHotelPensionados
 
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void BtGenerarFactura_Click(object sender, EventArgs e)
@@ -128,22 +121,18 @@ namespace ProyectoHotelPensionados
 
         private void label4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtHabitaciones_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtGestionarGanancias_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BTPensionados_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Maximizar_Click_1(object sender, EventArgs e)
@@ -165,7 +154,6 @@ namespace ProyectoHotelPensionados
 
         private void BtConsultarPlanAsignatura_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtConsultarAsignatura_Click(object sender, EventArgs e)

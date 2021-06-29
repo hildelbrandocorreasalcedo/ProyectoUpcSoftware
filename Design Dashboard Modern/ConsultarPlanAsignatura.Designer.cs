@@ -590,7 +590,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarReferenciasBibliograficas.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarReferenciasBibliograficas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarReferenciasBibliograficas.BorderRadius = 0;
-            this.BtLLenarReferenciasBibliograficas.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarReferenciasBibliograficas.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarReferenciasBibliograficas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarReferenciasBibliograficas.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarReferenciasBibliograficas.Iconcolor = System.Drawing.Color.Transparent;
@@ -613,7 +613,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarReferenciasBibliograficas.selected = false;
             this.BtLLenarReferenciasBibliograficas.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarReferenciasBibliograficas.TabIndex = 28;
-            this.BtLLenarReferenciasBibliograficas.Text = "     LLENAR CAMPO";
+            this.BtLLenarReferenciasBibliograficas.Text = "     AMPLIAR CAMPO";
             this.BtLLenarReferenciasBibliograficas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarReferenciasBibliograficas.Textcolor = System.Drawing.Color.White;
             this.BtLLenarReferenciasBibliograficas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -640,7 +640,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarMecanismoEvaluacion.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarMecanismoEvaluacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarMecanismoEvaluacion.BorderRadius = 0;
-            this.BtLLenarMecanismoEvaluacion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarMecanismoEvaluacion.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarMecanismoEvaluacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarMecanismoEvaluacion.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarMecanismoEvaluacion.Iconcolor = System.Drawing.Color.Transparent;
@@ -663,7 +663,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarMecanismoEvaluacion.selected = false;
             this.BtLLenarMecanismoEvaluacion.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarMecanismoEvaluacion.TabIndex = 28;
-            this.BtLLenarMecanismoEvaluacion.Text = "     LLENAR CAMPO";
+            this.BtLLenarMecanismoEvaluacion.Text = "     AMPLIAR CAMPO";
             this.BtLLenarMecanismoEvaluacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarMecanismoEvaluacion.Textcolor = System.Drawing.Color.White;
             this.BtLLenarMecanismoEvaluacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -690,7 +690,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarContenidos.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarContenidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarContenidos.BorderRadius = 0;
-            this.BtLLenarContenidos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarContenidos.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarContenidos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarContenidos.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarContenidos.Iconcolor = System.Drawing.Color.Transparent;
@@ -713,7 +713,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarContenidos.selected = false;
             this.BtLLenarContenidos.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarContenidos.TabIndex = 28;
-            this.BtLLenarContenidos.Text = "     LLENAR CAMPO";
+            this.BtLLenarContenidos.Text = "     AMPLIAR CAMPO";
             this.BtLLenarContenidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarContenidos.Textcolor = System.Drawing.Color.White;
             this.BtLLenarContenidos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -740,7 +740,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarEstrategiasPedagogicas.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarEstrategiasPedagogicas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarEstrategiasPedagogicas.BorderRadius = 0;
-            this.BtLLenarEstrategiasPedagogicas.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarEstrategiasPedagogicas.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarEstrategiasPedagogicas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarEstrategiasPedagogicas.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarEstrategiasPedagogicas.Iconcolor = System.Drawing.Color.Transparent;
@@ -763,7 +763,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarEstrategiasPedagogicas.selected = false;
             this.BtLLenarEstrategiasPedagogicas.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarEstrategiasPedagogicas.TabIndex = 28;
-            this.BtLLenarEstrategiasPedagogicas.Text = "     LLENAR CAMPO";
+            this.BtLLenarEstrategiasPedagogicas.Text = "     AMPLIAR CAMPO";
             this.BtLLenarEstrategiasPedagogicas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarEstrategiasPedagogicas.Textcolor = System.Drawing.Color.White;
             this.BtLLenarEstrategiasPedagogicas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -790,7 +790,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarComponentesGenericos.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarComponentesGenericos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarComponentesGenericos.BorderRadius = 0;
-            this.BtLLenarComponentesGenericos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarComponentesGenericos.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarComponentesGenericos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarComponentesGenericos.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarComponentesGenericos.Iconcolor = System.Drawing.Color.Transparent;
@@ -813,7 +813,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarComponentesGenericos.selected = false;
             this.BtLLenarComponentesGenericos.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarComponentesGenericos.TabIndex = 28;
-            this.BtLLenarComponentesGenericos.Text = "     LLENAR CAMPO";
+            this.BtLLenarComponentesGenericos.Text = "     AMPLIAR CAMPO";
             this.BtLLenarComponentesGenericos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarComponentesGenericos.Textcolor = System.Drawing.Color.White;
             this.BtLLenarComponentesGenericos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -840,7 +840,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarObjetivosEspecificos.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarObjetivosEspecificos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarObjetivosEspecificos.BorderRadius = 0;
-            this.BtLLenarObjetivosEspecificos.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarObjetivosEspecificos.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarObjetivosEspecificos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarObjetivosEspecificos.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarObjetivosEspecificos.Iconcolor = System.Drawing.Color.Transparent;
@@ -863,7 +863,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarObjetivosEspecificos.selected = false;
             this.BtLLenarObjetivosEspecificos.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarObjetivosEspecificos.TabIndex = 28;
-            this.BtLLenarObjetivosEspecificos.Text = "     LLENAR CAMPO";
+            this.BtLLenarObjetivosEspecificos.Text = "     AMPLIAR CAMPO";
             this.BtLLenarObjetivosEspecificos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarObjetivosEspecificos.Textcolor = System.Drawing.Color.White;
             this.BtLLenarObjetivosEspecificos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -890,7 +890,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarObjetivoGeneral.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarObjetivoGeneral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarObjetivoGeneral.BorderRadius = 0;
-            this.BtLLenarObjetivoGeneral.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarObjetivoGeneral.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarObjetivoGeneral.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarObjetivoGeneral.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarObjetivoGeneral.Iconcolor = System.Drawing.Color.Transparent;
@@ -913,7 +913,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarObjetivoGeneral.selected = false;
             this.BtLLenarObjetivoGeneral.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarObjetivoGeneral.TabIndex = 28;
-            this.BtLLenarObjetivoGeneral.Text = "     LLENAR CAMPO";
+            this.BtLLenarObjetivoGeneral.Text = "     AMPLIAR CAMPO";
             this.BtLLenarObjetivoGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarObjetivoGeneral.Textcolor = System.Drawing.Color.White;
             this.BtLLenarObjetivoGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -940,7 +940,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarJustificacion.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarJustificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarJustificacion.BorderRadius = 0;
-            this.BtLLenarJustificacion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarJustificacion.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarJustificacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarJustificacion.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarJustificacion.Iconcolor = System.Drawing.Color.Transparent;
@@ -963,7 +963,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarJustificacion.selected = false;
             this.BtLLenarJustificacion.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarJustificacion.TabIndex = 28;
-            this.BtLLenarJustificacion.Text = "     LLENAR CAMPO";
+            this.BtLLenarJustificacion.Text = "     AMPLIAR CAMPO";
             this.BtLLenarJustificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarJustificacion.Textcolor = System.Drawing.Color.White;
             this.BtLLenarJustificacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -990,7 +990,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.BtLLenarDescripcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtLLenarDescripcion.BorderRadius = 0;
-            this.BtLLenarDescripcion.ButtonText = "     LLENAR CAMPO";
+            this.BtLLenarDescripcion.ButtonText = "     AMPLIAR CAMPO";
             this.BtLLenarDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtLLenarDescripcion.DisabledColor = System.Drawing.Color.Gray;
             this.BtLLenarDescripcion.Iconcolor = System.Drawing.Color.Transparent;
@@ -1013,7 +1013,7 @@ namespace Design_Dashboard_Modern
             this.BtLLenarDescripcion.selected = false;
             this.BtLLenarDescripcion.Size = new System.Drawing.Size(139, 30);
             this.BtLLenarDescripcion.TabIndex = 28;
-            this.BtLLenarDescripcion.Text = "     LLENAR CAMPO";
+            this.BtLLenarDescripcion.Text = "     AMPLIAR CAMPO";
             this.BtLLenarDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtLLenarDescripcion.Textcolor = System.Drawing.Color.White;
             this.BtLLenarDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);

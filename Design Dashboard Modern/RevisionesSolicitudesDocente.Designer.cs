@@ -382,8 +382,8 @@ namespace Design_Dashboard_Modern
             this.CmbFiltro.FormattingEnabled = true;
             this.CmbFiltro.Items.AddRange(new object[] {
             "TODOS",
-            "No",
-            "Si"});
+            "Aprobado",
+            "Desaprobado"});
             this.CmbFiltro.Location = new System.Drawing.Point(796, 72);
             this.CmbFiltro.Name = "CmbFiltro";
             this.CmbFiltro.Size = new System.Drawing.Size(101, 28);

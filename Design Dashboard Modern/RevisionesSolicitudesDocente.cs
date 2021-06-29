@@ -91,22 +91,35 @@ namespace Design_Dashboard_Modern
             }
             else if (CmbFiltro.Text.Equals("TODOS"))
             {
-                ConsultarTodosDocentesDtg();
+                ConsultarTodosSolicitudDocentesDtg();
             }
-            else if (CmbFiltro.Text.Equals("Si"))
+            else if (CmbFiltro.Text.Equals("Aprobados"))
             {
-                //ConsultarFiltrarDocenteCatedratico();
+                ConsultarFiltrarSolicitudDocenteAprobadoSi();
             }
-            else if (CmbFiltro.Text.Equals("No"))
+            else if (CmbFiltro.Text.Equals("Desaprobados"))
             {
-               // ConsultarFiltrarDocenteOcacional();
+                ConsultarFiltrarSolicitudDocenteAprobadoNo();
             }
         }
-        private void ConsultarTodosDocentesDtg()
+        private void ConsultarTodosSolicitudDocentesDtg()
         {
             var response = upcService.ConsultarTodosSolicitudDocentesDtg();
             LlenarDtg(response);
-            //TxtTotalDocentes.Text = upcService.TotalizarTodosSolicitudDocentes().ToString();
+            TxtContarTotalAprobados.Text = upcService.TotalizarTodosSolicitudDocentes().ToString();
+        }
+        private void ConsultarFiltrarSolicitudDocenteAprobadoSi()
+        {
+            var response = upcService.FiltrarSolicitudDocenteAprobado(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtContarSiAprobados.Text = upcService.ContarSolicitudDocenteAprobado().ToString();
+        }
+
+        private void ConsultarFiltrarSolicitudDocenteAprobadoNo()
+        {
+            var response = upcService.FiltrarSolicitudDocenteDesaprobado(CmbFiltro.Text);
+            LlenarDtg(response);
+            TxtContarNOAprobados.Text = upcService.ContarSolicitudDocenteDesaprobado().ToString();
         }
     }
 }

@@ -209,7 +209,7 @@ namespace Design_Dashboard_Modern
             solicitudDocente.Contenidos = respuestaCkContenido;
             solicitudDocente.MecanismosEvaluacion = respuestaCkMecanismoEvaluativo;
             solicitudDocente.ReferenciasBibliograficas = respuestaCkReferenciasBibliograficas;
-            string estado = "No";
+            string estado = "Desaprobado";
             solicitudDocente.Estado = estado;
             return solicitudDocente;
         }
@@ -502,6 +502,21 @@ namespace Design_Dashboard_Modern
             AddOwnedForm(abrir);
             abrir.TxtReferenciasBibliograficasFrom.Text = TxtReferenciasBibliograficas.Text;
             abrir.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtJustificacion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

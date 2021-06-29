@@ -316,7 +316,7 @@ namespace Design_Dashboard_Modern
             this.BtRevisionesFormatoDocente.BackColor = System.Drawing.Color.Transparent;
             this.BtRevisionesFormatoDocente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtRevisionesFormatoDocente.BorderRadius = 0;
-            this.BtRevisionesFormatoDocente.ButtonText = "                 REVISIONES DE                   FORMATOS DEL DOCENTE";
+            this.BtRevisionesFormatoDocente.ButtonText = "              REVISIONES DE                   FORMATOS DEL DOCENTE";
             this.BtRevisionesFormatoDocente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtRevisionesFormatoDocente, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtRevisionesFormatoDocente, BunifuAnimatorNS.DecorationType.None);
@@ -343,7 +343,7 @@ namespace Design_Dashboard_Modern
             this.BtRevisionesFormatoDocente.selected = false;
             this.BtRevisionesFormatoDocente.Size = new System.Drawing.Size(245, 48);
             this.BtRevisionesFormatoDocente.TabIndex = 23;
-            this.BtRevisionesFormatoDocente.Text = "                 REVISIONES DE                   FORMATOS DEL DOCENTE";
+            this.BtRevisionesFormatoDocente.Text = "              REVISIONES DE                   FORMATOS DEL DOCENTE";
             this.BtRevisionesFormatoDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRevisionesFormatoDocente.Textcolor = System.Drawing.Color.LightGray;
             this.BtRevisionesFormatoDocente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -369,7 +369,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPlanAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtConsultarPlanAsignatura.BorderRadius = 0;
             this.BtConsultarPlanAsignatura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtConsultarPlanAsignatura.ButtonText = "      CONSULTAR PLAN                             ASIGNATURA";
+            this.BtConsultarPlanAsignatura.ButtonText = "       CONSULTAR PLAN                                ASIGNATURA";
             this.BtConsultarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtConsultarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -397,7 +397,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPlanAsignatura.selected = false;
             this.BtConsultarPlanAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtConsultarPlanAsignatura.TabIndex = 29;
-            this.BtConsultarPlanAsignatura.Text = "      CONSULTAR PLAN                             ASIGNATURA";
+            this.BtConsultarPlanAsignatura.Text = "       CONSULTAR PLAN                                ASIGNATURA";
             this.BtConsultarPlanAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultarPlanAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtConsultarPlanAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -410,7 +410,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtRegistrarPlanAsignatura.BorderRadius = 0;
             this.BtRegistrarPlanAsignatura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BtRegistrarPlanAsignatura.ButtonText = "        GESTIONAR PLAN                               ASIGNATURA";
+            this.BtRegistrarPlanAsignatura.ButtonText = "      GESTIONAR PLAN                               ASIGNATURA";
             this.BtRegistrarPlanAsignatura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BtRegistrarPlanAsignatura, BunifuAnimatorNS.DecorationType.None);
@@ -438,7 +438,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPlanAsignatura.selected = false;
             this.BtRegistrarPlanAsignatura.Size = new System.Drawing.Size(245, 48);
             this.BtRegistrarPlanAsignatura.TabIndex = 30;
-            this.BtRegistrarPlanAsignatura.Text = "        GESTIONAR PLAN                               ASIGNATURA";
+            this.BtRegistrarPlanAsignatura.Text = "      GESTIONAR PLAN                               ASIGNATURA";
             this.BtRegistrarPlanAsignatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarPlanAsignatura.Textcolor = System.Drawing.Color.LightGray;
             this.BtRegistrarPlanAsignatura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);

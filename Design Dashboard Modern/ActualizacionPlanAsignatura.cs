@@ -19,6 +19,29 @@ namespace Design_Dashboard_Modern
         {
             InitializeComponent();
             upcService = new UpcService();
+            VisibilidadOpciones();
+        }
+
+        private void VisibilidadOpciones()
+        {
+            TxtDescripcion.Visible = false;
+            ExDescripcion.Visible = false;
+            TxtJustificacion.Visible = false;
+            ExJustificacion.Visible = false;
+            TxtObjetivoGeneral.Visible = false;
+            ExObjetivoGeneral.Visible = false;
+            TxtObjetivoEspecifico.Visible = false;
+            ExObjetivosEspecificos.Visible = false;
+            TxtComponentesGenericos.Visible = false;
+            ExComponetes.Visible = false;
+            TxtEstrategias.Visible = false;
+            ExEstrategias.Visible = false;
+            TxtContenido.Visible = false;
+            ExContenido.Visible = false;
+            TxtMecanismoEvaluativo.Visible = false;
+            ExMecanismoEvaluacion.Visible = false;
+            TxtReferenciaBibliografica.Visible = false;
+            ExReferenciasBibliograficas.Visible = false;
         }
         private PlanAsignaturas MapearPlanAsignatura()
         {
@@ -50,62 +73,33 @@ namespace Design_Dashboard_Modern
             errorProvider1.SetError(TxtReferenciaBibliografica, "");
         }
 
-
         private bool validarcampos()
         {
             bool ok = true;
+            if (TxtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(TxtNombre, "Este Campo Es Obligatorio");
+            }
+            if (TxtIdentificacion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(TxtIdentificacion, "Por Favor Ingrese la Identificacion");
+            }
+            if (TxtApellido.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(TxtApellido, "Este Campo Es Obligatorio");
+            }
             if (CmbAsignatura.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(CmbAsignatura, "Por Favor escoja una Asignatura");
+                errorProvider1.SetError(CmbAsignatura, "Este Campo Es Obligatorio");
             }
-            if (TxtDescripcion.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtDescripcion, "Por Favor Ingrese la descripcion");
-            }
-            if (TxtJustificacion.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtJustificacion, "Por Favor Ingrese la justificacion");
-            }
-            if (TxtObjetivoGeneral.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtObjetivoGeneral, "Por Favor Ingrese el Objetivo general");
-            }
-            if (TxtObjetivoEspecifico.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtObjetivoEspecifico, "Por Favor Ingrese los Objetivos especificos");
-            }
-            if (TxtComponentesGenericos.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtComponentesGenericos, "Por Favor Ingrese los componentes genericos");
-            }
-            if (TxtEstrategias.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtEstrategias, "Por Favor Ingrese las estreategias pedagogicas");
-            }
-            if (TxtContenido.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtContenido, "Por Favor Ingrese los Contenidos, Competencias y resultados");
-            }
-            if (TxtMecanismoEvaluativo.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtMecanismoEvaluativo, "Por Favor Ingrese el mecanismo de evaluacion");
-            }
-            if (TxtReferenciaBibliografica.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtReferenciaBibliografica, "Por Favor Ingrese las referencias bibliograficas");
-            }
+            
             return ok;
         }
+
         private void BtConsultar_Click(object sender, EventArgs e)
         {
             string materia = CmbAsignatura.Text;
@@ -140,21 +134,9 @@ namespace Design_Dashboard_Modern
 
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
-            LimpiarTxt();
+           
         }
-        private void LimpiarTxt()
-        {
-            CmbAsignatura.Text = "";
-            TxtDescripcion.Text = "";
-            TxtJustificacion.Text = "";
-            TxtObjetivoGeneral.Text = "";
-            TxtObjetivoEspecifico.Text = "";
-            TxtComponentesGenericos.Text = "";
-            TxtEstrategias.Text = "";
-            TxtContenido.Text = "";
-            TxtMecanismoEvaluativo.Text = "";
-            TxtReferenciaBibliografica.Text = "";
-        }
+       
 
         private void BtModificar_Click(object sender, EventArgs e)
         {
@@ -340,6 +322,103 @@ namespace Design_Dashboard_Modern
             AddOwnedForm(abrir);
             abrir.TxtReferenciasBibliograficasFrom.Text = TxtMecanismoEvaluativo.Text;
             abrir.ShowDialog();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            string identifiacion = TxtIdentificacion.Text;
+            if (identifiacion != "")
+            {
+                RespuestaBusqueda respuesta = upcService.BuscarDocente(identifiacion);
+
+                if (respuesta.Docente != null)
+                {
+                    Docentes docente = respuesta.Docente;
+                    TxtNombre.Text = docente.Nombre;
+                    TxtApellido.Text = docente.Apellido;
+                    CmbAsignatura.Text = docente.Materia;
+                    string materia = CmbAsignatura.Text;
+                    if (materia != "")
+                    {
+                        RespuestaBusqueda respuesta2 = upcService.BuscarPlanAsignatura(materia);
+
+                        if (respuesta2.PlanAsignatura != null)
+                        {
+                            PlanAsignaturas planAsignatura = respuesta2.PlanAsignatura;
+                            TxtDescripcion.Text = planAsignatura.Descripcion;
+                            TxtJustificacion.Text = planAsignatura.Justificacion;
+                            TxtObjetivoGeneral.Text = planAsignatura.ObjetivoGeneral;
+                            TxtObjetivoEspecifico.Text = planAsignatura.ObjetivoEspecifico;
+                            TxtComponentesGenericos.Text = planAsignatura.ComponeteGenerico;
+                            TxtEstrategias.Text = planAsignatura.Estrategias;
+                            TxtContenido.Text = planAsignatura.Contenidos;
+                            TxtMecanismoEvaluativo.Text = planAsignatura.MecanismosEvaluacion;
+                            TxtMecanismoEvaluativo.Text = planAsignatura.ReferenciasBibliograficas;
+
+                        }
+                        MessageBox.Show(respuesta.Mensaje);
+                    }
+                    else
+                    {
+                        MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            LimpiarTxt();
+        }
+        private void LimpiarTxt()
+        {
+            TxtIdentificacion.Text = "";
+            TxtNombre.Text = "";
+            TxtApellido.Text = "";
+            TxtApellido.Text = "";
+            CmbAsignatura.Text = "";
+            TxtDescripcion.Text = "";
+            TxtJustificacion.Text = "";
+            TxtObjetivoGeneral.Text = "";
+            TxtObjetivoEspecifico.Text = "";
+            TxtComponentesGenericos.Text = "";
+            TxtEstrategias.Text = "";
+            TxtContenido.Text = "";
+            TxtMecanismoEvaluativo.Text = "";
+            TxtReferenciaBibliografica.Text = "";
+
+        }
+
+        private void TxtIdentificacion_TextChanged(object sender, EventArgs e)
+        {
+            int numero;
+            if (!int.TryParse(TxtIdentificacion.Text, out numero))
+            {
+                errorProvider1.SetError(TxtIdentificacion, "Ingrese Solo Numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(TxtIdentificacion, "");
+            }
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(TxtNombre, "");
+        }
+
+        private void TxtApellido_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(TxtApellido, "");
+        }
+
+        private void CmbAsignatura_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(CmbAsignatura, "");
         }
     }
 }

@@ -120,7 +120,7 @@ namespace Design_Dashboard_Modern
         private void BtConsultarPlanAsignatura_Click(object sender, EventArgs e)
         {
             
-            openChildForm(new ConsultarPlanAsignatura());
+            openChildForm(new SolicitudActualizacionDocentes());
         }
 
         private void BtRevisionesFormatoDocente_Click(object sender, EventArgs e)
@@ -130,7 +130,7 @@ namespace Design_Dashboard_Modern
 
         private void BtRespuestaFormatoDocente_Click(object sender, EventArgs e)
         {
-            openChildForm(new SolicitudActualizacionDocentes());
+            openChildForm(new RespuestasSolicitudes());
         }
 
         private void BTAsignaturas_Click(object sender, EventArgs e)

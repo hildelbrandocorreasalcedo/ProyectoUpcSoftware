@@ -124,7 +124,7 @@ namespace Design_Dashboard_Modern
             TxtComponetes.Text = "";
             TxtMecanismoEvaluacion.Text = "";
             TxtReferenciasBibliograficas.Text = "";
-
+            CmbEstado.Text = "";
         }
 
         private void RespuestasSolicitudes_Load(object sender, EventArgs e)
@@ -256,8 +256,7 @@ namespace Design_Dashboard_Modern
             solicitudDocente.Contenidos = respuestaCkContenido;
             solicitudDocente.MecanismosEvaluacion = respuestaCkMecanismoEvaluativo;
             solicitudDocente.ReferenciasBibliograficas = respuestaCkReferenciasBibliograficas;
-            string estado = "Desaprobado";
-            solicitudDocente.Estado = estado;
+            solicitudDocente.Estado = CmbEstado.Text; 
             return solicitudDocente;
         }
 
@@ -295,10 +294,11 @@ namespace Design_Dashboard_Modern
             {
                 TxtDescripcion.Visible = true;
                 ExDescripcion.Visible = true;
+
             }
             else
             {
-                TxtDescripcion.Text = "";
+                
                 TxtDescripcion.Visible = false;
                 ExDescripcion.Visible = false;
             }
@@ -313,7 +313,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtJustificacion.Text = "";
+                
                 TxtJustificacion.Visible = false;
                 ExJustificacion.Visible = false;
             }
@@ -328,7 +328,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtObjetivoGeneral.Text = "";
+                
                 TxtObjetivoGeneral.Visible = false;
                 ExObjetivoGeneral.Visible = false;
             }
@@ -343,7 +343,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtObjetivosEspecificos.Text = "";
+                
                 TxtObjetivosEspecificos.Visible = false;
                 ExObjetivosEspecificos.Visible = false;
             }
@@ -358,7 +358,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtComponetes.Text = "";
+                
                 TxtComponetes.Visible = false;
                 ExComponetes.Visible = false;
             }
@@ -373,7 +373,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtEstrategias.Text = "";
+                
                 TxtEstrategias.Visible = false;
                 ExEstrategias.Visible = false;
             }
@@ -388,7 +388,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtContenidos.Text = "";
+                
                 TxtContenidos.Visible = false;
                 ExContenido.Visible = false;
             }
@@ -403,7 +403,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtMecanismoEvaluacion.Text = "";
+                
                 TxtMecanismoEvaluacion.Visible = false;
                 ExMecanismoEvaluacion.Visible = false;
             }
@@ -418,7 +418,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtReferenciasBibliograficas.Text = "";
+                
                 TxtReferenciasBibliograficas.Visible = false;
                 ExReferenciasBibliograficas.Visible = false;
             }
@@ -432,6 +432,78 @@ namespace Design_Dashboard_Modern
         private void CmbEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
             errorProvider1.SetError(CmbEstado, "");
+        }
+
+        private void ExDescripcion_Click(object sender, EventArgs e)
+        {
+            LLenarDescripcion abrir = new LLenarDescripcion();
+            AddOwnedForm(abrir);
+            abrir.TxtDescripcionFrom.Text = TxtDescripcion.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExJustificacion_Click(object sender, EventArgs e)
+        {
+            LLenarJustificacion abrir = new LLenarJustificacion();
+            AddOwnedForm(abrir);
+            abrir.TxtJustificacionFrom.Text = TxtJustificacion.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExObjetivoGeneral_Click(object sender, EventArgs e)
+        {
+            LLenarObjetivoGeneral abrir = new LLenarObjetivoGeneral();
+            AddOwnedForm(abrir);
+            abrir.TxtObjetivoGeneralFrom.Text = TxtObjetivoGeneral.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExObjetivosEspecificos_Click(object sender, EventArgs e)
+        {
+            LLenarObjetivoEspecifico abrir = new LLenarObjetivoEspecifico();
+            AddOwnedForm(abrir);
+            abrir.TxtOjetivosEspecificosFrom.Text = TxtObjetivosEspecificos.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExComponetes_Click(object sender, EventArgs e)
+        {
+            LLenarComponentesGenericos abrir = new LLenarComponentesGenericos();
+            AddOwnedForm(abrir);
+            abrir.TxtComponetesGenericosFrom.Text = TxtComponetes.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExEstrategias_Click(object sender, EventArgs e)
+        {
+            LLenarEstrategiasPedagogicas abrir = new LLenarEstrategiasPedagogicas();
+            AddOwnedForm(abrir);
+            abrir.TxtEstrategiasPedagogicasFrom.Text = TxtEstrategias.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExContenido_Click(object sender, EventArgs e)
+        {
+            LLenarContenidosCompetencias abrir = new LLenarContenidosCompetencias();
+            AddOwnedForm(abrir);
+            abrir.TxtContenidosCompetenciasFrom.Text = TxtContenidos.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExMecanismoEvaluacion_Click(object sender, EventArgs e)
+        {
+            LLenarMecanismoEvaluacion abrir = new LLenarMecanismoEvaluacion();
+            AddOwnedForm(abrir);
+            abrir.TxtMecanismoEvaluacionFrom.Text = TxtMecanismoEvaluacion.Text;
+            abrir.ShowDialog();
+        }
+
+        private void ExReferenciasBibliograficas_Click(object sender, EventArgs e)
+        {
+            LLenarReferenciasBibliograficas abrir = new LLenarReferenciasBibliograficas();
+            AddOwnedForm(abrir);
+            abrir.TxtReferenciasBibliograficasFrom.Text = TxtReferenciasBibliograficas.Text;
+            abrir.ShowDialog();
         }
     }
 }

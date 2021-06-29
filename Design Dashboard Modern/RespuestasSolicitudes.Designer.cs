@@ -204,10 +204,10 @@ namespace Design_Dashboard_Modern
             // CmbEstado
             // 
             this.CmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbEstado.Enabled = false;
             this.CmbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbEstado.FormattingEnabled = true;
             this.CmbEstado.Items.AddRange(new object[] {
+            "",
             "Aprobado",
             "Desaprobado"});
             this.CmbEstado.Location = new System.Drawing.Point(377, 656);
@@ -249,6 +249,7 @@ namespace Design_Dashboard_Modern
             this.ExReferenciasBibliograficas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExReferenciasBibliograficas.Textcolor = System.Drawing.Color.White;
             this.ExReferenciasBibliograficas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExReferenciasBibliograficas.Click += new System.EventHandler(this.ExReferenciasBibliograficas_Click);
             // 
             // ExMecanismoEvaluacion
             // 
@@ -283,6 +284,7 @@ namespace Design_Dashboard_Modern
             this.ExMecanismoEvaluacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExMecanismoEvaluacion.Textcolor = System.Drawing.Color.White;
             this.ExMecanismoEvaluacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExMecanismoEvaluacion.Click += new System.EventHandler(this.ExMecanismoEvaluacion_Click);
             // 
             // ExContenido
             // 
@@ -317,6 +319,7 @@ namespace Design_Dashboard_Modern
             this.ExContenido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExContenido.Textcolor = System.Drawing.Color.White;
             this.ExContenido.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExContenido.Click += new System.EventHandler(this.ExContenido_Click);
             // 
             // ExEstrategias
             // 
@@ -351,6 +354,7 @@ namespace Design_Dashboard_Modern
             this.ExEstrategias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExEstrategias.Textcolor = System.Drawing.Color.White;
             this.ExEstrategias.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExEstrategias.Click += new System.EventHandler(this.ExEstrategias_Click);
             // 
             // ExComponetes
             // 
@@ -385,6 +389,7 @@ namespace Design_Dashboard_Modern
             this.ExComponetes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExComponetes.Textcolor = System.Drawing.Color.White;
             this.ExComponetes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExComponetes.Click += new System.EventHandler(this.ExComponetes_Click);
             // 
             // ExObjetivosEspecificos
             // 
@@ -419,6 +424,7 @@ namespace Design_Dashboard_Modern
             this.ExObjetivosEspecificos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExObjetivosEspecificos.Textcolor = System.Drawing.Color.White;
             this.ExObjetivosEspecificos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExObjetivosEspecificos.Click += new System.EventHandler(this.ExObjetivosEspecificos_Click);
             // 
             // ExObjetivoGeneral
             // 
@@ -453,6 +459,7 @@ namespace Design_Dashboard_Modern
             this.ExObjetivoGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExObjetivoGeneral.Textcolor = System.Drawing.Color.White;
             this.ExObjetivoGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExObjetivoGeneral.Click += new System.EventHandler(this.ExObjetivoGeneral_Click);
             // 
             // ExJustificacion
             // 
@@ -487,6 +494,7 @@ namespace Design_Dashboard_Modern
             this.ExJustificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExJustificacion.Textcolor = System.Drawing.Color.White;
             this.ExJustificacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExJustificacion.Click += new System.EventHandler(this.ExJustificacion_Click);
             // 
             // ExDescripcion
             // 
@@ -521,6 +529,7 @@ namespace Design_Dashboard_Modern
             this.ExDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExDescripcion.Textcolor = System.Drawing.Color.White;
             this.ExDescripcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExDescripcion.Click += new System.EventHandler(this.ExDescripcion_Click);
             // 
             // TxtReferenciasBibliograficas
             // 

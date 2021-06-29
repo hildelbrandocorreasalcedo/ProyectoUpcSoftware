@@ -231,16 +231,36 @@ namespace Design_Dashboard_Modern
                     TxtNombre.Text = docente.Nombre;
                     TxtApellido.Text = docente.Apellido;
                     CmbAsignatura.Text = docente.Materia;
-                    MessageBox.Show(respuesta.Mensaje);
+                    string materia = CmbAsignatura.Text;
+                    if (materia != "")
+                    {
+                        RespuestaBusqueda respuesta2 = upcService.BuscarPlanAsignatura(materia);
+
+                        if (respuesta2.PlanAsignatura != null)
+                        {
+                            PlanAsignaturas planAsignatura = respuesta2.PlanAsignatura;
+                            TxtDescripcion.Text = planAsignatura.Descripcion;
+                            TxtJustificacion.Text = planAsignatura.Justificacion;
+                            TxtObjetivoGeneral.Text = planAsignatura.ObjetivoGeneral;
+                            TxtObjetivosEspecificos.Text = planAsignatura.ObjetivoEspecifico;
+                            TxtComponetes.Text = planAsignatura.ComponeteGenerico;
+                            TxtEstrategias.Text = planAsignatura.Estrategias;
+                            TxtContenidos.Text = planAsignatura.Contenidos;
+                            TxtMecanismoEvaluacion.Text = planAsignatura.MecanismosEvaluacion;
+                            TxtReferenciasBibliograficas.Text = planAsignatura.ReferenciasBibliograficas;
+
+                        }
+                        MessageBox.Show(respuesta.Mensaje);
+                    }
+                    else
+                    {
+                        MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            }
-            else
-            {
-                MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -286,7 +306,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtJustificacion.Text = "";
+               
                 TxtJustificacion.Visible = false;
                 ExJustificacion.Visible = false;
             }
@@ -303,10 +323,11 @@ namespace Design_Dashboard_Modern
             {
                 TxtDescripcion.Visible = true;
                 ExDescripcion.Visible = true;
+
             }
             else
             {
-                TxtDescripcion.Text = "";
+              
                 TxtDescripcion.Visible = false;
                 ExDescripcion.Visible = false;
             }
@@ -321,7 +342,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtObjetivoGeneral.Text = "";
+                
                 TxtObjetivoGeneral.Visible = false;
                 ExObjetivoGeneral.Visible = false;
             }
@@ -336,7 +357,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtObjetivosEspecificos.Text = "";
+                
                 TxtObjetivosEspecificos.Visible = false;
                 ExObjetivosEspecificos.Visible = false;
             }
@@ -351,7 +372,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtComponetes.Text = "";
+                
                 TxtComponetes.Visible = false;
                 ExComponetes.Visible = false;
             }
@@ -366,7 +387,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtEstrategias.Text = "";
+                
                 TxtEstrategias.Visible = false;
                 ExEstrategias.Visible = false;
             }
@@ -381,7 +402,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtContenidos.Text = "";
+                
                 TxtContenidos.Visible = false;
                 ExContenido.Visible = false;
             }
@@ -396,7 +417,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtMecanismoEvaluacion.Text = "";
+                
                 TxtMecanismoEvaluacion.Visible = false;
                 ExMecanismoEvaluacion.Visible = false;
             }
@@ -411,7 +432,7 @@ namespace Design_Dashboard_Modern
             }
             else
             {
-                TxtReferenciasBibliograficas.Text = "";
+            
                 TxtReferenciasBibliograficas.Visible = false;
                 ExReferenciasBibliograficas.Visible = false;
             }

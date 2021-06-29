@@ -26,8 +26,8 @@ namespace Design_Dashboard_Modern
 
         private void BtVolver_Click(object sender, EventArgs e)
         {
-            ConsultarPlanAsignatura abrir = Owner as ConsultarPlanAsignatura;
-            abrir.TxtComponentesGenericos.Text = TxtComponetesGenericosFrom.Text;
+            RespuestasSolicitudes abrir = Owner as RespuestasSolicitudes;
+            abrir.TxtComponetes.Text = TxtComponetesGenericosFrom.Text;
             this.Hide();
         }
     }

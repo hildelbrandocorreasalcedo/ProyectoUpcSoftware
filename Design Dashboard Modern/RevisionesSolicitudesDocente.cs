@@ -43,7 +43,7 @@ namespace Design_Dashboard_Modern
                 {
                     DtgSolicitudDocente.Rows.Add(item.Identificacion, item.Nombre, item.Apellido, item.Materia, item.Descripcion,
                         item.Justificacion, item.ObjetivoGeneral, item.ComponeteGenerico, item.Estrategias, item.Contenidos, 
-                        item.MecanismosEvaluacion, item.ReferenciasBibliograficas);
+                        item.MecanismosEvaluacion, item.ReferenciasBibliograficas, item.Estado);
                 }
             }
         }
@@ -93,11 +93,11 @@ namespace Design_Dashboard_Modern
             {
                 ConsultarTodosSolicitudDocentesDtg();
             }
-            else if (CmbFiltro.Text.Equals("Aprobados"))
+            else if (CmbFiltro.Text.Equals("Aprobado"))
             {
                 ConsultarFiltrarSolicitudDocenteAprobadoSi();
             }
-            else if (CmbFiltro.Text.Equals("Desaprobados"))
+            else if (CmbFiltro.Text.Equals("Desaprobado"))
             {
                 ConsultarFiltrarSolicitudDocenteAprobadoNo();
             }

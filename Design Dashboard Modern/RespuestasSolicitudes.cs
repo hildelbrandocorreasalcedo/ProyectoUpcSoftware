@@ -90,17 +90,35 @@ namespace Design_Dashboard_Modern
                     TxtNombre.Text = solicitudDocente.Nombre;
                     TxtApellido.Text = solicitudDocente.Apellido;
                     CmbAsignatura.Text = solicitudDocente.Materia;
+                    string materia = CmbAsignatura.Text;
+                    if (materia != "")
+                    {
+                        RespuestaBusqueda respuesta2 = upcService.BuscarPlanAsignatura(materia);
 
-                    MessageBox.Show(respuesta.Mensaje);
+                        if (respuesta2.PlanAsignatura != null)
+                        {
+                            PlanAsignaturas planAsignatura = respuesta2.PlanAsignatura;
+                            TxtDescripcion.Text = planAsignatura.Descripcion;
+                            TxtJustificacion.Text = planAsignatura.Justificacion;
+                            TxtObjetivoGeneral.Text = planAsignatura.ObjetivoGeneral;
+                            TxtObjetivosEspecificos.Text = planAsignatura.ObjetivoEspecifico;
+                            TxtComponetes.Text = planAsignatura.ComponeteGenerico;
+                            TxtEstrategias.Text = planAsignatura.Estrategias;
+                            TxtContenidos.Text = planAsignatura.Contenidos;
+                            TxtMecanismoEvaluacion.Text = planAsignatura.MecanismosEvaluacion;
+                            TxtReferenciasBibliograficas.Text = planAsignatura.ReferenciasBibliograficas;
+                        }
+                        MessageBox.Show(respuesta.Mensaje);
+                    }
+                    else
+                    {
+                        MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            }
-            else
-            {
-                MessageBox.Show("digite la identificacion a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -121,7 +139,7 @@ namespace Design_Dashboard_Modern
             TxtObjetivosEspecificos.Text = "";
             TxtComponetes.Text = "";
             TxtEstrategias.Text = "";
-            TxtComponetes.Text = "";
+            TxtContenidos.Text = "";
             TxtMecanismoEvaluacion.Text = "";
             TxtReferenciasBibliograficas.Text = "";
             CmbEstado.Text = "";
@@ -149,14 +167,46 @@ namespace Design_Dashboard_Modern
                 }
                 else
                 {
+                    BorrarMensajesError();
+                    if (validarcampos())
+                    {
+                        if (CmbAsignatura.Text != "" && TxtDescripcion.Text != "" && TxtJustificacion.Text != "" && TxtObjetivoGeneral.Text != ""
+                            && TxtObjetivosEspecificos.Text != "" && TxtComponetes.Text != "" && TxtEstrategias.Text != ""
+                             && TxtContenidos.Text != "" && TxtMecanismoEvaluacion.Text != "" && TxtReferenciasBibliograficas.Text != "")
+                        {
+                            PlanAsignaturas materia = MapearPlanAsignatura();
+                            string mensaje = upcService.ModificarPlanAsignatura(materia);
+                           
 
-                    SolicitudDocentes solicitudDocente = MapearSolicitudDocente();
-                    string mensaje = upcService.GuardarSolicitudDocente(solicitudDocente);
-                    MessageBox.Show(mensaje, "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LimpiarTxt();
+                        }
+                        if (TxtIdentificacion.Text != "" && TxtNombre.Text != "" && TxtApellido.Text != "" && CmbAsignatura.Text != "")
+                        {
+
+                            SolicitudDocentes solicitudDocente = MapearSolicitudDocente();
+                            string mensaje1 = upcService.ModificarSolicitudDocente(solicitudDocente);
+                           
+                            LimpiarTxt();
+                        }
+                        MessageBox.Show("Revisar respuesta de cambio de estado en Consultas", "Informacion de respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
             else { MessageBox.Show("Debe llenar todos los campos", "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        }
+        private PlanAsignaturas MapearPlanAsignatura()
+        {
+            PlanAsignaturas planAsignatura = new PlanAsignaturas();
+            planAsignatura.Materia = CmbAsignatura.Text;
+            planAsignatura.Descripcion = TxtDescripcion.Text;
+            planAsignatura.Justificacion = TxtJustificacion.Text;
+            planAsignatura.ObjetivoGeneral = TxtObjetivoGeneral.Text;
+            planAsignatura.ObjetivoEspecifico = TxtObjetivosEspecificos.Text;
+            planAsignatura.ComponeteGenerico = TxtComponetes.Text;
+            planAsignatura.Estrategias = TxtEstrategias.Text;
+            planAsignatura.Contenidos = TxtContenidos.Text;
+            planAsignatura.MecanismosEvaluacion = TxtMecanismoEvaluacion.Text;
+            planAsignatura.ReferenciasBibliograficas = TxtReferenciasBibliograficas.Text;
+            return planAsignatura;
         }
 
         private SolicitudDocentes MapearSolicitudDocente()

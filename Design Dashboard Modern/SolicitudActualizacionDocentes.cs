@@ -75,7 +75,7 @@ namespace Design_Dashboard_Modern
             TxtObjetivosEspecificos.Text = "";
             TxtComponetes.Text = "";
             TxtEstrategias.Text = "";
-            TxtComponetes.Text = "";
+            TxtContenidos.Text = "";
             TxtMecanismoEvaluacion.Text = "";
             TxtReferenciasBibliograficas.Text = "";
 
@@ -107,11 +107,43 @@ namespace Design_Dashboard_Modern
                     SolicitudDocentes solicitudDocente = MapearSolicitudDocente();
                     string mensaje = upcService.GuardarSolicitudDocente(solicitudDocente);
                     MessageBox.Show(mensaje, "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BorrarMensajesError();
+                    if (validarcampos())
+                    {
+                        if (CmbAsignatura.Text != "" && TxtDescripcion.Text != "" && TxtJustificacion.Text != "" && TxtObjetivoGeneral.Text != ""
+                            && TxtObjetivosEspecificos.Text != "" && TxtComponetes.Text != "" && TxtEstrategias.Text != ""
+                             && TxtContenidos.Text != "" && TxtMecanismoEvaluacion.Text != "" && TxtReferenciasBibliograficas.Text != "")
+                        {
+                            PlanAsignaturas materia = MapearPlanAsignatura();
+                            string mensaje1 = upcService.ModificarPlanAsignatura(materia);
+
+
+                        }
+                        
+                        MessageBox.Show("Esperar respuesta del comite curricular", "Informacion de respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     LimpiarTxt();
                 }
             }
             else { MessageBox.Show("Debe llenar todos los campos", "Informacion de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
+
+        private PlanAsignaturas MapearPlanAsignatura()
+        {
+            PlanAsignaturas planAsignatura = new PlanAsignaturas();
+            planAsignatura.Materia = CmbAsignatura.Text;
+            planAsignatura.Descripcion = TxtDescripcion.Text;
+            planAsignatura.Justificacion = TxtJustificacion.Text;
+            planAsignatura.ObjetivoGeneral = TxtObjetivoGeneral.Text;
+            planAsignatura.ObjetivoEspecifico = TxtObjetivosEspecificos.Text;
+            planAsignatura.ComponeteGenerico = TxtComponetes.Text;
+            planAsignatura.Estrategias = TxtEstrategias.Text;
+            planAsignatura.Contenidos = TxtContenidos.Text;
+            planAsignatura.MecanismosEvaluacion = TxtMecanismoEvaluacion.Text;
+            planAsignatura.ReferenciasBibliograficas = TxtReferenciasBibliograficas.Text;
+            return planAsignatura;
+        }
+
         private SolicitudDocentes MapearSolicitudDocente()
         {
             string respuestaCkDescripcion;

@@ -207,7 +207,6 @@ namespace Design_Dashboard_Modern
             this.CmbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbEstado.FormattingEnabled = true;
             this.CmbEstado.Items.AddRange(new object[] {
-            "",
             "Aprobado",
             "Desaprobado"});
             this.CmbEstado.Location = new System.Drawing.Point(377, 656);
@@ -655,7 +654,6 @@ namespace Design_Dashboard_Modern
             this.CkReferenciasBibliograficas.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkReferenciasBibliograficas.Checked = false;
             this.CkReferenciasBibliograficas.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkReferenciasBibliograficas.Enabled = false;
             this.CkReferenciasBibliograficas.ForeColor = System.Drawing.Color.White;
             this.CkReferenciasBibliograficas.Location = new System.Drawing.Point(369, 336);
             this.CkReferenciasBibliograficas.Name = "CkReferenciasBibliograficas";
@@ -669,7 +667,6 @@ namespace Design_Dashboard_Modern
             this.CkMecanismoEvaluacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkMecanismoEvaluacion.Checked = false;
             this.CkMecanismoEvaluacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkMecanismoEvaluacion.Enabled = false;
             this.CkMecanismoEvaluacion.ForeColor = System.Drawing.Color.White;
             this.CkMecanismoEvaluacion.Location = new System.Drawing.Point(369, 294);
             this.CkMecanismoEvaluacion.Name = "CkMecanismoEvaluacion";
@@ -683,7 +680,6 @@ namespace Design_Dashboard_Modern
             this.CkContenido.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkContenido.Checked = false;
             this.CkContenido.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkContenido.Enabled = false;
             this.CkContenido.ForeColor = System.Drawing.Color.White;
             this.CkContenido.Location = new System.Drawing.Point(369, 251);
             this.CkContenido.Name = "CkContenido";
@@ -697,7 +693,6 @@ namespace Design_Dashboard_Modern
             this.CkEstrategias.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkEstrategias.Checked = false;
             this.CkEstrategias.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkEstrategias.Enabled = false;
             this.CkEstrategias.ForeColor = System.Drawing.Color.White;
             this.CkEstrategias.Location = new System.Drawing.Point(369, 210);
             this.CkEstrategias.Name = "CkEstrategias";
@@ -711,7 +706,6 @@ namespace Design_Dashboard_Modern
             this.CkComponetes.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkComponetes.Checked = false;
             this.CkComponetes.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkComponetes.Enabled = false;
             this.CkComponetes.ForeColor = System.Drawing.Color.White;
             this.CkComponetes.Location = new System.Drawing.Point(369, 166);
             this.CkComponetes.Name = "CkComponetes";
@@ -725,7 +719,6 @@ namespace Design_Dashboard_Modern
             this.CkObjetivosEspecificos.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkObjetivosEspecificos.Checked = false;
             this.CkObjetivosEspecificos.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkObjetivosEspecificos.Enabled = false;
             this.CkObjetivosEspecificos.ForeColor = System.Drawing.Color.White;
             this.CkObjetivosEspecificos.Location = new System.Drawing.Point(369, 125);
             this.CkObjetivosEspecificos.Name = "CkObjetivosEspecificos";
@@ -739,7 +732,6 @@ namespace Design_Dashboard_Modern
             this.CkObjetivoGeneral.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkObjetivoGeneral.Checked = false;
             this.CkObjetivoGeneral.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkObjetivoGeneral.Enabled = false;
             this.CkObjetivoGeneral.ForeColor = System.Drawing.Color.White;
             this.CkObjetivoGeneral.Location = new System.Drawing.Point(369, 83);
             this.CkObjetivoGeneral.Name = "CkObjetivoGeneral";
@@ -753,7 +745,6 @@ namespace Design_Dashboard_Modern
             this.CkJustificacion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkJustificacion.Checked = false;
             this.CkJustificacion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkJustificacion.Enabled = false;
             this.CkJustificacion.ForeColor = System.Drawing.Color.White;
             this.CkJustificacion.Location = new System.Drawing.Point(369, 43);
             this.CkJustificacion.Name = "CkJustificacion";
@@ -767,7 +758,6 @@ namespace Design_Dashboard_Modern
             this.CkDescripcion.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.CkDescripcion.Checked = false;
             this.CkDescripcion.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CkDescripcion.Enabled = false;
             this.CkDescripcion.ForeColor = System.Drawing.Color.White;
             this.CkDescripcion.Location = new System.Drawing.Point(369, 8);
             this.CkDescripcion.Name = "CkDescripcion";

@@ -37,36 +37,53 @@ namespace Design_Dashboard_Modern
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
             if (TxtUsuario.Text == "Usuario" && TxtContraseña.Text == "Contraseña")
             {
-                MessageBox.Show("Faltan llenar Completar Campos");
+                MessageBox.Show("Faltan llenar Completar Campos", "Informacion de Ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                ///Docente
-                if ((TxtUsuario.Text == "Docente") && (TxtContraseña.Text == "docente123"))
+                if(TxtUsuario.Text == "Usuario" || TxtUsuario.Text == "")
                 {
-                    MenuUpcDocente abrir = new MenuUpcDocente();
-                    abrir.Show();
-                    this.Hide();
-                }
-                else
-                if ((TxtUsuario.Text == "Comite curricular") && (TxtContraseña.Text == "comite123"))
-                {
-                    MenuUpcComite abrir = new MenuUpcComite();
-                    abrir.Show();
-                    this.Hide();
+                    MessageBox.Show("Falta llenar Usuario", "Informacion de Ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Datos Incorrectos");
-                    Contador += 1;
-                    
+                    if (TxtContraseña.Text == "Contraseña" || TxtContraseña.Text == "")
+                    {
+                        MessageBox.Show("Falta llenar Contraseña", "Informacion de Ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        ///Docente
+                        if ((TxtUsuario.Text == "Docente") && (TxtContraseña.Text == "docente123"))
+                        {
+                            MenuUpcDocente abrir = new MenuUpcDocente();
+                            abrir.Show();
+                            this.Hide();
+                        }
+                        else
+                        //Comite Curricular
+                        if ((TxtUsuario.Text == "Comite curricular") && (TxtContraseña.Text == "comite123"))
+                        {
+                            MenuUpcComite abrir = new MenuUpcComite();
+                            abrir.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Datos Incorrectos", "Informacion de Ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Contador += 1;
+
+                        }
+                    }
                 }
             }
+
             if (Contador>2)
             {
-                MessageBox.Show("Se ha equivocado 3 veces, el programa se cerra, por razones de seguridad");
+                MessageBox.Show("Se ha equivocado 3 veces, el programa se cerra, por razones de seguridad", "Informacion de Ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Application.Exit();
             }
         }

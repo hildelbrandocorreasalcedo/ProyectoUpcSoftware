@@ -102,15 +102,15 @@ namespace BLL
             try
             {
                 respuesta.Error = false;
-                Asignaturas curso = AsignaturaRepository.BuscarAsignatura(Codigo);
-                if (curso == null)
+                Asignaturas asignatura = AsignaturaRepository.BuscarAsignatura(Codigo);
+                if (asignatura == null)
                 {
                     respuesta.Mensaje = $"La asignatura con Codigo {Codigo} no se encuentra registrado";
                     respuesta.Asignatura = null;
                 }
                 else
                 {
-                    respuesta.Asignatura = curso;
+                    respuesta.Asignatura = asignatura;
                     respuesta.Mensaje = "Asignatura encontrada\n\n";
                 }
             }

@@ -139,7 +139,7 @@ namespace Design_Dashboard_Modern
                 {
                     Asignaturas asignatura = respuesta.Asignatura;
                     TxtNombre.Text = asignatura.Nombre;
-                    CmbPrograma.Text = asignatura.Programa;                 
+                    CmbPrograma.Text = asignatura.Programa;
                     CmbTipoAsignatura.Text = asignatura.TipoAsignatura;
                     CmbCreditos.Text = asignatura.Creditos.ToString();
                     MessageBox.Show(respuesta.Mensaje, "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -154,7 +154,7 @@ namespace Design_Dashboard_Modern
                 MessageBox.Show("digite el codigo a buscar", "Informacion de Consulta", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
+        
         private void BtEliminar_Click(object sender, EventArgs e)
         {
             BorrarMensajesErrorCodigo();

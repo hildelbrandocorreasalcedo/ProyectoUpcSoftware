@@ -10,6 +10,8 @@ namespace TestValidacionesRegistrar
         UpcService upcService = new UpcService();
         Asignaturas asignatura = new Asignaturas();
         Docentes docente = new Docentes();
+        PlanAsignaturas planAsignatura = new PlanAsignaturas();
+        SolicitudDocentes solicitudDocente = new SolicitudDocentes();
 
         [SetUp]
         public void Setup()
@@ -20,10 +22,10 @@ namespace TestValidacionesRegistrar
         public void test_CorrectoRegistar_Asignatura()
         {
             asignatura.Codigo = "555";
-            asignatura.Nombre = "Gestion de proyecto";
+            asignatura.Nombre = "Computacion Grafica";
             asignatura.Programa = "INGENIERIA SISTEMAS";
-            asignatura.TipoAsignatura= "Teorico/Practico";
-            asignatura.Creditos = 4;
+            asignatura.TipoAsignatura= "Practico";
+            asignatura.Creditos = 2;
             
 
             upcService.GuardarAsignatura(asignatura);
@@ -41,6 +43,22 @@ namespace TestValidacionesRegistrar
                 asignatura.TipoAsignatura = "Teorico/Practico";
                 asignatura.Creditos = 3;
 
+
+                upcService.GuardarAsignatura(asignatura);
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.Pass();
+            }
+        }
+
+        [Test]
+        public void test_IncorrectoAsignatura_CamposVacios()
+        {
+            try
+            {
+                asignatura = null;
 
                 upcService.GuardarAsignatura(asignatura);
                 Assert.Fail();
@@ -87,5 +105,87 @@ namespace TestValidacionesRegistrar
                 Assert.Pass();
             }
         }
+
+        [Test]
+        public void test_IncorrectoDocente_CamposVacios()
+        {
+            try
+            {
+                docente = null;
+
+                upcService.GuardarDocente(docente);
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.Pass();
+            }
+        }
+        public void test_IncorrectoPlanAsignatura_CamposVacios()
+        {
+            try
+            {
+                planAsignatura = null;
+
+                upcService.GuardarPlanAsignatura(planAsignatura);
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.Pass();
+            }
+        }
+
+            [Test]
+        public void test_CorrectoRegistar_SolicitudDocente()
+        {
+            solicitudDocente.Identificacion = "6";
+            solicitudDocente.Nombre = "Braulio";
+            solicitudDocente.Apellido = "Barrios Zuñiga";
+            solicitudDocente.Materia = "Estructura de datos";
+            solicitudDocente.Descripcion = "Yes";
+            solicitudDocente.Justificacion = "Yes";
+            solicitudDocente.ObjetivoGeneral = "Yes";
+            solicitudDocente.ObjetivoEspecifico = "Yes";
+            solicitudDocente.ComponeteGenerico = "Not";
+            solicitudDocente.Estrategias = "Not";
+            solicitudDocente.Contenidos = "Not";
+            solicitudDocente.MecanismosEvaluacion = "Not";
+            solicitudDocente.ReferenciasBibliograficas = "Not";
+            solicitudDocente.Estado = "Desaprobado";
+
+            upcService.GuardarSolicitudDocente(solicitudDocente);
+            Assert.Pass();
+        }
+
+        [Test]
+        public void test_Incorrecto_CodigoRegistrar_SolicitudDocente()
+        {
+            try
+            {
+                solicitudDocente.Identificacion = "1";
+                solicitudDocente.Nombre = "Eydy";
+                solicitudDocente.Apellido = "Suarez Brieva";
+                solicitudDocente.Materia = "Software 01";
+                solicitudDocente.Descripcion = "Not";
+                solicitudDocente.Justificacion = "Not";
+                solicitudDocente.ObjetivoGeneral = "Yes";
+                solicitudDocente.ObjetivoEspecifico = "Yes";
+                solicitudDocente.ComponeteGenerico = "Not";
+                solicitudDocente.Estrategias = "Not";
+                solicitudDocente.Contenidos = "Not";
+                solicitudDocente.MecanismosEvaluacion = "Not";
+                solicitudDocente.ReferenciasBibliograficas = "Not";
+                solicitudDocente.Estado = "Desaprobado";
+
+                upcService.GuardarSolicitudDocente(solicitudDocente);
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.Pass();
+            }
+        }
+
     }
 }

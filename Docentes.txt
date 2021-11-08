@@ -1,0 +1,2 @@
+7;Maribel;Romero;3001234567;maribelromero@gmail.com;Docente catedratico;Software 02
+1;Eydy;Suarez Brieva;302293220;Eydy@unicesar.edu.co;Docente catedratico;Software 01

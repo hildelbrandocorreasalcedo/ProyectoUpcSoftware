@@ -1,0 +1,2 @@
+6;Braulio;Barrios Zuñiga;Estructura de datos;Yes;Yes;Yes;Yes;Not;Not;Not;Not;Not;
+1;Eydy;Suarez Brieva;Software 01;Not;Not;Yes;Yes;Not;Not;Not;Not;Not;Desaprobado

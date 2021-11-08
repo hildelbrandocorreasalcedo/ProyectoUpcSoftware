@@ -1,0 +1,2 @@
+555;Computacion Grafica;INGENIERIA SISTEMAS;Practico;2
+123;Software 01;INGENIERIA SISTEMAS;Teorico/Practico;3

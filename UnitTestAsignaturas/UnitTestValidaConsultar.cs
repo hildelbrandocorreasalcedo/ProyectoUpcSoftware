@@ -12,7 +12,8 @@ namespace UnitTestAsignaturas
     public class UnitTestValidaConsultar
     {
         UpcService upcService = new UpcService();
-  
+        
+
         [TestMethod]
         public void Test_CompararTodosLosDatos_Asignatura()
         {
@@ -94,6 +95,7 @@ namespace UnitTestAsignaturas
                 Assert.AreEqual(experadoCategoria, actualCategoria);
                 Assert.AreEqual(experadoMateria, actualMateria);
             }
+            
         }
 
         [TestMethod]
@@ -109,6 +111,25 @@ namespace UnitTestAsignaturas
             {
                 Docentes docente = respuesta.Docente;
                 var actual = docente.Identificacion;
+
+                //Assert o Afirmar
+                Assert.AreEqual(actual, experado);
+            }
+        }
+
+        [TestMethod]
+        public void Test_CompararPlanAsignatura_Docente()
+        {
+            //Arrange
+            var MateriaDR = "Proyecto Grado";
+            var experado = "Proyecto Grado";
+
+            //Action
+            RespuestaBusqueda respuesta = upcService.BuscarPlanAsignatura(MateriaDR);
+            if (respuesta.PlanAsignatura != null)
+            {
+                PlanAsignaturas planAsignatura = respuesta.PlanAsignatura;
+                var actual = planAsignatura.Materia;
 
                 //Assert o Afirmar
                 Assert.AreEqual(actual, experado);

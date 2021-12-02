@@ -3,7 +3,6 @@ using System;
 using ENTITY;
 using BLL;
 
-//using ProyectoHotelPensionados;
 
 namespace UnitTestAsignaturas
 {
@@ -94,8 +93,7 @@ namespace UnitTestAsignaturas
                 Assert.AreEqual(experadoCorreo, actualCorreo);
                 Assert.AreEqual(experadoCategoria, actualCategoria);
                 Assert.AreEqual(experadoMateria, actualMateria);
-            }
-            
+            }   
         }
 
         [TestMethod]

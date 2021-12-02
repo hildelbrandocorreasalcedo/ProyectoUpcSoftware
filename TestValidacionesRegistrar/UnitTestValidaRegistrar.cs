@@ -121,6 +121,7 @@ namespace TestValidacionesRegistrar
                 Assert.Pass();
             }
         }
+        [Test]
         public void test_IncorrectoPlanAsignatura_CamposVacios()
         {
             try
